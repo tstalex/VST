@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tarif_calculation_id: 1
+  name: MyString
+  tarif_value:
+
+two:
+  tarif_calculation_id: 1
+  name: MyString
+  tarif_value:

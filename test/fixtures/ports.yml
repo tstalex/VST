@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  country: 1
+  code: MyString
+  flag: 1
+  tips: MyText
+  description: MyText
+  picture: MyString
+
+two:
+  name: MyString
+  country: 1
+  code: MyString
+  flag: 1
+  tips: MyText
+  description: MyText
+  picture: MyString

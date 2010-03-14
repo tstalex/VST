@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @port.name %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%=h @port.country %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%=h @port.code %>
+</p>
+
+<p>
+  <b>Flag:</b>
+  <%=h @port.flag %>
+</p>
+
+<p>
+  <b>Tips:</b>
+  <%=h @port.tips %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @port.description %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%=h @port.picture %>
+</p>
+
+
+<%= link_to 'Edit', edit_port_path(@port) %> |
+<%= link_to 'Back', ports_path %>

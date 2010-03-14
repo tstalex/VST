@@ -1,0 +1,23 @@
+<h1>New tarif_calculation</h1>
+
+<% form_for(@tarif_calculation) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :calc_date %><br />
+    <%= f.date_select :calc_date %>
+  </p>
+  <p>
+    <%= f.label :notes %><br />
+    <%= f.text_field :notes %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', tarif_calculations_path %>

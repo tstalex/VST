@@ -1,0 +1,24 @@
+<h1>Listing tarif_calculations</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Calc date</th>
+    <th>Notes</th>
+  </tr>
+
+<% @tarif_calculations.each do |tarif_calculation| %>
+  <tr>
+    <td><%=h tarif_calculation.name %></td>
+    <td><%=h tarif_calculation.calc_date %></td>
+    <td><%=h tarif_calculation.notes %></td>
+    <td><%= link_to 'Show', tarif_calculation %></td>
+    <td><%= link_to 'Edit', edit_tarif_calculation_path(tarif_calculation) %></td>
+    <td><%= link_to 'Destroy', tarif_calculation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tarif_calculation', new_tarif_calculation_path %>

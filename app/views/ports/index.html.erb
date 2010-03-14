@@ -1,0 +1,32 @@
+<h1>Listing ports</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Country</th>
+    <th>Code</th>
+    <th>Flag</th>
+    <th>Tips</th>
+    <th>Description</th>
+    <th>Picture</th>
+  </tr>
+
+<% @ports.each do |port| %>
+  <tr>
+    <td><%=h port.name %></td>
+    <td><%=h port.country %></td>
+    <td><%=h port.code %></td>
+    <td><%=h port.flag %></td>
+    <td><%=h port.tips %></td>
+    <td><%=h port.description %></td>
+    <td><%=h port.picture %></td>
+    <td><%= link_to 'Show', port %></td>
+    <td><%= link_to 'Edit', edit_port_path(port) %></td>
+    <td><%= link_to 'Destroy', port, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New port', new_port_path %>

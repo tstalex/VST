@@ -1,0 +1,18 @@
+<p>
+  <b>Text:</b>
+  <%=h @country.text %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%=h @country.code %>
+</p>
+
+<p>
+  <b>Is euro:</b>
+  <%=h @country.is_euro %>
+</p>
+
+
+<%= link_to 'Edit', edit_country_path(@country) %> |
+<%= link_to 'Back', countries_path %>

@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @tarif_calculation.name %>
+</p>
+
+<p>
+  <b>Calc date:</b>
+  <%=h @tarif_calculation.calc_date %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%=h @tarif_calculation.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_tarif_calculation_path(@tarif_calculation) %> |
+<%= link_to 'Back', tarif_calculations_path %>

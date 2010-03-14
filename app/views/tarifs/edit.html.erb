@@ -1,0 +1,24 @@
+<h1>Editing tarif</h1>
+
+<% form_for(@tarif) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tarif_calculation_id %><br />
+    <%= f.text_field :tarif_calculation_id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :tarif_value %><br />
+    <%= f.text_field :tarif_value %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @tarif %> |
+<%= link_to 'Back', tarifs_path %>
