@@ -9812,3 +9812,51 @@ Processing PortsController#update (for 127.0.0.1 at 2010-03-12 08:23:28) [PUT]
 WARNING: Can't mass-assign these protected attributes: id
   [4;36;1mPort Update (2.0ms)[0m   [0;1mUPDATE "ports" SET "description" = '<br>', "updated_at" = '2010-03-12 06:23:28' WHERE "id" = 2[0m
 Completed in 141ms (View: 3, DB: 3) | 200 OK [http://localhost/ports/2]
+
+
+Processing BaseController#show (for 127.0.0.1 at 2010-03-14 18:13:05) [GET]
+Rendering base/show
+Completed in 160ms (View: 159, DB: 0) | 200 OK [http://localhost/base/show]
+
+
+Processing CountriesController#show (for 127.0.0.1 at 2010-03-14 18:13:09) [GET]
+  Parameters: {"_dc"=>"1268583188906", "id"=>"with_ports"}
+  [4;36;1mCountry Load (27.0ms)[0m   [0;1mselect distinct countries.* from countries inner join ports where ports.country_id=countries.id[0m
+Completed in 1119ms (View: 851, DB: 27) | 200 OK [http://localhost/countries/with_ports?_dc=1268583188906]
+
+
+Processing CountriesController#show (for 127.0.0.1 at 2010-03-14 18:13:10) [GET]
+  Parameters: {"_dc"=>"1268583190166", "id"=>"with_ports"}
+  [4;35;1mCountry Load (2.0ms)[0m   [0mselect distinct countries.* from countries inner join ports where ports.country_id=countries.id[0m
+Completed in 31ms (View: 15, DB: 2) | 200 OK [http://localhost/countries/with_ports?_dc=1268583190166]
+  [4;36;1mSQL (12.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTarifCalculations (20100217062150)
+Migrating to CreateTarifs (20100217062552)
+Migrating to CreatePorts (20100305054045)
+Migrating to CreateCountries (20100305055558)
+Migrating to CreateVesselTypes (20100314161638)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE "vessel_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100314161638')[0m
+Migrating to CreateVessels (20100315062705)
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "vessels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "flag" integer, "vesel_type" integer, "owner_id" integer, "loa" float, "vessel_length" float, "beam" float, "dw" float, "draft" float, "gross_tonnage" integer, "net_tonnage" integer, "cap1" integer, "paxcap" integer, "ice_class" integer, "calls" varchar(255), "contact_info" varchar(255), "max_draft" float, "safety_cert_date" date, "construction_cert_date" date, "equipment_date" date, "security_cert_date" date, "int_load_line_cert_date" date, "oil_pollut_prevent_date" date, "tonnage_cert_issued_date" date, "sanitation_contr_exempt_date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100315062705')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("countries")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ports")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tarif_calculations")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tarifs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("vessel_types")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("vessels")[0m

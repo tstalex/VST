@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @vessel_type.name %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%=h @vessel_type.code %>
+</p>
+
+
+<%= link_to 'Edit', edit_vessel_type_path(@vessel_type) %> |
+<%= link_to 'Back', vessel_types_path %>

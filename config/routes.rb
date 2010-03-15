@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :vessels
+
+  map.resources :ovies
+
+  map.resources :vessel_types
+
   map.resources :countries
 
   map.resources :countries

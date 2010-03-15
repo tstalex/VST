@@ -102,6 +102,9 @@ function Application() {
             items: [
                 this.countriesPanel(),
                 {
+                    title: 'Vessels',
+                    html: '<p></p>'
+                },{
                     title: 'Tarifs information',
                     html: '<p></p>'
                 }

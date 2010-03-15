@@ -1,0 +1,55 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  flag: 1
+  vesel_type: 1
+  owner_id: 1
+  loa: 1.5
+  vessel_length: 1.5
+  beam: 1.5
+  dw: 1.5
+  draft: 1.5
+  gross_tonnage: 1
+  net_tonnage: 1
+  cap1: 1
+  paxcap: 1
+  ice_class: 1
+  calls: MyString
+  contact_info: MyString
+  max_draft: 1.5
+  safety_cert_date: 2010-03-15
+  construction_cert_date: 2010-03-15
+  equipment_date: 2010-03-15
+  security_cert_date: 2010-03-15
+  int_load_line_cert_date: 2010-03-15
+  oil_pollut_prevent_date: 2010-03-15
+  tonnage_cert_issued_date: 2010-03-15
+  sanitation_contr_exempt_date: 2010-03-15
+
+two:
+  name: MyString
+  flag: 1
+  vesel_type: 1
+  owner_id: 1
+  loa: 1.5
+  vessel_length: 1.5
+  beam: 1.5
+  dw: 1.5
+  draft: 1.5
+  gross_tonnage: 1
+  net_tonnage: 1
+  cap1: 1
+  paxcap: 1
+  ice_class: 1
+  calls: MyString
+  contact_info: MyString
+  max_draft: 1.5
+  safety_cert_date: 2010-03-15
+  construction_cert_date: 2010-03-15
+  equipment_date: 2010-03-15
+  security_cert_date: 2010-03-15
+  int_load_line_cert_date: 2010-03-15
+  oil_pollut_prevent_date: 2010-03-15
+  tonnage_cert_issued_date: 2010-03-15
+  sanitation_contr_exempt_date: 2010-03-15
