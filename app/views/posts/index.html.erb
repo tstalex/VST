@@ -1,0 +1,18 @@
+<% content_for :head do %>
+  <%= javascript_include_tag 'ext_scaffold/post.js' %>
+  <% javascript_tag do %>
+    
+    Ext.onReady(function() {
+
+      Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+      Ext.QuickTips.init();
+
+      var vp = new Ext.Viewport({
+        layout: 'fit',
+        renderTo:"main",
+        items:[Post.postPanel()]
+      });
+    });
+  <% end %>
+<% end %>
+<div id="main"></div>
