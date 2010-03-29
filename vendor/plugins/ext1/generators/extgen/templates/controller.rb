@@ -39,8 +39,6 @@ class <%= controller_class_name %>Controller < ApplicationController
     else
       render :json =>{:success =>false, :message=> @<%= controller_class_name.demodulize.tableize %>.errors}
     end
-
-    render :json => @<%= file_name %>.to_ext_json(:success => @<%= file_name %>.update_attributes(params[:<%= file_name %>]))
   end
 
   # DELETE /<%= controller_class_name.tableize %>/1

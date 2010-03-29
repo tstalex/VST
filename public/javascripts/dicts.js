@@ -2,6 +2,53 @@ function Dicts() {
 
     var countryStoreRestControl = null;
     var countriesGridControl = null;
+    var countryAllStoreRestControl = null;
+    var vessel_typeStoreControl = null;
+    var ice_classStoreControl = null;
+
+    this.ice_classStore = function() {
+        if (ice_classStoreControl != null)
+            return ice_classStoreControl;
+        var proxy = new Ext.data.HttpProxy({
+            url: '/ice_classes'
+        });
+
+        var reader = new Ext.data.JsonReader({
+            rest:true,
+            totalProperty: 'total',
+            successProperty: 'success',
+            idProperty: 'id',
+            root: 'data',
+            messageProperty: 'message'
+        }, [
+            {
+                name: 'id',
+                mapping: 'id'
+            }
+            ,
+            {
+                name: 'code' ,
+                type: 'string'
+            }
+
+        ]);
+
+        var writer = new Ext.data.JsonWriter();
+
+        ice_classStoreControl = new Ext.data.Store({
+            restful: true,
+            id: "ice_classs_stored",
+            proxy: proxy,
+            reader: reader,
+            listeners: {
+                write : function(store, action, result, response, rs) {
+                    Ext.MessageBox.alert(response.success, response.message);
+                }
+            },
+            writer: writer
+        });
+        return ice_classStoreControl;
+    }
 
     this.countriesGrid = function() {
         if (countriesGridControl != null) {
@@ -71,8 +118,6 @@ function Dicts() {
             }
         ]);
 
-        var writer = new Ext.data.JsonWriter();
-
         countryStoreRestControl = new Ext.data.Store({
             restful: true,
             storeId : "dict_store",
@@ -83,11 +128,108 @@ function Dicts() {
                     Ext.MessageBox.alert(response.success, response.message);
                 }
             },
-            writer: writer
+            writer: new Ext.data.JsonWriter()
         });
-        console.log("Creating store " + countryStoreRestControl.storeId);
+
         return countryStoreRestControl;
     };
 
+    this.storeCountryAll = function() {
+        if (countryAllStoreRestControl != null)
+            return countryAllStoreRestControl;
+        var proxy = new Ext.data.HttpProxy({
+            url: '/countries'
+        });
+
+        var reader = new Ext.data.JsonReader({
+            totalProperty: 'total',
+            successProperty: 'success',
+            idProperty: 'id',
+            root: 'data',
+            messageProperty: 'message'
+
+        }, [
+            {
+                name: 'id'
+            },
+            {
+                name: 'text',
+                allowBlank: false
+            },
+            {
+                name: 'code',
+                allowBlank: false
+            }
+        ]);
+
+        var writer = new Ext.data.JsonWriter();
+
+        countryAllStoreRestControl = new Ext.data.Store({
+            restful: true,
+            storeId : "country_storse",
+            proxy: proxy,
+            reader: reader,
+            listeners: {
+                write : function(store, action, result, response, rs) {
+                    Ext.MessageBox.alert(response.success, response.message);
+                }
+            },
+            writer: writer
+        });
+        countryAllStoreRestControl.load();
+        return countryAllStoreRestControl;
+    }
+
+    this.vesselTypeStore = function() {
+        if (vessel_typeStoreControl != null)
+            return vessel_typeStoreControl;
+        var proxy = new Ext.data.HttpProxy({
+            url: '/vessel_types'
+        });
+
+        var reader = new Ext.data.JsonReader({
+            totalProperty: 'total',
+            successProperty: 'success',
+            idProperty: 'id',
+            root: 'data',
+            messageProperty: 'message'
+
+        }, [
+            {
+                name: 'id',
+                mapping: 'id'
+            }
+            ,
+            {
+                name: 'name' ,
+                type: 'string'
+            }
+            ,
+            {
+                name: 'code' ,
+                type: 'string'
+            }
+
+        ]);
+
+        var writer = new Ext.data.JsonWriter();
+
+        vessel_typeStoreControl = new Ext.data.Store({
+            restful: true,
+            id: "vessel_types_store",
+            proxy: proxy,
+            reader: reader,
+            listeners: {
+                write : function(store, action, result, response, rs) {
+                    Ext.MessageBox.alert(response.success, response.message);
+                }
+            },
+            writer: writer
+        });
+        vessel_typeStoreControl.load();
+        return vessel_typeStoreControl;
+    }
+
     this.storeCountry();
+    this.storeCountryAll();
 }

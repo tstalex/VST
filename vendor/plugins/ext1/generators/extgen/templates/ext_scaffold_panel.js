@@ -1,5 +1,5 @@
-var <%=class_name%>= new <%=class_name%>s();
-function <%=class_name%>s(){
+var <%=class_name%>= new <%=class_name.pluralize%>();
+function <%=class_name.pluralize%>(){
     var <%=file_name%>GridControl= null;
     var <%=file_name%>EditControl=null;
     var <%=file_name%>StoreControl=null;
@@ -35,9 +35,14 @@ function <%=class_name%>s(){
             title:"<%=class_name%>",
             items:[this.<%=file_name%>Grid(),this.<%=file_name%>EditPanel() ]
         });
-        this.<%=file_name%>Grid().on("rowclick", function(grid, rowIndex, e) {
+                
+        this.<%=file_name%>Grid().getSelectionModel().on("rowselect", function(grid, rowIndex, e) {
             <%=class_name%>.<%=file_name%>EditPanel().loadGridData(grid);
         });
+        this.<%=file_name%>Grid().getSelectionModel().on("rowdeselect", function(grid, rowIndex, e) {
+            <%=class_name%>.<%=file_name%>EditPanel().loadGridData(grid);
+        });
+
         return <%=file_name%>MainControl;
     };
             
@@ -47,7 +52,7 @@ function <%=class_name%>s(){
         }
         <%=file_name%>EditControl = new Ext.FormPanel({
             region:"center",
-            url:'/<%=file_name%>s',
+            url:'/<%=file_name.pluralize%>',
             frame:true,
             border:false,
             bodyBorder :false,
@@ -117,7 +122,7 @@ function <%=class_name%>s(){
 
         <%=file_name%>GridControl = new Ext.grid.GridPanel(
         {
-            title:"<%=class_name%>s",
+            title:"<%=class_name.pluralize%>",
             region:"north",
             store:this.<%=file_name%>Store(),
             collapsible:true,
@@ -147,7 +152,7 @@ function <%=class_name%>s(){
        if (<%=file_name%>StoreControl != null)
             return <%=file_name%>StoreControl;
         var proxy = new Ext.data.HttpProxy({
-            url: '/<%=file_name%>s'
+            url: '/<%=file_name.pluralize%>'
         });
 
         var reader = new Ext.data.JsonReader({
@@ -178,7 +183,7 @@ function <%=class_name%>s(){
 
         <%=file_name%>StoreControl = new Ext.data.Store({
             restful: true,
-            id: "<%=file_name%>s_store",
+            id: "<%=file_name.pluralize%>_store",
             proxy: proxy,
             reader: reader,
             listeners: {

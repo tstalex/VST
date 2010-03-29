@@ -10,7 +10,7 @@ class CountriesController < ApplicationController
   # GET /countries
   # GET /countries.xml
   def with_ports
-    @countries = Country.find_by_sql("select distinct countries.* from countries inner join ports where ports.country_id=countries.id")
+    @countries = Country.find_by_sql("select distinct countries.* from countries inner join ports where ports.country=countries.id")
 
     render :json =>{:data=>@countries, :success=>true, :total=>@countries.length}
   end

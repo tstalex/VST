@@ -2,10 +2,58 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="287d49ea-7968-4133-b409-b09fecac4a5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/ports.js" afterPath="$PROJECT_DIR$/public/javascripts/ports.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/vessels.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/vessels.html.erb" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\helpers\vessel_types_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\db\development - Copy.sqlite3" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/vessels.yml" afterPath="$PROJECT_DIR$/test/fixtures/vessels.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\stylesheets\scaffold.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\views\tarifs\show.html.erb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/vessel_types.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/vessel_types.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tarifs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tarifs_controller.rb" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\controllers\vessel_types_controller.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/dicts.js" afterPath="$PROJECT_DIR$/public/javascripts/dicts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/port.rb" afterPath="$PROJECT_DIR$/app/models/port.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/countries_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/countries_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/templates/ext_scaffold_panel.js" afterPath="$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/templates/ext_scaffold_panel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/overrides.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/tarifs_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/tarifs_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/base/show.html.erb" afterPath="$PROJECT_DIR$/app/views/base/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/tarif.rb" afterPath="$PROJECT_DIR$/app/models/tarif.rb" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\views\vessel_types\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\views\vessel_types\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\views\vessels\new.html.erb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/vessel_types_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/vessel_types_controller_test.rb" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\views\vessels\show.html.erb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\views\vessel_types\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\views\tarifs\edit.html.erb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/vessels.js" afterPath="$PROJECT_DIR$/public/javascripts/vessels.js" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\test\unit\helpers\tarifs_helper_test.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/templates/controller.rb" afterPath="$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/templates/controller.rb" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\db\migrate\20100217062552_create_tarifs.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/tarifs.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/tarifs.html.erb" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\models\vessel_type.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tarifs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/tarifs/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/ext_scaffold/tarif.js" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\db\migrate\20100314161638_create_vessel_types.rb" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20100329050913_create_tarifs.rb" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\views\tarifs\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\db\migrate\20100315062705_create_vessels.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/tarifs.yml" afterPath="$PROJECT_DIR$/test/fixtures/tarifs.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\views\vessels\edit.html.erb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/base_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/base_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/app.js" afterPath="$PROJECT_DIR$/public/javascripts/app.js" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\app\views\vessel_types\index.html.erb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/vessels_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/vessels_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/vessels/index.html.erb" afterPath="$PROJECT_DIR$/app/views/vessels/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/vessels_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/vessels_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\test\unit\helpers\vessels_helper_test.rb" afterPath="" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="third.iws" />
@@ -28,17 +76,7 @@
   </component>
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="vessels_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/vessels_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="75" selection-start="247" selection-end="247" vertical-scroll-proportion="0.042288557">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -48,6 +86,7 @@
   <component name="GeneratorOptions">
     <option name="FORCE" value="true" />
     <option name="SKIP" value="false" />
+    <option name="GIT" value="true" />
     <option name="VCS_SHOW_CONFIRMATION" value="true" />
   </component>
   <component name="Git.Settings">
@@ -57,22 +96,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/javascripts/tarif_calculations.js" />
-        <option value="$PROJECT_DIR$/app/views/base/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/ports_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20100305055558_create_countries.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/base_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/countries_controller.rb" />
-        <option value="$PROJECT_DIR$/public/javascripts/dicts.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/ports.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/app.js" />
-        <option value="$PROJECT_DIR$/app/models/vessel_type.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/vessel_types_controller.rb" />
-        <option value="$PROJECT_DIR$/public/javascripts/vessels.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/ext_scaffold/vessel.js" />
         <option value="$PROJECT_DIR$/app/controllers/vessels_controller.rb" />
-        <option value="$PROJECT_DIR$/vendor/plugins/ext_scaffold/init.rb" />
-        <option value="$PROJECT_DIR$/vendor/plugins/ext_scaffold/generators/ext_scaffold/templates/ext_scaffold_panel.js" />
-        <option value="$PROJECT_DIR$/vendor/plugins/ext_scaffold/generators/ext_scaffold/ext_scaffold_generator.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/ice_classes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/base/show.html.erb" />
+        <option value="$PROJECT_DIR$/public/javascripts/ext_scaffold/ice_class.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/app.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/dicts.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/overrides.js" />
+        <option value="$PROJECT_DIR$/app/controllers/base_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/port.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/countries_controller.rb" />
+        <option value="$PROJECT_DIR$/public/javascripts/vessels.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/ports.js" />
+        <option value="$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/templates/controller.rb" />
+        <option value="$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/templates/ext_scaffold_panel.js" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -109,9 +148,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -144,50 +180,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Rake.db:migrate">
+  <component name="RunManager" selected="Rails.Development: third">
     <configuration default="false" name="db:drop" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="third" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
@@ -199,7 +207,7 @@
         <env name="RAILS_ENV" value="development" />
       </envs>
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:drop" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="posts" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
@@ -493,25 +501,45 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27424484" sideWeight="0.6635659" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15503876" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3255814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24562798" sideWeight="0.6" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46666667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38914728" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49147287" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27131784" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939272" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -526,7 +554,7 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added vessels and vessel_types" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ext generator plugin" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -541,6 +569,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Initial" />
     <MESSAGE value="Added vessels and vessel_types" />
+    <MESSAGE value="Added ext generator plugin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -549,60 +578,112 @@
           <url>file://$PROJECT_DIR$/vendor/plugins/ext_scaffold/generators/ext_scaffold/ext_scaffold_generator.rb</url>
           <line>46</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/posts_controller.rb</url>
+          <line>21</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/base_controller.rb</url>
+          <line>15</line>
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/vessels.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/overrides.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" />
+        <state line="68" column="65" selection-start="2046" selection-end="2046" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20100314161638_create_vessel_types.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/ice_classes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20100305055558_create_countries.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20100305054045_create_ports.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20100217062552_create_tarifs.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20100217062150_create_tarif_calculations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/.rakeTasks">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="26" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/vessels_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="75" selection-start="247" selection-end="247" vertical-scroll-proportion="0.042288557">
+        <state line="21" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="0" selection-start="6788" selection-end="6788" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="43" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.68929505" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/port.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="2" selection-start="34" selection-end="34" vertical-scroll-proportion="0.057239056" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/base_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="13" selection-start="1777" selection-end="1777" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20100305054045_create_ports.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="24" selection-start="127" selection-end="134" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/countries_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="70" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/vessels.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="11" selection-start="1614" selection-end="1952" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/templates/controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="70" selection-start="1608" selection-end="1608" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="29" selection-start="133" selection-end="133" vertical-scroll-proportion="0.23545706">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/templates/ext_scaffold_panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="16" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/extgen_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="11" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/ports.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="11" selection-start="1427" selection-end="1750" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/plugins/ext_scaffold/generators/ext_scaffold/templates/ext_scaffold_panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="74" selection-start="1846" selection-end="1846" vertical-scroll-proportion="-15.56">
           <folding />
         </state>
       </provider>

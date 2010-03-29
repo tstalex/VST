@@ -1,25 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :posts
+  map.resources :tarifs
 
   map.resources :vessels
 
-  map.resources :ovies
+  map.resources :ice_classes
 
   map.resources :vessel_types
-
-  map.resources :countries
-
   map.resources :countries
 
   map.resources :ports
-
-  map.resources :tarifs
-
-  map.resources :tarif_calculations
-
-  map.resources :tarifs
-
-  map.resources :tarifs
 
   map.resources :tarif_calculations
 
@@ -41,7 +30,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample resource route with sub-resources:
   #   map.resources :products, :has_many => [ :comments, :sales ], :has_one => :seller
-  
+
   # Sample resource route with more complex sub-resources
   #   map.resources :products do |products|
   #     products.resources :comments

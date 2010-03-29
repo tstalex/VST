@@ -1,65 +1,15 @@
-Ext.override(Ext.FormPanel, {
+//Ext.Ajax.defaultHeaders = { 'Content-Type': 'application/json' };
 
-    saveGridSata : function(grid) {
-        var rec = grid.getSelectionModel().getSelected();
-        this.getForm().items.each(function(field) {
-
-            if (field.name && (name = field.name) && (value = field.getValue()) !== undefined) {
-                rec.set(name, value);
-                console.log("field " + field.name + " got value " + field.getValue());
-            }
-        }, this);
-        grid.store.fireEvent('datachanged', grid.store);
-        grid.store.commitChanges();
-        grid.store.save();
-    },
-
-    loadGridData : function(grid) {
-        var record = grid.getSelectionModel().getSelected();
-        var values = record.data;
-        this.getForm().items.each(function(field) {
-            if (field.name && (name = field.name) && (value = values[name]) !== undefined) {
-                console.log("field " + name + " got value " + value);
-                field.setValue(value);
-                if (this.trackResetOnLoad) {
-                    field.originalValue = field.getValue();
-                }
-            }
-        }, this);
-        return this;
-    }
-
-});
-
-Ext.override(Ext.grid.GridPanel, {
-    viewPanel:null,
-    showInView: function(viewPanel) {
-        viewPanel.loadData(this);
-    }
-});
-
-Ext.override(Ext.form.Field, {
-    getName: function() {
-        return this.rendered && this.el.dom.name ? this.el.dom.name :
-               this.name || this.id || '';
-    }
-});
-
-
-Ext.override(Ext.form.ComboBox, {
-    getName: function() {
-        return this.hiddenField && this.hiddenField.name ? this.hiddenField.name :
-               this.hiddenName || Ext.form.ComboBox.superclass.getName.call(this);
-    }
-});
-
-var App = new Application();
 var Dict = new Dicts();
+var App = new Application();
+
 var Calc = new Calculation();
 var Ports = new Ports();
-
+var Vessel= new Vessels();
 
 function Application() {
+    
+
     var currentpanel = new Ext.Panel({region:"center"});
     var mainPanel = null;
 
@@ -99,14 +49,15 @@ function Application() {
             region:"west",
             layout:"accordion",
             collapsible:true,
+            activeItem:1,
             items: [
                 this.countriesPanel(),
                 {
                     title: 'Vessels',
-                    html: '<p></p>'
+                    html: '<p><a href="#" onclick="App.showMainPanel(Vessel.vesselPanel())">Show</a></p>'
                 },{
-                    title: 'Tarifs information',
-                    html: '<p></p>'
+                    title: 'Configuration',
+                    html: '<p><a href="#" onclick="App.showMainPanel(IceClass.ice_classPanel())">Ice classes</a></p>'
                 }
             ],
             split:true
@@ -134,6 +85,8 @@ function Application() {
     var storesToLoad = [
         {
             store : "dict_store"
+        },{
+            store:"country_storse"
         }
     ];
 
@@ -143,9 +96,9 @@ function Application() {
             if (success !== false) {
                 task.callback = arguments.callee
                 var store = Ext.StoreMgr.lookup(task.store);
-                store ? store.load(task) : console.log('bad store specified');
+                store ? store.load(task) : console.log('bad store specified '+task.store);
             } else {
-                console.log("Store loaded");
+                console.log(" Store loaded "+task.store);
             }
         } else {
             App.buildLayout();

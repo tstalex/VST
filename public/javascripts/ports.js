@@ -6,10 +6,24 @@ function Ports() {
     this.add = function() {
         this.editPanel().saveGridSata(this.portGrid());
     }
-    this.reset = function() {
-        Ports.editPanel().loadGridData(this.portGrid());
 
-    }
+    this.del = function() {
+        this.editPanel().deleteGridData(this.portGrid());
+    };
+
+    this.edit = function() {
+        this.editPanel().loadGridData(this.portGrid());
+        this.editPanel().setEditable(true);
+    };
+    this.newRow = function() {
+        this.editPanel().addNew(this.portGrid());
+    };
+
+
+    this.reset = function() {
+        this.editPanel().resetData(this.portGrid());
+    };
+
 
     this.showPanel = function(country_id) {
         if (this.portGrid().store.isFiltered()) {
@@ -32,9 +46,14 @@ function Ports() {
             title:"Ports",
             items:[this.portGrid(),this.editPanel() ]
         });
-        this.portGrid().on("rowclick", function(grid, rowIndex, e) {
-            Ports.editPanel().loadGridData(grid);
+        
+        this.portGrid().getSelectionModel().on("rowselect", function(obj, rowIndex, row) {
+            Ports.editPanel().loadGridData(Ports.portGrid());
         });
+        this.portGrid().getSelectionModel().on("rowdeselect", function(obj, rowIndex, row) {
+            Ports.editPanel().loadGridData(Ports.portGrid());
+        });
+
         return portMainControl;
     };
 
@@ -44,7 +63,6 @@ function Ports() {
             return  editPanelControl;
         }
 
-        console.log("creating new editPanelControl");
         editPanelControl = new Ext.FormPanel({
             region:"center",
             url:'/ports',
@@ -66,7 +84,7 @@ function Ports() {
                             bodyBorder :false,
                             items:[
                                 new Ext.Panel({
-                                    width:480,
+                                    width:550,
                                     layout:"column",
                                     items:[
                                         {
@@ -79,13 +97,17 @@ function Ports() {
                                                     name: 'code',
                                                     anchor:'90%'
                                                 },
-                                                {
-
-                                                    xtype:'textfield',
+                                                new Ext.form.ComboBox({
+                                                    store: Dict.storeCountryAll() ,
+                                                    typeAhead: true,
+                                                    triggerAction: 'all',
+                                                    lazyRender:true,
+                                                    mode: 'local',
+                                                    valueField: 'id',
+                                                    displayField: 'text',
                                                     fieldLabel: 'Country',
-                                                    name: 'country_id',
-                                                    anchor:'90%'
-                                                }
+                                                    name: 'country'
+                                                })
                                             ]
                                         },
                                         {
@@ -98,12 +120,17 @@ function Ports() {
                                                     name: 'name',
                                                     anchor:'95%'
                                                 },
-                                                {
-                                                    xtype:'textfield',
+                                                new Ext.form.ComboBox({
+                                                    store: Dict.storeCountryAll() ,
+                                                    typeAhead: true,
+                                                    triggerAction: 'all',
+                                                    lazyRender:true,
+                                                    mode: 'local',
+                                                    valueField: 'id',
+                                                    displayField: 'text',
                                                     fieldLabel: 'Flag',
-                                                    name: 'flag',
-                                                    anchor:'95%'
-                                                }
+                                                    name: 'flag'
+                                                })
                                             ]
                                         }
                                     ]
@@ -112,12 +139,19 @@ function Ports() {
                                 new Ext.form.HtmlEditor({
                                     fieldLabel: 'Description',
                                     name: 'description',
-                                    width:480
+                                    width:550
                                 })
                             ]
                         }
-                       ,
-                        {title:"Tarifs",items:[{title:"Some data"}]}
+                        ,
+                        {
+                            title:"Tarifs",
+                            items:[
+                                {
+                                    title:"Some data"
+                                }
+                            ]
+                        }
                     ]
                 }
                         )
@@ -125,25 +159,48 @@ function Ports() {
 
             ],
 
-            buttons: [
+            bbar: [
+                {
+                    text: 'New',
+                    iconCls:"silk-add",
+                    handler: function(btn, evnt) {
+                        Ports.newRow();
+                    }
+                },
+                {
+                    text: 'Edit',
+                    iconCls:"silk-page-edit",
+                    handler: function(btn, evnt) {
+                        Ports.edit();
+                    }
+                },
                 {
                     text: 'Save',
+                    iconCls:"icon-save",
                     handler: function(btn, evnt) {
                         Ports.add();
                     }
                 },
                 {
                     text: 'Cancel',
+                    iconCls:"silk-cancel",
                     handler: function(btn, evnt) {
                         Ports.reset();
                     }
-                }
+                },
+                {
+                    text: 'Delete',
+                    iconCls:"silk-delete",
+                    handler: function(btn, evnt) {
+                        Ports.del();
+                    }
+                },
             ]
         }
                 )
                 ;
         editPanelControl.data = {};
-
+        editPanelControl.setEditable(false);
         return editPanelControl;
     }
 
@@ -185,7 +242,7 @@ function Ports() {
                 },
                 {
                     header:"Country",
-                    dataIndex:"country_id",
+                    dataIndex:"country",
                     sortable:true,
                     hidden:false
                 }
@@ -217,7 +274,7 @@ function Ports() {
                 allowBlank: false
             },
             {
-                name: 'country_id',
+                name: 'country',
                 allowBlank: false
             },
             {

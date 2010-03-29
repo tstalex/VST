@@ -1,24 +1,18 @@
-<h1>Listing tarifs</h1>
+<% content_for :head do %>
+  <%= javascript_include_tag 'ext_scaffold/tarif.js' %>
+  <% javascript_tag do %>
+    Ext.Ajax.defaultHeaders = { 'Content-Type': 'application/json' };
+    Ext.onReady(function() {
 
-<table>
-  <tr>
-    <th>Tarif calculation</th>
-    <th>Name</th>
-    <th>Tarif value</th>
-  </tr>
+      Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+      Ext.QuickTips.init();
 
-<% @tarifs.each do |tarif| %>
-  <tr>
-    <td><%=h tarif.tarif_calculation_id %></td>
-    <td><%=h tarif.name %></td>
-    <td><%=h tarif.tarif_value %></td>
-    <td><%= link_to 'Show', tarif %></td>
-    <td><%= link_to 'Edit', edit_tarif_path(tarif) %></td>
-    <td><%= link_to 'Destroy', tarif, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+      var vp = new Ext.Viewport({
+        layout: 'fit',
+        renderTo:"main",
+        items:[Tarif.tarifPanel()]
+      });
+    });
+  <% end %>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New tarif', new_tarif_path %>
+<div id="main"></div>

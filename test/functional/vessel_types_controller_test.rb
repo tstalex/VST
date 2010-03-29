@@ -1,45 +1,35 @@
-require 'test_helper'
+require File.dirname(__FILE__) + '/../test_helper'
+
+# make sure the secret for request forgery protection is set (views will
+# explicitly use the form_authenticity_token method which will fail otherwise)
+VesselTypesController.request_forgery_protection_options[:secret] = 'test_secret'
 
 class VesselTypesControllerTest < ActionController::TestCase
-  test "should get index" do
+
+
+  def test_should_get_index
     get :index
     assert_response :success
-    assert_not_nil assigns(:vessel_types)
-  end
-
-  test "should get new" do
-    get :new
+    get :index, :format => 'ext_json'
     assert_response :success
   end
 
-  test "should create vessel_type" do
+  def test_should_create_vessel_type
     assert_difference('VesselType.count') do
-      post :create, :vessel_type => { }
+      xhr :post, :create, :format => 'ext_json', :vessel_type => { }
     end
-
-    assert_redirected_to vessel_type_path(assigns(:vessel_type))
-  end
-
-  test "should show vessel_type" do
-    get :show, :id => vessel_types(:one).to_param
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit, :id => vessel_types(:one).to_param
+  def test_should_update_vessel_type
+    xhr :put, :update, :format => 'ext_json', :id => vessel_types(:one).id, :vessel_type => { }
     assert_response :success
   end
 
-  test "should update vessel_type" do
-    put :update, :id => vessel_types(:one).to_param, :vessel_type => { }
-    assert_redirected_to vessel_type_path(assigns(:vessel_type))
-  end
-
-  test "should destroy vessel_type" do
+  def test_should_destroy_vessel_type
     assert_difference('VesselType.count', -1) do
-      delete :destroy, :id => vessel_types(:one).to_param
+      xhr :delete, :destroy, :id => vessel_types(:one).id
     end
-
-    assert_redirected_to vessel_types_path
+    assert_response :success
   end
 end

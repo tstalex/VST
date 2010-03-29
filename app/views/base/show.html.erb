@@ -7,10 +7,15 @@
   <title>Base</title>
   <script type="text/javascript" src="/javascripts/adapter/ext/ext-base-debug.js"></script>
   <script type="text/javascript" src="/javascripts/ext-all-debug.js"></script>
+  <script type="text/javascript" src="<%= javascript_path "overrides" %>"></script>
   <script type="text/javascript" src="<%= javascript_path "tarif_calculations" %>"></script>
   <script type="text/javascript" src="<%= javascript_path "ports" %>"></script>
   <script type="text/javascript" src="<%= javascript_path "dicts" %>"></script>
+  <script type="text/javascript" src="<%= javascript_path "vessels" %>"></script>
+  <script type="text/javascript" src="<%= javascript_path "ext_scaffold/ice_class" %>"></script>
   <script type="text/javascript" src="<%= javascript_path "app" %>"></script>
+
+  <%= stylesheet_link_tag    "silk", "/stylesheets/silk.css" %>
   <link rel="stylesheet" type="text/css" href="<%= stylesheet_path "ext-all" %>"/>
 </head>
 <body>

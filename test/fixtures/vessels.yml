@@ -18,14 +18,14 @@ one:
   calls: MyString
   contact_info: MyString
   max_draft: 1.5
-  safety_cert_date: 2010-03-15
-  construction_cert_date: 2010-03-15
-  equipment_date: 2010-03-15
-  security_cert_date: 2010-03-15
-  int_load_line_cert_date: 2010-03-15
-  oil_pollut_prevent_date: 2010-03-15
-  tonnage_cert_issued_date: 2010-03-15
-  sanitation_contr_exempt_date: 2010-03-15
+  safety_cert_date: 2010-03-24
+  construction_cert_date: 2010-03-24
+  equipment_date: 2010-03-24
+  security_cert_date: 2010-03-24
+  int_load_line_cert_date: 2010-03-24
+  oil_pollut_prevent_date: 2010-03-24
+  tonnage_cert_issued_date: 2010-03-24
+  sanitation_contr_exempt_date: 2010-03-24
 
 two:
   name: MyString
@@ -45,11 +45,11 @@ two:
   calls: MyString
   contact_info: MyString
   max_draft: 1.5
-  safety_cert_date: 2010-03-15
-  construction_cert_date: 2010-03-15
-  equipment_date: 2010-03-15
-  security_cert_date: 2010-03-15
-  int_load_line_cert_date: 2010-03-15
-  oil_pollut_prevent_date: 2010-03-15
-  tonnage_cert_issued_date: 2010-03-15
-  sanitation_contr_exempt_date: 2010-03-15
+  safety_cert_date: 2010-03-24
+  construction_cert_date: 2010-03-24
+  equipment_date: 2010-03-24
+  security_cert_date: 2010-03-24
+  int_load_line_cert_date: 2010-03-24
+  oil_pollut_prevent_date: 2010-03-24
+  tonnage_cert_issued_date: 2010-03-24
+  sanitation_contr_exempt_date: 2010-03-24

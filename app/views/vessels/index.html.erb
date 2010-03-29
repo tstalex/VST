@@ -1,68 +1,18 @@
-<h1>Listing vessels</h1>
+<% content_for :head do %>
+  <%= javascript_include_tag 'ext_scaffold/vessel.js' %>
+  <% javascript_tag do %>
+    Ext.Ajax.defaultHeaders = { 'Content-Type': 'application/json' };
+    Ext.onReady(function() {
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Flag</th>
-    <th>Vesel type</th>
-    <th>Owner</th>
-    <th>Loa</th>
-    <th>Vessel length</th>
-    <th>Beam</th>
-    <th>Dw</th>
-    <th>Draft</th>
-    <th>Gross tonnage</th>
-    <th>Net tonnage</th>
-    <th>Cap1</th>
-    <th>Paxcap</th>
-    <th>Ice class</th>
-    <th>Calls</th>
-    <th>Contact info</th>
-    <th>Max draft</th>
-    <th>Safety cert date</th>
-    <th>Construction cert date</th>
-    <th>Equipment date</th>
-    <th>Security cert date</th>
-    <th>Int load line cert date</th>
-    <th>Oil pollut prevent date</th>
-    <th>Tonnage cert issued date</th>
-    <th>Sanitation contr exempt date</th>
-  </tr>
+      Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+      Ext.QuickTips.init();
 
-<% @vessels.each do |vessel| %>
-  <tr>
-    <td><%=h vessel.name %></td>
-    <td><%=h vessel.flag %></td>
-    <td><%=h vessel.vesel_type %></td>
-    <td><%=h vessel.owner_id %></td>
-    <td><%=h vessel.loa %></td>
-    <td><%=h vessel.vessel_length %></td>
-    <td><%=h vessel.beam %></td>
-    <td><%=h vessel.dw %></td>
-    <td><%=h vessel.draft %></td>
-    <td><%=h vessel.gross_tonnage %></td>
-    <td><%=h vessel.net_tonnage %></td>
-    <td><%=h vessel.cap1 %></td>
-    <td><%=h vessel.paxcap %></td>
-    <td><%=h vessel.ice_class %></td>
-    <td><%=h vessel.calls %></td>
-    <td><%=h vessel.contact_info %></td>
-    <td><%=h vessel.max_draft %></td>
-    <td><%=h vessel.safety_cert_date %></td>
-    <td><%=h vessel.construction_cert_date %></td>
-    <td><%=h vessel.equipment_date %></td>
-    <td><%=h vessel.security_cert_date %></td>
-    <td><%=h vessel.int_load_line_cert_date %></td>
-    <td><%=h vessel.oil_pollut_prevent_date %></td>
-    <td><%=h vessel.tonnage_cert_issued_date %></td>
-    <td><%=h vessel.sanitation_contr_exempt_date %></td>
-    <td><%= link_to 'Show', vessel %></td>
-    <td><%= link_to 'Edit', edit_vessel_path(vessel) %></td>
-    <td><%= link_to 'Destroy', vessel, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+      var vp = new Ext.Viewport({
+        layout: 'fit',
+        renderTo:"main",
+        items:[Vessel.vesselPanel()]
+      });
+    });
+  <% end %>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New vessel', new_vessel_path %>
+<div id="main"></div>
