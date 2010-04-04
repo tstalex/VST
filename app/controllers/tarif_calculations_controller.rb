@@ -1,52 +1,58 @@
 class TarifCalculationsController < ApplicationController
+
+  rescue_from ActiveRecord::RecordNotFound do |exception|
+    render :json => { :success => false }, :status => :not_found
+  end
+ 
   # GET /tarif_calculations
-  # GET /tarif_calculations.xml
+  # GET /tarif_calculations.ext_json
   def index
-    @tarif_calculations = TarifCalculation.all
-    render :json => {:data =>@tarif_calculations }
+    port_id=params[:port_id]
+    if(port_id)
+      @tarif_calculations =TarifCalculation.find_all_by_port_id(port_id)
+    else
+      @tarif_calculations =TarifCalculation.all
+    end
+
+   render :json => {:successful=>true, :total=>@tarif_calculations.length, :data=> @tarif_calculations }
   end
 
-  # GET /tarif_calculations/1
-  # GET /tarif_calculations/1.xml
-  def show
-    @tarif_calculation = TarifCalculation.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @tarif_calculation }
+
+
+  # POST /tarif_calculations
+  def create
+    data= params[:data]
+    json_obj= ActiveSupport::JSON.decode(data)
+    @tarif_calculation = TarifCalculation.new(json_obj)
+
+    if @tarif_calculation.save
+      render :json => { :success => true, :message => "Created new @TarifCalculation  #{@tarif_calculation.id}", :data => @tarif_calculation }
+    else
+      render :json =>{:success =>false, :message=> @tarif_calculation.errors}
     end
   end
 
-  # POST /tarif_calculations
-  # POST /tarif_calculations.xml
-  def create
-    data= params[:data]
-    jsonObj= ActiveSupport::JSON.decode(data)
-    @tarif_calculation = TarifCalculation.new(jsonObj)
-     if @tarif_calculation.save
-      render :json => { :success => true, :message => "Created new TarifCalculation  #{@tarif_calculation.id}", :data => @tarif_calculation }
-     else
-      render :json => { :message => "Failed to create object"}
-     end
-  end
-
   # PUT /tarif_calculations/1
-  # PUT /tarif_calculations/1.xml
   def update
-    @tarif_calculation = TarifCalculation.find(params[:id])
-      if @tarif_calculation.update_attributes(ActiveSupport::JSON.decode(params[:data]))
-        render :json =>{:success =>true, :message=> 'TarifCalculation was successfully updated.'}
-      else
-        render :json =>{:success =>false, :message=> @tarif_calculation.errors}
-      end
+    @tarif_calculations = TarifCalculation.find(params[:id])
+
+    if @tarif_calculations.update_attributes(ActiveSupport::JSON.decode(params[:data]))
+      render :json => { :success => true, :message => "TarifCalculations was updated", :data => @tarif_calculations }
+    else
+      render :json =>{:success =>false, :message=> @tarif_calculations.errors}
+    end
   end
 
   # DELETE /tarif_calculations/1
-  # DELETE /tarif_calculations/1.xml
   def destroy
-    @tarif_calculation = TarifCalculation.find(params[:id])
-    @tarif_calculation.destroy
+    @tarif_calculations = TarifCalculation.find(params[:id])
+     if @tarif_calculations.destroy
+      render :json => { :success => true, :message => "TarifCalculations was deleted"}
+    else
+      render :json =>{:success =>false, :message=> @tarif_calculations.errors}
+    end
 
-    render :json =>{:success =>true, :message=> 'TarifCalculation was successfully deleted.'}
   end
+
 end

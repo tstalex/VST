@@ -35,12 +35,14 @@ function <%=class_name.pluralize%>(){
             title:"<%=class_name%>",
             items:[this.<%=file_name%>Grid(),this.<%=file_name%>EditPanel() ]
         });
-                
-        this.<%=file_name%>Grid().getSelectionModel().on("rowselect", function(grid, rowIndex, e) {
-            <%=class_name%>.<%=file_name%>EditPanel().loadGridData(grid);
+        this.<%=file_name%>Grid().viewPanel =this.<%=file_name%>EditPanel();
+        this.<%=file_name%>EditPanel().grid=this.<%=file_name%>Grid();
+
+        this.<%=file_name%>Grid().getSelectionModel().on("rowselect", function(rsm, rowIndex, e) {
+            rsm.grid.viewPanel.loadGridData();
         });
-        this.<%=file_name%>Grid().getSelectionModel().on("rowdeselect", function(grid, rowIndex, e) {
-            <%=class_name%>.<%=file_name%>EditPanel().loadGridData(grid);
+        this.<%=file_name%>Grid().getSelectionModel().on("rowdeselect", function(rsm, rowIndex, e) {
+            rsm.grid.viewPanel.loadGridData();
         });
 
         return <%=file_name%>MainControl;

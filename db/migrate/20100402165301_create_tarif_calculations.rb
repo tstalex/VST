@@ -1,10 +1,12 @@
 class CreateTarifCalculations < ActiveRecord::Migration
   def self.up
     create_table :tarif_calculations do |t|
-      t.string :name
-      t.date :calc_date
+      t.date :from
+      t.date :to
+      t.boolean :active
       t.string :notes
-
+      t.integer  :port_id
+      
       t.timestamps
     end
   end

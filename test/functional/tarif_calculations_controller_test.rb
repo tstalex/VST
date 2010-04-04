@@ -1,45 +1,35 @@
-require 'test_helper'
+require File.dirname(__FILE__) + '/../test_helper'
+
+# make sure the secret for request forgery protection is set (views will
+# explicitly use the form_authenticity_token method which will fail otherwise)
+TarifCalculationsController.request_forgery_protection_options[:secret] = 'test_secret'
 
 class TarifCalculationsControllerTest < ActionController::TestCase
-  test "should get index" do
+
+
+  def test_should_get_index
     get :index
     assert_response :success
-    assert_not_nil assigns(:tarif_calculations)
-  end
-
-  test "should get new" do
-    get :new
+    get :index, :format => 'ext_json'
     assert_response :success
   end
 
-  test "should create tarif_calculation" do
+  def test_should_create_tarif_calculation
     assert_difference('TarifCalculation.count') do
-      post :create, :tarif_calculation => { }
+      xhr :post, :create, :format => 'ext_json', :tarif_calculation => { }
     end
-
-    assert_redirected_to tarif_calculation_path(assigns(:tarif_calculation))
-  end
-
-  test "should show tarif_calculation" do
-    get :show, :id => tarif_calculations(:one).to_param
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit, :id => tarif_calculations(:one).to_param
+  def test_should_update_tarif_calculation
+    xhr :put, :update, :format => 'ext_json', :id => tarif_calculations(:one).id, :tarif_calculation => { }
     assert_response :success
   end
 
-  test "should update tarif_calculation" do
-    put :update, :id => tarif_calculations(:one).to_param, :tarif_calculation => { }
-    assert_redirected_to tarif_calculation_path(assigns(:tarif_calculation))
-  end
-
-  test "should destroy tarif_calculation" do
+  def test_should_destroy_tarif_calculation
     assert_difference('TarifCalculation.count', -1) do
-      delete :destroy, :id => tarif_calculations(:one).to_param
+      xhr :delete, :destroy, :id => tarif_calculations(:one).id
     end
-
-    assert_redirected_to tarif_calculations_path
+    assert_response :success
   end
 end

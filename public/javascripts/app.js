@@ -3,12 +3,13 @@
 var Dict = new Dicts();
 var App = new Application();
 
-var Calc = new Calculation();
+var Calc = new TarifCalculations();
 var Ports = new Ports();
-var Vessel= new Vessels();
+var Vessel = new Vessels();
+var Tarif = new Tarifs();
 
 function Application() {
-    
+
 
     var currentpanel = new Ext.Panel({region:"center"});
     var mainPanel = null;
@@ -49,7 +50,7 @@ function Application() {
             region:"west",
             layout:"accordion",
             collapsible:true,
-            activeItem:1,
+            //activeItem:1,
             items: [
                 this.countriesPanel(),
                 {
@@ -85,7 +86,8 @@ function Application() {
     var storesToLoad = [
         {
             store : "dict_store"
-        },{
+        },
+        {
             store:"country_storse"
         }
     ];
@@ -96,9 +98,9 @@ function Application() {
             if (success !== false) {
                 task.callback = arguments.callee
                 var store = Ext.StoreMgr.lookup(task.store);
-                store ? store.load(task) : console.log('bad store specified '+task.store);
+                store ? store.load(task) : console.log('bad store specified ' + task.store);
             } else {
-                console.log(" Store loaded "+task.store);
+                console.log(" Store loaded " + task.store);
             }
         } else {
             App.buildLayout();

@@ -3,6 +3,18 @@ function Ports() {
     var portGridControl = null;
     var portMainControl = null;
     var editPanelControl = null;
+    this.showTarif = function(record) {
+        var modal = new Ext.Window(
+        {
+            width:500,
+            height:300,
+            plain: true,
+            layout:'fit',
+            items:[Tarif.tarifPanel()]
+        });
+        modal.show();
+    }
+
     this.add = function() {
         this.editPanel().saveGridSata(this.portGrid());
     }
@@ -26,13 +38,17 @@ function Ports() {
 
 
     this.showPanel = function(country_id) {
-        if (this.portGrid().store.isFiltered()) {
-            console.log("Removing filter");
-            this.portGrid().store.clearFilter();
-            console.log(this.portGrid().store.isFiltered());
-        }
-
-        this.portGrid().store.filter("country_id", country_id);
+        this.filter_country=country_id;
+        this.portGrid().store.clearFilter();
+        console.log("filtring by "+country_id);
+        this.portGrid().store.filterBy(function(rec,country_id){
+            
+            var t_country_id=rec.get("country");
+            if(t_country_id==this.filter_country){
+                return true;
+            }
+            return false;
+        },this);
         console.log("Applied filter " + this.portGrid().store.isFiltered());
         return this.portsPanel();
     }
@@ -41,17 +57,21 @@ function Ports() {
         if (portMainControl != null && !portMainControl.isDestroyed) {
             return  portMainControl;
         }
+        this.portGrid().viewPanel=this.editPanel();
+        this.editPanel().grid=this.portGrid();
         portMainControl = new Ext.Panel({
             layout:"border",
             title:"Ports",
             items:[this.portGrid(),this.editPanel() ]
         });
-        
+
         this.portGrid().getSelectionModel().on("rowselect", function(obj, rowIndex, row) {
             Ports.editPanel().loadGridData(Ports.portGrid());
+            Calc.reloadStore(Ports.portGrid());
         });
         this.portGrid().getSelectionModel().on("rowdeselect", function(obj, rowIndex, row) {
             Ports.editPanel().loadGridData(Ports.portGrid());
+            Calc.reloadStore(Ports.portGrid());
         });
 
         return portMainControl;
@@ -72,11 +92,10 @@ function Ports() {
             defaults:{bodyBorder :false,frame:true,border:false},
             width:600,
             layout:"fit",
-            items: [
-                new Ext.TabPanel(
-                {
-                    activeTab:0,
-                    items:[
+            items:[
+                new Ext.TabPanel({
+                    activeItem:0,
+                    items: [
                         {
                             title:"Port data",
                             frame:true,
@@ -143,21 +162,16 @@ function Ports() {
                                 })
                             ]
                         }
-                        ,
+                            ,
                         {
-                            title:"Tarifs",
-                            items:[
-                                {
-                                    title:"Some data"
-                                }
-                            ]
+                            title:"Tarif information",
+                            layout:"fit",
+                            items:[Calc.tarif_calculationGrid(Ports.portGrid())]
                         }
                     ]
-                }
-                        )
-
-
-            ],
+                })
+            ]
+            ,
 
             bbar: [
                 {
@@ -194,7 +208,9 @@ function Ports() {
                     handler: function(btn, evnt) {
                         Ports.del();
                     }
-                },
+                }
+
+
             ]
         }
                 )
@@ -315,7 +331,11 @@ function Ports() {
         });
         storeRestControl.load();
         return storeRestControl;
-    };
+    }
 
+    this.tarifs = function(tarif_calc_id) {
 
+        var tg = Tarif.tarifPanel();
+        return tg;
+    }
 }

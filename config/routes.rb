@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :tarif_calculations
+
   map.resources :tarifs
 
   map.resources :vessels
@@ -9,8 +11,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :countries
 
   map.resources :ports
-
-  map.resources :tarif_calculations
 
   # The priority is based upon order of creation: first created -> highest priority.
 

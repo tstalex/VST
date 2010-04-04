@@ -7,7 +7,7 @@ Ext.override(Ext.FormPanel, {
             grid.getSelectionModel().clearSelections();
         var p = new grid.store.recordType();
         this.setValues(p.data);
-        this.setEditable(true);        
+        this.setEditable(true);
     }
     ,
     saveGridSata : function(grid) {
@@ -70,7 +70,6 @@ Ext.override(Ext.FormPanel, {
     }
     ,
     setValues:function(values) {
-        console.log(values);
         this.getForm().reset();
         this.getForm().items.each(function(field) {
             if (field.name && (name = field.name) && (value = values[name]) !== undefined) {
@@ -82,6 +81,13 @@ Ext.override(Ext.FormPanel, {
         }, this);
     }
     ,
+    loadData : function() {
+        var record = (this.grid.getSelectionModel().getSelected())? this.grid.getSelectionModel().getSelected() : new this.grid.store.recordType();
+        var values = record.data;
+        this.setValues(values);
+        this.setEditable(false);
+        return this;
+    },
     loadGridData : function(grid) {
         this.grid = grid;
         var record = (grid.getSelectionModel().getSelected())? grid.getSelectionModel().getSelected() : new grid.store.recordType();

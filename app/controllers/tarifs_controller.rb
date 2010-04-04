@@ -8,10 +8,7 @@ class TarifsController < ApplicationController
   # GET /tarifs.ext_json
   def index
    @tarifs =Tarif.all
-    respond_to do |format|
-      format.html     # index.html.erb (no data required)
-      format.json {render :json => {:successful=>true, :total=>@tarifs.length, :data=> @tarifs }}
-    end
+    render :json => {:successful=>true, :total=>@tarifs.length, :data=> @tarifs}
   end
 
 

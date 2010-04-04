@@ -1,32 +1,32 @@
-var Tarif= new Tarifs();
-function Tarifs(){
-    var tarifGridControl= null;
-    var tarifEditControl=null;
-    var tarifStoreControl=null;
-    var tarifMainControl=null;
+
+function Tarifs() {
+    var tarifGridControl = null;
+    var tarifEditControl = null;
+    var tarifStoreControl = null;
+    var tarifMainControl = null;
 
 
-    this.del= function(){
+    this.del = function() {
         this.tarifEditPanel().deleteGridData(this.tarifGrid());
     };
 
-    this.edit=function(){
+    this.edit = function() {
         this.tarifEditPanel().loadGridData(this.tarifGrid());
         this.tarifEditPanel().setEditable(true);
     };
-    this.newRow=function(){
+    this.newRow = function() {
         this.tarifEditPanel().addNew(this.tarifGrid());
     };
 
     this.add = function() {
         this.tarifEditPanel().saveGridSata(this.tarifGrid());
     };
-            
+
     this.reset = function() {
         tarifEditPanel().loadGridData(this.tarifGrid());
     };
 
-    this.tarifPanel = function(){
+    this.tarifPanel = function() {
         if (tarifMainControl != null && !tarifMainControl.isDestroyed) {
             return  tarifMainControl;
         }
@@ -35,18 +35,18 @@ function Tarifs(){
             title:"Tarif",
             items:[this.tarifGrid(),this.tarifEditPanel() ]
         });
-                
+
         this.tarifGrid().getSelectionModel().on("rowselect", function(grid, rowIndex, e) {
-            Tarif.tarifEditPanel().loadGridData(grid);
+            Tarif.tarifEditPanel().loadGridData(Tarif.tarifGrid());
         });
         this.tarifGrid().getSelectionModel().on("rowdeselect", function(grid, rowIndex, e) {
-            Tarif.tarifEditPanel().loadGridData(grid);
+            Tarif.tarifEditPanel().loadGridData(Tarif.tarifGrid());
         });
 
         return tarifMainControl;
     };
-            
-    this.tarifEditPanel=function(){
+
+    this.tarifEditPanel = function() {
         if (tarifEditControl != null && !tarifEditControl.isDestroyed) {
             return  tarifEditControl;
         }
@@ -54,15 +54,28 @@ function Tarifs(){
             region:"center",
             url:'/tarifs',
             frame:true,
-            border:false,
-            bodyBorder :false,
             defaults:{bodyBorder :false,frame:true,border:false,xtype:'textfield'},
             layout:"form",
             items: [
-                 { fieldLabel: 'tarif_calculation_id',name: 'tarif_calculation_id' }
-,                { fieldLabel: 'name',name: 'name' }
-,                { fieldLabel: 'manual',name: 'manual' }
-,                { fieldLabel: 'formula',name: 'formula' }
+                {
+                    fieldLabel: 'tarif_calculation_id',
+                    name: 'tarif_calculation_id'
+                }
+                ,
+                {
+                    fieldLabel: 'name',
+                    name: 'name'
+                }
+                ,
+                {
+                    fieldLabel: 'manual',
+                    name: 'is_manual'
+                }
+                ,
+                {
+                    fieldLabel: 'formula',
+                    name: 'formula'
+                }
 
             ],
 
@@ -74,7 +87,8 @@ function Tarifs(){
                     handler: function(btn, evnt) {
                         Tarif.newRow();
                     }
-                },{
+                },
+                {
                     text: 'Edit',
                     iconCls:"silk-page-edit",
                     handler: function(btn, evnt) {
@@ -110,11 +124,11 @@ function Tarifs(){
                 ;
         tarifEditControl.data = {};
         tarifEditControl.setEditable(false);
-        return tarifEditControl;    
+        return tarifEditControl;
     }
 
-    this.tarifGrid=function(){
-         if (tarifGridControl != null && !tarifGridControl.isDestroyed)
+    this.tarifGrid = function() {
+        if (tarifGridControl != null && !tarifGridControl.isDestroyed)
             return tarifGridControl;
 
         tarifGridControl = new Ext.grid.GridPanel(
@@ -132,18 +146,37 @@ function Tarifs(){
                     sortable:true,
                     hidden:true
                 }
-                ,{ dataIndex: 'tarif_calculation_id', header: 'tarif_calculation_id'  }
-                ,{ dataIndex: 'name', header: 'name'  }
-                ,{ dataIndex: 'manual', header: 'manual'  }
-                ,{ dataIndex: 'formula', header: 'formula'  }
+                ,
+                {
+                    dataIndex: 'tarif_calculation_id',
+                    header: 'tarif_calculation_id',
+                    hidden:true
+                }
+                ,
+                {
+                    dataIndex: 'name',
+                    header: 'Name'
+                }
+                ,
+                {
+                    dataIndex: 'is_manual',
+                    header: 'manual',
+                    hidden:true
+                }
+                ,
+                {
+                    dataIndex: 'formula',
+                    header: 'formula',
+                    hidden:true
+                }
 
             ]
         });
         return tarifGridControl;
     }
- 
-    this.tarifStore= function(){
-       if (tarifStoreControl != null)
+
+    this.tarifStore = function() {
+        if (tarifStoreControl != null)
             return tarifStoreControl;
         var proxy = new Ext.data.HttpProxy({
             url: '/tarifs'
@@ -157,11 +190,30 @@ function Tarifs(){
             messageProperty: 'message'
 
         }, [
-            { name: 'id', mapping: 'id' }
-                 ,{ name: 'tarif_calculation_id' , type: 'int' }
-                ,{ name: 'name' , type: 'string' }
-                ,{ name: 'manual' , type: 'boolean' }
-                ,{ name: 'formula' , type: 'string' }
+            {
+                name: 'id',
+                mapping: 'id'
+            }
+            ,
+            {
+                name: 'tarif_calculation_id' ,
+                type: 'int'
+            }
+            ,
+            {
+                name: 'name' ,
+                type: 'string'
+            }
+            ,
+            {
+                name: 'is_manual' ,
+                type: 'boolean'
+            }
+            ,
+            {
+                name: 'formula' ,
+                type: 'string'
+            }
 
         ]);
 
@@ -180,7 +232,7 @@ function Tarifs(){
             writer: writer
         });
         tarifStoreControl.load();
-        return tarifStoreControl; 
+        return tarifStoreControl;
     }
 
 }
