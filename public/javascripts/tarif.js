@@ -1,17 +1,35 @@
-
 function Tarifs() {
     var tarifGridControl = null;
     var tarifEditControl = null;
     var tarifStoreControl = null;
     var tarifMainControl = null;
 
+    var tarif_calculation_id = -1;
+    var tarifCalculationField = new Ext.form.Hidden({
+        name: 'tarif_calculation_id'
+    });
+
+    this.showModal = function(grid) {
+        this.reloadStore(grid);
+        modalWindow = new Ext.Window(
+        {
+            width:500,
+            height:300,
+            modal:true,
+            plain: true,
+            layout:'fit',
+            items:[this.tarifPanel()]
+        });
+        tarifCalculationField.setValue(tarif_calculation_id);
+        modalWindow.show();
+    }
 
     this.del = function() {
         this.tarifEditPanel().deleteGridData(this.tarifGrid());
     };
 
     this.edit = function() {
-        this.tarifEditPanel().loadGridData(this.tarifGrid());
+        this.tarifEditPanel().loadData();
         this.tarifEditPanel().setEditable(true);
     };
     this.newRow = function() {
@@ -36,12 +54,14 @@ function Tarifs() {
             items:[this.tarifGrid(),this.tarifEditPanel() ]
         });
 
-        this.tarifGrid().getSelectionModel().on("rowselect", function(grid, rowIndex, e) {
-            Tarif.tarifEditPanel().loadGridData(Tarif.tarifGrid());
+        this.tarifGrid().getSelectionModel().on("rowselect", function(rsm, rowIndex, e) {
+            rsm.grid.viewPanel.loadData();
         });
-        this.tarifGrid().getSelectionModel().on("rowdeselect", function(grid, rowIndex, e) {
-            Tarif.tarifEditPanel().loadGridData(Tarif.tarifGrid());
+        this.tarifGrid().getSelectionModel().on("rowdeselect", function(rsm, rowIndex, e) {
+            rsm.grid.viewPanel.loadData();
         });
+        this.tarifGrid().viewPanel = this.tarifEditPanel();
+        this.tarifEditPanel().grid = this.tarifGrid();
 
         return tarifMainControl;
     };
@@ -53,28 +73,41 @@ function Tarifs() {
         tarifEditControl = new Ext.FormPanel({
             region:"center",
             url:'/tarifs',
-            frame:true,
-            defaults:{bodyBorder :false,frame:true,border:false,xtype:'textfield'},
+            frame:false,
             layout:"form",
+            controller:this,
+            defaults:{labelWidth:110},
             items: [
+                tarifCalculationField
+                ,{
+                    xtype:"container",
+                    layout:"column",
+                    defaults:{xtype:"container",layout:"form"},
+                    items:[
+                        {
+                           columnWidth:.7,
+                            items:{
+                                xtype:"textfield",
+                                fieldLabel: 'Name',
+                                name: 'name'
+                            }
+                        },{
+                            columnWidth:.3,
+                            items:{
+                                fieldLabel: 'Calculated manually',
+                                xtype:"checkbox",
+                                name: 'is_manual'
+                            }
+                        }
+
+                    ]
+
+                },
                 {
-                    fieldLabel: 'tarif_calculation_id',
-                    name: 'tarif_calculation_id'
-                }
-                ,
-                {
-                    fieldLabel: 'name',
-                    name: 'name'
-                }
-                ,
-                {
-                    fieldLabel: 'manual',
-                    name: 'is_manual'
-                }
-                ,
-                {
-                    fieldLabel: 'formula',
-                    name: 'formula'
+                    fieldLabel: 'Formula',
+                    name: 'formula',
+                    xtype:"textarea"
+
                 }
 
             ],
@@ -85,35 +118,35 @@ function Tarifs() {
                     text: 'New',
                     iconCls:"silk-add",
                     handler: function(btn, evnt) {
-                        Tarif.newRow();
+                        btn.getFormPanel().controller.newRow();
                     }
                 },
                 {
                     text: 'Edit',
                     iconCls:"silk-page-edit",
                     handler: function(btn, evnt) {
-                        Tarif.edit();
+                        btn.getFormPanel().controller.edit();
                     }
                 },
                 {
                     text: 'Save',
                     iconCls:"icon-save",
                     handler: function(btn, evnt) {
-                        Tarif.add();
+                        btn.getFormPanel().controller.add();
                     }
                 },
                 {
                     text: 'Cancel',
                     iconCls:"silk-cancel",
                     handler: function(btn, evnt) {
-                        Tarif.reset();
+                        btn.getFormPanel().controller.reset();
                     }
                 },
                 {
                     text: 'Delete',
                     iconCls:"silk-delete",
                     handler: function(btn, evnt) {
-                        Tarif.del();
+                        btn.getFormPanel().controller.del();
                     }
                 },
 
@@ -138,6 +171,7 @@ function Tarifs() {
             store:this.tarifStore(),
             collapsible:true,
             split:true,
+            controller:this,
             columns:[
                 {
                     id:"id",
@@ -173,6 +207,12 @@ function Tarifs() {
             ]
         });
         return tarifGridControl;
+    }
+
+    this.reloadStore = function(ds) {
+        var rec = ds.getSelectionModel().getSelected();
+        tarif_calculation_id = (rec) ? rec.get("id") : -1;
+        this.tarifStore().load({params:{tarif_calculation_id:tarif_calculation_id}});
     }
 
     this.tarifStore = function() {

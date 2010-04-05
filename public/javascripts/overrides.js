@@ -1,6 +1,6 @@
 Ext.override(Ext.FormPanel, {
     grid:null,
-
+    controller:null,
     addNew:function(grid) {
         this.grid = grid;
         if(grid.getSelectionModel().getSelected())
@@ -121,9 +121,16 @@ Ext.override(Ext.FormPanel, {
 });
 
 Ext.override(Ext.grid.GridPanel, {
+    controller:null,
     viewPanel:null,
     showInView: function(viewPanel) {
         viewPanel.loadData(this);
+    }
+});
+
+Ext.override(Ext.Button,{
+    getFormPanel:function(){
+        return this.findParentByType("form");
     }
 });
 

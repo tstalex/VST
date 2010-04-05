@@ -1,0 +1,30 @@
+<% content_for :head do %>
+  <%= javascript_include_tag 'tarif.js' %>
+  <% javascript_tag do %>
+    var t= new Tarifs()
+    modalWindow = new Ext.Window(
+        {
+            width:500,
+            height:300,
+            modal:true,
+            plain: true,
+            layout:'fit',
+            items:[t.tarifEditPanel()]
+        });
+
+
+
+    Ext.onReady(function() {
+
+      Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+      Ext.QuickTips.init();
+
+      var vp = new Ext.Viewport({
+        layout: 'fit',
+        renderTo:"main",
+        items:[new Ext.Panel({items:{xtype:"button",handler:function(a,b){modalWindow.show();}}})]
+      });
+    });
+  <% end %>
+<% end %>
+<div id="main"></div>

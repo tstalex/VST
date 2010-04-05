@@ -215,7 +215,8 @@ function TarifCalculations() {
                     text: 'Tarif',
                     iconCls:"silk-application",
                     handler: function(btn, evnt) {
-                        Ports.showTarif(Ports.portGrid().getSelectionModel().getSelected());
+                        var t= new Tarifs();
+                        t.showModal(Calc.tarif_calculationGrid())
                     }
                 }
 

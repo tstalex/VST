@@ -7,11 +7,20 @@ class TarifsController < ApplicationController
   # GET /tarifs
   # GET /tarifs.ext_json
   def index
-   @tarifs =Tarif.all
+    calc= params[:tarif_calculation_id]
+    if(calc)
+       @tarifs =Tarif.find_all_by_tarif_calculation_id calc
+    else
+      @tarifs =Tarif.all
+    end
+
+
     render :json => {:successful=>true, :total=>@tarifs.length, :data=> @tarifs}
   end
 
-
+  def show
+       render :action => "base"
+  end
 
 
   # POST /tarifs
