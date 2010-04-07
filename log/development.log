@@ -34959,3 +34959,346 @@ Processing TarifsController#show (for 127.0.0.1 at 2010-04-05 08:57:04) [GET]
 Rendering template within layouts/tarifs
 Rendering tarifs/base
 Completed in 5ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-05 21:49:09) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 325ms (View: 323, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-05 21:49:41) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-05 21:54:20) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-05 21:55:36) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-05 21:56:09) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 07:31:12) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 285ms (View: 283, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 07:44:23) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 07:45:05) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 07:45:55) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 07:47:07) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 07:48:51) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 07:49:23) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 07:49:43) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 07:51:16) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 08:06:29) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 08:07:31) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/tarifs/base]
+
+
+Processing TarifsController#index (for 127.0.0.1 at 2010-04-06 08:07:45) [GET]
+  Parameters: {"_dc"=>"1270530465647"}
+  [4;36;1mTarif Load (33.0ms)[0m   [0;1mSELECT * FROM "tarifs" [0m
+Completed in 1024ms (View: 955, DB: 33) | 200 OK [http://localhost/tarifs?_dc=1270530465647]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 08:08:12) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 08:09:12) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 08:12:05) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 08:13:15) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 08:14:04) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 08:14:50) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 08:31:20) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 08:32:22) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 08:34:47) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-06 08:35:38) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:30:25) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 756ms (View: 550, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:32:32) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:33:19) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:33:48) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 18ms (View: 15, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:39:50) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 203ms (View: 127, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:40:16) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 126ms (View: 65, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:45:48) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:46:15) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:46:45) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:47:20) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:48:19) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:48:49) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:50:14) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:50:47) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:51:28) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:51:56) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:52:49) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-07 07:53:20) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tarifs/show]
+
+
+Processing BaseController#show (for 127.0.0.1 at 2010-04-07 07:55:54) [GET]
+Rendering base/show
+Completed in 703ms (View: 702, DB: 0) | 200 OK [http://localhost/base/show]
+
+
+Processing CountriesController#index (for 127.0.0.1 at 2010-04-07 07:55:58) [GET]
+  Parameters: {"_dc"=>"1270616158532"}
+  [4;35;1mCountry Load (126.0ms)[0m   [0mSELECT * FROM "countries" [0m
+Completed in 1636ms (View: 393, DB: 126) | 200 OK [http://localhost/countries?_dc=1270616158532]
+
+
+Processing CountriesController#show (for 127.0.0.1 at 2010-04-07 07:56:00) [GET]
+  Parameters: {"_dc"=>"1270616159144", "id"=>"with_ports"}
+  [4;36;1mCountry Load (2.0ms)[0m   [0;1mselect distinct countries.* from countries inner join ports where ports.country=countries.id[0m
+Completed in 28ms (View: 8, DB: 2) | 200 OK [http://localhost/countries/with_ports?_dc=1270616159144]
+
+
+Processing CountriesController#index (for 127.0.0.1 at 2010-04-07 07:56:00) [GET]
+  Parameters: {"_dc"=>"1270616160655"}
+  [4;35;1mCountry Load (15.0ms)[0m   [0mSELECT * FROM "countries" [0m
+Completed in 170ms (View: 105, DB: 15) | 200 OK [http://localhost/countries?_dc=1270616160655]
+
+
+Processing CountriesController#show (for 127.0.0.1 at 2010-04-07 07:56:01) [GET]
+  Parameters: {"_dc"=>"1270616161016", "id"=>"with_ports"}
+  [4;36;1mCountry Load (2.0ms)[0m   [0;1mselect distinct countries.* from countries inner join ports where ports.country=countries.id[0m
+Completed in 21ms (View: 9, DB: 2) | 200 OK [http://localhost/countries/with_ports?_dc=1270616161016]

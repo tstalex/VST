@@ -50,7 +50,6 @@ function Tarifs() {
         }
         tarifMainControl = new Ext.Panel({
             layout:"border",
-            title:"Tarif",
             items:[this.tarifGrid(),this.tarifEditPanel() ]
         });
 
@@ -73,44 +72,50 @@ function Tarifs() {
         tarifEditControl = new Ext.FormPanel({
             region:"center",
             url:'/tarifs',
-            frame:false,
-            layout:"form",
+            layout:"fit",
             controller:this,
-            defaults:{labelWidth:110},
-            items: [
-                tarifCalculationField
-                ,{
-                    xtype:"container",
-                    layout:"column",
-                    defaults:{xtype:"container",layout:"form"},
+            frame:true,
+            border:false,
+            bodyBorder :false,
+            defaults:{bodyBorder :false,frame:false,border:false},
+            items:{
+                xtype:"panel",
+                layout:"border",
+                defaults:{labelWidth:110, xtype:"panel",layout:"form",bodyBorder :false,frame:false,border:false},
+                items: [
+                {
+
+                    region:"north",
+                    autoHeight:true,
                     items:[
+                        tarifCalculationField,{
+                            xtype:"textfield",
+                            fieldLabel: 'Name',
+                            name: 'name'
+                        },
                         {
-                           columnWidth:.7,
-                            items:{
-                                xtype:"textfield",
-                                fieldLabel: 'Name',
-                                name: 'name'
-                            }
-                        },{
-                            columnWidth:.3,
-                            items:{
-                                fieldLabel: 'Calculated manually',
-                                xtype:"checkbox",
-                                name: 'is_manual'
-                            }
+                            fieldLabel: 'Calculated manually',
+                            xtype:"checkbox",
+                            name: 'is_manual'
                         }
-
                     ]
-
                 },
                 {
-                    fieldLabel: 'Formula',
-                    name: 'formula',
-                    xtype:"textarea"
+                    region:"center",
+                    xtype:"fieldset",
+                    title:"Formula",
+                    layout:"fit",
+                    border:true,
+                    items:[{
+                        fieldLabel: 'Formula',
+                        name: 'formula',
+                        xtype:"textarea"
 
+                    }]
                 }
-
-            ],
+            ]
+            }
+            ,
 
             bbar: [
 
@@ -271,7 +276,6 @@ function Tarifs() {
             },
             writer: writer
         });
-        tarifStoreControl.load();
         return tarifStoreControl;
     }
 
