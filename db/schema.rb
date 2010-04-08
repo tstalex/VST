@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100402165301) do
+ActiveRecord::Schema.define(:version => 20100407182141) do
 
   create_table "countries", :force => true do |t|
     t.string   "text"
@@ -51,9 +51,9 @@ ActiveRecord::Schema.define(:version => 20100402165301) do
     t.date     "to"
     t.boolean  "active"
     t.string   "notes"
-    t.integer  "port_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "port_id"
   end
 
   create_table "tarifs", :force => true do |t|
@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20100402165301) do
     t.boolean  "is_manual"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "remark"
   end
 
   create_table "vessel_types", :force => true do |t|

@@ -35302,3 +35302,795 @@ Processing CountriesController#show (for 127.0.0.1 at 2010-04-07 07:56:01) [GET]
   Parameters: {"_dc"=>"1270616161016", "id"=>"with_ports"}
   [4;36;1mCountry Load (2.0ms)[0m   [0;1mselect distinct countries.* from countries inner join ports where ports.country=countries.id[0m
 Completed in 21ms (View: 9, DB: 2) | 200 OK [http://localhost/countries/with_ports?_dc=1270616161016]
+
+
+Processing PortsController#index (for 127.0.0.1 at 2010-04-07 07:56:44) [GET]
+  Parameters: {"_dc"=>"1270616204546"}
+  [4;35;1mPort Load (6.0ms)[0m   [0mSELECT * FROM "ports" [0m
+Completed in 193ms (View: 173, DB: 6) | 200 OK [http://localhost/ports?_dc=1270616204546]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:56:45) [GET]
+  Parameters: {"_dc"=>"1270616204555", "port_id"=>"-1"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 118ms (View: 11, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616204555&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:56:48) [GET]
+  Parameters: {"_dc"=>"1270616208490", "port_id"=>"155"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '155') [0m
+Completed in 125ms (View: 111, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616208490&port_id=155]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:56:49) [GET]
+  Parameters: {"_dc"=>"1270616209454", "port_id"=>"-1"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616209454&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:56:49) [GET]
+  Parameters: {"_dc"=>"1270616209492", "port_id"=>"156"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '156') [0m
+Completed in 26ms (View: 6, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616209492&port_id=156]
+
+
+Processing TarifsController#index (for 127.0.0.1 at 2010-04-07 07:56:53) [GET]
+  Parameters: {"_dc"=>"1270616213657", "tarif_calculation_id"=>"8"}
+  [4;36;1mTarif Load (1.0ms)[0m   [0;1mSELECT * FROM "tarifs" WHERE ("tarifs"."tarif_calculation_id" = '8') [0m
+Completed in 24ms (View: 6, DB: 1) | 200 OK [http://localhost/tarifs?_dc=1270616213657&tarif_calculation_id=8]
+
+
+Processing TarifsController#destroy (for 127.0.0.1 at 2010-04-07 07:57:38) [DELETE]
+  Parameters: {"data"=>"3", "id"=>"3"}
+  [4;35;1mTarif Load (0.0ms)[0m   [0mSELECT * FROM "tarifs" WHERE ("tarifs"."id" = 3) [0m
+  [4;36;1mTarif Destroy (2.0ms)[0m   [0;1mDELETE FROM "tarifs" WHERE "id" = 3[0m
+Completed in 468ms (View: 4, DB: 2) | 200 OK [http://localhost/tarifs/3]
+
+
+Processing TarifsController#destroy (for 127.0.0.1 at 2010-04-07 07:57:45) [DELETE]
+  Parameters: {"data"=>"4", "id"=>"4"}
+  [4;35;1mTarif Load (0.0ms)[0m   [0mSELECT * FROM "tarifs" WHERE ("tarifs"."id" = 4) [0m
+  [4;36;1mTarif Destroy (2.0ms)[0m   [0;1mDELETE FROM "tarifs" WHERE "id" = 4[0m
+Completed in 150ms (View: 3, DB: 2) | 200 OK [http://localhost/tarifs/4]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:57:51) [GET]
+  Parameters: {"_dc"=>"1270616271630", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (1.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616271630&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:57:51) [GET]
+  Parameters: {"_dc"=>"1270616271643", "port_id"=>"155"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '155') [0m
+Completed in 18ms (View: 6, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616271643&port_id=155]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:57:59) [GET]
+  Parameters: {"_dc"=>"1270616279082", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (1.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616279082&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:57:59) [GET]
+  Parameters: {"_dc"=>"1270616279097", "port_id"=>"156"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '156') [0m
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616279097&port_id=156]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:58:00) [GET]
+  Parameters: {"_dc"=>"1270616280260", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (1.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616280260&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:58:00) [GET]
+  Parameters: {"_dc"=>"1270616280275", "port_id"=>"155"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '155') [0m
+Completed in 49ms (View: 6, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616280275&port_id=155]
+
+
+Processing TarifsController#index (for 127.0.0.1 at 2010-04-07 07:58:03) [GET]
+  Parameters: {"_dc"=>"1270616283068", "tarif_calculation_id"=>"2"}
+  [4;35;1mTarif Load (1.0ms)[0m   [0mSELECT * FROM "tarifs" WHERE ("tarifs"."tarif_calculation_id" = '2') [0m
+Completed in 26ms (View: 3, DB: 1) | 200 OK [http://localhost/tarifs?_dc=1270616283068&tarif_calculation_id=2]
+
+
+Processing TarifCalculationsController#destroy (for 127.0.0.1 at 2010-04-07 07:58:11) [DELETE]
+  Parameters: {"data"=>"2", "id"=>"2"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."id" = 2) [0m
+  [4;35;1mTarifCalculation Destroy (2.0ms)[0m   [0mDELETE FROM "tarif_calculations" WHERE "id" = 2[0m
+Completed in 159ms (View: 2, DB: 2) | 200 OK [http://localhost/tarif_calculations/2]
+
+
+Processing TarifCalculationsController#destroy (for 127.0.0.1 at 2010-04-07 07:58:17) [DELETE]
+  Parameters: {"data"=>"1", "id"=>"1"}
+  [4;36;1mTarifCalculation Load (1.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."id" = 1) [0m
+  [4;35;1mTarifCalculation Destroy (2.0ms)[0m   [0mDELETE FROM "tarif_calculations" WHERE "id" = 1[0m
+Completed in 209ms (View: 4, DB: 3) | 200 OK [http://localhost/tarif_calculations/1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:58:43) [GET]
+  Parameters: {"_dc"=>"1270616323879", "port_id"=>"-1"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616323879&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:58:44) [GET]
+  Parameters: {"_dc"=>"1270616323894", "port_id"=>"156"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '156') [0m
+Completed in 16ms (View: 6, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616323894&port_id=156]
+
+
+Processing BaseController#show (for 127.0.0.1 at 2010-04-07 07:58:47) [GET]
+Rendering base/show
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/base/show]
+
+
+Processing CountriesController#index (for 127.0.0.1 at 2010-04-07 07:58:50) [GET]
+  Parameters: {"_dc"=>"1270616329972"}
+  [4;36;1mCountry Load (69.0ms)[0m   [0;1mSELECT * FROM "countries" [0m
+Completed in 202ms (View: 116, DB: 69) | 200 OK [http://localhost/countries?_dc=1270616329972]
+
+
+Processing CountriesController#show (for 127.0.0.1 at 2010-04-07 07:58:50) [GET]
+  Parameters: {"_dc"=>"1270616330144", "id"=>"with_ports"}
+  [4;35;1mCountry Load (3.0ms)[0m   [0mselect distinct countries.* from countries inner join ports where ports.country=countries.id[0m
+Completed in 20ms (View: 8, DB: 3) | 200 OK [http://localhost/countries/with_ports?_dc=1270616330144]
+
+
+Processing CountriesController#index (for 127.0.0.1 at 2010-04-07 07:58:50) [GET]
+  Parameters: {"_dc"=>"1270616330514"}
+  [4;36;1mCountry Load (47.0ms)[0m   [0;1mSELECT * FROM "countries" [0m
+Completed in 167ms (View: 103, DB: 47) | 200 OK [http://localhost/countries?_dc=1270616330514]
+
+
+Processing CountriesController#show (for 127.0.0.1 at 2010-04-07 07:58:50) [GET]
+  Parameters: {"_dc"=>"1270616330816", "id"=>"with_ports"}
+  [4;35;1mCountry Load (3.0ms)[0m   [0mselect distinct countries.* from countries inner join ports where ports.country=countries.id[0m
+Completed in 27ms (View: 12, DB: 3) | 200 OK [http://localhost/countries/with_ports?_dc=1270616330816]
+
+
+Processing PortsController#index (for 127.0.0.1 at 2010-04-07 07:58:55) [GET]
+  Parameters: {"_dc"=>"1270616335864"}
+  [4;36;1mPort Load (6.0ms)[0m   [0;1mSELECT * FROM "ports" [0m
+Completed in 93ms (View: 39, DB: 6) | 200 OK [http://localhost/ports?_dc=1270616335864]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:58:56) [GET]
+  Parameters: {"_dc"=>"1270616335875", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616335875&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:05) [GET]
+  Parameters: {"_dc"=>"1270616345890", "port_id"=>"161"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '161') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616345890&port_id=161]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:06) [GET]
+  Parameters: {"_dc"=>"1270616346795", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616346795&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:06) [GET]
+  Parameters: {"_dc"=>"1270616346822", "port_id"=>"162"}
+  [4;36;1mTarifCalculation Load (1.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '162') [0m
+Completed in 14ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616346822&port_id=162]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:07) [GET]
+  Parameters: {"_dc"=>"1270616347339", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 17ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616347339&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:07) [GET]
+  Parameters: {"_dc"=>"1270616347370", "port_id"=>"163"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '163') [0m
+Completed in 60ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616347370&port_id=163]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:07) [GET]
+  Parameters: {"_dc"=>"1270616347445", "port_id"=>"165"}
+  [4;35;1mTarifCalculation Load (1.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '165') [0m
+Completed in 15ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616347445&port_id=165]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:07) [GET]
+  Parameters: {"_dc"=>"1270616347406", "port_id"=>"-1"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616347406&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:07) [GET]
+  Parameters: {"_dc"=>"1270616347480", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616347480&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:07) [GET]
+  Parameters: {"_dc"=>"1270616347576", "port_id"=>"-1"}
+  [4;36;1mTarifCalculation Load (1.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616347576&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:08) [GET]
+  Parameters: {"_dc"=>"1270616347541", "port_id"=>"166"}
+  [4;35;1mTarifCalculation Load (1.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '166') [0m
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616347541&port_id=166]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:08) [GET]
+  Parameters: {"_dc"=>"1270616347605", "port_id"=>"168"}
+  [4;36;1mTarifCalculation Load (1.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '168') [0m
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616347605&port_id=168]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:08) [GET]
+  Parameters: {"_dc"=>"1270616348353", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616348353&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:08) [GET]
+  Parameters: {"_dc"=>"1270616348397", "port_id"=>"169"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '169') [0m
+Completed in 18ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616348397&port_id=169]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:08) [GET]
+  Parameters: {"_dc"=>"1270616348543", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616348543&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:08) [GET]
+  Parameters: {"_dc"=>"1270616348581", "port_id"=>"177"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '177') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616348581&port_id=177]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:09) [GET]
+  Parameters: {"_dc"=>"1270616349077", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616349077&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:09) [GET]
+  Parameters: {"_dc"=>"1270616349109", "port_id"=>"171"}
+  [4;36;1mTarifCalculation Load (1.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '171') [0m
+Completed in 14ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616349109&port_id=171]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:09) [GET]
+  Parameters: {"_dc"=>"1270616349529", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616349529&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:09) [GET]
+  Parameters: {"_dc"=>"1270616349571", "port_id"=>"172"}
+  [4;36;1mTarifCalculation Load (1.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '172') [0m
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616349571&port_id=172]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:10) [GET]
+  Parameters: {"_dc"=>"1270616350336", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (1.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616350336&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:10) [GET]
+  Parameters: {"_dc"=>"1270616350381", "port_id"=>"176"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '176') [0m
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616350381&port_id=176]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:11) [GET]
+  Parameters: {"_dc"=>"1270616350940", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616350940&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:11) [GET]
+  Parameters: {"_dc"=>"1270616350984", "port_id"=>"178"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '178') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616350984&port_id=178]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:11) [GET]
+  Parameters: {"_dc"=>"1270616351903", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 17ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616351903&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:12) [GET]
+  Parameters: {"_dc"=>"1270616351963", "port_id"=>"173"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '173') [0m
+Completed in 16ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616351963&port_id=173]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:12) [GET]
+  Parameters: {"_dc"=>"1270616352684", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616352684&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:12) [GET]
+  Parameters: {"_dc"=>"1270616352719", "port_id"=>"174"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '174') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616352719&port_id=174]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:13) [GET]
+  Parameters: {"_dc"=>"1270616353095", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (1.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 49ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616353095&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:13) [GET]
+  Parameters: {"_dc"=>"1270616353138", "port_id"=>"179"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '179') [0m
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616353138&port_id=179]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:13) [GET]
+  Parameters: {"_dc"=>"1270616353453", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 16ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616353453&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:13) [GET]
+  Parameters: {"_dc"=>"1270616353508", "port_id"=>"180"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '180') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616353508&port_id=180]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:14) [GET]
+  Parameters: {"_dc"=>"1270616354148", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616354148&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:14) [GET]
+  Parameters: {"_dc"=>"1270616354173", "port_id"=>"181"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '181') [0m
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616354173&port_id=181]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:14) [GET]
+  Parameters: {"_dc"=>"1270616354609", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (1.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616354609&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:14) [GET]
+  Parameters: {"_dc"=>"1270616354647", "port_id"=>"194"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '194') [0m
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616354647&port_id=194]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:15) [GET]
+  Parameters: {"_dc"=>"1270616355004", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616355004&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:15) [GET]
+  Parameters: {"_dc"=>"1270616355041", "port_id"=>"193"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '193') [0m
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616355041&port_id=193]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:15) [GET]
+  Parameters: {"_dc"=>"1270616355302", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 17ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616355302&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:15) [GET]
+  Parameters: {"_dc"=>"1270616355335", "port_id"=>"182"}
+  [4;36;1mTarifCalculation Load (1.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '182') [0m
+Completed in 14ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616355335&port_id=182]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:15) [GET]
+  Parameters: {"_dc"=>"1270616355655", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616355655&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:15) [GET]
+  Parameters: {"_dc"=>"1270616355693", "port_id"=>"164"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '164') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616355693&port_id=164]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:16) [GET]
+  Parameters: {"_dc"=>"1270616355965", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 15ms (View: 2, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616355965&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:16) [GET]
+  Parameters: {"_dc"=>"1270616356013", "port_id"=>"170"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '170') [0m
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616356013&port_id=170]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:16) [GET]
+  Parameters: {"_dc"=>"1270616356283", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (1.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 17ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616356283&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:16) [GET]
+  Parameters: {"_dc"=>"1270616356332", "port_id"=>"183"}
+  [4;36;1mTarifCalculation Load (1.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '183') [0m
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616356332&port_id=183]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:17) [GET]
+  Parameters: {"_dc"=>"1270616357083", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616357083&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:17) [GET]
+  Parameters: {"_dc"=>"1270616357108", "port_id"=>"170"}
+  [4;36;1mTarifCalculation Load (1.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '170') [0m
+Completed in 14ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616357108&port_id=170]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:17) [GET]
+  Parameters: {"_dc"=>"1270616357615", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (1.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616357615&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:17) [GET]
+  Parameters: {"_dc"=>"1270616357642", "port_id"=>"164"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '164') [0m
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616357642&port_id=164]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:18) [GET]
+  Parameters: {"_dc"=>"1270616358354", "port_id"=>"-1"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616358354&port_id=-1]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:18) [GET]
+  Parameters: {"_dc"=>"1270616358384", "port_id"=>"170"}
+  [4;36;1mTarifCalculation Load (1.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '170') [0m
+Completed in 17ms (View: 3, DB: 1) | 200 OK [http://localhost/tarif_calculations?_dc=1270616358384&port_id=170]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:18) [GET]
+  Parameters: {"_dc"=>"1270616358612", "port_id"=>"183"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '183') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616358612&port_id=183]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:18) [GET]
+  Parameters: {"_dc"=>"1270616358565", "port_id"=>"-1"}
+  [4;36;1mTarifCalculation Load (0.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '-1') [0m
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616358565&port_id=-1]
+
+
+Processing PortsController#update (for 127.0.0.1 at 2010-04-07 07:59:46) [PUT]
+  Parameters: {"data"=>"{\"flag\":68,\"id\":183}", "id"=>"183"}
+  [4;35;1mPort Load (1.0ms)[0m   [0mSELECT * FROM "ports" WHERE ("ports"."id" = 183) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mPort Update (2.0ms)[0m   [0;1mUPDATE "ports" SET "flag" = 68, "updated_at" = '2010-04-07 04:59:47' WHERE "id" = 183[0m
+Completed in 929ms (View: 4, DB: 3) | 200 OK [http://localhost/ports/183]
+
+
+Processing TarifCalculationsController#index (for 127.0.0.1 at 2010-04-07 07:59:47) [GET]
+  Parameters: {"_dc"=>"1270616387072", "port_id"=>"183"}
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE ("tarif_calculations"."port_id" = '183') [0m
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/tarif_calculations?_dc=1270616387072&port_id=183]
+
+
+Processing PortsController#update (for 127.0.0.1 at 2010-04-07 07:59:47) [PUT]
+  Parameters: {"data"=>"{\"flag\":68,\"description\":\"1. Navigation\\nBefore entering Gulf of Finland pls note GOFREP area and report accordingly.\\nLOCAL SUMMER TIME:  GMT + 3 ( THREE ) hrs.\\nTallinn pilot boarding positions :\\nTallinn North Buoy Nr 1,  59 d 37'5 N,  24 d 38'0 E.\\nTallinn Suurupi Nr 3,  59 d 29' 4 N, 24 d 33' 0 E.\\nPls call 'Tallinn Traffic Control' on VHF-13,  2 hr prior reaching plt psn.\\nDistance from Pilot station to berth 11 miles.\\nMinimum depths at approaches 15.0 m.\\n\\n2. Port\\nPort working chanel VHF-14\\nPort of Tallinn / Old City Harbour is ISPS certified\\nPort ID number -  VS-1 (Old City)\\nUN Locator EE VAN\\nPort Facility Number -  EE395-0001\\nPFSO : Mr. Marko Kotkas,  phone +372 6318 030, e/mail:  m.kotkas@ts.ee\\nMinimum depths at berth 10.7 m\\nTugs fleet available :  Akilles - 1450 bhp, Jupiters - 3000 bhp ASD, Calypso - 3000 bhp ASD.\\nDue to high local traffic at the port LIFEBOAT DRILLS ARE NOT PERMITTED inside the port only at seaberth (jetty 24/25).\\nWashing &amp; painting permitted without pollution\\nWEATHER CONDITIONS:  Pls see site  www.weather.ee\\nLocal ferries has a priority in entering and leaving the port.\\nWastes delivery in Tallinn included into Port Sanitary dues. The amount of wastes is not restricted, however port reserves right to charge extra expenses.\\nLatest 24 hrs prior to arrival ISPS &amp; Wastes delivery notification  form should be sent to AGENT.\\n\\n3. Going ashore:\\nNo landing cards are needed. No any ship-produced  IDs are accepted.\\nPassengers : All passengers are going ashore with passports.The holders of European Union states' passports, can go ashore with National ID card only, without passport. If  ID is not available, they are going ashore with National passport.\\nCrew : Crewmembers of EU states can go ashore with National  ID cards, passports or seaman's book, crewmembers of non-EU states are going ashore with valid Seaman's Book or National passport. Passport for non-ILO member states are required\\n\\n4. Clearance &amp; Visas\\nHealth formalities : An answers to Maritime Health Delcaration needed a day before arrival. No other special requirements.\\nClearance Officials board upon berthing, 2-3 person;\\nClearance times : 15 mins,\\nIf ship is bound from non-Schengen please prepare for stamping passports of all those non-EU passengers who embarked at last port and make a list of those who has Schengen visa or residence permit;\\nIf ship is bound to non-Schengen please prepare for stamping passports of all those non-EU passengers who disembark at next port and make a list of those who has Schengen visa or residence permit;\\nGenerally no personal control neither for pax nor for crew ;\\nALL PASSENGERS SHOULD HAVE SCHENGEN VISA OR RESIDENCE PERMIT OR TO BE INCLUDED INTO VISAFREE NATIONALITIES LIST TO BE ABLE TO GO ASHORE as follwoing:\\nAndorra, Argentina, Australia,  Austria,  Belgium, Brazil, Brunei, Bulgaria, Canada, Costa Rica, Chile, Croatia, Cyprus, Czech Republic, El Salvador, Denmark, Finland,  France,  Greece,   Germany, Guatemala,Hong Kong, Honduras, Hungary, Iceland, Ireland, Israel, Italy, Japan, Latvia, Liechtenstein, Lithuania, Luxembourg, Macao, Malaysia, Malta, Mexico, Monaco, New Zealand, The Netherlands, Nicaragua, Norway, Panama, Paraguay, Poland, Portugal, Romania, San Marino, Singapore, South Korea, Slovak Republic, Slovenia, South Korea, Spain, Sweden, Switzerland, United Kingdom, Uruguay, USA, Vatican City, Venezuela\\n\\nCitizens of S. AFRICA are entitled to arrive to/transit Estonia with valid visa issued by Latvia or Lithuania.\\n\\nGenerally, it is not possible to apply for a visa at a border checkpoint, an exception is made for seamen only.\\n\\nHowever passengers that obliged to have a visa but is not in possession could stay on board without any problem.\\n\\nSince December 21st 2007 passengers obtaining Schengen State residence permitt may visit Estonia without visa.\\n\\nVisa is not required for crew going ashore if ship sailing under ILO flag. To embark or disembark the ship some nationals require ESTONAIN Transit visa.\\n\\n5. A COPY OF PASSENGER LIST &amp; CREW LIST WITH NATIONALITIES BREAKDOWN should be sent to Agent FOR IMMIGRATION NEEDS in electronic format, latest a day prior to arrival. Excel is preferable.\\n\\nPlease prepare for clearance sufficient quantities of following documents:\\nCrew list   3,\\nPax list   1,\\nCre &amp; Pax Nationalities breakdown 2,\\nBonded stores  1, \\nCrew's effects   1, \\nHealth declaration   1, \\nArms/Narcotics List (if any)  2.\\nBesides, for the 1st call ONLY we need : copy of Tonnage Certificate; \\nValidity terms of - Passenger Ship Safety, Load Line, IOPP, Sanitation exemption certificates;  \\nBunkers, fresh &amp; ballast waters figures.\\n\\n6. Customs\\nBonded stores should be closed, generally Customs don't inspect or seal them. Beauty salons and bars might be opened while ship is in Tallinn\\nCrew &amp; Passengers: \\nIf ship arrives from E.Union state then each person may have onboard 800 cigarettes, 10 ltrs of spirits, 20 ltrs of under 22% alc. 90 ltrs of wins, 110 ltrs of beers.\\nIf ship arrives from non-EU state (Russia, Aland Islands) then each person may have only 200 cigarettes, 1 ltrs of spirits OR 2 ltrs of under 22% alc. and 3 ltrs of wine. \\nCash exceeding 10000 EUR shoud be declared.\\nAmounts of controllable goods or cash exceeding above mentioned quantities are subject to legal penalties.\\n\\nThen ship bond to Russia or other non EU state and Customs TaxFree confirmation required for non EU citizens please inform on arrival about number of persons for Customs arrangements. For goods purchased at Estonia latest notification is 2 hrs prior sailing.\\nNB! EU Goods shall be closed in original packing with TaxFree invoice.\\n\\n7. Destination information\\nExchange rates : 1.0 EUR=15.4, 1.0 USD=10.3, 1.0 GBP=20.5 EEK;\\nDistance from pier to downtown:     0.9 km\\nTaxi rate to Downtown :     abt 10.00 EUR all taxis are metered; Shuttle bus service :      optional (via Travel Agents)\\nShopping hours in downtown:     0900-1900 (supermarkets - 2100)\\nPost office working hours:     Weekdays 0800-1930,  Sat 0800-1800,  Sun 0800-1500,  address :    Narva mnt. 1\\nBank hours:    1000-1800, \\nClosest Bank office is in A-Terminal 400m, in downtown ATMs each 300 m,\\nOnboard Banking Exchange service is available by request ; \\nUSD/EURO are not accepted for payment, but you can find currency exchange bureaus widely,\\nNearest telephone terminal:    400m A-Terminal\\nNearest Internet cafe:  Kaubamaja (Viru Center) (Gonsiori 2, 5 floor); \\\"Enter\\\" cafe  (Viru  Str.,24)\\nShore Excursion agents will attend on board on arrival -  they can help you with maps and information.\\nPostage :\\n                                                         Europe    USA / Rest\\npostcards&amp;letters (-20 gr)         6.50           8.00\\nletter (20 gr+)                             10.00           13.50\\nALL rates are in Estonian krones -  EEK. \\n\\n8. Local (emergency) contact numbers:\\nFire\\t\\t                112\\nAmbulance\\t         112\\nPolice\\t\\t                110, 112\\nHospital\\t\\t         112\\nPort authorities\\t(+372) 6318588,   VHF-14\\nCoastguard / Immigration\\t(+372) 6318777\\nCustoms\\t\\t                          (+372) 6318759 \",\"id\":183}", "id"=>"183"}
+  [4;36;1mPort Load (1.0ms)[0m   [0;1mSELECT * FROM "ports" WHERE ("ports"."id" = 183) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mPort Update (2.0ms)[0m   [0mUPDATE "ports" SET "description" = '1. Navigation
+Before entering Gulf of Finland pls note GOFREP area and report accordingly.
+LOCAL SUMMER TIME: GMT + 3 ( THREE ) hrs.
+Tallinn pilot boarding positions :
+Tallinn North Buoy Nr 1, 59 d 37''5 N, 24 d 38''0 E.
+Tallinn Suurupi Nr 3, 59 d 29'' 4 N, 24 d 33'' 0 E.
+Pls call ''Tallinn Traffic Control'' on VHF-13, 2 hr prior reaching plt psn.
+Distance from Pilot station to berth 11 miles.
+Minimum depths at approaches 15.0 m.
+
+2. Port
+Port working chanel VHF-14
+Port of Tallinn / Old City Harbour is ISPS certified
+Port ID number - VS-1 (Old City)
+UN Locator EE VAN
+Port Facility Number - EE395-0001
+PFSO : Mr. Marko Kotkas, phone +372 6318 030, e/mail: m.kotkas@ts.ee
+Minimum depths at berth 10.7 m
+Tugs fleet available : Akilles - 1450 bhp, Jupiters - 3000 bhp ASD, Calypso - 3000 bhp ASD.
+Due to high local traffic at the port LIFEBOAT DRILLS ARE NOT PERMITTED inside the port only at seaberth (jetty 24/25).
+Washing &amp; painting permitted without pollution
+WEATHER CONDITIONS: Pls see site www.weather.ee
+Local ferries has a priority in entering and leaving the port.
+Wastes delivery in Tallinn included into Port Sanitary dues. The amount of wastes is not restricted, however port reserves right to charge extra expenses.
+Latest 24 hrs prior to arrival ISPS &amp; Wastes delivery notification form should be sent to AGENT.
+
+3. Going ashore:
+No landing cards are needed. No any ship-produced IDs are accepted.
+Passengers : All passengers are going ashore with passports.The holders of European Union states'' passports, can go ashore with National ID card only, without passport. If ID is not available, they are going ashore with National passport.
+Crew : Crewmembers of EU states can go ashore with National ID cards, passports or seaman''s book, crewmembers of non-EU states are going ashore with valid Seaman''s Book or National passport. Passport for non-ILO member states are required
+
+4. Clearance &amp; Visas
+Health formalities : An answers to Maritime Health Delcaration needed a day before arrival. No other special requirements.
+Clearance Officials board upon berthing, 2-3 person;
+Clearance times : 15 mins,
+If ship is bound from non-Schengen please prepare for stamping passports of all those non-EU passengers who embarked at last port and make a list of those who has Schengen visa or residence permit;
+If ship is bound to non-Schengen please prepare for stamping passports of all those non-EU passengers who disembark at next port and make a list of those who has Schengen visa or residence permit;
+Generally no personal control neither for pax nor for crew ;
+ALL PASSENGERS SHOULD HAVE SCHENGEN VISA OR RESIDENCE PERMIT OR TO BE INCLUDED INTO VISAFREE NATIONALITIES LIST TO BE ABLE TO GO ASHORE as follwoing:
+Andorra, Argentina, Australia, Austria, Belgium, Brazil, Brunei, Bulgaria, Canada, Costa Rica, Chile, Croatia, Cyprus, Czech Republic, El Salvador, Denmark, Finland, France, Greece, Germany, Guatemala,Hong Kong, Honduras, Hungary, Iceland, Ireland, Israel, Italy, Japan, Latvia, Liechtenstein, Lithuania, Luxembourg, Macao, Malaysia, Malta, Mexico, Monaco, New Zealand, The Netherlands, Nicaragua, Norway, Panama, Paraguay, Poland, Portugal, Romania, San Marino, Singapore, South Korea, Slovak Republic, Slovenia, South Korea, Spain, Sweden, Switzerland, United Kingdom, Uruguay, USA, Vatican City, Venezuela
+
+Citizens of S. AFRICA are entitled to arrive to/transit Estonia with valid visa issued by Latvia or Lithuania.
+
+Generally, it is not possible to apply for a visa at a border checkpoint, an exception is made for seamen only.
+
+However passengers that obliged to have a visa but is not in possession could stay on board without any problem.
+
+Since December 21st 2007 passengers obtaining Schengen State residence permitt may visit Estonia without visa.
+
+Visa is not required for crew going ashore if ship sailing under ILO flag. To embark or disembark the ship some nationals require ESTONAIN Transit visa.
+
+5. A COPY OF PASSENGER LIST &amp; CREW LIST WITH NATIONALITIES BREAKDOWN should be sent to Agent FOR IMMIGRATION NEEDS in electronic format, latest a day prior to arrival. Excel is preferable.
+
+Please prepare for clearance sufficient quantities of following documents:
+Crew list 3,
+Pax list 1,
+Cre &amp; Pax Nationalities breakdown 2,
+Bonded stores 1, 
+Crew''s effects 1, 
+Health declaration 1, 
+Arms/Narcotics List (if any) 2.
+Besides, for the 1st call ONLY we need : copy of Tonnage Certificate; 
+Validity terms of - Passenger Ship Safety, Load Line, IOPP, Sanitation exemption certificates; 
+Bunkers, fresh &amp; ballast waters figures.
+
+6. Customs
+Bonded stores should be closed, generally Customs don''t inspect or seal them. Beauty salons and bars might be opened while ship is in Tallinn
+Crew &amp; Passengers: 
+If ship arrives from E.Union state then each person may have onboard 800 cigarettes, 10 ltrs of spirits, 20 ltrs of under 22% alc. 90 ltrs of wins, 110 ltrs of beers.
+If ship arrives from non-EU state (Russia, Aland Islands) then each person may have only 200 cigarettes, 1 ltrs of spirits OR 2 ltrs of under 22% alc. and 3 ltrs of wine. 
+Cash exceeding 10000 EUR shoud be declared.
+Amounts of controllable goods or cash exceeding above mentioned quantities are subject to legal penalties.
+
+Then ship bond to Russia or other non EU state and Customs TaxFree confirmation required for non EU citizens please inform on arrival about number of persons for Customs arrangements. For goods purchased at Estonia latest notification is 2 hrs prior sailing.
+NB! EU Goods shall be closed in original packing with TaxFree invoice.
+
+7. Destination information
+Exchange rates : 1.0 EUR=15.4, 1.0 USD=10.3, 1.0 GBP=20.5 EEK;
+Distance from pier to downtown: 0.9 km
+Taxi rate to Downtown : abt 10.00 EUR all taxis are metered; Shuttle bus service : optional (via Travel Agents)
+Shopping hours in downtown: 0900-1900 (supermarkets - 2100)
+Post office working hours: Weekdays 0800-1930, Sat 0800-1800, Sun 0800-1500, address : Narva mnt. 1
+Bank hours: 1000-1800, 
+Closest Bank office is in A-Terminal 400m, in downtown ATMs each 300 m,
+Onboard Banking Exchange service is available by request ; 
+USD/EURO are not accepted for payment, but you can find currency exchange bureaus widely,
+Nearest telephone terminal: 400m A-Terminal
+Nearest Internet cafe: Kaubamaja (Viru Center) (Gonsiori 2, 5 floor); "Enter" cafe (Viru Str.,24)
+Shore Excursion agents will attend on board on arrival - they can help you with maps and information.
+Postage :
+ Europe USA / Rest
+postcards&amp;letters (-20 gr) 6.50 8.00
+letter (20 gr+) 10.00 13.50
+ALL rates are in Estonian krones - EEK. 
+
+8. Local (emergency) contact numbers:
+Fire		 112
+Ambulance	 112
+Police		 110, 112
+Hospital		 112
+Port authorities	(+372) 6318588, VHF-14
+Coastguard / Immigration	(+372) 6318777
+Customs		 (+372) 6318759 ', "updated_at" = '2010-04-07 04:59:47' WHERE "id" = 183[0m
+Completed in 231ms (View: 6, DB: 3) | 200 OK [http://localhost/ports/183]
+
+
+Processing TarifCalculationsController#create (for 127.0.0.1 at 2010-04-07 08:00:58) [POST]
+  Parameters: {"data"=>"{\"from\":\"2010-01-01T00:00:00\",\"to\":\"2010-12-31T00:00:00\",\"notes\":\"2010 year<br>\",\"port_id\":\"183\"}"}
+  [4;36;1mTarifCalculation Create (2.0ms)[0m   [0;1mINSERT INTO "tarif_calculations" ("from", "to", "active", "notes", "created_at", "updated_at", "port_id") VALUES('2010-01-01', '2010-12-31', NULL, '2010 year<br>', '2010-04-07 05:00:58', '2010-04-07 05:00:58', 183)[0m
+Completed in 355ms (View: 6, DB: 2) | 200 OK [http://localhost/tarif_calculations]
+
+
+Processing TarifsController#index (for 127.0.0.1 at 2010-04-07 08:01:03) [GET]
+  Parameters: {"_dc"=>"1270616463001", "tarif_calculation_id"=>"9"}
+  [4;35;1mTarif Load (1.0ms)[0m   [0mSELECT * FROM "tarifs" WHERE ("tarifs"."tarif_calculation_id" = '9') [0m
+Completed in 19ms (View: 3, DB: 1) | 200 OK [http://localhost/tarifs?_dc=1270616463001&tarif_calculation_id=9]
+
+
+Processing TarifsController#create (for 127.0.0.1 at 2010-04-07 08:04:20) [POST]
+  Parameters: {"data"=>"{\"tarif_calculation_id\":\"9\",\"name\":\"Agency fee\",\"is_manual\":true,\"formula\":\"\"}"}
+  [4;36;1mTarif Create (2.0ms)[0m   [0;1mINSERT INTO "tarifs" ("tarif_calculation_id", "name", "formula", "is_manual", "created_at", "updated_at") VALUES(9, 'Agency fee', '', 't', '2010-04-07 05:04:20', '2010-04-07 05:04:20')[0m
+Completed in 192ms (View: 6, DB: 2) | 200 OK [http://localhost/tarifs]
+
+
+Processing TarifsController#create (for 127.0.0.1 at 2010-04-07 08:05:08) [POST]
+  Parameters: {"data"=>"{\"tarif_calculation_id\":\"9\",\"name\":\"Fresh water\",\"is_manual\":false,\"formula\":\"per 1.0 m/tonne\"}"}
+  [4;35;1mTarif Create (3.0ms)[0m   [0mINSERT INTO "tarifs" ("tarif_calculation_id", "name", "formula", "is_manual", "created_at", "updated_at") VALUES(9, 'Fresh water', 'per 1.0 m/tonne', 'f', '2010-04-07 05:05:08', '2010-04-07 05:05:08')[0m
+Completed in 147ms (View: 4, DB: 3) | 200 OK [http://localhost/tarifs]
+
+
+Processing TarifsController#create (for 127.0.0.1 at 2010-04-07 08:06:06) [POST]
+  Parameters: {"data"=>"{\"tarif_calculation_id\":\"9\",\"name\":\"Passenger port tax In & Out ttl\",\"is_manual\":false,\"formula\":\"per 1 transit pax\"}"}
+  [4;36;1mTarif Create (2.0ms)[0m   [0;1mINSERT INTO "tarifs" ("tarif_calculation_id", "name", "formula", "is_manual", "created_at", "updated_at") VALUES(9, 'Passenger port tax In & Out ttl', 'per 1 transit pax', 'f', '2010-04-07 05:06:06', '2010-04-07 05:06:06')[0m
+Completed in 145ms (View: 6, DB: 2) | 200 OK [http://localhost/tarifs]
+
+
+Processing TarifsController#create (for 127.0.0.1 at 2010-04-07 08:07:07) [POST]
+  Parameters: {"data"=>"{\"tarif_calculation_id\":\"9\",\"name\":\"Lighthouse dues (Incl. 40% rebate)\",\"is_manual\":false,\"formula\":\"\"}"}
+  [4;35;1mTarif Create (1.0ms)[0m   [0mINSERT INTO "tarifs" ("tarif_calculation_id", "name", "formula", "is_manual", "created_at", "updated_at") VALUES(9, 'Lighthouse dues (Incl. 40% rebate)', '', 'f', '2010-04-07 05:07:07', '2010-04-07 05:07:07')[0m
+Completed in 156ms (View: 5, DB: 1) | 200 OK [http://localhost/tarifs]
+
+
+Processing TarifsController#create (for 127.0.0.1 at 2010-04-07 08:08:03) [POST]
+  Parameters: {"data"=>"{\"tarif_calculation_id\":\"9\",\"name\":\"Navigation Dues (Incl. 40% rebaste)\",\"is_manual\":false,\"formula\":\"\"}"}
+  [4;36;1mTarif Create (4.0ms)[0m   [0;1mINSERT INTO "tarifs" ("tarif_calculation_id", "name", "formula", "is_manual", "created_at", "updated_at") VALUES(9, 'Navigation Dues (Incl. 40% rebaste)', '', 'f', '2010-04-07 05:08:03', '2010-04-07 05:08:03')[0m
+Completed in 188ms (View: 5, DB: 4) | 200 OK [http://localhost/tarifs]
+
+
+Processing TarifsController#create (for 127.0.0.1 at 2010-04-07 08:08:52) [POST]
+  Parameters: {"data"=>"{\"tarif_calculation_id\":\"9\",\"name\":\"Pilotage (incl 20% rebate)\",\"is_manual\":false,\"formula\":\"\"}"}
+  [4;35;1mTarif Create (2.0ms)[0m   [0mINSERT INTO "tarifs" ("tarif_calculation_id", "name", "formula", "is_manual", "created_at", "updated_at") VALUES(9, 'Pilotage (incl 20% rebate)', '', 'f', '2010-04-07 05:08:52', '2010-04-07 05:08:52')[0m
+Completed in 159ms (View: 5, DB: 2) | 200 OK [http://localhost/tarifs]
+
+
+Processing TarifsController#update (for 127.0.0.1 at 2010-04-07 08:09:33) [PUT]
+  Parameters: {"data"=>"{\"name\":\"Navigation Dues (Incl. 40% rebate)\",\"id\":9}", "id"=>"9"}
+  [4;36;1mTarif Load (1.0ms)[0m   [0;1mSELECT * FROM "tarifs" WHERE ("tarifs"."id" = 9) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mTarif Update (2.0ms)[0m   [0mUPDATE "tarifs" SET "name" = 'Navigation Dues (Incl. 40% rebate)', "updated_at" = '2010-04-07 05:09:33' WHERE "id" = 9[0m
+Completed in 165ms (View: 8, DB: 3) | 200 OK [http://localhost/tarifs/9]
+
+
+Processing TarifsController#create (for 127.0.0.1 at 2010-04-07 08:10:30) [POST]
+  Parameters: {"data"=>"{\"tarif_calculation_id\":\"9\",\"name\":\"Sanitary dues\",\"is_manual\":false,\"formula\":\"GT * 0.018\"}"}
+  [4;36;1mTarif Create (2.0ms)[0m   [0;1mINSERT INTO "tarifs" ("tarif_calculation_id", "name", "formula", "is_manual", "created_at", "updated_at") VALUES(9, 'Sanitary dues', 'GT * 0.018', 'f', '2010-04-07 05:10:30', '2010-04-07 05:10:30')[0m
+Completed in 178ms (View: 7, DB: 2) | 200 OK [http://localhost/tarifs]
+
+
+Processing TarifsController#create (for 127.0.0.1 at 2010-04-07 08:11:02) [POST]
+  Parameters: {"data"=>"{\"tarif_calculation_id\":\"9\",\"name\":\"Linehandling: Mooring & Unmooring\",\"is_manual\":false,\"formula\":\"\"}"}
+  [4;35;1mTarif Create (2.0ms)[0m   [0mINSERT INTO "tarifs" ("tarif_calculation_id", "name", "formula", "is_manual", "created_at", "updated_at") VALUES(9, 'Linehandling: Mooring & Unmooring', '', 'f', '2010-04-07 05:11:02', '2010-04-07 05:11:02')[0m
+Completed in 136ms (View: 5, DB: 2) | 200 OK [http://localhost/tarifs]
+
+
+Processing TarifsController#create (for 127.0.0.1 at 2010-04-07 08:11:50) [POST]
+  Parameters: {"data"=>"{\"tarif_calculation_id\":\"9\",\"name\":\"Tonnage Dues\",\"is_manual\":false,\"formula\":\"GT*0.45 -75%\"}"}
+  [4;36;1mTarif Create (3.0ms)[0m   [0;1mINSERT INTO "tarifs" ("tarif_calculation_id", "name", "formula", "is_manual", "created_at", "updated_at") VALUES(9, 'Tonnage Dues', 'GT*0.45 -75%', 'f', '2010-04-07 05:11:50', '2010-04-07 05:11:50')[0m
+Completed in 147ms (View: 5, DB: 3) | 200 OK [http://localhost/tarifs]
+
+
+Processing TarifsController#create (for 127.0.0.1 at 2010-04-07 08:12:30) [POST]
+  Parameters: {"data"=>"{\"tarif_calculation_id\":\"9\",\"name\":\"Watchman -Security\",\"is_manual\":true,\"formula\":\"\"}"}
+  [4;35;1mTarif Create (2.0ms)[0m   [0mINSERT INTO "tarifs" ("tarif_calculation_id", "name", "formula", "is_manual", "created_at", "updated_at") VALUES(9, 'Watchman -Security', '', 't', '2010-04-07 05:12:30', '2010-04-07 05:12:30')[0m
+Completed in 152ms (View: 5, DB: 2) | 200 OK [http://localhost/tarifs]
+  [4;36;1mSQL (17.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePorts (20100305054045)
+Migrating to CreateCountries (20100305055558)
+Migrating to CreatePosts (20100322055522)
+Migrating to CreateVesselTypes (20100324063306)
+Migrating to CreateIceClasses (20100324175319)
+Migrating to CreateVessels (20100324182132)
+Migrating to CreateTarifs (20100329050913)
+Migrating to CreateTarifCalculations (20100402165301)
+Migrating to AddRemarkToTarif (20100407182141)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mALTER TABLE "tarifs" ADD "remark" varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100407182141')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("countries")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ice_classes")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ports")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("posts")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tarif_calculations")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tarifs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("vessel_types")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("vessels")[0m
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-08 07:29:21) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 354ms (View: 352, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-08 07:30:37) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-08 07:33:18) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-08 07:34:58) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-08 07:35:42) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-08 07:37:14) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-08 07:37:14) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-08 07:37:36) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-08 07:38:11) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-08 07:38:23) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]
+
+
+Processing TarifsController#show (for 127.0.0.1 at 2010-04-08 07:39:09) [GET]
+  Parameters: {"id"=>"base"}
+Rendering template within layouts/tarifs
+Rendering tarifs/base
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/tarifs/base]

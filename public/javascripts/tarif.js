@@ -83,37 +83,64 @@ function Tarifs() {
                 layout:"border",
                 defaults:{labelWidth:110, xtype:"panel",layout:"form",bodyBorder :false,frame:false,border:false},
                 items: [
-                {
+                    {
+                        region:"north",
+                        autoHeight:true,
+                        items:[
+                            tarifCalculationField,
+                            {
+                                xtype:"textfield",
+                                fieldLabel: 'Name',
+                                name: 'name'
+                            },
+                            {
+                                xtype:"container",
+                                layout:"column",
+                                items:[
+                                    {
+                                        xtype:"container",
+                                        layout:"form",
+                                        columnWidth:.6,
+                                        items:[
+                                            {
+                                                fieldLabel: 'Remark',
+                                                xtype:"textfield",
+                                                name: 'remark'
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        xtype:"container",
+                                        layout:"form",
+                                        columnWidth:.4,
+                                        items:[
+                                            {
+                                                fieldLabel: 'Calculated manually',
+                                                xtype:"checkbox",
+                                                name: 'is_manual'
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        region:"center",
+                        xtype:"fieldset",
+                        title:"Formula",
+                        layout:"fit",
+                        border:true,
+                        items:[
+                            {
+                                fieldLabel: 'Formula',
+                                name: 'formula',
+                                xtype:"textarea"
 
-                    region:"north",
-                    autoHeight:true,
-                    items:[
-                        tarifCalculationField,{
-                            xtype:"textfield",
-                            fieldLabel: 'Name',
-                            name: 'name'
-                        },
-                        {
-                            fieldLabel: 'Calculated manually',
-                            xtype:"checkbox",
-                            name: 'is_manual'
-                        }
-                    ]
-                },
-                {
-                    region:"center",
-                    xtype:"fieldset",
-                    title:"Formula",
-                    layout:"fit",
-                    border:true,
-                    items:[{
-                        fieldLabel: 'Formula',
-                        name: 'formula',
-                        xtype:"textarea"
-
-                    }]
-                }
-            ]
+                            }
+                        ]
+                    }
+                ]
             }
             ,
 
@@ -258,6 +285,10 @@ function Tarifs() {
             {
                 name: 'formula' ,
                 type: 'string'
+            },
+            {
+                name:"remark",
+                type:"string"
             }
 
         ]);
