@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tarif_id: 1
+  proforma_id: 1
+  val: 1.5
+
+two:
+  tarif_id: 1
+  proforma_id: 1
+  val: 1.5

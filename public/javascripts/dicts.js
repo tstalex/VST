@@ -6,6 +6,33 @@ function Dicts() {
     var vessel_typeStoreControl = null;
     var ice_classStoreControl = null;
 
+    var statusesStoreControl = null;
+
+    //proforma statuses
+    this.statusesStore = function() {
+        if (statusesStoreControl != null) {
+            return statusesStoreControl;
+        }
+        statusesStoreControl = new Ext.data.ArrayStore({
+            // store configs
+            autoDestroy: true,
+            storeId: 'myStore',
+            idIndex: 0,
+            fields: [
+                'id',
+                 'name'
+            ]
+        });
+
+        var myData = [
+            [0,'Project'],
+            [1,'Calculated'],
+            [2,'Accepted']
+        ];
+        statusesStoreControl.loadData(myData);
+        return statusesStoreControl;
+    }
+
     this.ice_classStore = function() {
         if (ice_classStoreControl != null)
             return ice_classStoreControl;

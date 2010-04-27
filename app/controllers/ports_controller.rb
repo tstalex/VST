@@ -1,4 +1,22 @@
 class PortsController < ApplicationController
+
+  def tarifs
+    id= Integer(params[:port_id])
+    logger.info "Id= %s" %id
+    if(id< 1)
+      tarifs=Array.new
+    else
+      if (Port.exists? id)
+         @port = Port.find(id)
+         tarifs=@port.tarifs
+      else
+        tarifs=Array.new
+      end
+
+    end
+   render :json => {:successful=>true, :data=> tarifs }
+  end
+
   # GET /ports
   # GET /ports.xml
   def index

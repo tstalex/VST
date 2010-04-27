@@ -2,15 +2,59 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="287d49ea-7968-4133-b409-b09fecac4a5d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/currencies_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/currencies.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/currencies.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/prof_tarif_calcs.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/proformas/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/dicts.js" afterPath="$PROJECT_DIR$/public/javascripts/dicts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/proformas_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/port.rb" afterPath="$PROJECT_DIR$/app/models/port.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/proforma_tarif_helper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/templates/ext_scaffold_panel.js" afterPath="$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/templates/ext_scaffold_panel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20100408052836_create_currencies.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/base/show.html.erb" afterPath="$PROJECT_DIR$/app/views/base/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/tarif.rb" afterPath="$PROJECT_DIR$/app/models/tarif.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/prof_tarif_calcs_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/currencies_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/tarif.js" afterPath="$PROJECT_DIR$/public/javascripts/tarif.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/ext_scaffold/proforma.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/proforma.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20100407182141_add_remark_to_tarif.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/currencies/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20100408053917_create_proformas.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/proformas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/ext_scaffold/currency.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/prof_tarif_calcs_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/currency_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/proforma_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/prof_tarif_calc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/prof_tarif_calcs_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/dt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/app.js" afterPath="$PROJECT_DIR$/public/javascripts/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20100410171425_create_prof_tarif_calcs.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ports_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/ports_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20100408052457_add_curr_to_tarif.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/currency.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/proformas.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/prof_tarif_calcs/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/overrides.js" afterPath="$PROJECT_DIR$/public/javascripts/overrides.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/currencies_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20100410084954_add_column_to_proforma.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/currency.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/prof_tarif_calc_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/proformas.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/prof_tarif_calc.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/tarif_calculation.rb" afterPath="$PROJECT_DIR$/app/models/tarif_calculation.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/proformas_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/proformas_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/prof_tarif_calcs.html.erb" />
     </list>
-    <ignored path="third.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="third.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,19 +75,82 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tarif.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/tarif.js">
+      <file leaf-file-name="proformas.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/proformas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="73" selection-start="429" selection-end="429" vertical-scroll-proportion="0.41195476">
+            <state line="579" column="36" selection-start="18977" selection-end="18977" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ports.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/ports.js">
+      <file leaf-file-name="proforma_tarif_helper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/proforma_tarif_helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="92" selection-start="3464" selection-end="3464" vertical-scroll-proportion="0.0">
+            <state line="70" column="96" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="31" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="overrides.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/overrides.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="26" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="101" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proforma.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/proforma.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="28" selection-start="48" selection-end="64" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proformas_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/proformas_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="0.31070495">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/base.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="584" column="29" selection-start="30637" selection-end="30681" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1331" column="0" selection-start="60458" selection-end="60458" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,22 +176,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20100329050913_create_tarifs.rb" />
-        <option value="$PROJECT_DIR$/config/environment.rb" />
-        <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/templates/ext_scaffold_panel.js" />
+        <option value="$PROJECT_DIR$/app/models/prof_tarif_calc.rb" />
+        <option value="$PROJECT_DIR$/app/models/proforma.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/app.js" />
-        <option value="$PROJECT_DIR$/db/migrate/20100402165301_create_tarif_calculations.rb" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/public/javascripts/ext_scaffold/tarif_calculation.js" />
-        <option value="$PROJECT_DIR$/app/controllers/tarif_calculations_controller.rb" />
-        <option value="$PROJECT_DIR$/public/javascripts/ports.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/tarif_calculations.js" />
+        <option value="$PROJECT_DIR$/app/models/tarif_calculation.rb" />
+        <option value="$PROJECT_DIR$/app/models/tarif.rb" />
+        <option value="$PROJECT_DIR$/app/models/port.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/prof_tarif_calcs_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/ports_controller.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/overrides.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/prof_tarif_calc.js" />
         <option value="$PROJECT_DIR$/app/views/base/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tarifs/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/tarifs_controller.rb" />
-        <option value="$PROJECT_DIR$/public/javascripts/tarif.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/proformas.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/proforma_tarif_helper.js" />
+        <option value="$PROJECT_DIR$/app/controllers/proformas_controller.rb" />
       </list>
     </option>
   </component>
@@ -152,7 +259,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -166,11 +273,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -187,26 +294,6 @@
     <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RunManager" selected="Rails.Development: third">
-    <configuration default="false" name="db:drop" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
-      <module name="third" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="development" />
-      </envs>
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:drop" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="posts" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="db:drop:all" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="third" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
@@ -274,6 +361,24 @@
         <env name="RAILS_ENV" value="development" />
       </envs>
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="rails:update:configs" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="third" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="rails:update:configs" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
@@ -465,11 +570,11 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Rake.db:drop" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.db:drop:all" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.routes" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.gems:install" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.db:drop:all" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.routes" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.gems:install" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.rails:update:configs" />
       <item index="5" class="java.lang.String" itemvalue="Rails.Production: third" />
       <item index="6" class="java.lang.String" itemvalue="Rails.Development: third" />
       <item index="7" class="java.lang.String" itemvalue="Rake.test" />
@@ -514,21 +619,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25755167" sideWeight="0.62015504" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4356589" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36899224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2154213" sideWeight="0.6604651" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37984496" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21550387" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32868218" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34728682" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57054263" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939272" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -582,94 +688,102 @@
           <url>file://$PROJECT_DIR$/app/controllers/base_controller.rb</url>
           <line>15</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/proformas_controller.rb</url>
+          <line>16</line>
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/ext_scaffold/tarif.js">
+    <entry file="file://$PROJECT_DIR$/app/models/tarif_calculation.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="1" column="57" selection-start="81" selection-end="101" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/overrides.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/tarif.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="16" selection-start="4013" selection-end="4025" vertical-scroll-proportion="0.0" />
+        <state line="275" column="27" selection-start="8848" selection-end="8852" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tarif_calculations_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/ports_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="40" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ice_classes/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/ext_scaffold/ice_class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/tarif_calculations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="11" selection-start="1989" selection-end="2297" vertical-scroll-proportion="0.0" />
+        <state line="8" column="78" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tarifs/base.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="93" selection-start="643" selection-end="643" vertical-scroll-proportion="-17.0" />
+        <state line="11" column="45" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/base_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/base/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="72" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/prof_tarif_calc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="22" selection-start="380" selection-end="393" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/overrides.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="26" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="101" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="584" column="29" selection-start="30637" selection-end="30681" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1331" column="0" selection-start="60458" selection-end="60458" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="31" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/proformas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="579" column="36" selection-start="18977" selection-end="18977" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/proforma_tarif_helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="96" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/proforma.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="28" selection-start="48" selection-end="64" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/port.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/plugins/ext1/generators/extgen/extgen_generator.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/proformas_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/base/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="98" selection-start="300" selection-end="396" vertical-scroll-proportion="-4.9583335" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tarifs_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="487" selection-end="487" vertical-scroll-proportion="0.44902912" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20100407182141_add_remark_to_tarif.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/ports.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="92" selection-start="3464" selection-end="3464" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/tarif.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="73" selection-start="429" selection-end="429" vertical-scroll-proportion="0.41195476">
+        <state line="7" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="0.31070495">
           <folding />
         </state>
       </provider>

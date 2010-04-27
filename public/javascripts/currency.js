@@ -1,42 +1,40 @@
-var <%=class_name%>= new <%=class_name.pluralize%>();
-function <%=class_name.pluralize%>(){
-    var <%=file_name%>GridControl= null;
-    var <%=file_name%>EditControl=null;
-    var <%=file_name%>StoreControl=null;
-    var <%=file_name%>MainControl=null;
-
+function Currencies(){
+    var currencyGridControl= null;
+    var currencyEditControl=null;
+    var currencyStoreControl=null;
+    var currencyMainControl=null;
 
     this.del= function(){
-        this.editPanel().deleteGridData(this.<%=file_name%>Grid());
+        this.currencyEditPanel().deleteGridData(this.currencyGrid());
     };
 
     this.edit=function(){
-        this.editPanel().loadData();
-        this.editPanel().setEditable(true);
+        this.currencyEditPanel().loadGridData(this.currencyGrid());
+        this.currencyEditPanel().setEditable(true);
     };
     this.newRow=function(){
-        this.editPanel().addNew(this.<%=file_name%>Grid());
+        this.editPanel().addNew(this.gridPanel());
     };
 
     this.add = function() {
-        this.editPanel().saveData();
+        this.editPanel().saveGridSata(this.gridPanel());
     };
             
     this.reset = function() {
-        this.editPanel().loadData();
+        currencyEditPanel().loadGridData(this.currencyGrid());
     };
 
     this.mainPanel = function(){
-        if (<%=file_name%>MainControl != null && !<%=file_name%>MainControl.isDestroyed) {
-            return  <%=file_name%>MainControl;
+        if (currencyMainControl != null && !currencyMainControl.isDestroyed) {
+            return  currencyMainControl;
         }
-        <%=file_name%>MainControl = new Ext.Panel({
+        currencyMainControl = new Ext.Panel({
             layout:"border",
-            title:"<%=class_name%>",
+            title:"Currency",
             items:[this.gridPanel(),this.editPanel() ]
         });
         this.gridPanel().viewPanel =this.editPanel();
-        this.editPanel().grid=this.<%=file_name%>Grid();
+        this.editPanel().grid=this.gridPanel();
 
         this.gridPanel().getSelectionModel().on("rowselect", function(rsm, rowIndex, e) {
             rsm.grid.viewPanel.loadGridData();
@@ -45,30 +43,25 @@ function <%=class_name.pluralize%>(){
             rsm.grid.viewPanel.loadGridData();
         });
 
-        return <%=file_name%>MainControl;
+        return currencyMainControl;
     };
             
     this.editPanel=function(){
-        if (<%=file_name%>EditControl != null && !<%=file_name%>EditControl.isDestroyed) {
-            return  <%=file_name%>EditControl;
+        if (currencyEditControl != null && !currencyEditControl.isDestroyed) {
+            return  currencyEditControl;
         }
-        <%=file_name%>EditControl = new Ext.FormPanel({
+        currencyEditControl = new Ext.FormPanel({
             region:"center",
-            url:'/<%=file_name.pluralize%>',
+            url:'/currencies',
             frame:true,
             border:false,
+            controller:this,
             bodyBorder :false,
             defaults:{bodyBorder :false,frame:true,border:false,xtype:'textfield'},
             layout:"form",
             items: [
- <%= attributes.inject([]) do |mappings, a|
-     mapping =  "                { "
-     mapping << "fieldLabel: '#{a.name}',"
-     mapping << "name: '#{a.name}'"
-     mapping << " }\n"
-     mappings << mapping
-   end.join(',')
--%>
+                 { fieldLabel: 'curr',name: 'curr' }
+
             ],
 
             bbar: [
@@ -113,22 +106,23 @@ function <%=class_name.pluralize%>(){
         }
                 )
                 ;
-        <%=file_name%>EditControl.data = {};
-        <%=file_name%>EditControl.setEditable(false);
-        return <%=file_name%>EditControl;    
+        currencyEditControl.data = {};
+        currencyEditControl.setEditable(false);
+        return currencyEditControl;    
     }
 
     this.gridPanel=function(){
-         if (<%=file_name%>GridControl != null && !<%=file_name%>GridControl.isDestroyed)
-            return <%=file_name%>GridControl;
+         if (currencyGridControl != null && !currencyGridControl.isDestroyed)
+            return currencyGridControl;
 
-        <%=file_name%>GridControl = new Ext.grid.GridPanel(
+        currencyGridControl = new Ext.grid.GridPanel(
         {
-            title:"<%=class_name.pluralize%>",
+            title:"Currencies",
             region:"north",
-            store:this.<%=file_name%>Store(),
+            store:this.currencyStore(),
             collapsible:true,
             split:true,
+            controller:this,
             columns:[
                 {
                     id:"id",
@@ -137,24 +131,18 @@ function <%=class_name.pluralize%>(){
                     sortable:true,
                     hidden:true
                 }
-<%= attributes.inject('') do |mappings, a|
-     mapping =  "                ,{ "
-     mapping << "dataIndex: '#{a.name}', "
-     mapping << "header: '#{a.name}' "
-     mapping << " }\n"
-     mappings << mapping
-   end
--%>
+                ,{ dataIndex: 'curr', header: 'curr'  }
+
             ]
         });
-        return <%=file_name%>GridControl;
+        return currencyGridControl;
     }
  
-    this.<%=file_name%>Store= function(){
-       if (<%=file_name%>StoreControl != null)
-            return <%=file_name%>StoreControl;
+    this.currencyStore= function(){
+       if (currencyStoreControl != null)
+            return currencyStoreControl;
         var proxy = new Ext.data.HttpProxy({
-            url: '/<%=file_name.pluralize%>'
+            url: '/currencies'
         });
 
         var reader = new Ext.data.JsonReader({
@@ -166,26 +154,15 @@ function <%=class_name.pluralize%>(){
 
         }, [
             { name: 'id', mapping: 'id' }
- <%= attributes.inject('') do |mappings, a|
-     mapping =  "                ,{ "
-     mapping << "name: '#{a.name}' "
-     mapping << case a.type
-       when :date     then ", type: 'date', dateFormat: 'Y-m-d'"
-       when :time then ", type: 'date', dateFormat: 'c'"
-       when :integer then ", type: 'int'"
-       else ", type: '%s'" %a.type
-     end
-     mapping << " }\n"
-     mappings << mapping
-   end
--%>
+                 ,{ name: 'curr' , type: 'string' }
+
         ]);
 
         var writer = new Ext.data.JsonWriter();
 
-        <%=file_name%>StoreControl = new Ext.data.Store({
+        currencyStoreControl = new Ext.data.Store({
             restful: true,
-            id: "<%=file_name.pluralize%>_store",
+            id: "currencies_store",
             proxy: proxy,
             reader: reader,
             listeners: {
@@ -195,8 +172,7 @@ function <%=class_name.pluralize%>(){
             },
             writer: writer
         });
-        <%=file_name%>StoreControl.load();
-        return <%=file_name%>StoreControl; 
+        currencyStoreControl.load();
+        return currencyStoreControl; 
     }
-
 }

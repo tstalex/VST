@@ -1,4 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
+  map.connect "prof_tarif_calcs/gen_tarifs", :controller => 'prof_tarif_calcs', :action => 'gen_tarifs'
+  map.connect "ports/tarifs", :controller => 'ports', :action => 'tarifs'
+  
+  map.resources :prof_tarif_calcs
+
+  map.resources :proformas
+
+  map.resources :currencies
+
   map.resources :tarif_calculations
 
   map.resources :tarifs

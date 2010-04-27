@@ -5,17 +5,9 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
   <title>Base</title>
-  <%= javascript_include_tag 'adapter/ext/ext-base-debug.js','ext-all-debug.js' ,:cache => true %>
-
-  <script type="text/javascript" src="<%= javascript_path "overrides" %>"></script>
-  <script type="text/javascript" src="<%= javascript_path "tarif_calculations" %>"></script>
-  <script type="text/javascript" src="<%= javascript_path "ports" %>"></script>
-  <script type="text/javascript" src="<%= javascript_path "dicts" %>"></script>
-  <script type="text/javascript" src="<%= javascript_path "vessels" %>"></script>
-  <script type="text/javascript" src="<%= javascript_path "ext_scaffold/ice_class" %>"></script>
-  <script type="text/javascript" src="<%= javascript_path "tarif" %>"></script>
-  <script type="text/javascript" src="<%= javascript_path "app" %>"></script>
-
+  <%= javascript_include_tag 'adapter/ext/ext-base-debug.js','ext-all-debug.js',"dt.js","overrides" ,:cache => true %>
+  <%= javascript_include_tag 'tarif_calculations','ports',"dicts","vessels","ext_scaffold/ice_class" ,:cache => true %>
+  <%= javascript_include_tag 'tarif','proformas','proforma_tarif_helper', "currency","prof_tarif_calc","app" ,:cache => true %>
 
   <%= stylesheet_link_tag    "silk", "/stylesheets/silk.css" %>
   <link rel="stylesheet" type="text/css" href="<%= stylesheet_path "ext-all" %>"/>

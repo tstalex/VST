@@ -1,0 +1,18 @@
+<% content_for :head do %>
+  <%= javascript_include_tag 'ext_scaffold/prof_tarif_calc.js' %>
+  <% javascript_tag do %>
+    Ext.Ajax.defaultHeaders = { 'Content-Type': 'application/json' };
+    Ext.onReady(function() {
+
+      Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+      Ext.QuickTips.init();
+
+      var vp = new Ext.Viewport({
+        layout: 'fit',
+        renderTo:"main",
+        items:[ProfTarifCalc.prof_tarif_calcPanel()]
+      });
+    });
+  <% end %>
+<% end %>
+<div id="main"></div>

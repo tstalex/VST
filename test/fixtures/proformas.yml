@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  status: 1
+  curr: MyString
+  date_curr: 2010-04-08
+  vessel_id: 1
+  port_id: 1
+  arrived: 2010-04-08 08:39:17
+  sailed: 2010-04-08 08:39:17
+  estimated_arrive: 2010-04-08
+  gt: 1.5
+  calls: 1
+  registration_date: 2010-04-08
+
+two:
+  status: 1
+  curr: MyString
+  date_curr: 2010-04-08
+  vessel_id: 1
+  port_id: 1
+  arrived: 2010-04-08 08:39:17
+  sailed: 2010-04-08 08:39:17
+  estimated_arrive: 2010-04-08
+  gt: 1.5
+  calls: 1
+  registration_date: 2010-04-08

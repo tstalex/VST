@@ -9,12 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100407182141) do
+ActiveRecord::Schema.define(:version => 20100410171425) do
 
   create_table "countries", :force => true do |t|
     t.string   "text"
     t.string   "code"
     t.integer  "is_euro"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "currencies", :force => true do |t|
+    t.string   "curr"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -46,6 +52,30 @@ ActiveRecord::Schema.define(:version => 20100407182141) do
     t.datetime "updated_at"
   end
 
+  create_table "prof_tarif_calcs", :force => true do |t|
+    t.integer  "tarif_id"
+    t.integer  "proforma_id"
+    t.float    "val"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "proformas", :force => true do |t|
+    t.integer  "status"
+    t.string   "curr"
+    t.date     "date_curr"
+    t.integer  "vessel_id"
+    t.integer  "port_id"
+    t.datetime "arrived"
+    t.datetime "sailed"
+    t.date     "estimated_arrive"
+    t.float    "gw"
+    t.integer  "calls"
+    t.date     "registration_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "tarif_calculations", :force => true do |t|
     t.date     "from"
     t.date     "to"
@@ -64,6 +94,7 @@ ActiveRecord::Schema.define(:version => 20100407182141) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "remark"
+    t.string   "curr"
   end
 
   create_table "vessel_types", :force => true do |t|

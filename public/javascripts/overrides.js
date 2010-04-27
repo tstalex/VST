@@ -1,3 +1,17 @@
+Ext.namespace("Ext.ux");
+Ext.ux.comboBoxRenderer = function(combo) {
+  return function(value) {
+    var idx = combo.store.find(combo.valueField, value);
+      if(idx>-1){
+        var rec = combo.store.getAt(idx);
+        return rec.get(combo.displayField);  
+      }else{
+          return value;
+      }
+
+  };
+}
+
 Ext.override(Ext.FormPanel, {
     grid:null,
     controller:null,
@@ -8,6 +22,27 @@ Ext.override(Ext.FormPanel, {
         var p = new grid.store.recordType();
         this.setValues(p.data);
         this.setEditable(true);
+    }
+    ,
+    saveData : function(){
+        var grid=this.controller.gridPanel(); 
+        var rec = grid.getSelectionModel().getSelected();
+        if (rec == null) {
+            rec = new grid.store.recordType();
+        }
+        this.getForm().items.each(function(field) {
+
+            if (field.name && (name = field.name) && (value = field.getValue()) !== undefined) {
+                rec.set(name, value);
+            }
+        }, this);
+        if (!grid.store.getById(rec.id)) {
+            grid.store.add(rec);
+        }
+        grid.store.fireEvent('datachanged', grid.store);
+        grid.store.commitChanges();
+        grid.store.save();
+        this.setEditable(false);
     }
     ,
     saveGridSata : function(grid) {
@@ -117,6 +152,17 @@ Ext.override(Ext.FormPanel, {
             }
         });
         return this;
+    },
+    getFieldByName: function(name){
+        var ret=null;     
+        this.getForm().items.each(function(field){
+                 if(field.name==name){
+                     ret= field;
+                 }
+             });
+        if(ret==null)
+            console.log("Field "+name+" not found!");
+        return ret;
     }
 });
 

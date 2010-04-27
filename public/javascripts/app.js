@@ -1,8 +1,7 @@
-//Ext.Ajax.defaultHeaders = { 'Content-Type': 'application/json' };
-
+var Currency= new Currencies();
 var Dict = new Dicts();
 var App = new Application();
-
+var Proforma= new Proformas();
 var Calc = new TarifCalculations();
 var Ports = new Ports();
 var Vessel = new Vessels();
@@ -50,7 +49,7 @@ function Application() {
             region:"west",
             layout:"accordion",
             collapsible:true,
-            //activeItem:1,
+            activeItem:3,
             items: [
                 this.countriesPanel(),
                 {
@@ -58,7 +57,10 @@ function Application() {
                     html: '<p><a href="#" onclick="App.showMainPanel(Vessel.vesselPanel())">Show</a></p>'
                 },{
                     title: 'Configuration',
-                    html: '<p><a href="#" onclick="App.showMainPanel(IceClass.ice_classPanel())">Ice classes</a></p>'
+                    html: '<p><a href="#" onclick="App.showMainPanel(IceClass.ice_classPanel())">Ice classes</a></p><p><a href="#" onclick="App.showMainPanel(Currency.mainPanel())">Currencies</a></p>'
+                },{
+                    title:"Proforma",
+                    html: '<p><a href="#" onclick="App.showMainPanel(Proforma.mainPanel())">Proforma</a></p>'
                 }
             ],
             split:true
@@ -89,6 +91,9 @@ function Application() {
         },
         {
             store:"country_storse"
+        },
+        {
+            store:Currency.currencyStore()
         }
     ];
 
