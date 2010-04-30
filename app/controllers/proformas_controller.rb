@@ -15,8 +15,8 @@ class ProformasController < ApplicationController
     json_obj.each{|el|
 
       profCalc=  ProfTarifCalc.new
-      profCalc.tarif_id=el.tarif_id
-      profCalc.val=el.val
+      profCalc.tarif_id=el["tarif_id"]
+      profCalc.val=el["val"]
       tarifs << profCalc
     }
     tarifs
@@ -45,12 +45,13 @@ class ProformasController < ApplicationController
 
   # PUT /proformas/1
   def update
-    @proformas = Proforma.find(params[:id])
-    @proforma.prof_tarif_calcs= convertTarifCalcs
-    if @proformas.update_attributes(ActiveSupport::JSON.decode(params[:data]))
-      render :json => { :success => true, :message => "Proformas was updated", :data => @proformas }
+    @proforma = Proforma.find(params[:id])
+    logger.info @proforma.prof_tarif_calcs.nil?
+    @proforma.prof_tarif_calcs << convertTarifCalcs
+    if @proforma.update_attributes(ActiveSupport::JSON.decode(params[:data]))
+      render :json => { :success => true, :message => "Proformas was updated", :data => @proforma }
     else
-      render :json =>{:success =>false, :message=> @proformas.errors}
+      render :json =>{:success =>false, :message=> @proforma.errors}
     end
   end
 
