@@ -47,6 +47,7 @@ class ProformasController < ApplicationController
   def update
     @proforma = Proforma.find(params[:id])
     logger.info @proforma.prof_tarif_calcs.nil?
+    ProfTarifCalc.delete_all(:proforma_id=>@proforma.id)
     @proforma.prof_tarif_calcs << convertTarifCalcs
     if @proforma.update_attributes(ActiveSupport::JSON.decode(params[:data]))
       render :json => { :success => true, :message => "Proformas was updated", :data => @proforma }

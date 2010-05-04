@@ -547,6 +547,10 @@ function Proformas() {
                     }
                     ,
                     {
+                        name:"passengers",
+                        type:'int'
+                    },
+                    {
                         name: 'registration_date' ,
                         type: 'date',
                         dateFormat: 'Y-m-d'

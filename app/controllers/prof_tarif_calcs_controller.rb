@@ -22,6 +22,7 @@ class ProfTarifCalcsController < ApplicationController
   def gen_tarifs
     data= params[:data]
     json_obj= ActiveSupport::JSON.decode(data)
+    prof =Proforma.new json_obj
     logger.debug "calculating for port %s" % json_obj["port_id"]
     port= Port.find(json_obj["port_id"])
     profCalc=Array.new
@@ -32,10 +33,11 @@ class ProfTarifCalcsController < ApplicationController
     end
     tarifs.each{|t|
       calc= ProfTarifCalc.new
+      calc.proforma=prof
       calc.tarif_id=t.id
-      calc.val=200
+      calc.val= "%.2f" % calc.getCalculatedValue.to_s
       profCalc.push calc}
-
+    
   render :json => { :success => true, :data => profCalc }
 
 end
