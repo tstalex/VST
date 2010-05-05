@@ -47,6 +47,10 @@ Ext.ux.ProfTarifHelper = function(proforma){
             {
                 name: 'val' ,
                 type: 'float'
+            },
+            {
+                name: 'description' ,
+                type: 'string'
             }
 
         ]);

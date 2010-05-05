@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="287d49ea-7968-4133-b409-b09fecac4a5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/testing_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/testing_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/proformas.js" afterPath="$PROJECT_DIR$/public/javascripts/proformas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/testing_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/tarif.rb" afterPath="$PROJECT_DIR$/app/models/tarif.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/proformas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/proformas_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/prof_tarif_calc.rb" afterPath="$PROJECT_DIR$/app/models/prof_tarif_calc.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/proforma.rb" afterPath="$PROJECT_DIR$/app/models/proforma.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/prof_tarif_calc.js" afterPath="$PROJECT_DIR$/public/javascripts/prof_tarif_calc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20100505054054_add_description_to_proftarif_calsc.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/prof_tarif_calcs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/prof_tarif_calcs_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/testing/eval.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/proforma_tarif_helper.js" afterPath="$PROJECT_DIR$/public/javascripts/proforma_tarif_helper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/testing_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/testing_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/testing_helper_test.rb" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="third.iws" />
@@ -43,34 +38,34 @@
       <file leaf-file-name="testing_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/testing_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="44" selection-start="324" selection-end="1119" vertical-scroll-proportion="0.0">
+            <state line="49" column="29" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="26" selection-start="3102" selection-end="3110" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prof_tarif_calcs_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="prof_tarif_calcs_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/prof_tarif_calcs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="118" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0">
+            <state line="38" column="7" selection-start="988" selection-end="988" vertical-scroll-proportion="0.1423221">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="proformas.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="proformas.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/proformas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="546" column="21" selection-start="17919" selection-end="17919" vertical-scroll-proportion="0.16445182">
+            <state line="564" column="76" selection-start="18459" selection-end="18459" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proforma_tarif_helper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/proforma_tarif_helper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="82" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -79,7 +74,7 @@
       <file leaf-file-name="prof_tarif_calc.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/prof_tarif_calc.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,22 +145,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/port.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/ports_controller.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/overrides.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/prof_tarif_calc.js" />
         <option value="$PROJECT_DIR$/app/views/base/show.html.erb" />
-        <option value="$PROJECT_DIR$/public/javascripts/proforma_tarif_helper.js" />
         <option value="$PROJECT_DIR$/app/models/tarif.rb" />
         <option value="$PROJECT_DIR$/app/controllers/proformas_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/prof_tarif_calcs_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/proforma.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/testing_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20100502190934_add_passengers_to_proforma.rb" />
-        <option value="$PROJECT_DIR$/app/models/prof_tarif_calc.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20100504044402_rename_vessel_column.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/proformas.js" />
+        <option value="$PROJECT_DIR$/app/controllers/testing_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/prof_tarif_calc.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20100505054054_add_description_to_proftarif_calsc.rb" />
+        <option value="$PROJECT_DIR$/public/javascripts/prof_tarif_calc.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/proforma_tarif_helper.js" />
+        <option value="$PROJECT_DIR$/app/controllers/prof_tarif_calcs_controller.rb" />
       </list>
     </option>
   </component>
@@ -202,8 +197,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -212,9 +207,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -560,9 +597,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28934819" sideWeight="0.5984496" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26152623" sideWeight="0.503876" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7658915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3906977" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4852713" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -586,7 +623,7 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="tarifs are now generated" />
+    <option name="LAST_COMMIT_MESSAGE" value="update in tarifs" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -607,6 +644,7 @@
     <MESSAGE value="changes in tarifs" />
     <MESSAGE value="added remark column to tarif" />
     <MESSAGE value="tarifs are now generated" />
+    <MESSAGE value="update in tarifs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -627,36 +665,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/overrides.js">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20100504044402_rename_vessel_column.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="63" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/tarif.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/proformas_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="47" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/proforma.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/testing_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="44" selection-start="324" selection-end="1119" vertical-scroll-proportion="0.0" />
+        <state line="9" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.44606414" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="26" selection-start="3102" selection-end="3110" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="110" column="26" selection-start="3102" selection-end="3110" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb">
@@ -684,35 +700,65 @@
         <state line="535" column="0" selection-start="23987" selection-end="23987" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20100502190934_add_passengers_to_proforma.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/testing_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20100504044402_rename_vessel_column.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.44606414">
+        <state line="49" column="29" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/prof_tarif_calc.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20100410171425_create_prof_tarif_calcs.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+        <state line="2" column="34" selection-start="85" selection-end="101" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/prof_tarif_calcs_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20100505054054_add_description_to_proftarif_calsc.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="118" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0">
+        <state line="2" column="72" selection-start="149" selection-end="149" vertical-scroll-proportion="0.09912536">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/ext_scaffold/proforma.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/prof_tarif_calc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="54" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.47204968">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/proformas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="546" column="21" selection-start="17919" selection-end="17919" vertical-scroll-proportion="0.16445182">
+        <state line="564" column="76" selection-start="18459" selection-end="18459" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/proforma_tarif_helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="82" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/prof_tarif_calc.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/prof_tarif_calcs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="7" selection-start="988" selection-end="988" vertical-scroll-proportion="0.1423221">
           <folding />
         </state>
       </provider>

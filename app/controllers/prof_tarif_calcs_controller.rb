@@ -35,7 +35,10 @@ class ProfTarifCalcsController < ApplicationController
       calc= ProfTarifCalc.new
       calc.proforma=prof
       calc.tarif_id=t.id
-      calc.val= "%.2f" % calc.getCalculatedValue.to_s
+
+      generated_value=calc.getCalculatedValue
+      calc.val= "%.2f" % generated_value[0]
+      calc.description=generated_value[1]
       profCalc.push calc}
     
   render :json => { :success => true, :data => profCalc }

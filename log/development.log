@@ -60224,3 +60224,264 @@ calculating formula ((((proforma.gw * 0.45) /100)*25))
 Proforma #<Proforma:0x5405700>
   [4;35;1mTarif Load (0.0ms)[0m   [0mSELECT * FROM "tarifs" WHERE ("tarifs"."id" = 14) [0m
 Completed in 124ms (View: 7, DB: 12) | 200 OK [http://localhost/prof_tarif_calcs/gen_tarifs]
+  [4;36;1mSQL (3.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePorts (20100305054045)
+Migrating to CreateCountries (20100305055558)
+Migrating to CreatePosts (20100322055522)
+Migrating to CreateVesselTypes (20100324063306)
+Migrating to CreateIceClasses (20100324175319)
+Migrating to CreateVessels (20100324182132)
+Migrating to CreateTarifs (20100329050913)
+Migrating to CreateTarifCalculations (20100402165301)
+Migrating to AddRemarkToTarif (20100407182141)
+Migrating to AddCurrToTarif (20100408052457)
+Migrating to CreateCurrencies (20100408052836)
+Migrating to CreateProformas (20100408053917)
+Migrating to AddColumnToProforma (20100410084954)
+Migrating to CreateProfTarifCalcs (20100410171425)
+Migrating to AddPassengersToProforma (20100502190934)
+Migrating to RenameVesselColumn (20100504044402)
+Migrating to AddDescriptionToProftarifCalsc (20100505054054)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: no such table: proftarif_calscs: ALTER TABLE "proftarif_calscs" ADD "description" varchar(255)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePorts (20100305054045)
+Migrating to CreateCountries (20100305055558)
+Migrating to CreatePosts (20100322055522)
+Migrating to CreateVesselTypes (20100324063306)
+Migrating to CreateIceClasses (20100324175319)
+Migrating to CreateVessels (20100324182132)
+Migrating to CreateTarifs (20100329050913)
+Migrating to CreateTarifCalculations (20100402165301)
+Migrating to AddRemarkToTarif (20100407182141)
+Migrating to AddCurrToTarif (20100408052457)
+Migrating to CreateCurrencies (20100408052836)
+Migrating to CreateProformas (20100408053917)
+Migrating to AddColumnToProforma (20100410084954)
+Migrating to CreateProfTarifCalcs (20100410171425)
+Migrating to AddPassengersToProforma (20100502190934)
+Migrating to RenameVesselColumn (20100504044402)
+Migrating to AddDescriptionToProftarifCalsc (20100505054054)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (22.0ms)[0m   [0mALTER TABLE "prof_tarif_calcs" ADD "description" varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100505054054')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("countries")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("currencies")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ice_classes")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ports")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("prof_tarif_calcs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("proformas")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tarif_calculations")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tarifs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("vessel_types")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("vessels")[0m
+
+
+Processing BaseController#show (for 127.0.0.1 at 2010-05-05 08:51:44) [GET]
+Rendering base/show
+Completed in 376ms (View: 374, DB: 0) | 200 OK [http://localhost/base/show]
+
+
+Processing CountriesController#index (for 127.0.0.1 at 2010-05-05 08:51:48) [GET]
+  Parameters: {"_dc"=>"1273038708343"}
+  [4;36;1mCountry Load (19.0ms)[0m   [0;1mSELECT * FROM "countries" [0m
+Completed in 1243ms (View: 915, DB: 19) | 200 OK [http://localhost/countries?_dc=1273038708343]
+
+
+Processing CurrenciesController#index (for 127.0.0.1 at 2010-05-05 08:51:49) [GET]
+  Parameters: {"_dc"=>"1273038708416"}
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM "currencies" [0m
+Completed in 37ms (View: 13, DB: 1) | 200 OK [http://localhost/currencies?_dc=1273038708416]
+
+
+Processing CountriesController#show (for 127.0.0.1 at 2010-05-05 08:51:49) [GET]
+  Parameters: {"_dc"=>"1273038708725", "id"=>"with_ports"}
+  [4;36;1mCountry Load (2.0ms)[0m   [0;1mselect distinct countries.* from countries inner join ports where ports.country=countries.id[0m
+Completed in 18ms (View: 7, DB: 2) | 200 OK [http://localhost/countries/with_ports?_dc=1273038708725]
+
+
+Processing CountriesController#index (for 127.0.0.1 at 2010-05-05 08:51:50) [GET]
+  Parameters: {"_dc"=>"1273038710126"}
+  [4;35;1mCountry Load (15.0ms)[0m   [0mSELECT * FROM "countries" [0m
+Completed in 160ms (View: 130, DB: 15) | 200 OK [http://localhost/countries?_dc=1273038710126]
+
+
+Processing CurrenciesController#index (for 127.0.0.1 at 2010-05-05 08:51:50) [GET]
+  Parameters: {"_dc"=>"1273038710435"}
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM "currencies" [0m
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/currencies?_dc=1273038710435]
+
+
+Processing CountriesController#show (for 127.0.0.1 at 2010-05-05 08:51:50) [GET]
+  Parameters: {"_dc"=>"1273038710536", "id"=>"with_ports"}
+  [4;35;1mCountry Load (2.0ms)[0m   [0mselect distinct countries.* from countries inner join ports where ports.country=countries.id[0m
+Completed in 23ms (View: 11, DB: 2) | 200 OK [http://localhost/countries/with_ports?_dc=1273038710536]
+
+
+Processing ProformasController#index (for 127.0.0.1 at 2010-05-05 08:51:57) [GET]
+  Parameters: {"_dc"=>"1273038717450"}
+  [4;36;1mProforma Load (2.0ms)[0m   [0;1mSELECT * FROM "proformas" [0m
+Completed in 151ms (View: 56, DB: 2) | 200 OK [http://localhost/proformas?_dc=1273038717450]
+
+
+Processing VesselsController#index (for 127.0.0.1 at 2010-05-05 08:51:57) [GET]
+  Parameters: {"_dc"=>"1273038717464"}
+  [4;35;1mVessel Load (3.0ms)[0m   [0mSELECT * FROM "vessels" [0m
+Completed in 58ms (View: 33, DB: 3) | 200 OK [http://localhost/vessels?_dc=1273038717464]
+
+
+Processing PortsController#index (for 127.0.0.1 at 2010-05-05 08:51:58) [GET]
+  Parameters: {"_dc"=>"1273038717476"}
+  [4;36;1mPort Load (5.0ms)[0m   [0;1mSELECT * FROM "ports" [0m
+Completed in 69ms (View: 48, DB: 5) | 200 OK [http://localhost/ports?_dc=1273038717476]
+
+
+Processing PortsController#tarifs (for 127.0.0.1 at 2010-05-05 08:51:58) [GET]
+  Parameters: {"_dc"=>"1273038717520", "port_id"=>"-1"}
+Id= -1
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/ports/tarifs?_dc=1273038717520&port_id=-1]
+
+
+Processing PortsController#tarifs (for 127.0.0.1 at 2010-05-05 08:52:03) [GET]
+  Parameters: {"_dc"=>"1273038722925", "port_id"=>"183"}
+Id= 183
+  [4;35;1mPort Load (1.0ms)[0m   [0mSELECT "ports".id FROM "ports" WHERE ("ports"."id" = 183) LIMIT 1[0m
+  [4;36;1mPort Load (1.0ms)[0m   [0;1mSELECT * FROM "ports" WHERE ("ports"."id" = 183) [0m
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE (port_id = 183) ORDER BY tarif_calculations.id DESC LIMIT 1[0m
+  [4;36;1mTarif Load (1.0ms)[0m   [0;1mSELECT * FROM "tarifs" WHERE ("tarifs".tarif_calculation_id = 9) [0m
+Completed in 68ms (View: 11, DB: 3) | 200 OK [http://localhost/ports/tarifs?_dc=1273038722925&port_id=183]
+
+
+Processing ProfTarifCalcsController#index (for 127.0.0.1 at 2010-05-05 08:52:03) [GET]
+  Parameters: {"_dc"=>"1273038722930", "proforma_id"=>"2"}
+  [4;35;1mProfTarifCalc Load (1.0ms)[0m   [0mSELECT * FROM "prof_tarif_calcs" WHERE ("prof_tarif_calcs"."proforma_id" = '2') [0m
+Completed in 31ms (View: 18, DB: 1) | 200 OK [http://localhost/prof_tarif_calcs?_dc=1273038722930&proforma_id=2]
+
+
+Processing ProfTarifCalcsController#gen_tarifs (for 127.0.0.1 at 2010-05-05 08:52:06) [POST]
+  Parameters: {"data"=>"{\"id\":2,\"status\":0,\"curr\":\"EUR\",\"date_curr\":\"2010-04-10T00:00:00\",\"vessel_id\":34,\"port_id\":183,\"arrived\":\"1970-01-01T00:00:00Z\",\"sailed\":\"1970-01-01T00:00:00Z\",\"estimated_arrive\":\"2010-04-10T00:00:00\",\"gw\":23287,\"calls\":\"\",\"passengers\":3,\"registration_date\":\"2010-04-10T00:00:00\"}"}
+WARNING: Can't mass-assign these protected attributes: id
+calculating for port 183
+  [4;36;1mPort Load (1.0ms)[0m   [0;1mSELECT * FROM "ports" WHERE ("ports"."id" = 183) [0m
+  [4;35;1mTarifCalculation Load (0.0ms)[0m   [0mSELECT * FROM "tarif_calculations" WHERE (port_id = 183) ORDER BY tarif_calculations.id DESC LIMIT 1[0m
+  [4;36;1mTarif Load (1.0ms)[0m   [0;1mSELECT * FROM "tarifs" WHERE ("tarifs".tarif_calculation_id = 9) [0m
+
+NameError (undefined local variable or method `calc' for #<ProfTarifCalcsController:0x3f73be0>):
+  app/controllers/prof_tarif_calcs_controller.rb:35:in `block in gen_tarifs'
+  app/controllers/prof_tarif_calcs_controller.rb:34:in `gen_tarifs'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/connection.rb:76:in `block in pre_process'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/connection.rb:74:in `catch'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/connection.rb:74:in `pre_process'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/connection.rb:57:in `process'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/backends/base.rb:57:in `start'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/server.rb:156:in `start'
+  -e:1:in `load'
+  -e:1:in `<main>'
+
+Rendered rescues/_trace (112.0ms)
+Rendered rescues/_request_and_response (14.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProfTarifCalcsController#gen_tarifs (for 127.0.0.1 at 2010-05-05 08:54:27) [POST]
+  Parameters: {"data"=>"{\"id\":2,\"status\":0,\"curr\":\"EUR\",\"date_curr\":\"2010-04-10T00:00:00\",\"vessel_id\":34,\"port_id\":183,\"arrived\":\"1970-01-01T00:00:00Z\",\"sailed\":\"1970-01-01T00:00:00Z\",\"estimated_arrive\":\"2010-04-10T00:00:00\",\"gw\":23287,\"calls\":\"\",\"passengers\":3,\"registration_date\":\"2010-04-10T00:00:00\"}"}
+WARNING: Can't mass-assign these protected attributes: id
+calculating for port 183
+  [4;35;1mPort Load (0.0ms)[0m   [0mSELECT * FROM "ports" WHERE ("ports"."id" = 183) [0m
+  [4;36;1mTarifCalculation Load (1.0ms)[0m   [0;1mSELECT * FROM "tarif_calculations" WHERE (port_id = 183) ORDER BY tarif_calculations.id DESC LIMIT 1[0m
+  [4;35;1mTarif Load (1.0ms)[0m   [0mSELECT * FROM "tarifs" WHERE ("tarifs".tarif_calculation_id = 9) [0m
+Proforma #<Proforma:0x44ee280>
+  [4;36;1mTarif Load (0.0ms)[0m   [0;1mSELECT * FROM "tarifs" WHERE ("tarifs"."id" = 5) [0m
+Proforma #<Proforma:0x44ee280>
+  [4;35;1mTarif Load (0.0ms)[0m   [0mSELECT * FROM "tarifs" WHERE ("tarifs"."id" = 6) [0m
+Proforma #<Proforma:0x44ee280>
+  [4;36;1mTarif Load (0.0ms)[0m   [0;1mSELECT * FROM "tarifs" WHERE ("tarifs"."id" = 7) [0m
+calculating formula ([proforma.passengers * 1.56,"Passengers * 1.56"])
+Proforma #<Proforma:0x44ee280>
+  [4;35;1mTarif Load (0.0ms)[0m   [0mSELECT * FROM "tarifs" WHERE ("tarifs"."id" = 8) [0m
+Proforma #<Proforma:0x44ee280>
+  [4;36;1mTarif Load (0.0ms)[0m   [0;1mSELECT * FROM "tarifs" WHERE ("tarifs"."id" = 9) [0m
+Proforma #<Proforma:0x44ee280>
+  [4;35;1mTarif Load (0.0ms)[0m   [0mSELECT * FROM "tarifs" WHERE ("tarifs"."id" = 10) [0m
+Proforma #<Proforma:0x44ee280>
+  [4;36;1mTarif Load (0.0ms)[0m   [0;1mSELECT * FROM "tarifs" WHERE ("tarifs"."id" = 11) [0m
+calculating formula ([(proforma.gw * 0.018),"0.018 * GW"])
+Proforma #<Proforma:0x44ee280>
+  [4;35;1mTarif Load (0.0ms)[0m   [0mSELECT * FROM "tarifs" WHERE ("tarifs"."id" = 12) [0m
+calculating formula (case proforma.gw
+      when 0..2000 then
+        if proforma.vessel.vessel_type == 2 or proforma.vessel.vessel_type == 3
+          [200,"100 *2"]
+        else
+          [40,"40 *2"]
+        end
+      when 2001..6000 then
+        if proforma.vessel.vessel_type == 2 or proforma.vessel.vessel_type == 3
+          [166,"166 *2"]
+        else
+          [64,"64 *2"]
+        end
+      when 6001..20000 then
+        if proforma.vessel.vessel_type == 2 or proforma.vessel.vessel_type == 3
+          [216,"216 *2"]
+        else
+          [85,"85 *2"]
+        end
+      when 20001..50000 then
+        if proforma.vessel.vessel_type == 2 or proforma.vessel.vessel_type == 3
+          [281,"281 *2"]
+        else
+          [110,"110 *2"]
+        end
+      else
+        if proforma.vessel.vessel_type == 2 or proforma.vessel.vessel_type == 3
+          [331,"331 *2"]
+        else
+          [129,"129 *2"]
+        end)
+
+SyntaxError ((eval):31: syntax error, unexpected ')', expecting keyword_end
+        end)
+            ^):
+  app/models/prof_tarif_calc.rb:10:in `eval'
+  app/models/prof_tarif_calc.rb:10:in `getCalculatedValue'
+  app/controllers/prof_tarif_calcs_controller.rb:39:in `block in gen_tarifs'
+  app/controllers/prof_tarif_calcs_controller.rb:34:in `gen_tarifs'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/connection.rb:76:in `block in pre_process'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/connection.rb:74:in `catch'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/connection.rb:74:in `pre_process'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/connection.rb:57:in `process'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/backends/base.rb:57:in `start'
+  C:/Ruby19/lib/ruby/gems/1.9.1/gems/thin-1.2.7-x86-mingw32/lib/thin/server.rb:156:in `start'
+  -e:1:in `load'
+  -e:1:in `<main>'
+
+Rendered rescues/_trace (123.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)

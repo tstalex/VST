@@ -9,9 +9,9 @@ class ProfTarifCalc < ActiveRecord::Base
       txtFormula= "evaluatedValue= (%s)" % tarif.formula
       eval txtFormula
     else
-      evaluatedValue=0
+      evaluatedValue=[0,"Empty"]
     end
-    evaluatedValue.to_f
+    evaluatedValue
   end
 
 end

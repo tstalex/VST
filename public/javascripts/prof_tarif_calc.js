@@ -7,6 +7,7 @@ function ProfTarifCalcs(){
                  ,{ name: 'tarif_id' , type: 'int' }
                 ,{ name: 'proforma_id' , type: 'int' }
                 ,{ name: 'val' , type: 'float' }
+                ,{ name:'description',type:"string"}
 
         ];
     this.fillCalcStore = function(ds,profcalcStore) {
@@ -40,7 +41,7 @@ function ProfTarifCalcs(){
                 ,{ dataIndex: 'tarif_id', header: 'tarif_id' , hidden:true }
                 ,{ dataIndex: 'proforma_id', header: 'proforma_id', hidden:true  }
                 ,{ dataIndex: 'val', header: 'val'  }
-
+                ,{ dataIndex:'description',header:"Remarks"}
             ]
         });
         return prof_tarif_calcGridControl;
