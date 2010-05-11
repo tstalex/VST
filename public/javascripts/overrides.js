@@ -6,7 +6,7 @@ Ext.ux.comboBoxRenderer = function(combo) {
         var rec = combo.store.getAt(idx);
         return rec.get(combo.displayField);  
       }else{
-          return value;
+          return value+" "+combo.store.getTotalCount();
       }
 
   };

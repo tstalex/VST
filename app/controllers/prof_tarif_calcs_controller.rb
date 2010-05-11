@@ -4,7 +4,6 @@ class ProfTarifCalcsController < ApplicationController
     render :json => { :success => false }, :status => :not_found
   end
 
-
   # GET /prof_tarif_calcs
   # GET /prof_tarif_calcs.ext_json
   def index
@@ -32,13 +31,14 @@ class ProfTarifCalcsController < ApplicationController
       tarifs= []
     end
     tarifs.each{|t|
+      if(t.is_manual)
+        next  
+      end
+
       calc= ProfTarifCalc.new
       calc.proforma=prof
       calc.tarif_id=t.id
-
       generated_value=calc.getCalculatedValue
-      calc.val= "%.2f" % generated_value[0]
-      calc.description=generated_value[1]
       profCalc.push calc}
     
   render :json => { :success => true, :data => profCalc }

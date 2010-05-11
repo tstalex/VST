@@ -59,7 +59,8 @@ Ext.ux.ProfTarifHelper = function(proforma){
             var TarifObj = proforma.calcGrid().store.recordType;
             var newTarif = new TarifObj({
                 tarif_id:obj.data[i].tarif_id,
-                val:obj.data[i].val
+                val:obj.data[i].val,
+                description:obj.data[i].description 
             });
 
             proforma.calcGrid().store.insert(0,newTarif);

@@ -17,6 +17,7 @@ class ProformasController < ApplicationController
       profCalc=  ProfTarifCalc.new
       profCalc.tarif_id=el["tarif_id"]
       profCalc.val=el["val"]
+      profCalc.description=el["description"]
       tarifs << profCalc
     }
     tarifs

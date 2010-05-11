@@ -145,6 +145,11 @@ function Proformas() {
                     header: 'Value',
                     dataIndex: 'val',
                     editor: new fm.TextField()
+                },
+                {
+                    header: 'Remark',
+                    dataIndex: 'description',
+                    editor: new fm.TextField()
                 }
             ]
         });
