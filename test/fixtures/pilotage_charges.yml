@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  diapason_id: 
+  gt_from: 
+  gt_to: 
+  tarif: 9.99
+
+two:
+  diapason_id: 
+  gt_from: 
+  gt_to: 
+  tarif: 9.99

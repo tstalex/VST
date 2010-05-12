@@ -1,0 +1,2 @@
+module PilotageDiapasonsHelper
+end

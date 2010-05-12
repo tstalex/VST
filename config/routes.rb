@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :pilotage_charges
+
+  map.resources :pilotage_diapasons
+
   map.connect "prof_tarif_calcs/gen_tarifs", :controller => 'prof_tarif_calcs', :action => 'gen_tarifs'
   map.connect "ports/tarifs", :controller => 'ports', :action => 'tarifs'
   
