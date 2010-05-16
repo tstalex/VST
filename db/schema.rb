@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100509090457) do
+ActiveRecord::Schema.define(:version => 20100515131251) do
 
   create_table "countries", :force => true do |t|
     t.string   "text"
@@ -29,6 +29,22 @@ ActiveRecord::Schema.define(:version => 20100509090457) do
     t.string   "code"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "pilotage_charges", :force => true do |t|
+    t.decimal  "tarif"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "gt_from"
+    t.integer  "gt_to"
+    t.integer  "diapason_id"
+  end
+
+  create_table "pilotage_diapasons", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.decimal  "from"
+    t.decimal  "to"
   end
 
   create_table "ports", :force => true do |t|
@@ -77,6 +93,7 @@ ActiveRecord::Schema.define(:version => 20100509090457) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "passengers"
+    t.integer  "pilotage"
   end
 
   create_table "tarif_calculations", :force => true do |t|

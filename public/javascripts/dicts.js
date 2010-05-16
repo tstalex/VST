@@ -25,9 +25,9 @@ function Dicts() {
         });
 
         var myData = [
-            [0,'Project'],
-            [1,'Calculated'],
-            [2,'Accepted']
+            [0,'Estimation'],
+            [1,'Proforma'],
+            [2,'Final DA']
         ];
         statusesStoreControl.loadData(myData);
         return statusesStoreControl;

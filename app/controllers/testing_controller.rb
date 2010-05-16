@@ -12,6 +12,13 @@ class TestingController < ApplicationController
 
   end
 
+  def lots (proforma)
+    pilotGtDiap= PilotageDiapason.find(:first, :conditions => ["\"from\">=?",6],  :order => "\"from\"")
+    logger.debug pilotGtDiap
+    pilotCharge= PilotageCharge.find(:first,:conditions => ["diapason_id=? and gt_from >=?",pilotGtDiap.id,proforma.gw],:order => "gt_from")
+     logger.debug pilotGtDiap
+  end
+
   def tonnage(proforma)
     val= case proforma.vessel.vessel_type
       when 6 then  #tanker
@@ -86,6 +93,7 @@ class TestingController < ApplicationController
 
   def evalt
     proforma = Proforma.find(2)
+    lots proforma
     formulas=""
     proforma.prof_tarif_calcs.each{ |pct|
       calculatedValue= pct.getCalculatedValue

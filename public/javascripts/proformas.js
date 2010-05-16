@@ -1,6 +1,7 @@
 var ddd = [];
 
 function Proformas() {
+    prof_cache.push(this);
     var proformaGridControl = null;
     var proformaEditControl = null;
     var proformaStoreControl = null;
@@ -98,7 +99,7 @@ function Proformas() {
             return calcgrid;
 
         var prof = new ProfTarifCalcs();
-        calcStore = new Ext.data.ArrayStore({fields:[
+        var calcStore = new Ext.data.ArrayStore({fields:[
             'id',
             'tarif_id',
             'proforma_id' ,
@@ -301,7 +302,7 @@ function Proformas() {
                                     name: 'sailed'
                                 },
                                 {
-                                    fieldLabel: 'GW',
+                                    fieldLabel: 'GT',
                                     xtype:"textfield",
                                     name: 'gw'
                                 },
@@ -309,6 +310,11 @@ function Proformas() {
                                     fieldLabel: 'calls',
                                     xtype:"textfield",
                                     name: 'calls'
+                                },
+                                {
+                                    fieldLabel: 'Pilotage',
+                                    xtype:"textfield",
+                                    name: 'pilotage'
                                 }
                             ]
                         },
@@ -469,7 +475,12 @@ function Proformas() {
                 ,
                 {
                     dataIndex: 'gw',
-                    header: 'gw'
+                    header: 'gt'
+                }
+                ,
+                {
+                    dataIndex: 'pilotage',
+                    header: 'Pilotage'
                 }
                 ,
                 {
@@ -552,6 +563,11 @@ function Proformas() {
                     }
                     ,
                     {
+                        name: 'pilotage' ,
+                        type: 'int'
+                    }
+                    ,
+                    {
                         name:"passengers",
                         type:'int'
                     },
@@ -587,10 +603,6 @@ function Proformas() {
                 }
             },
             writer: writer
-        });
-        proformaStoreControl.on("load", function(a, b, c) {
-            console.log(b.length);
-
         });
         proformaStoreControl.load();
         return proformaStoreControl;

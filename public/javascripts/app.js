@@ -1,3 +1,4 @@
+var prof_cache=[];
 var Currency= new Currencies();
 var Dict = new Dicts();
 var App = new Application();
@@ -6,6 +7,7 @@ var Calc = new TarifCalculations();
 var Ports = new Ports();
 var Vessel = new Vessels();
 var Tarif = new Tarifs();
+
 
 function Application() {
 

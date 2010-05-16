@@ -85,11 +85,6 @@ Ext.ux.ProfTarifHelper = function(proforma){
             sz.push(itm.data);
         });
         options.params.tarifs= Ext.util.JSON.encode(sz);
-        //rec.fields.add({name:'prof_tarif_calcs',type:'string'});
-        //rec.data.prof_tarif_calcs=sz;
-        //rec.set("prof_tarif_calcs",sz);
-        //rec.data.tarifs=sz;
-        //rec.json.tarifs=sz;
-        //console.log(rec);
+        
     }
 }

@@ -1,8 +1,8 @@
 class CreatePilotageDiapasons < ActiveRecord::Migration
   def self.up
     create_table :pilotage_diapasons do |t|
-      t.int, :from
-      t.int :to
+      t.integer :from
+      t.integer :to
 
       t.timestamps
     end
