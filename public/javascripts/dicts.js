@@ -7,7 +7,7 @@ function Dicts() {
     var ice_classStoreControl = null;
 
     var statusesStoreControl = null;
-
+          
     //proforma statuses
     this.statusesStore = function() {
         if (statusesStoreControl != null) {
@@ -16,7 +16,7 @@ function Dicts() {
         statusesStoreControl = new Ext.data.ArrayStore({
             // store configs
             autoDestroy: true,
-            storeId: 'myStore',
+            storeId: 'statusStore',
             idIndex: 0,
             fields: [
                 'id',
@@ -24,12 +24,12 @@ function Dicts() {
             ]
         });
 
-        var myData = [
+        proformaStatusesArray = [
             [0,'Estimation'],
             [1,'Proforma'],
             [2,'Final DA']
         ];
-        statusesStoreControl.loadData(myData);
+        statusesStoreControl.loadData(proformaStatusesArray);
         return statusesStoreControl;
     }
 

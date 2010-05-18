@@ -329,6 +329,7 @@ function Proformas() {
                                     valueField: 'id',
                                     displayField: 'name',
                                     fieldLabel: 'Status',
+                                    emptyText:"Select status...",
                                     name: 'status'
                                 })
                                 ,

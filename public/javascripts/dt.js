@@ -24,7 +24,7 @@ Ext.ux.form.DateTime = Ext.extend(Ext.form.Field, {
      * @cfg {String} hiddenFormat Format of datetime used to store value in hidden field
      * and submitted to server (defaults to 'Y-m-d H:i:s' that is mysql format)
      */
-    ,hiddenFormat:'Y-m-d H:i:s'
+    ,hiddenFormat:'c'
     /**
      * @cfg {Boolean} otherToNow Set other field to now() if not explicly filled in (defaults to true)
      */
@@ -50,11 +50,11 @@ Ext.ux.form.DateTime = Ext.extend(Ext.form.Field, {
     /**
      * @cfg {String} dateFormat Format of DateField. Can be localized. (defaults to 'm/y/d')
      */
-    ,dateFormat:'d.m.Y'
+    ,dateFormat:'m/d/y'
     /**
      * @cfg {String} timeFormat Format of TimeField. Can be localized. (defaults to 'g:i A')
      */
-    ,timeFormat:'G:i'
+    ,timeFormat:'g:i A'
     /**
      * @cfg {Object} dateConfig Config for DateField constructor.
      */
