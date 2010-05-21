@@ -249,7 +249,16 @@ Ext.ux.form.DateTime = Ext.extend(Ext.form.Field, {
             this.df.destroy();
             this.tf.destroy();
         }
-    } // eo function beforeDestroy
+    }
+    ,
+    setReadOnly:function(readOnly){
+         if(this.isRendered) {
+            this.df.setReadOnly(readOnly);
+            this.tf.setReadOnly(readOnly);
+        }
+    }
+
+    // eo function beforeDestroy
     // }}}
     // {{{
     /**

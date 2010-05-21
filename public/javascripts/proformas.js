@@ -257,13 +257,14 @@ function Proformas() {
                                     valueField: 'id',
                                     displayField: 'name',
                                     fieldLabel: 'Vessel',
+                                    forceSelection:true,
                                     name: 'vessel_id'
                                 }),
                                 new Ext.form.ComboBox({
                                     store: Ports.storeRest() ,
                                     triggerAction: 'all',
                                     typeAhead: false,
-                                    forceSelection:false,
+                                    forceSelection:true,
                                     mode: 'remote',
                                     valueField: 'id',
                                     displayField: 'name',
@@ -329,6 +330,7 @@ function Proformas() {
                                     valueField: 'id',
                                     displayField: 'name',
                                     fieldLabel: 'Status',
+                                    forceSelection:true,
                                     emptyText:"Select status...",
                                     name: 'status'
                                 })
@@ -341,6 +343,7 @@ function Proformas() {
                                     mode: 'remote',
                                     valueField: 'curr',
                                     displayField: 'curr',
+                                    forceSelection:true,
                                     fieldLabel: 'Currency',
                                     name: 'curr'
                                 })

@@ -260,8 +260,16 @@ function Ports() {
                     header:"Country",
                     dataIndex:"country",
                     sortable:true,
-                    hidden:false
-                }
+                    hidden:false,
+                    renderer:function(value){
+                        var rec=Dict.storeCountry().getById(value);
+                        if(rec){
+                            return rec.get("text");
+                        }else{
+                            return "Empty "+value;
+                        }
+                    }
+                 }
             ]
         });
         return portGridControl;

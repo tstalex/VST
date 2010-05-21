@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100515131251) do
+ActiveRecord::Schema.define(:version => 20100521043142) do
 
   create_table "countries", :force => true do |t|
     t.string   "text"
@@ -43,8 +43,8 @@ ActiveRecord::Schema.define(:version => 20100515131251) do
   create_table "pilotage_diapasons", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.decimal  "from"
-    t.decimal  "to"
+    t.decimal  "pilotage_from"
+    t.decimal  "pilotage_to"
   end
 
   create_table "ports", :force => true do |t|

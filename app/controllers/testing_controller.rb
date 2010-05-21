@@ -13,10 +13,15 @@ class TestingController < ApplicationController
   end
 
   def lots (proforma)
-    pilotGtDiap= PilotageDiapason.find(:first, :conditions => ["\"from\">=?",6],  :order => "\"from\"")
-    logger.debug pilotGtDiap
-    pilotCharge= PilotageCharge.find(:first,:conditions => ["diapason_id=? and gt_from >=?",pilotGtDiap.id,proforma.gw],:order => "gt_from")
-     logger.debug pilotGtDiap
+    pilotGtDiap= PilotageDiapason.find(:first, :conditions => ["? >=pilotage_from and ? <=pilotage_to", proforma.pilotage,proforma.pilotage ],  :order => "pilotage_from")
+
+    if pilotGtDiap.nil?
+      pilotGtDiap= PilotageDiapason.last
+    end
+    pilotCharge= PilotageCharge.find(:first,:conditions => ["diapason_id=? and ? >=gt_from and ? <=gt_to",pilotGtDiap.id,proforma.gw,proforma.gw],:order => "gt_from")
+    
+
+    pilotCharge.tarif
   end
 
   def tonnage(proforma)
@@ -93,12 +98,16 @@ class TestingController < ApplicationController
 
   def evalt
     proforma = Proforma.find(2)
-    lots proforma
     formulas=""
     proforma.prof_tarif_calcs.each{ |pct|
       calculatedValue= pct.getCalculatedValue
-      formulas<< ("%s %.2f<br/>" % [pct.tarif.name, calculatedValue])
+      dd =Array.new
+      dd << pct.tarif.name
+      dd= dd + calculatedValue
+      formulas << ( "%s - %.2f Remark: %s <br/>" % dd)
     }
+    formulas << "<br/>"
+    formulas << ("Pilotage charge for %s miles. GT %s -%.2f" % [proforma.pilotage,proforma.gw, lots(proforma)]) 
     render :text=> formulas
 
   end
