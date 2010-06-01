@@ -10,7 +10,7 @@ function Dicts() {
           
     //proforma statuses
     this.statusesStore = function() {
-        if (statusesStoreControl != null) {
+        if (statusesStoreControl != null && !statusesStoreControl.isDestroyed) {
             return statusesStoreControl;
         }
         statusesStoreControl = new Ext.data.ArrayStore({

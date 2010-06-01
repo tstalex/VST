@@ -1,15 +1,35 @@
 Ext.namespace("Ext.ux");
-Ext.ux.comboBoxRenderer = function(combo) {
-  return function(value) {
-    var idx = combo.store.find(combo.valueField, value);
-      if(idx>-1){
-        var rec = combo.store.getAt(idx);
-        return rec.get(combo.displayField);  
-      }else{
-          return value+" "+combo.store.getTotalCount();
-      }
 
-  };
+
+Ext.ux.boolRenderer = function() {
+    return function(value) {
+        return String.format("{0}", (value == 1) ? 'Yes' : 'No');
+    }
+}
+
+Ext.ux.storeRenderer = function(store, display_field) {
+    return function(value) {
+        var idx = store.find("id", value);
+        if (idx > -1) {
+            var rec = store.getAt(idx);
+            return rec.data[display_field];
+        } else {
+            return value;
+        }
+    }
+}
+
+Ext.ux.comboBoxRenderer = function(combo) {
+    return function(value) {
+        var idx = combo.store.find(combo.valueField, value);
+        if (idx > -1) {
+            var rec = combo.store.getAt(idx);
+            return rec.get(combo.displayField);
+        } else {
+            return value + " " + combo.store.getTotalCount();
+        }
+
+    };
 }
 
 Ext.override(Ext.FormPanel, {
@@ -17,15 +37,15 @@ Ext.override(Ext.FormPanel, {
     controller:null,
     addNew:function(grid) {
         this.grid = grid;
-        if(grid.getSelectionModel().getSelected())
+        if (grid.getSelectionModel().getSelected())
             grid.getSelectionModel().clearSelections();
         var p = new grid.store.recordType();
         this.setValues(p.data);
         this.setEditable(true);
     }
     ,
-    saveData : function(){
-        var grid=this.controller.gridPanel(); 
+    saveData : function() {
+        var grid = this.controller.gridPanel();
         var rec = grid.getSelectionModel().getSelected();
         if (rec == null) {
             rec = new grid.store.recordType();
@@ -117,7 +137,7 @@ Ext.override(Ext.FormPanel, {
     }
     ,
     loadData : function() {
-        var record = (this.grid.getSelectionModel().getSelected())? this.grid.getSelectionModel().getSelected() : new this.grid.store.recordType();
+        var record = (this.grid.getSelectionModel().getSelected()) ? this.grid.getSelectionModel().getSelected() : new this.grid.store.recordType();
         var values = record.data;
         this.setValues(values);
         this.setEditable(false);
@@ -125,7 +145,7 @@ Ext.override(Ext.FormPanel, {
     },
     loadGridData : function(grid) {
         this.grid = grid;
-        var record = (grid.getSelectionModel().getSelected())? grid.getSelectionModel().getSelected() : new grid.store.recordType();
+        var record = (grid.getSelectionModel().getSelected()) ? grid.getSelectionModel().getSelected() : new grid.store.recordType();
         var values = record.data;
         this.setValues(values);
         this.setEditable(false);
@@ -134,7 +154,7 @@ Ext.override(Ext.FormPanel, {
     ,
     resetData: function(grid) {
         this.grid = grid;
-        var p = (grid.getSelectionModel().getSelected())? grid.getSelectionModel().getSelected() : new grid.store.recordType();
+        var p = (grid.getSelectionModel().getSelected()) ? grid.getSelectionModel().getSelected() : new grid.store.recordType();
         this.setValues(p.data);
         this.setEditable(false);
     }
@@ -153,15 +173,15 @@ Ext.override(Ext.FormPanel, {
         });
         return this;
     },
-    getFieldByName: function(name){
-        var ret=null;     
-        this.getForm().items.each(function(field){
-                 if(field.name==name){
-                     ret= field;
-                 }
-             });
-        if(ret==null)
-            console.log("Field "+name+" not found!");
+    getFieldByName: function(name) {
+        var ret = null;
+        this.getForm().items.each(function(field) {
+            if (field.name == name) {
+                ret = field;
+            }
+        });
+        if (ret == null)
+            console.log("Field " + name + " not found!");
         return ret;
     }
 });
@@ -174,8 +194,8 @@ Ext.override(Ext.grid.GridPanel, {
     }
 });
 
-Ext.override(Ext.Button,{
-    getFormPanel:function(){
+Ext.override(Ext.Button, {
+    getFormPanel:function() {
         return this.findParentByType("form");
     }
 });

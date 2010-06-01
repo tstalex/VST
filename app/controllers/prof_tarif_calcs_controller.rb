@@ -1,5 +1,6 @@
 class ProfTarifCalcsController < ApplicationController
 
+  require "holiday"
   rescue_from ActiveRecord::RecordNotFound do |exception|
     render :json => { :success => false }, :status => :not_found
   end
@@ -31,7 +32,7 @@ class ProfTarifCalcsController < ApplicationController
       tarifs= []
     end
     tarifs.each{|t|
-      if(t.is_manual)
+      if(t.is_manual)                                                         
         next  
       end
 

@@ -89,9 +89,37 @@ function Tarifs() {
                         items:[
                             tarifCalculationField,
                             {
-                                xtype:"textfield",
-                                fieldLabel: 'Name',
-                                name: 'name'
+                                xtype:"container",
+                                layout:"column",
+                                items:[
+                                    {
+                                        xtype:"container",
+                                        layout:"form",
+                                        items:{
+                                            xtype:"textfield",
+                                            fieldLabel: 'Name',
+                                            name: 'name'
+                                        }
+                                    }
+                                    ,
+                                    {
+                                        xtype:"container",
+                                        layout:"form",
+                                        items:new Ext.form.ComboBox({
+                                            store: Currency.currencyStore(),
+                                            typeAhead: true,
+                                            triggerAction: 'all',
+                                            lazyRender:true,
+                                            mode: 'local',
+                                            valueField: 'id',
+                                            displayField: 'curr',
+                                            fieldLabel: 'Currency',
+                                            forceSelection:true,
+                                            name: 'currency_id'
+                                        })
+                                    }
+                                    ,
+                                ]
                             },
                             {
                                 xtype:"container",
@@ -227,13 +255,18 @@ function Tarifs() {
                 {
                     dataIndex: 'is_manual',
                     header: 'manual',
-                    hidden:true
+                    renderer:Ext.ux.boolRenderer()
                 }
                 ,
                 {
                     dataIndex: 'formula',
                     header: 'formula',
                     hidden:true
+                },
+                {
+                    dataIndex: 'currency_id',
+                    header: 'Currency',
+                    renderer:Ext.ux.storeRenderer(Currency.currencyStore(), "curr")
                 }
 
             ]
@@ -289,6 +322,10 @@ function Tarifs() {
             {
                 name:"remark",
                 type:"string"
+            },
+            {
+                name:"currency_id",
+                type:"int"
             }
 
         ]);

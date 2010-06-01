@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100521043142) do
+ActiveRecord::Schema.define(:version => 20100531051717) do
 
   create_table "countries", :force => true do |t|
     t.string   "text"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20100521043142) do
     t.string   "curr"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "rate"
   end
 
   create_table "ice_classes", :force => true do |t|
@@ -114,7 +115,7 @@ ActiveRecord::Schema.define(:version => 20100521043142) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "remark"
-    t.string   "curr"
+    t.integer  "currency_id"
   end
 
   create_table "vessel_types", :force => true do |t|

@@ -284,9 +284,9 @@ function Proformas() {
                                 }
                                 ,
                                 {
-                                    fieldLabel: 'registration_date',
+                                    fieldLabel: 'Registration date',
                                     xtype:"datefield",
-                                    name: 'Registration_date'
+                                    name: 'registration_date'
                                 }
                             ]
                         },

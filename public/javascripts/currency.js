@@ -1,30 +1,31 @@
-function Currencies(){
-    var currencyGridControl= null;
-    var currencyEditControl=null;
-    var currencyStoreControl=null;
-    var currencyMainControl=null;
+function Currencies() {
+    var currencyGridControl = null;
+    var currencyEditControl = null;
+    var currencyStoreControl = null;
+    var currencyMainControl = null;
 
-    this.del= function(){
-        this.currencyEditPanel().deleteGridData(this.currencyGrid());
+
+    this.del = function() {
+        this.editPanel().deleteGridData(this.currencyGrid());
     };
 
-    this.edit=function(){
-        this.currencyEditPanel().loadGridData(this.currencyGrid());
-        this.currencyEditPanel().setEditable(true);
+    this.edit = function() {
+        this.editPanel().loadData();
+        this.editPanel().setEditable(true);
     };
-    this.newRow=function(){
+    this.newRow = function() {
         this.editPanel().addNew(this.gridPanel());
     };
 
     this.add = function() {
-        this.editPanel().saveGridSata(this.gridPanel());
-    };
-            
-    this.reset = function() {
-        currencyEditPanel().loadGridData(this.currencyGrid());
+        this.editPanel().saveData();
     };
 
-    this.mainPanel = function(){
+    this.reset = function() {
+        this.editPanel().loadData();
+    };
+
+    this.mainPanel = function() {
         if (currencyMainControl != null && !currencyMainControl.isDestroyed) {
             return  currencyMainControl;
         }
@@ -33,20 +34,20 @@ function Currencies(){
             title:"Currency",
             items:[this.gridPanel(),this.editPanel() ]
         });
-        this.gridPanel().viewPanel =this.editPanel();
-        this.editPanel().grid=this.gridPanel();
+        this.gridPanel().viewPanel = this.editPanel();
+        this.editPanel().grid = this.gridPanel();
 
         this.gridPanel().getSelectionModel().on("rowselect", function(rsm, rowIndex, e) {
-            rsm.grid.viewPanel.loadGridData();
+            rsm.grid.viewPanel.loadData();
         });
         this.gridPanel().getSelectionModel().on("rowdeselect", function(rsm, rowIndex, e) {
-            rsm.grid.viewPanel.loadGridData();
+            rsm.grid.viewPanel.loadData();
         });
 
         return currencyMainControl;
     };
-            
-    this.editPanel=function(){
+
+    this.editPanel = function() {
         if (currencyEditControl != null && !currencyEditControl.isDestroyed) {
             return  currencyEditControl;
         }
@@ -55,12 +56,13 @@ function Currencies(){
             url:'/currencies',
             frame:true,
             border:false,
-            controller:this,
             bodyBorder :false,
             defaults:{bodyBorder :false,frame:true,border:false,xtype:'textfield'},
             layout:"form",
             items: [
-                 { fieldLabel: 'curr',name: 'curr' }
+                { fieldLabel: 'curr',name: 'curr' }
+                ,
+                { fieldLabel: 'rate',name: 'rate' }
 
             ],
 
@@ -72,7 +74,8 @@ function Currencies(){
                     handler: function(btn, evnt) {
                         btn.getFormPanel().controller.newRow();
                     }
-                },{
+                },
+                {
                     text: 'Edit',
                     iconCls:"silk-page-edit",
                     handler: function(btn, evnt) {
@@ -108,11 +111,11 @@ function Currencies(){
                 ;
         currencyEditControl.data = {};
         currencyEditControl.setEditable(false);
-        return currencyEditControl;    
+        return currencyEditControl;
     }
 
-    this.gridPanel=function(){
-         if (currencyGridControl != null && !currencyGridControl.isDestroyed)
+    this.gridPanel = function() {
+        if (currencyGridControl != null && !currencyGridControl.isDestroyed)
             return currencyGridControl;
 
         currencyGridControl = new Ext.grid.GridPanel(
@@ -122,7 +125,6 @@ function Currencies(){
             store:this.currencyStore(),
             collapsible:true,
             split:true,
-            controller:this,
             columns:[
                 {
                     id:"id",
@@ -131,15 +133,18 @@ function Currencies(){
                     sortable:true,
                     hidden:true
                 }
-                ,{ dataIndex: 'curr', header: 'curr'  }
+                ,
+                { dataIndex: 'curr', header: 'curr'  }
+                ,
+                { dataIndex: 'rate', header: 'rate'  }
 
             ]
         });
         return currencyGridControl;
     }
- 
-    this.currencyStore= function(){
-       if (currencyStoreControl != null)
+
+    this.currencyStore = function() {
+        if (currencyStoreControl != null)
             return currencyStoreControl;
         var proxy = new Ext.data.HttpProxy({
             url: '/currencies'
@@ -154,7 +159,10 @@ function Currencies(){
 
         }, [
             { name: 'id', mapping: 'id' }
-                 ,{ name: 'curr' , type: 'string' }
+            ,
+            { name: 'curr' , type: 'string' }
+            ,
+            { name: 'rate' , type: 'decimal' }
 
         ]);
 
@@ -173,6 +181,7 @@ function Currencies(){
             writer: writer
         });
         currencyStoreControl.load();
-        return currencyStoreControl; 
+        return currencyStoreControl;
     }
+
 }
