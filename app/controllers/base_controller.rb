@@ -120,13 +120,12 @@ class BaseController < ApplicationController
   end
 
   def import
-    PilotageCharge.delete_all
-    file= File.new("c:/Users/denis/Desktop/lightandnavi.xml")
+    file= File.new("c:/Users/denis/Desktop/loots.xml")
     xm1=Document.new file
     rr="Done"
     XPath.each(xm1, "//tr") {
             |element|
-      setuplight(element)
+      setupDiapason(element)
     }
     response :html => rr
   end

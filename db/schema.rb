@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100604045803) do
+ActiveRecord::Schema.define(:version => 20100605101306) do
 
   create_table "countries", :force => true do |t|
     t.string   "text"
@@ -148,7 +148,7 @@ ActiveRecord::Schema.define(:version => 20100604045803) do
     t.integer  "net_tonnage"
     t.integer  "cap1"
     t.integer  "paxcap"
-    t.integer  "ice_class"
+    t.integer  "ice_class_id"
     t.string   "calls"
     t.string   "contact_info"
     t.float    "max_draft"

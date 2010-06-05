@@ -1,6 +1,5 @@
+require "#{RAILS_ROOT}/HolidayValidator.rb"
 class ProfTarifCalcsController < ApplicationController
-
-  require "holiday"
   rescue_from ActiveRecord::RecordNotFound do |exception|
     render :json => { :success => false }, :status => :not_found
   end
