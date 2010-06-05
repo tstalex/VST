@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  gt: 
+  lighthouse: 9.99
+  navi: 9.99
+
+two:
+  gt: 
+  lighthouse: 9.99
+  navi: 9.99

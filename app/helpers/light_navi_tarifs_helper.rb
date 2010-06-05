@@ -1,0 +1,2 @@
+module LightNaviTarifsHelper
+end

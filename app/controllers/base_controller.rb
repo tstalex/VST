@@ -51,11 +51,44 @@ class BaseController < ApplicationController
     port.save
   end
 
+
+  def setuplight (element)
+    td=Array.new
+    tarifs= Array.new
+    tds= XPath.each (element){|tdel|
+      td.push tdel
+    }
+    diap= td[0].text.strip
+    tarifs.push td[1].text.gsub(" ","")  #light
+    tarifs.push td[2].text.gsub(" ","") #navi
+
+    if diap.index("ule").nil?
+      arr= diap.split("-")
+      gt_f=(arr[0]=="") ? 0 : arr[0].strip.gsub(" ","").to_i
+      gt_t=arr[1].strip.gsub(" ","").to_i
+    else
+      arr= diap.split("ule ")
+      gt_f=arr[1].strip.gsub(" ","").to_i
+      gt_t=99999999
+    end
+
+
+
+      pc= LightNaviTarif.new
+      pc.gt_from=gt_f
+      pc.gt_to=gt_t
+      pc.lighthouse= tarifs[0].to_d
+      pc.navi= tarifs[1].to_d     
+      pc.save
+
+  end
+
+
   def setupDiapason(el)
     td=Array.new
     tarifs= Array.new
-    tds= XPath.each (el){|tdel|
-     td.push tdel
+    tds= XPath.each (el){ |tdel|
+      td.push tdel
     }
     diap= td[0].text.strip
     tarifs.push td[1].text.strip
@@ -76,27 +109,24 @@ class BaseController < ApplicationController
     end
 
     for i in 0..tarifs.length-1
-        pc= PilotageCharge.new
-        pc.diapason_id=i+1
-        pc.gt_from=gt_f
-        pc.gt_to=gt_t
-        pc.tarif= tarifs[i]
-        pc.save
-      end
+      pc= PilotageCharge.new
+      pc.diapason_id=i+1
+      pc.gt_from=gt_f
+      pc.gt_to=gt_t
+      pc.tarif= tarifs[i]
+      pc.save
+    end
 
   end
 
-
-
-
   def import
     PilotageCharge.delete_all
-    file= File.new("c:/Users/denis/Desktop/loots.xml")
+    file= File.new("c:/Users/denis/Desktop/lightandnavi.xml")
     xm1=Document.new file
     rr="Done"
     XPath.each(xm1, "//tr") {
-      |element|
-      setupDiapason(element)
+            |element|
+      setuplight(element)
     }
     response :html => rr
   end

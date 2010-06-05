@@ -48,6 +48,10 @@ function Proformas() {
                     {
                         name:"remark",
                         type:"string"
+                    },
+                    {
+                        name:"currency_id",
+                        type:"int"
                     }
                 ]
                 );
@@ -80,8 +84,6 @@ function Proformas() {
         var item = frm.items.get("port_id");
         var port = -1;
         if (item) {
-            console.log("selected item " + item);
-            //panel is fully loaded
             port = item.getValue();
         }
         tarifByPortStore.load({params:{port_id:port}});
@@ -151,6 +153,12 @@ function Proformas() {
                     header: 'Remark',
                     dataIndex: 'description',
                     editor: new fm.TextField()
+                },
+                {
+                    header: 'Currency',
+                    dataIndex: 'tarif_id',
+                    editable:false,
+                    renderer: Ext.ux.forignKeyRenderer(Currency.currencyStore(), combo.store,"currency_id","curr")
                 }
             ]
         });

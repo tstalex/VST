@@ -15,7 +15,6 @@ Ext.ux.ProfTarifHelper = function(proforma){
 
     this.generateTarifs=function() {
         var data =  proforma.gridPanel().getSelectionModel().getSelected().data;
-        console.log(this);
         Ext.Ajax.request({
             url: '/prof_tarif_calcs/gen_tarifs',
             success: this.loadGeneratedCalc,

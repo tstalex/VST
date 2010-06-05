@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100531051717) do
+ActiveRecord::Schema.define(:version => 20100604045803) do
 
   create_table "countries", :force => true do |t|
     t.string   "text"
@@ -30,6 +30,15 @@ ActiveRecord::Schema.define(:version => 20100531051717) do
     t.string   "code"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "light_navi_tarifs", :force => true do |t|
+    t.decimal  "lighthouse"
+    t.decimal  "navi"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "gt_from"
+    t.integer  "gt_to"
   end
 
   create_table "pilotage_charges", :force => true do |t|

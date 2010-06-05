@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :light_navi_tarifs
+
   map.resources :pilotage_charges
 
   map.resources :pilotage_diapasons

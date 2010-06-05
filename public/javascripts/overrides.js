@@ -9,10 +9,22 @@ Ext.ux.boolRenderer = function() {
 
 Ext.ux.storeRenderer = function(store, display_field) {
     return function(value) {
-        var idx = store.find("id", value);
+        return store.searchField(display_field,value);
+    }
+}
+Ext.ux.forignKeyRenderer = function(pkStore, fkStore, fk, display_field) {
+    return function(value) {
+
+
+        var idx = fkStore.find("id", value);
         if (idx > -1) {
-            var rec = store.getAt(idx);
-            return rec.data[display_field];
+            var rec = fkStore.getAt(idx);
+            var fkValue = rec.data[fk]
+            if (fkValue && fkValue > -1) {
+                return pkStore.searchField(display_field,fkValue)
+            } else {
+                return "_";
+            }
         } else {
             return value;
         }
@@ -219,4 +231,17 @@ Ext.override(Ext.form.FieldSet, {
     setReadOnly: function(isRo) {
         //do nothing
     }
+});
+
+Ext.override(Ext.data.Store, {
+    searchField: function(field_name, rec_id) {
+        var idx = this.find("id", rec_id);
+        if (idx > -1) {
+            var rec = this.getAt(idx);
+            return rec.data[field_name];
+        } else {
+            return rec_id;
+        }
+    }
+
 });

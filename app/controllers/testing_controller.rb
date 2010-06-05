@@ -13,6 +13,29 @@ class TestingController < ApplicationController
 
   end
 
+  def calcLh (proforma)
+    ret=0
+    remark=""
+    ln= LightNaviTarif.find(:first, :conditions => [ ":u >=gt_from and :u<=gt_to ", { :u => proforma.gw }])
+    ret=ln.lighthouse
+
+    if proforma.vssel.vessel_flag.is_euro==1
+      ret= ret * 0.75
+      remark << " incl. 25% rebate"
+    end
+    unless (["PAS","CRU","CCR"].index( proforma.vessel.type.code).nil?)
+      ret= ret * 0.6
+      remark << " incl. 40% rebate"
+    end
+    unless (["PAS","CRU","CCR"].index( proforma.vessel.type.code).nil?)
+      ret= ret * 0.6
+      remark << " incl. 40% rebate"
+    end
+    
+
+    [ret, remark]
+  end
+
   def calcVal (proforma)
     ret=0
     remark=""
@@ -70,8 +93,8 @@ class TestingController < ApplicationController
     proforma = Proforma.find(2)
     formulas=""
 
-    formulas << "%s %s" % calcVal(proforma)
-    formulas << " vessel %s" % proforma.vessel.type.name
+    formulas << "%s %s" % calcLh(proforma)
+    formulas << " vessel %s" % proforma.gw
     render :text=> formulas
 
   end

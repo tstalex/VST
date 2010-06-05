@@ -42,6 +42,7 @@ function ProfTarifCalcs(){
                 ,{ dataIndex: 'proforma_id', header: 'proforma_id', hidden:true  }
                 ,{ dataIndex: 'val', header: 'val'  }
                 ,{ dataIndex:'description',header:"Remarks"}
+                ,
             ]
         });
         return prof_tarif_calcGridControl;
