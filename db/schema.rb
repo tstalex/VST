@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100605101306) do
+ActiveRecord::Schema.define(:version => 20100608045932) do
 
   create_table "countries", :force => true do |t|
     t.string   "text"
@@ -90,7 +90,6 @@ ActiveRecord::Schema.define(:version => 20100605101306) do
 
   create_table "proformas", :force => true do |t|
     t.integer  "status"
-    t.string   "curr"
     t.date     "date_curr"
     t.integer  "vessel_id"
     t.integer  "port_id"
@@ -104,6 +103,7 @@ ActiveRecord::Schema.define(:version => 20100605101306) do
     t.datetime "updated_at"
     t.integer  "passengers"
     t.integer  "pilotage"
+    t.integer  "currency_id"
   end
 
   create_table "tarif_calculations", :force => true do |t|

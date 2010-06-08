@@ -9,7 +9,7 @@ Ext.ux.boolRenderer = function() {
 
 Ext.ux.storeRenderer = function(store, display_field) {
     return function(value) {
-        return store.searchField(display_field,value);
+        return store.searchField(display_field, value);
     }
 }
 Ext.ux.forignKeyRenderer = function(pkStore, fkStore, fk, display_field) {
@@ -21,7 +21,7 @@ Ext.ux.forignKeyRenderer = function(pkStore, fkStore, fk, display_field) {
             var rec = fkStore.getAt(idx);
             var fkValue = rec.data[fk]
             if (fkValue && fkValue > -1) {
-                return pkStore.searchField(display_field,fkValue)
+                return pkStore.searchField(display_field, fkValue)
             } else {
                 return "_";
             }
@@ -245,3 +245,17 @@ Ext.override(Ext.data.Store, {
     }
 
 });
+
+Ext.override(Ext.grid.EditorGridPanel, {
+    handler_to_makeReadOnly: function() {
+        return false;
+    },
+    setPanelReadOnly:function(isRo)
+    {
+        if (isRo) {
+            this.on('beforeedit', this.handler_to_makeReadOnly, this);
+        } else {
+            this.un('beforeedit', this.handler_to_makeReadOnly, this);
+        }
+    }
+})

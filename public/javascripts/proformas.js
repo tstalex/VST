@@ -100,14 +100,21 @@ function Proformas() {
         if (calcgrid != null && !calcgrid.isDestroyed)
             return calcgrid;
 
-        var prof = new ProfTarifCalcs();
-        var calcStore = new Ext.data.ArrayStore({fields:[
-            'id',
-            'tarif_id',
-            'proforma_id' ,
-            'val'
+        var editor = new Ext.ux.grid.RowEditor({
+            saveText: 'Update'
+        });
 
-        ]});
+        var prof = new ProfTarifCalcs();
+        var calcStore = new Ext.data.ArrayStore(
+        {
+            fields:[
+                'id',
+                'tarif_id',                  
+                'proforma_id' ,
+                'val' ]
+
+        }
+                );
         var fm = Ext.form;
         var combo = new fm.ComboBox({
             allowBlank: false,
@@ -158,8 +165,9 @@ function Proformas() {
                     header: 'Currency',
                     dataIndex: 'tarif_id',
                     editable:false,
-                    renderer: Ext.ux.forignKeyRenderer(Currency.currencyStore(), combo.store,"currency_id","curr")
+                    renderer: Ext.ux.forignKeyRenderer(Currency.currencyStore(), combo.store, "currency_id", "curr")
                 }
+
             ]
         });
 
@@ -170,17 +178,64 @@ function Proformas() {
             frame: true,
             clicksToEdit: 1,
             controller:this,
+            setReadOnly:function(isRo) {
+                this.setPanelReadOnly(isRo);
+                var bt = Proforma.calcGrid().getTopToolbar().items;
+                if (!isRo) {
+                    bt.get(0).enable();
+                    bt.get(1).enable();
+                    bt.get(2).enable();
+                } else {
+                    bt.get(0).disable();
+                    bt.get(1).disable();
+                    bt.get(2).disable();
+                }
+            }
+            ,
             tbar: [
                 {
                     text: 'Generate',
+                    iconCls:"silk-image",
+                    listeners:{
+                        scope: this.tarifHelper,
+                        'click': this.tarifHelper.generateTarifs
+                    }
+                },
+                {
+                    text: 'Add',
+                    iconCls:"silk-add",
+                    handler: function() {
+                        var TarifObj = Proforma.calcGrid().store.recordType;
+                        var newTarif = new TarifObj({
+                            tarif_id:1,
+                            val:0,
+                            description:"Empty"
+                        });
+                        Proforma.calcGrid().store.insert(0, newTarif);
+                        Proforma.calcGrid().getView().refresh();
+                        Proforma.calcGrid().getSelectionModel().selectRow(0);
+                    }
+                },
+                {
+                    text: 'Delete',
+                    iconCls:"silk-delete",
                     listeners:{
                         scope: this.tarifHelper,
                         'click': this.tarifHelper.generateTarifs
                     }
                 }
             ]
+        }
+                )
+                ;
+
+        calcgrid.store.on("update", function(a,b,c){
+            Proforma.tarifHelper.calcTotal();
         });
-        return calcgrid;
+        calcgrid.store.on("add", function(a,b,c){
+            Proforma.tarifHelper.calcTotal();
+        });
+       return calcgrid;
     }
 
     this.fail = function(resp, options) {
@@ -194,6 +249,8 @@ function Proformas() {
     this.edit = function() {
         this.editPanel().loadData();
         this.editPanel().setEditable(true);
+        this.calcGrid().setReadOnly(false);
+
     };
     this.newRow = function() {
         this.editPanel().addNew(this.gridPanel());
@@ -222,12 +279,14 @@ function Proformas() {
         this.gridPanel().getSelectionModel().on("rowselect", function(rsm, rowIndex, e) {
             rsm.grid.viewPanel.loadData();
             rsm.grid.controller.tarifHelper.handleProformaRowChanged();
+            rsm.grid.controller.tarifHelper.calcTotal();
 
 
         });
         this.gridPanel().getSelectionModel().on("rowdeselect", function(rsm, rowIndex, e) {
             rsm.grid.viewPanel.loadData();
             rsm.grid.controller.tarifHelper.handleProformaRowChanged();
+            rsm.grid.controller.tarifHelper.calcTotal();
         });
 
         return proformaMainControl;
@@ -250,7 +309,7 @@ function Proformas() {
                 {
                     region:"north",
                     layout:"column",
-                    height:105,
+                    height:127,
                     split:true,
                     defaults:{xtype:"panel",layout:"form",columnWidth:.3},
                     items:[
@@ -295,6 +354,13 @@ function Proformas() {
                                     fieldLabel: 'Registration date',
                                     xtype:"datefield",
                                     name: 'registration_date'
+                                },{
+                                    fieldLabel:"Total",
+                                    xtype:"textfield",
+                                    readOnly:true,
+                                    submitValue:false,
+                                    plugins:[new Ext.ux.InputTextMask("####-##")],
+                                    name:"total_eur"
                                 }
                             ]
                         },
@@ -349,11 +415,11 @@ function Proformas() {
                                     triggerAction: 'all',
                                     lazyRender:true,
                                     mode: 'remote',
-                                    valueField: 'curr',
+                                    valueField: 'id',
                                     displayField: 'curr',
                                     forceSelection:true,
                                     fieldLabel: 'Currency',
-                                    name: 'curr'
+                                    name: 'currency_id'
                                 })
                                 ,{
                                     fieldLabel: 'Date of rates',
@@ -390,6 +456,7 @@ function Proformas() {
                     iconCls:"silk-page-edit",
                     handler: function(btn, evnt) {
                         btn.getFormPanel().controller.edit();
+                        Proforma.calcGrid().setReadOnly(false);
                     }
                 },
                 {
@@ -397,6 +464,7 @@ function Proformas() {
                     iconCls:"icon-save",
                     handler: function(btn, evnt) {
                         btn.getFormPanel().controller.add();
+                        Proforma.calcGrid().setReadOnly(true);
                     }
                 },
                 {
@@ -404,6 +472,7 @@ function Proformas() {
                     iconCls:"silk-cancel",
                     handler: function(btn, evnt) {
                         btn.getFormPanel().controller.reset();
+                        Proforma.calcGrid().setReadOnly(true);
                     }
                 },
                 {
@@ -411,6 +480,7 @@ function Proformas() {
                     iconCls:"silk-delete",
                     handler: function(btn, evnt) {
                         btn.getFormPanel().controller.del();
+                        Proforma.calcGrid().setReadOnly(true);
                     }
                 },
 
@@ -421,6 +491,8 @@ function Proformas() {
                 ;
         proformaEditControl.data = {};
         proformaEditControl.setEditable(false);
+        this.calcGrid().setReadOnly(true)
+
         return proformaEditControl;
     }
 
@@ -447,12 +519,14 @@ function Proformas() {
                 ,
                 {
                     dataIndex: 'status',
-                    header: 'status'
+                    header: 'status',
+                    renderer: Ext.ux.storeRenderer(Dict.statusesStore(), "name")
                 }
                 ,
                 {
-                    dataIndex: 'curr',
-                    header: 'curr'
+                    dataIndex: 'currency_id',
+                    header: 'Currency',
+                    renderer: Ext.ux.storeRenderer(Currency.currencyStore(), "curr")
                 }
                 ,
                 {
@@ -462,12 +536,14 @@ function Proformas() {
                 ,
                 {
                     dataIndex: 'vessel_id',
-                    header: 'vessel_id'
+                    header: 'Vessel',
+                    renderer: Ext.ux.storeRenderer(Vessel.vesselStore(), "name")
                 }
                 ,
                 {
                     dataIndex: 'port_id',
-                    header: 'port_id'
+                    header: 'Port',
+                    renderer: Ext.ux.storeRenderer(Ports.storeRest(), "name")
                 }
                 ,
                 {
@@ -528,8 +604,8 @@ function Proformas() {
                     }
                     ,
                     {
-                        name: 'curr' ,
-                        type: 'string'
+                        name: 'currency_id' ,
+                        type: 'int'
                     }
                     ,
                     {

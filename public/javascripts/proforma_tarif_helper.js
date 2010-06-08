@@ -2,6 +2,17 @@ Ext.namespace("Ext.ux");
 
 Ext.ux.ProfTarifHelper = function(proforma){
 
+    this.calcTotal=function(){
+        var valTotal=0
+        proforma.calcGrid().store.each(function(row){
+          tarif_id= row.get("tarif_id");
+          val=row.get("val");
+          curr= Tarif.tarifStore().searchField("currency_id",tarif_id);
+          valTotal+= parseFloat(val);
+      },this);
+      proforma.editPanel().getFieldByName("total_eur").setValue(valTotal);
+    }
+
     this.handleProformaRowChanged=function(){
         this.handlePortChanged();
         this.fillProfTarifs();

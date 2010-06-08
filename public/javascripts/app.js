@@ -1,12 +1,12 @@
-var prof_cache=[];
+var prof_cache = [];
 Ext.BLANK_IMAGE_URL = '/javascripts/resources/images/default/s.gif';
-var Currency= new Currencies();
+var Currency = new Currencies();
 var Dict = new Dicts();
-var App = new Application();
-var Proforma= new Proformas();
-var Calc = new TarifCalculations();
-var Ports = new Ports();
 var Vessel = new Vessels();
+var Ports = new Ports();
+var App = new Application();
+var Proforma = new Proformas();
+var Calc = new TarifCalculations();
 var Tarif = new Tarifs();
 
 
@@ -97,6 +97,11 @@ function Application() {
         },
         {
             store:Currency.currencyStore()
+        },
+        {
+            store:Vessel.vesselStore()
+        },{
+            store:Ports.storeRest()
         }
     ];
 
