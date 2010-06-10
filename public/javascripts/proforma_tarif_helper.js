@@ -1,31 +1,39 @@
 Ext.namespace("Ext.ux");
 
-Ext.ux.ProfTarifHelper = function(proforma){
+Ext.ux.ProfTarifHelper = function(proforma) {
 
-    this.calcTotal=function(){
-        var valTotal=0
-        proforma.calcGrid().store.each(function(row){
-          tarif_id= row.get("tarif_id");
-          val=row.get("val");
-          curr= Tarif.tarifStore().searchField("currency_id",tarif_id);
-          valTotal+= parseFloat(val);
-      },this);
-      proforma.editPanel().getFieldByName("total_eur").setValue(valTotal);
+    this.calcTotal = function() {
+        var valTotal = 0;
+        var proformaCurrency = proforma.editPanel().getFieldByName("currency_id").getValue();
+        proformaCurrency = Currency.currencyStore().getById( proformaCurrency);
+        proforma.calcGrid().store.each(function(row) {
+            var tarif_id = row.get("tarif_id");
+            var tarif=proforma.tarifsByPort().getById(tarif_id);
+            var val = row.get("val");
+
+            var curr = tarif.get("currency_id");
+            curr = Currency.currencyStore().getById(curr);
+            val= parseFloat(val)* curr.get("rate");
+            valTotal += val / proformaCurrency.get("rate") ;
+            console.log("tarif "+tarif.get("name")+" val "+val+" total "+valTotal);
+
+        }, this);
+        proforma.editPanel().getFieldByName("total_eur").setValue(valTotal);
     }
 
-    this.handleProformaRowChanged=function(){
+    this.handleProformaRowChanged = function() {
         this.handlePortChanged();
         this.fillProfTarifs();
     }
 
-    this.fillProfTarifs=function() {
+    this.fillProfTarifs = function() {
         var prof = new ProfTarifCalcs();
         proforma.calcGrid().store.removeAll(true);
         prof.fillCalcStore(proforma.gridPanel(), proforma.calcGrid().store);
     }
 
-    this.generateTarifs=function() {
-        var data =  proforma.gridPanel().getSelectionModel().getSelected().data;
+    this.generateTarifs = function() {
+        var data = proforma.gridPanel().getSelectionModel().getSelected().data;
         Ext.Ajax.request({
             url: '/prof_tarif_calcs/gen_tarifs',
             success: this.loadGeneratedCalc,
@@ -35,7 +43,7 @@ Ext.ux.ProfTarifHelper = function(proforma){
         });
     }
 
-    this.loadGeneratedCalc=function(resp, opts){
+    this.loadGeneratedCalc = function(resp, opts) {
         var obj = Ext.decode(resp.responseText);
         proforma.calcGrid().store.removeAll(true);
         var recordType = Ext.data.Record.create([
@@ -70,31 +78,31 @@ Ext.ux.ProfTarifHelper = function(proforma){
             var newTarif = new TarifObj({
                 tarif_id:obj.data[i].tarif_id,
                 val:obj.data[i].val,
-                description:obj.data[i].description 
+                description:obj.data[i].description
             });
 
-            proforma.calcGrid().store.insert(0,newTarif);
+            proforma.calcGrid().store.insert(0, newTarif);
         }
         //proforma.calcGrid().store.save();
-        console.log("generated "+proforma.calcGrid().store.getCount());
+        console.log("generated " + proforma.calcGrid().store.getCount());
 
     }
 
-    this.handlePortChanged=function() {
-        var el= proforma.editPanel().getFieldByName("port_id");
+    this.handlePortChanged = function() {
+        var el = proforma.editPanel().getFieldByName("port_id");
         var newVal = el.getValue();
         proforma.tarifsByPort().removeAll(true);
-        if(newVal)
+        if (newVal)
             proforma.tarifsByPort().load({params:{port_id:newVal}});
     }
 
-    this.beforeSaveProforma=function(store, action, rec, options, ar){
-        var tarifs= proforma.calcGrid().store.getModifiedRecords();
-        var sz=[];
-        proforma.calcGrid().store.data.each(function(itm){
+    this.beforeSaveProforma = function(store, action, rec, options, ar) {
+        var tarifs = proforma.calcGrid().store.getModifiedRecords();
+        var sz = [];
+        proforma.calcGrid().store.data.each(function(itm) {
             sz.push(itm.data);
         });
-        options.params.tarifs= Ext.util.JSON.encode(sz);
-        
+        options.params.tarifs = Ext.util.JSON.encode(sz);
+
     }
 }
