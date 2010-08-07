@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100608045932) do
+ActiveRecord::Schema.define(:version => 20100731065239) do
 
   create_table "countries", :force => true do |t|
     t.string   "text"
@@ -24,6 +24,14 @@ ActiveRecord::Schema.define(:version => 20100608045932) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.decimal  "rate"
+  end
+
+  create_table "entities", :force => true do |t|
+    t.string   "name"
+    t.string   "tag"
+    t.integer  "parent_entity_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "ice_classes", :force => true do |t|
@@ -125,6 +133,16 @@ ActiveRecord::Schema.define(:version => 20100608045932) do
     t.datetime "updated_at"
     t.string   "remark"
     t.integer  "currency_id"
+  end
+
+  create_table "tree_elements", :force => true do |t|
+    t.string   "text"
+    t.text     "tag"
+    t.integer  "parent_id"
+    t.integer  "sort_order"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "query"
   end
 
   create_table "vessel_types", :force => true do |t|

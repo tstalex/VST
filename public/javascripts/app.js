@@ -16,12 +16,25 @@ function Application() {
     var currentpanel = new Ext.Panel({region:"center"});
     var mainPanel = null;
 
-    this.showMainPanel = function(newPanel) {
+    this.showMainPanel = function(objStr) {
+        var objPanel= Ext.decode(objStr);
+        var newPanel=objPanel.getPanel();
+        console.log(newPanel);
+        switch (newPanel) {
+            case "Vessel" :
+                newPanel = Vessel.vesselPanel();
+                console.log("vess");
+                break;
+            case "Ports" : newPanel = Vessel.vesselPanel(); break;
+            case "Proforma" : newPanel = Proforma.mainPanel(); break;
+            case "Configuration" : newPanel = IceClass.ice_classPanel(); break;
+        }
         if (currentpanel == newPanel)
             return;
         var center = Ext.getCmp('center_panel');
         center.remove(currentpanel);
         center.add(newPanel);
+
         center.getLayout().setActiveItem(newPanel);
         center.doLayout();
         currentpanel = newPanel;
@@ -44,31 +57,36 @@ function Application() {
     }
 
     this.buildLayout = function() {
-        var treePanel = new Ext.Panel(
-        {
+
+        var tree = new Ext.tree.TreePanel({
+            useArrows: true,
+            autoScroll: true,
+            animate: true,
+            enableDD: true,
+            containerScroll: true,
+            border: false,
             id:"tree-panel",
             title:'Navigation',
             width:130,
             region:"west",
-            layout:"accordion",
             collapsible:true,
-            activeItem:3,
-            items: [
-                this.countriesPanel(),
-                {
-                    title: 'Vessels',
-                    html: '<p><a href="#" onclick="App.showMainPanel(Vessel.vesselPanel())">Show</a></p>'
-                },{
-                    title: 'Configuration',
-                    html: '<p><a href="#" onclick="App.showMainPanel(IceClass.ice_classPanel())">Ice classes</a></p><p><a href="#" onclick="App.showMainPanel(Currency.mainPanel())">Currencies</a></p>'
-                },{
-                    title:"Proforma",
-                    html: '<p><a href="#" onclick="App.showMainPanel(Proforma.mainPanel())">Proforma</a></p>'
+            split:true,
+            loader: new Ext.tree.TreeLoader({requestMethod :"GET", dataUrl: '/tree_elements'}),
+            rootVisible:false,
+            listeners: {
+                click: function(n) {
+                    App.showMainPanel(n.attributes.tag);
+                    //Ext.Msg.alert('Navigation Tree Click', 'You clicked: "' + n.attributes.text + '"');
                 }
-            ],
-            split:true
-        }
-                );
+            },
+            root: {
+                expanded: true,
+                nodeType: 'async',
+                text: 'Root',
+                draggable: false,
+                id: 'source'
+            }
+        });
         mainPanel = new Ext.Viewport(
         {
             id:'main-panel',
@@ -82,7 +100,7 @@ function Application() {
                     items:[currentpanel]
                 }
                 ,
-                treePanel
+                tree
             ]
         }
                 );
@@ -100,7 +118,8 @@ function Application() {
         },
         {
             store:Vessel.vesselStore()
-        },{
+        },
+        {
             store:Ports.storeRest()
         }
     ];

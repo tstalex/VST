@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+  <title>Base</title>
+  <script type="text/javascript" src="/javascripts/adapter/ext/ext-base-debug.js"></script>
+  <script type="text/javascript" src="/javascripts/ext-all-debug.js"></script>
+  <script type="text/javascript" src="/javascripts/overrides.js"></script>
+  <%= stylesheet_link_tag    "ext_scaffold", "/stylesheets/ext-all.css" %>
+  <%= stylesheet_link_tag    "silk", "/stylesheets/silk.css" %>
+  <%= yield :head %>
+</head>
+<body>
+<%= yield %>
+</body>
+</html>
