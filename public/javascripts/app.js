@@ -1,4 +1,3 @@
-var prof_cache = [];
 Ext.BLANK_IMAGE_URL = '/javascripts/resources/images/default/s.gif';
 var Currency = new Currencies();
 var Dict = new Dicts();

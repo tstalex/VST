@@ -41,10 +41,11 @@ function Ports() {
         this.filter_country=country_id;
         this.portGrid().store.clearFilter();
         console.log("filtring by "+country_id);
+
         this.portGrid().store.filterBy(function(rec,country_id){
             
             var t_country_id=rec.get("country");
-            if(t_country_id==this.filter_country){
+            if(t_country_id==this.filter_country ||this.filter_country <0 ){
                 return true;
             }
             return false;

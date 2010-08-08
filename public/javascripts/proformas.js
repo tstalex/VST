@@ -1,7 +1,4 @@
-var ddd = [];
-
 function Proformas() {
-    prof_cache.push(this);
     var proformaGridControl = null;
     var proformaEditControl = null;
     var proformaStoreControl = null;
@@ -9,7 +6,6 @@ function Proformas() {
     var calcgrid = null;
     var tarifByPortStore = null;
     this.tarifHelper = new Ext.ux.ProfTarifHelper(this);
-    ddd.push(this);
     //store that returns current tarifs set for the selected port
     this.tarifsByPort = function() {
 
@@ -109,7 +105,7 @@ function Proformas() {
         {
             fields:[
                 'id',
-                'tarif_id',                  
+                'tarif_id',
                 'proforma_id' ,
                 'val' ]
 
@@ -202,6 +198,9 @@ function Proformas() {
                     }
                 },
                 {
+                    xtype:"tbseparator"
+                },
+                {
                     text: 'Add',
                     iconCls:"silk-add",
                     handler: function() {
@@ -224,18 +223,29 @@ function Proformas() {
                         'click': this.tarifHelper.generateTarifs
                     }
                 }
+                ,
+                {
+                    xtype:"tbseparator"
+                }
+                ,
+                {
+                    text:'Total:',
+                    id:"totalLabel",
+                    disabled:true,
+                    xtype:"label"
+                }
             ]
         }
                 )
                 ;
 
-        calcgrid.store.on("update", function(a,b,c){
+        calcgrid.store.on("update", function(a, b, c) {
             Proforma.tarifHelper.calcTotal();
         });
-        calcgrid.store.on("add", function(a,b,c){
+        calcgrid.store.on("add", function(a, b, c) {
             Proforma.tarifHelper.calcTotal();
         });
-       return calcgrid;
+        return calcgrid;
     }
 
     this.fail = function(resp, options) {
@@ -359,6 +369,7 @@ function Proformas() {
                                     xtype:"textfield",
                                     readOnly:true,
                                     submitValue:false,
+                                    labelStyle:"font-style: bold;",
                                     plugins:[new Ext.ux.InputTextMask("####-##")],
                                     name:"total_eur"
                                 }

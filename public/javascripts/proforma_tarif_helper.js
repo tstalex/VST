@@ -18,7 +18,7 @@ Ext.ux.ProfTarifHelper = function(proforma) {
             console.log("tarif "+tarif.get("name")+" val "+val+" total "+valTotal);
 
         }, this);
-        proforma.editPanel().getFieldByName("total_eur").setValue(valTotal);
+        proforma.editPanel().getFieldByName("total_eur").setValue(valTotal.toFixed(2));
     }
 
     this.handleProformaRowChanged = function() {

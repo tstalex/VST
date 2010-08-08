@@ -13,7 +13,7 @@ module TreeElementsHelper
       }
       if (entity.query?)
         data=TreeElement.find_by_sql(entity.query)
-        entity.children.push data
+        entity.children.concat data
       end
 
       entity.write_attribute(:children, entity.children)
