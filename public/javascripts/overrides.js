@@ -64,7 +64,7 @@ Ext.override(Ext.FormPanel, {
         }
         this.getForm().items.each(function(field) {
 
-            if (field.name && (name = field.name) && (value = field.getValue()) !== undefined) {
+            if (field.submitValue && field.name && (name = field.name) && (value = field.getValue()) !== undefined) {
                 rec.set(name, value);
             }
         }, this);

@@ -17,6 +17,12 @@ class PortsController < ApplicationController
    render :json => {:successful=>true, :data=> tarifs }
   end
 
+  def with_tarifs
+	@ports = Port.find_by_sql("SELECT distinct * FROM ports a   where exists (select 1 from tarif_calculations b  inner join tarifs c on b.id=c.tarif_calculation_id where a.id=b.port_id) ")
+	total= @ports.empty? ? 0: @ports.length
+    render :json => {:successful=>true, :total=>@ports.length, :data=> @ports }
+  end
+  
   # GET /ports
   # GET /ports.xml
   def index

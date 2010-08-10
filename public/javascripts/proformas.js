@@ -330,7 +330,7 @@ function Proformas() {
                                     typeAhead: true,
                                     triggerAction: 'all',
                                     lazyRender:true,
-                                    mode: 'remote',
+                                    mode: 'local',
                                     valueField: 'id',
                                     displayField: 'name',
                                     fieldLabel: 'Vessel',
@@ -338,7 +338,7 @@ function Proformas() {
                                     name: 'vessel_id'
                                 }),
                                 new Ext.form.ComboBox({
-                                    store: Ports.storeRest() ,
+                                    store: Ports.storeWithTarifs() ,
                                     triggerAction: 'all',
                                     typeAhead: false,
                                     forceSelection:true,
@@ -425,7 +425,7 @@ function Proformas() {
                                     typeAhead: true,
                                     triggerAction: 'all',
                                     lazyRender:true,
-                                    mode: 'remote',
+                                    mode: 'local',
                                     valueField: 'id',
                                     displayField: 'curr',
                                     forceSelection:true,
@@ -530,7 +530,7 @@ function Proformas() {
                 ,
                 {
                     dataIndex: 'status',
-                    header: 'status',
+                    header: 'Status',
                     renderer: Ext.ux.storeRenderer(Dict.statusesStore(), "name")
                 }
                 ,
@@ -542,7 +542,7 @@ function Proformas() {
                 ,
                 {
                     dataIndex: 'date_curr',
-                    header: 'date_curr'
+                    header: 'Calc. date'
                 }
                 ,
                 {
@@ -559,37 +559,39 @@ function Proformas() {
                 ,
                 {
                     dataIndex: 'arrived',
-                    header: 'arrived'
+                    header: 'Arrived at'
                 }
                 ,
                 {
                     dataIndex: 'sailed',
-                    header: 'sailed'
+                    header: 'Sailed at'
                 }
                 ,
                 {
                     dataIndex: 'estimated_arrive',
-                    header: 'estimated_arrive'
+                    header: 'ETA'
                 }
                 ,
                 {
                     dataIndex: 'gw',
-                    header: 'gt'
+                    header: 'GT'
                 }
                 ,
                 {
                     dataIndex: 'pilotage',
-                    header: 'Pilotage'
+                    header: 'Pilotage',
+					hidden:true
                 }
                 ,
                 {
                     dataIndex: 'calls',
-                    header: 'calls'
+                    header: 'Calls'
                 }
                 ,
                 {
                     dataIndex: 'registration_date',
-                    header: 'registration_date'
+                    header: 'registration_date',
+					hidden:true
                 }
             ]
         });

@@ -2,288 +2,10 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="287d49ea-7968-4133-b409-b09fecac4a5d" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\Combo.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\TextMetrics.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\direct\Event.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\Api.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\adapter\yui-bridge.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\HttpProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\state\CookieProvider.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Element.scroll-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\Cookies.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\Element.traversal.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Element.keys.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-pt_BR.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\GroupingStore.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\dd\Registry.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\chart\Chart.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\ComponentMgr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\DataView.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\adapter\ext-base-anim.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\Fx.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-id.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\adapter\ext-base-dom-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\TriggerField.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-af.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\list\Sorter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\direct\Transaction.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\adapter\ext-base-region.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\DirectProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\TableLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\FitLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\CellSelectionModel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\ToolbarLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\debug.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\Tree.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\DisplayField.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\test\yui_2.6.0\yui\build\yahoo-dom-event\yahoo-dom-event.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\test\yui_2.6.0\yui\build\logger\logger-min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\Label.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\adapter\ext-base-begin.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\test\yui_2.6.0\yui\build\yuitest\yuitest-min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tree\TreeDragZone.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\EditorGrid.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\DatePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tips\ToolTip.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tree\TreeDropZone.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\direct\Provider.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\Hidden.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\dd\DropZone.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\Action.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\adapter\ext-base-dom.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Toolbar.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\DomHelper.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\Column.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-pt_PT.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\CheckboxGroup.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-da.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\Observable-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\GridDD.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Element.traversal-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\examples\rating\rating.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-fi.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Element.fx-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\util\Observable.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\HtmlEditor.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\Field.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-no_NB.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\ArrayStore.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\PanelDD.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\BasicForm.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-fa.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\NumberField.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-en_GB.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\direct\RemotingProvider.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\ClickRepeater.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\ProgressBar.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-nl.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\Record.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Container.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\adapter\ext-base-event.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\SplitBar.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tree\TreeEventModel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\AccordionLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\dd\DragSource.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\adapter\jquery-bridge.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\CycleButton.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\list\Column.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\Radio.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\chart\swfobject.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\KeyNav.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\XTemplate.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\XmlReader.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-lv.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tips\SliderTip.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\examples\menu\menu.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-pl.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\ContainerLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\DomQuery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-en.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\DomHelper-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\dd\DropTarget.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\chart\FlashComponent.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\direct\PollingProvider.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\JsonReader.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\list\ListView.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\BoxLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\JsonStore.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tree\TreeSorter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\menu\MenuMgr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\util\JSON.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\examples\jsonp\jsonp.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\Store.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Slider.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\MemoryProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\DataWriter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\AnchorLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\MessageBox.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\ColumnModel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-bg.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\JsonWriter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Template-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Button.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-mk.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\CompositeElementLite-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\Template.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tips\Tip.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tree\TreeEditor.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\data\Connection.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\DataReader.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\Request.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\EventManager-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\Element.position.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\ArrayReader.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-zh_TW.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\Ext.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-ukr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\util\TaskMgr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\RowSelectionModel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\Checkbox.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\ScriptTagProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Editor.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\examples\carousel\carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\LoadMask.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\TimeField.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\PropertyGrid.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\WindowManager.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-pt.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-sl.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\direct\Direct.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\TextArea.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-ko.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\SplitButton.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Layer.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\dd\DragZone.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\CompositeElement.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\KeyMap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\adapter\ext-base-end.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-es.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Element-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\ColumnSplitDD.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\History.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\state\StateManager.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tree\TreePanel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tips\QuickTip.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-de.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\util\DelayedTask.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\Element.fx.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\menu\BaseItem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-ru.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-ja.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\FormLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\Response.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\SliderField.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Viewport.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\Form.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-zh_CN.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tree\TreeFilter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-hr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-it.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\ButtonGroup.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\examples\tabs\tabs.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Panel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\menu\CheckItem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\XmlWriter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\DirectStore.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Action.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Element.insertion-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-lt.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tree\AsyncTreeNode.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\list\ColumnResizer.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\BorderLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\UpdateManager.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\direct\JsonProvider.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\menu\DateMenu.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\menu\Item.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\Element.insertion.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\dd\ScrollManager.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\Date.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Component.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\Types.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\AutoLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\Element.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Shadow.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tips\QuickTips.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\adapter\ext-base-ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\AbstractSelectionModel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\chart\EventProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tree\TreeLoader.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\DateField.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\Format.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\menu\TextItem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\dd\DDCore.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\RadioGroup.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\menu\Menu.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-hu.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Element.legacy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tree\TreeNode.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\AbsoluteLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Resizable.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\GridEditor.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-sr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-th.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\PagingToolbar.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\XmlStore.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-he.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\adapter\prototype-bridge.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\state\Provider.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\ColumnDD.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\CompositeField.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Error.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\adapter\ext-base-anim-extra.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tree\TreeSelectionModel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\GridPanel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Ext-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Element.position-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\TabPanel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-fr_CA.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\menu\Separator.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\VTypes.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\ColumnLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\GridView.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Element.style-more.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-sk.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\tree\TreeNodeUI.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\menu\ColorMenu.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\dd\DragTracker.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\GroupingView.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\FieldSet.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Element.alignment.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\StoreMgr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\BoxComponent.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\form\TextField.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\Element.style.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-tr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-ro.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-el_GR.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\Element.scroll.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\CompositeElementLite.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\DataField.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-no_NN.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\SortTypes.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-cs.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\CardLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\CheckboxSelectionModel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-vn.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-sr_RS.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\CSS.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\data\DataProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\core\Element.dd.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-sv_SE.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\Window.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\core\EventManager.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\dd\StatusProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\layout\MenuLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\util\MixedCollection.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\grid\RowNumberer.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\widgets\ColorPalette.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-gr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\examples\lightbox\lightbox.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\locale\ext-lang-fr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\denis\RubymineProjects\VST\public\javascripts\src\ext-core\src\adapter\ext-base-point.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/testing_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/testing_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="third.iws" />
@@ -310,16 +32,70 @@
       <file leaf-file-name="testing_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/testing_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="13" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.0">
+            <state line="83" column="53" selection-start="2749" selection-end="2749" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="proformas_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/proformas_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="6" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tarif_calculations_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/tarif_calculations_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prof_tarif_calcs_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/prof_tarif_calcs_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="39" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prof_tarif_calc.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/prof_tarif_calc.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="34" selection-start="542" selection-end="542" vertical-scroll-proportion="1.4953704">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="64" selection-start="214" selection-end="214" vertical-scroll-proportion="0.2746365">
+            <state line="3" column="75" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proforma.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/proforma.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="16" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vessel.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/vessel.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="75" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -345,7 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/helpers/tree_menu_helper.rb" />
         <option value="$PROJECT_DIR$/app/models/entity.rb" />
         <option value="$PROJECT_DIR$/app/helpers/entities_helper.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20100721050254_create_entities.rb" />
@@ -361,6 +136,7 @@
         <option value="$PROJECT_DIR$/public/javascripts/app.js" />
         <option value="$PROJECT_DIR$/public/javascripts/proformas.js" />
         <option value="$PROJECT_DIR$/public/javascripts/proforma_tarif_helper.js" />
+        <option value="$PROJECT_DIR$/app/controllers/testing_controller.rb" />
       </list>
     </option>
   </component>
@@ -428,7 +204,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -799,19 +593,19 @@
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31627908" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22972973" sideWeight="0.58914727" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2400636" sideWeight="0.40155038" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44496125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5875969" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.60775197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40775195" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31627908" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939272" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -897,36 +691,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20100726174054_rename_tree_element_name.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.41239893" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20100731065239_add_query_to_tree_elements.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tree_elements_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/countries_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="62" selection-start="132" selection-end="132" vertical-scroll-proportion="0.028145695" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/dicts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="28" selection-start="3381" selection-end="3390" vertical-scroll-proportion="0.02746365" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/vessels.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="618" column="87" selection-start="19040" selection-end="19040" vertical-scroll-proportion="0.8352181" />
-      </provider>
-    </entry>
     <entry file="file://C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.6/lib/active_record/base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="641" column="37" selection-start="33160" selection-end="33160" vertical-scroll-proportion="0.20531401" />
@@ -973,16 +737,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/testing_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="13" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.0">
+        <state line="3" column="75" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/proforma.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="64" selection-start="214" selection-end="214" vertical-scroll-proportion="0.2746365">
+        <state line="2" column="16" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/vessel.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="75" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/testing_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="53" selection-start="2749" selection-end="2749" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/proformas_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="6" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tarif_calculations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/prof_tarif_calcs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="39" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/prof_tarif_calc.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="34" selection-start="542" selection-end="542" vertical-scroll-proportion="1.4953704">
           <folding />
         </state>
       </provider>

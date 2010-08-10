@@ -1,8 +1,10 @@
 function Ports() {
     var storeRestControl = null;
-    var portGridControl = null;
+    var storeWithTarifsControl = null;
+	var portGridControl = null;
     var portMainControl = null;
     var editPanelControl = null;
+	
     this.showTarif = function(record) {
         var modal = new Ext.Window(
         {
@@ -342,6 +344,72 @@ function Ports() {
         return storeRestControl;
     }
 
+	this.storeWithTarifs = function() {
+        if (storeWithTarifsControl != null)
+            return storeWithTarifsControl;
+        var proxy = new Ext.data.HttpProxy({
+            url: '/ports/with_tarifs'
+        });
+
+        var reader = new Ext.data.JsonReader({
+            totalProperty: 'total',
+            successProperty: 'success',
+            idProperty: 'id',
+            root: 'data',
+            messageProperty: 'message'
+
+        }, [
+            {
+                name: 'id'
+            },
+            {
+                name: 'name',
+                allowBlank: false
+            },
+            {
+                name: 'country',
+                allowBlank: false
+            },
+            {
+                name: 'code',
+                allowBlank: false
+            },
+            {
+                name: 'flag',
+                allowBlank: false
+            },
+            {
+                name: 'tips',
+                allowBlank: true
+            },
+            {
+                name: 'description',
+                allowBlank: true
+            },
+            {
+                name: 'picture',
+                allowBlank: true
+            },
+        ]);
+
+        var writer = new Ext.data.JsonWriter();
+
+        storeWithTarifsControl = new Ext.data.Store({
+            restful: true,
+            id: "port_store",
+            proxy: proxy,
+            reader: reader,
+            listeners: {
+                write : function(store, action, result, response, rs) {
+                    Ext.MessageBox.alert(response.success, response.message);
+                }
+            },
+            writer: writer
+        });
+        storeWithTarifsControl.load();
+        return storeWithTarifsControl;
+    }
+	
     this.tarifs = function(tarif_calc_id) {
 
         var tg = Tarif.tarifPanel();

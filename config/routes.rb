@@ -1,4 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+  
+  map.root :controller=>"base",:action=>"show"
+  
   map.resources :tree_elements
 
   map.resources :entities
@@ -11,6 +14,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect "prof_tarif_calcs/gen_tarifs", :controller => 'prof_tarif_calcs', :action => 'gen_tarifs'
   map.connect "ports/tarifs", :controller => 'ports', :action => 'tarifs'
+  map.connect "ports/with_tarifs", :controller => 'ports', :action => 'with_tarifs'
   
   map.resources :prof_tarif_calcs
 
