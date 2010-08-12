@@ -48,7 +48,7 @@ function Tarifs() {
         if (tarifMainControl != null && !tarifMainControl.isDestroyed) {
             return  tarifMainControl;
         }
-        tarifMainControl = new Ext.Panel({
+        tarifMainControl = new Ext.Container({
             layout:"border",
             items:[this.tarifGrid(),this.tarifEditPanel() ]
         });

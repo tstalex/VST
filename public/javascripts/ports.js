@@ -62,9 +62,8 @@ function Ports() {
         }
         this.portGrid().viewPanel=this.editPanel();
         this.editPanel().grid=this.portGrid();
-        portMainControl = new Ext.Panel({
+        portMainControl = new Ext.Container({
             layout:"border",
-            title:"Ports",
             items:[this.portGrid(),this.editPanel() ]
         });
 

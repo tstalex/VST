@@ -29,9 +29,8 @@ function Vessels() {
         if (vesselMainControl != null && !vesselMainControl.isDestroyed) {
             return  vesselMainControl;
         }
-        vesselMainControl = new Ext.Panel({
+        vesselMainControl = new Ext.Container({
             layout:"border",
-            title:"Vessel",
             items:[this.vesselGrid(),this.vesselEditPanel() ]
         });
         this.vesselGrid().getSelectionModel().on("rowselect", function(obj, rowIndex, row) {

@@ -227,13 +227,6 @@ function Proformas() {
                 {
                     xtype:"tbseparator"
                 }
-                ,
-                {
-                    text:'Total:',
-                    id:"totalLabel",
-                    disabled:true,
-                    xtype:"label"
-                }
             ]
         }
                 )
@@ -278,9 +271,8 @@ function Proformas() {
         if (proformaMainControl != null && !proformaMainControl.isDestroyed) {
             return  proformaMainControl;
         }
-        proformaMainControl = new Ext.Panel({
+        proformaMainControl = new Ext.Container({
             layout:"border",
-            title:"Proforma",
             items:[this.gridPanel(),this.editPanel() ]
         });
         this.gridPanel().viewPanel = this.editPanel();

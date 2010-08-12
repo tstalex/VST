@@ -30,9 +30,8 @@ function <%=class_name.pluralize%>(){
         if (<%=file_name%>MainControl != null && !<%=file_name%>MainControl.isDestroyed) {
             return  <%=file_name%>MainControl;
         }
-        <%=file_name%>MainControl = new Ext.Panel({
+        <%=file_name%>MainControl = new Ext.Container({
             layout:"border",
-            title:"<%=class_name%>",
             items:[this.gridPanel(),this.editPanel() ]
         });
         this.gridPanel().viewPanel =this.editPanel();

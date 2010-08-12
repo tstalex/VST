@@ -29,9 +29,8 @@ function Currencies() {
         if (currencyMainControl != null && !currencyMainControl.isDestroyed) {
             return  currencyMainControl;
         }
-        currencyMainControl = new Ext.Panel({
+        currencyMainControl = new Ext.Container({
             layout:"border",
-            title:"Currency",
             items:[this.gridPanel(),this.editPanel() ]
         });
         this.gridPanel().viewPanel = this.editPanel();
