@@ -1,13 +1,52 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  tag: MyText
-  parent_id: 1
-  sort_ordrt: 1
-
-two:
-  name: MyString
-  tag: MyText
-  parent_id: 1
-  sort_ordrt: 1
+--- 
+tree_elements_001: 
+  id: "1"
+  text: Root
+  tag: 
+  parent_id: 
+  sort_order: 
+  created_at: 
+  updated_at: 
+  query: 
+tree_elements_002: 
+  id: "2"
+  text: Vessel
+  tag: "{getPanel:function(){return Vessel.vesselPanel();}}"
+  parent_id: "1"
+  sort_order: 
+  created_at: 
+  updated_at: 
+  query: 
+tree_elements_003: 
+  id: "3"
+  text: Ports
+  tag: "{getPanel:function(){return Vessel.vesselPanel();}}"
+  parent_id: "1"
+  sort_order: 
+  created_at: 
+  updated_at: 
+  query: |-
+    select 
+    0 id, 'All' text, '{getPanel:function() {return Ports.showPanel(-1);}}' tag, 3 parent_id, 1000 sort_order, 'true' leaf 
+    union
+    SELECT distinct 
+    c.id, c.text, '{getPanel:function() {return Ports.showPanel('|| c.id ||');}}' tag, 3 parent_id, count(*) sort_order, 'true' leaf 
+    from countries c inner join ports p on c.id=p.country group by c.id, c.text, leaf order by sort_order desc
+tree_elements_004: 
+  id: "4"
+  text: Configuration
+  tag: "{getPanel:function(){return IceClass.ice_classPanel();}}"
+  parent_id: "1"
+  sort_order: 
+  created_at: 
+  updated_at: 
+  query: 
+tree_elements_005: 
+  id: "5"
+  text: Proforma
+  tag: "{getPanel:function(){return Proforma.mainPanel();}}"
+  parent_id: "1"
+  sort_order: 
+  created_at: 
+  updated_at: 
+  query: 

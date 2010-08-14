@@ -1,9 +1,206 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  formula: MyString
-
-two:
-  name: MyString
-  formula: MyString
+--- 
+tarifs_001: 
+  id: "5"
+  tarif_calculation_id: "9"
+  name: Agency fee
+  formula: ""
+  is_manual: t
+  created_at: 2010-04-07 05:04:20
+  updated_at: 2010-04-07 05:04:20
+  remark: ""
+  currency_id: "1"
+tarifs_002: 
+  id: "6"
+  tarif_calculation_id: "9"
+  name: Fresh water
+  formula: ""
+  is_manual: f
+  created_at: 2010-04-07 05:05:08
+  updated_at: 2010-04-07 05:05:08
+  remark: per 1.0 m/tonne
+  currency_id: "1"
+tarifs_003: 
+  id: "7"
+  tarif_calculation_id: "9"
+  name: Passenger port tax In & Out ttl
+  formula: "[proforma.passengers * 300,\"Passengers * 300\"]"
+  is_manual: f
+  created_at: 2010-04-07 05:06:06
+  updated_at: 2010-05-15 14:48:42
+  remark: per 1 transit pax
+  currency_id: "1"
+tarifs_004: 
+  id: "8"
+  tarif_calculation_id: "9"
+  name: Lighthouse dues (Incl. 40% rebate)
+  formula: |-
+    ret=0
+        remark=""
+        ln= LightNaviTarif.find(:first, :conditions => [ ":u >=gt_from and :u<=gt_to ", { :u => proforma.gw }])
+        ret=ln.lighthouse
+    
+        if proforma.vessel.vessel_flag.is_euro==1
+          ret= ret * 0.75
+          remark << " incl. 25% rebate"
+        end
+        unless (["PAS","CRU","CCR"].index( proforma.vessel.type.code).nil?)
+          ret= ret * 0.6
+          remark << " incl. 40% rebate. $50.10(1)"
+        end
+        if ( proforma.vessel.ice_class && ["1A Super","1A"].index( proforma.vessel.ice_class.code).nil?)
+          ret= ret * 0.5
+          remark << " incl. 50% rebate.  $50.10(2)"
+        end
+        if ( proforma.sailed-proforma.arrived < (60*60*24) )
+          ret= ret * 0.7
+          remark << " incl. 30% rebate.  $50.10(3)"
+        end
+        [ret, remark]
+  is_manual: f
+  created_at: 2010-04-07 05:07:07
+  updated_at: 2010-06-09 18:17:50
+  remark: ""
+  currency_id: "2"
+tarifs_005: 
+  id: "9"
+  tarif_calculation_id: "9"
+  name: Navigation Dues (Incl. 40% rebate)
+  formula: |-
+    ret=0
+        remark=""
+        ln= LightNaviTarif.find(:first, :conditions => [ ":u >=gt_from and :u<=gt_to ", { :u => proforma.gw }])
+        ret=ln.navi
+        if proforma.vessel.vessel_flag.is_euro==1
+          ret= ret * 0.75
+          remark << " incl. 25% rebate"
+        end
+        unless (["PAS","CRU","CCR"].index( proforma.vessel.type.code).nil?)
+          ret= ret * 0.6
+          remark << " incl. 40% rebate. $50.10(1)"
+        end
+        if ( proforma.vessel.ice_class && ["1A Super","1A"].index( proforma.vessel.ice_class.code).nil?)
+          ret= ret * 0.5
+          remark << " incl. 50% rebate.  $50.10(2)"
+        end
+        if ( proforma.sailed-proforma.arrived < (60*60*24) )
+          ret= ret * 0.7
+          remark << " incl. 30% rebate.  $50.10(3)"
+        end
+        [ret, remark]
+  is_manual: f
+  created_at: 2010-04-07 05:08:03
+  updated_at: 2010-06-09 18:17:58
+  remark: ""
+  currency_id: "2"
+tarifs_006: 
+  id: "10"
+  tarif_calculation_id: "9"
+  name: Pilotage
+  formula: "    remark=\"\"\n    price_in=0\n    price_out=0\n    holidayValidator= HolidayValidator.new\n\n    pilotGtDiap= PilotageDiapason.find(:first, :conditions => [\"? >=pilotage_from and ? <=pilotage_to\", proforma.pilotage, proforma.pilotage], :order => \"pilotage_from\")\n    if pilotGtDiap.nil?\n      #More than 25 miles\n      if (proforma.gw<=50000)\n        price_in=proforma.pilotage * 250\n        price_out=proforma.pilotage * 250\n        remark<< \"250 EEK per mile\"\n      else\n        price_in=proforma.pilotage * 350\n        price_out=proforma.pilotage * 350\n        remark<< \"350 EEK per mile\"\n      end\n    else\n      pilotCharge= PilotageCharge.find(:first, :conditions => [\"diapason_id=? and ? >=gt_from and ? <=gt_to\", pilotGtDiap.id, proforma.gw, proforma.gw], :order => \"gt_from\")\n      price_in=pilotCharge.tarif\n      price_out=pilotCharge.tarif\n      remark<< \"%.2f * 2\" %pilotCharge.tarif\n    end\n\n    #overtime from 18:00 -06:00 and weekends 1.25 public holidays 1.5\n    holiday_arrive=holidayValidator.is_holiday (proforma.arrived)\n    if (holiday_arrive==\"\")\n      if (proforma.arrived.wday>4 || (proforma.arrived.hour>=18 || proforma.arrived.hour<6))\n        price_in=price_in*1.25\n        remark<< \" including 25% for overtime\"\n      end\n    else\n      price_in=price_in*1.5\n      remark << \" including 50% for overtime\"\n    end\n\n    if (holidayValidator.is_holiday (proforma.arrived))\n      if (proforma.sailed.wday>4 || (proforma.sailed.hour>=18 || proforma.sailed.hour<6))\n        price_out=price_out*1.25\n        remark<< \" including 25% for overtime\"\n      end\n    else\n      price_out=price_out*1.5\n      remark<< \" including 50% for overtime\"\n    end\n    price=price_in+price_out\n    [price, remark]"
+  is_manual: f
+  created_at: 2010-04-07 05:08:52
+  updated_at: 2010-04-07 05:08:52
+  remark: ""
+  currency_id: "2"
+tarifs_007: 
+  id: "11"
+  tarif_calculation_id: "9"
+  name: Sanitary dues
+  formula: "[(proforma.gw * 0.018),\"0.018 * GW\"]"
+  is_manual: f
+  created_at: 2010-04-07 05:10:30
+  updated_at: 2010-04-07 05:10:30
+  remark: GT * 0.018
+  currency_id: "1"
+tarifs_008: 
+  id: "12"
+  tarif_calculation_id: "9"
+  name: "Linehandling: Mooring & Unmooring"
+  formula: |-
+    case proforma.gw
+            when 0..2000 then
+              if proforma.vessel.vessel_type == 2 or proforma.vessel.vessel_type == 3
+                [200, "100 *2"]
+              else
+                [80, "40 *2"]
+              end
+            when 2001..6000 then
+              if proforma.vessel.vessel_type == 2 or proforma.vessel.vessel_type == 3
+                [332, "166 *2"]
+              else
+                [128, "64 *2"]
+              end
+            when 6001..20000 then
+              if proforma.vessel.vessel_type == 2 or proforma.vessel.vessel_type == 3
+                [432, "216 *2"]
+              else
+                [170, "85 *2"]
+              end
+            when 20001..50000 then
+              if proforma.vessel.vessel_type == 2 or proforma.vessel.vessel_type == 3
+                [562, "281 *2"]
+              else
+                [220, "110 *2"]
+              end
+            else
+              if proforma.vessel.vessel_type == 2 or proforma.vessel.vessel_type == 3
+                [662, "331 *2"]
+              else
+                [258, "129 *2"]
+              end
+          end
+  is_manual: f
+  created_at: 2010-04-07 05:11:02
+  updated_at: 2010-05-10 04:54:42
+  remark: ""
+  currency_id: "1"
+tarifs_009: 
+  id: "13"
+  tarif_calculation_id: "9"
+  name: Tonnage Dues
+  formula: "    ret=0\n    remark=\"\"\n    case proforma.vessel.type.code\n      when \"TAN\" then #tankers\n        ret= proforma.gw * 1.66\n        remark = \"GT * 1.66\"\n      when \"PAS\" then #passenger ships\n        ret= proforma.gw *  ((proforma.gw < 30000) ? 0.215 : 0.2)\n        remark = \"GT * %s\" % ((proforma.gw < 30000) ? \"0.215\" : \"0.2\")\n\n        #discounts\n        case proforma.calls\n          when 31...150 then\n            ret= ret * 0.8 #20%\n            remark << \" 20% rebate\"\n          when 151...240 then\n            ret= ret * 0.6 #40%\n          remark << \" 40% rebate\"\n          when 241 ... 10000 then\n            ret= ret * 0.3 #70%\n          remark << \" 70% rebate\"\n        end\n      when \"CRU\" then #cruise ships, yachts and sailing crafts\n        ret= proforma.gw * ((proforma.gw < 50000) ? 0.415 : 0.4)\n        remark = \"GT * %s\" % ((proforma.gw < 50000) ? \"0.415\" : \"0.4\")\n        #Starting from January 1 st 2011: cruise ships, yachts and sailing crafts 0,46 EUR/GT unit\n        if (proforma.arrived > Date.civil(2010, 12, 31))\n          ret= proforma.gw * 0.46\n          remark = \"GT * 0.46\"\n        end\n        #discounts\n        case proforma.calls\n          when 2 then\n            ret=ret * 0.5 #50%\n            remark << \" 50% rebate\"\n          when 4 then\n            ret=ret * 0.25 #75%\n            remark << \" 75% rebate\"\n          when 6 ...100000 then\n            ret=ret * 0.15 #85%\n            remark << \" 85% rebate\"\n        end\n      when \"CCR\" then #coastal cruisers\n        ret= proforma.gw * 0.2\n        remark = \"GT * 0.2\"\n      else #all others\n        ret=proforma.gw * 0.735\n        remark = \"GT * 0.735\"\n    end\n    [ret, remark]"
+  is_manual: f
+  created_at: 2010-04-07 05:11:50
+  updated_at: 2010-04-07 05:11:50
+  remark: GT*0.45 -75%
+  currency_id: "1"
+tarifs_010: 
+  id: "14"
+  tarif_calculation_id: "9"
+  name: Watchman -Security
+  formula: ""
+  is_manual: t
+  created_at: 2010-04-07 05:12:30
+  updated_at: 2010-04-07 05:12:30
+  remark: ""
+  currency_id: "1"
+tarifs_011: 
+  id: "15"
+  tarif_calculation_id: "9"
+  name: Waste fee
+  formula: |-
+    case proforma.vessel.vessel_type
+             when 4 then
+              [ (0.010*proforma.gw),"0.010 * GW"]
+             when 8 then
+              [ (0.018*proforma.gw),"0.018 * GW"]
+             when 6 then
+              [ (0.020*proforma.gw),"0.020 * GW"]
+             else
+              [ (0.017*proforma.gw),"0.017 * GW"]
+           end
+  is_manual: f
+  created_at: 
+  updated_at: 
+  remark: 
+  currency_id: "1"
+tarifs_012: 
+  id: "16"
+  tarif_calculation_id: "10"
+  name: Test tarif
+  formula: "[1,\"Test remark\"]"
+  is_manual: f
+  created_at: 2010-08-08 13:43:32
+  updated_at: 2010-08-08 13:43:32
+  remark: Test tarif
+  currency_id: "1"

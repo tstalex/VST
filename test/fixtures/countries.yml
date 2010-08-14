@@ -1,9 +1,2045 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  code: MyString
-
-two:
-  name: MyString
-  code: MyString
+--- 
+countries_001: 
+  id: "1"
+  text: ""
+  code: 
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:27
+  updated_at: 2010-03-25 06:22:27
+countries_002: 
+  id: "2"
+  text: Albania
+  code: AL
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:27
+  updated_at: 2010-03-25 06:22:27
+countries_003: 
+  id: "3"
+  text: Algeria
+  code: DZ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:27
+  updated_at: 2010-03-25 06:22:27
+countries_004: 
+  id: "4"
+  text: American samoa
+  code: AS
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:27
+  updated_at: 2010-03-25 06:22:27
+countries_005: 
+  id: "5"
+  text: Andorra
+  code: AD
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:27
+  updated_at: 2010-03-25 06:22:27
+countries_006: 
+  id: "6"
+  text: Angola
+  code: AO
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:27
+  updated_at: 2010-03-25 06:22:27
+countries_007: 
+  id: "7"
+  text: Anguilla
+  code: AI
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:27
+  updated_at: 2010-03-25 06:22:27
+countries_008: 
+  id: "8"
+  text: Antarctica
+  code: AQ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:28
+  updated_at: 2010-03-25 06:22:28
+countries_009: 
+  id: "9"
+  text: Antigua and barbuda
+  code: AG
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:28
+  updated_at: 2010-03-25 06:22:28
+countries_010: 
+  id: "10"
+  text: Argentina
+  code: AR
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:28
+  updated_at: 2010-03-25 06:22:28
+countries_011: 
+  id: "11"
+  text: Armenia
+  code: AM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:28
+  updated_at: 2010-03-25 06:22:28
+countries_012: 
+  id: "12"
+  text: Aruba
+  code: AW
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:28
+  updated_at: 2010-03-25 06:22:28
+countries_013: 
+  id: "13"
+  text: Australia
+  code: AU
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:28
+  updated_at: 2010-03-25 06:22:28
+countries_014: 
+  id: "14"
+  text: Austria
+  code: AT
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:28
+  updated_at: 2010-03-25 06:22:28
+countries_015: 
+  id: "15"
+  text: Azerbaijan
+  code: AZ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:28
+  updated_at: 2010-03-25 06:22:28
+countries_016: 
+  id: "16"
+  text: Bahamas
+  code: BS
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:28
+  updated_at: 2010-03-25 06:22:28
+countries_017: 
+  id: "17"
+  text: Bahrain
+  code: BH
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:28
+  updated_at: 2010-03-25 06:22:28
+countries_018: 
+  id: "18"
+  text: Bangladesh
+  code: BD
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:29
+  updated_at: 2010-03-25 06:22:29
+countries_019: 
+  id: "19"
+  text: Barbados
+  code: BB
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:29
+  updated_at: 2010-03-25 06:22:29
+countries_020: 
+  id: "20"
+  text: Belarus
+  code: BY
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:29
+  updated_at: 2010-03-25 06:22:29
+countries_021: 
+  id: "21"
+  text: Belgium
+  code: BE
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:29
+  updated_at: 2010-03-25 06:22:29
+countries_022: 
+  id: "22"
+  text: Belize
+  code: BZ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:29
+  updated_at: 2010-03-25 06:22:29
+countries_023: 
+  id: "23"
+  text: Benin
+  code: BJ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:29
+  updated_at: 2010-03-25 06:22:29
+countries_024: 
+  id: "24"
+  text: Bermuda
+  code: BM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:29
+  updated_at: 2010-03-25 06:22:29
+countries_025: 
+  id: "25"
+  text: Bhutan
+  code: BT
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:29
+  updated_at: 2010-03-25 06:22:29
+countries_026: 
+  id: "26"
+  text: Bolivia
+  code: BO
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:30
+  updated_at: 2010-03-25 06:22:30
+countries_027: 
+  id: "27"
+  text: Bosnia and herzegovina
+  code: BA
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:30
+  updated_at: 2010-03-25 06:22:30
+countries_028: 
+  id: "28"
+  text: Botswana
+  code: BW
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:30
+  updated_at: 2010-03-25 06:22:30
+countries_029: 
+  id: "29"
+  text: Bouvet island
+  code: BV
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:30
+  updated_at: 2010-03-25 06:22:30
+countries_030: 
+  id: "30"
+  text: Brazil
+  code: BR
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:30
+  updated_at: 2010-03-25 06:22:30
+countries_031: 
+  id: "31"
+  text: British indian ocean territory
+  code: IO
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:30
+  updated_at: 2010-03-25 06:22:30
+countries_032: 
+  id: "32"
+  text: Brunei darussalam
+  code: BN
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:31
+  updated_at: 2010-03-25 06:22:31
+countries_033: 
+  id: "33"
+  text: Bulgaria
+  code: BG
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:31
+  updated_at: 2010-03-25 06:22:31
+countries_034: 
+  id: "34"
+  text: Burkina faso
+  code: BF
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:31
+  updated_at: 2010-03-25 06:22:31
+countries_035: 
+  id: "35"
+  text: Burundi
+  code: BI
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:31
+  updated_at: 2010-03-25 06:22:31
+countries_036: 
+  id: "36"
+  text: Cambodia
+  code: KH
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:31
+  updated_at: 2010-03-25 06:22:31
+countries_037: 
+  id: "37"
+  text: Cameroon
+  code: CM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:31
+  updated_at: 2010-03-25 06:22:31
+countries_038: 
+  id: "38"
+  text: Canada
+  code: CA
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:32
+  updated_at: 2010-03-25 06:22:32
+countries_039: 
+  id: "39"
+  text: Cape verde
+  code: CV
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:32
+  updated_at: 2010-03-25 06:22:32
+countries_040: 
+  id: "40"
+  text: Cayman islands
+  code: KY
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:32
+  updated_at: 2010-03-25 06:22:32
+countries_041: 
+  id: "41"
+  text: Central african republic
+  code: CF
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:32
+  updated_at: 2010-03-25 06:22:32
+countries_042: 
+  id: "42"
+  text: Chad
+  code: TD
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:32
+  updated_at: 2010-03-25 06:22:32
+countries_043: 
+  id: "43"
+  text: Chile
+  code: CL
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:32
+  updated_at: 2010-03-25 06:22:32
+countries_044: 
+  id: "44"
+  text: China
+  code: CN
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:33
+  updated_at: 2010-03-25 06:22:33
+countries_045: 
+  id: "45"
+  text: Christmas island
+  code: CX
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:33
+  updated_at: 2010-03-25 06:22:33
+countries_046: 
+  id: "46"
+  text: Cocos (keeling) islands
+  code: CC
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:33
+  updated_at: 2010-03-25 06:22:33
+countries_047: 
+  id: "47"
+  text: Colombia
+  code: CO
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:33
+  updated_at: 2010-03-25 06:22:33
+countries_048: 
+  id: "48"
+  text: Comoros
+  code: KM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:33
+  updated_at: 2010-03-25 06:22:33
+countries_049: 
+  id: "49"
+  text: Congo
+  code: CG
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:33
+  updated_at: 2010-03-25 06:22:33
+countries_050: 
+  id: "50"
+  text: Congo, the democratic republic of the
+  code: CD
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:33
+  updated_at: 2010-03-25 06:22:33
+countries_051: 
+  id: "51"
+  text: Cook islands
+  code: CK
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:34
+  updated_at: 2010-03-25 06:22:34
+countries_052: 
+  id: "52"
+  text: Costa rica
+  code: CR
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:34
+  updated_at: 2010-03-25 06:22:34
+countries_053: 
+  id: "53"
+  text: Cote d'ivoire
+  code: CI
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:34
+  updated_at: 2010-03-25 06:22:34
+countries_054: 
+  id: "54"
+  text: Croatia
+  code: HR
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:34
+  updated_at: 2010-03-25 06:22:34
+countries_055: 
+  id: "55"
+  text: Cuba
+  code: CU
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:34
+  updated_at: 2010-03-25 06:22:34
+countries_056: 
+  id: "56"
+  text: Cyprus
+  code: CY
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:34
+  updated_at: 2010-03-25 06:22:34
+countries_057: 
+  id: "57"
+  text: Czech republic
+  code: CZ
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:34
+  updated_at: 2010-03-25 06:22:34
+countries_058: 
+  id: "58"
+  text: Denmark
+  code: DK
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:34
+  updated_at: 2010-03-25 06:22:34
+countries_059: 
+  id: "59"
+  text: Djibouti
+  code: DJ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:35
+  updated_at: 2010-03-25 06:22:35
+countries_060: 
+  id: "60"
+  text: Dominica
+  code: DM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:35
+  updated_at: 2010-03-25 06:22:35
+countries_061: 
+  id: "61"
+  text: Dominican republic
+  code: DO
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:35
+  updated_at: 2010-03-25 06:22:35
+countries_062: 
+  id: "62"
+  text: Dutch
+  code: DU
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:35
+  updated_at: 2010-03-25 06:22:35
+countries_063: 
+  id: "63"
+  text: Ecuador
+  code: EC
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:35
+  updated_at: 2010-03-25 06:22:35
+countries_064: 
+  id: "64"
+  text: Egypt
+  code: EG
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:35
+  updated_at: 2010-03-25 06:22:35
+countries_065: 
+  id: "65"
+  text: El salvador
+  code: SV
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:35
+  updated_at: 2010-03-25 06:22:35
+countries_066: 
+  id: "66"
+  text: Equatorial guinea
+  code: GQ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:36
+  updated_at: 2010-03-25 06:22:36
+countries_067: 
+  id: "67"
+  text: Eritrea
+  code: ER
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:36
+  updated_at: 2010-03-25 06:22:36
+countries_068: 
+  id: "68"
+  text: Estonia
+  code: EE
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:36
+  updated_at: 2010-03-25 06:22:36
+countries_069: 
+  id: "69"
+  text: Ethiopia
+  code: ET
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:36
+  updated_at: 2010-03-25 06:22:36
+countries_070: 
+  id: "70"
+  text: Falkland islands (malvinas)
+  code: FK
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:36
+  updated_at: 2010-03-25 06:22:36
+countries_071: 
+  id: "71"
+  text: Faroe islands
+  code: FO
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:36
+  updated_at: 2010-03-25 06:22:36
+countries_072: 
+  id: "72"
+  text: Fiji
+  code: FJ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:36
+  updated_at: 2010-03-25 06:22:36
+countries_073: 
+  id: "73"
+  text: Finland
+  code: FI
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:36
+  updated_at: 2010-03-25 06:22:36
+countries_074: 
+  id: "74"
+  text: France
+  code: FR
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:37
+  updated_at: 2010-03-25 06:22:37
+countries_075: 
+  id: "75"
+  text: French guiana
+  code: GF
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:37
+  updated_at: 2010-03-25 06:22:37
+countries_076: 
+  id: "76"
+  text: French polynesia
+  code: PF
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:37
+  updated_at: 2010-03-25 06:22:37
+countries_077: 
+  id: "77"
+  text: French southern territories
+  code: TF
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:37
+  updated_at: 2010-03-25 06:22:37
+countries_078: 
+  id: "78"
+  text: Gabon
+  code: GA
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:37
+  updated_at: 2010-03-25 06:22:37
+countries_079: 
+  id: "79"
+  text: Gambia
+  code: GM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:37
+  updated_at: 2010-03-25 06:22:37
+countries_080: 
+  id: "80"
+  text: Georgia
+  code: GE
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:37
+  updated_at: 2010-03-25 06:22:37
+countries_081: 
+  id: "81"
+  text: Germany
+  code: DE
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:37
+  updated_at: 2010-03-25 06:22:37
+countries_082: 
+  id: "82"
+  text: Ghana
+  code: GH
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:37
+  updated_at: 2010-03-25 06:22:37
+countries_083: 
+  id: "83"
+  text: Gibraltar
+  code: GI
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:38
+  updated_at: 2010-03-25 06:22:38
+countries_084: 
+  id: "84"
+  text: Greece
+  code: GR
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:38
+  updated_at: 2010-03-25 06:22:38
+countries_085: 
+  id: "85"
+  text: Greenland
+  code: GL
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:38
+  updated_at: 2010-03-25 06:22:38
+countries_086: 
+  id: "86"
+  text: Grenada
+  code: GD
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:38
+  updated_at: 2010-03-25 06:22:38
+countries_087: 
+  id: "87"
+  text: Guadeloupe
+  code: GP
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:38
+  updated_at: 2010-03-25 06:22:38
+countries_088: 
+  id: "88"
+  text: Guam
+  code: GU
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:38
+  updated_at: 2010-03-25 06:22:38
+countries_089: 
+  id: "89"
+  text: Guatemala
+  code: GT
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:38
+  updated_at: 2010-03-25 06:22:38
+countries_090: 
+  id: "90"
+  text: Guinea
+  code: GN
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:39
+  updated_at: 2010-03-25 06:22:39
+countries_091: 
+  id: "91"
+  text: Guinea-bissau
+  code: GW
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:39
+  updated_at: 2010-03-25 06:22:39
+countries_092: 
+  id: "92"
+  text: Guyana
+  code: GY
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:39
+  updated_at: 2010-03-25 06:22:39
+countries_093: 
+  id: "93"
+  text: Haiti
+  code: HT
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:39
+  updated_at: 2010-03-25 06:22:39
+countries_094: 
+  id: "94"
+  text: Heard island and mcdonald islands
+  code: HM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:39
+  updated_at: 2010-03-25 06:22:39
+countries_095: 
+  id: "95"
+  text: Holy see (vatican city state)
+  code: VA
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:39
+  updated_at: 2010-03-25 06:22:39
+countries_096: 
+  id: "96"
+  text: Honduras
+  code: HN
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:40
+  updated_at: 2010-03-25 06:22:40
+countries_097: 
+  id: "97"
+  text: Hong kong
+  code: HK
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:40
+  updated_at: 2010-03-25 06:22:40
+countries_098: 
+  id: "98"
+  text: Hungary
+  code: HU
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:40
+  updated_at: 2010-03-25 06:22:40
+countries_099: 
+  id: "99"
+  text: Iceland
+  code: IS
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:40
+  updated_at: 2010-03-25 06:22:40
+countries_100: 
+  id: "100"
+  text: India
+  code: IN
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:40
+  updated_at: 2010-03-25 06:22:40
+countries_101: 
+  id: "101"
+  text: Indonesia
+  code: ID
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:40
+  updated_at: 2010-03-25 06:22:40
+countries_102: 
+  id: "102"
+  text: Iran, islamic republic of
+  code: IR
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:40
+  updated_at: 2010-03-25 06:22:40
+countries_103: 
+  id: "103"
+  text: Iraq
+  code: IQ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:41
+  updated_at: 2010-03-25 06:22:41
+countries_104: 
+  id: "104"
+  text: Ireland
+  code: IE
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:41
+  updated_at: 2010-03-25 06:22:41
+countries_105: 
+  id: "105"
+  text: Israel
+  code: IL
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:41
+  updated_at: 2010-03-25 06:22:41
+countries_106: 
+  id: "106"
+  text: Italy
+  code: IT
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:41
+  updated_at: 2010-03-25 06:22:41
+countries_107: 
+  id: "107"
+  text: Jamaica
+  code: JM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:41
+  updated_at: 2010-03-25 06:22:41
+countries_108: 
+  id: "108"
+  text: Japan
+  code: JP
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:41
+  updated_at: 2010-03-25 06:22:41
+countries_109: 
+  id: "109"
+  text: Jordan
+  code: JO
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:42
+  updated_at: 2010-03-25 06:22:42
+countries_110: 
+  id: "110"
+  text: Kazakhstan
+  code: KZ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:42
+  updated_at: 2010-03-25 06:22:42
+countries_111: 
+  id: "111"
+  text: Kenya
+  code: KE
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:42
+  updated_at: 2010-03-25 06:22:42
+countries_112: 
+  id: "112"
+  text: Kiribati
+  code: KI
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:42
+  updated_at: 2010-03-25 06:22:42
+countries_113: 
+  id: "113"
+  text: Korea, democratic people's republic of
+  code: KP
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:42
+  updated_at: 2010-03-25 06:22:42
+countries_114: 
+  id: "114"
+  text: Korea, republic of
+  code: KR
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:42
+  updated_at: 2010-03-25 06:22:42
+countries_115: 
+  id: "115"
+  text: Kuwait
+  code: KW
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:42
+  updated_at: 2010-03-25 06:22:42
+countries_116: 
+  id: "116"
+  text: Kyrgyzstan
+  code: KG
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:43
+  updated_at: 2010-03-25 06:22:43
+countries_117: 
+  id: "117"
+  text: Lao people's democratic republic
+  code: LA
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:43
+  updated_at: 2010-03-25 06:22:43
+countries_118: 
+  id: "118"
+  text: Latvia
+  code: LV
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:43
+  updated_at: 2010-03-25 06:22:43
+countries_119: 
+  id: "119"
+  text: Lebanon
+  code: LB
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:43
+  updated_at: 2010-03-25 06:22:43
+countries_120: 
+  id: "120"
+  text: Lesotho
+  code: LS
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:43
+  updated_at: 2010-03-25 06:22:43
+countries_121: 
+  id: "121"
+  text: Liberia
+  code: LR
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:43
+  updated_at: 2010-03-25 06:22:43
+countries_122: 
+  id: "122"
+  text: Libyan arab jamahiriya
+  code: LY
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:43
+  updated_at: 2010-03-25 06:22:43
+countries_123: 
+  id: "123"
+  text: Liechtenstein
+  code: LI
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:44
+  updated_at: 2010-03-25 06:22:44
+countries_124: 
+  id: "124"
+  text: Lithuania
+  code: LT
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:44
+  updated_at: 2010-03-25 06:22:44
+countries_125: 
+  id: "125"
+  text: Luxembourg
+  code: LU
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:44
+  updated_at: 2010-03-25 06:22:44
+countries_126: 
+  id: "126"
+  text: Macao
+  code: MO
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:44
+  updated_at: 2010-03-25 06:22:44
+countries_127: 
+  id: "127"
+  text: Macedonia, the former yugoslav republic of
+  code: MK
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:44
+  updated_at: 2010-03-25 06:22:44
+countries_128: 
+  id: "128"
+  text: Madagascar
+  code: MG
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:44
+  updated_at: 2010-03-25 06:22:44
+countries_129: 
+  id: "129"
+  text: Malawi
+  code: MW
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:44
+  updated_at: 2010-03-25 06:22:44
+countries_130: 
+  id: "130"
+  text: Malaysia
+  code: MY
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:44
+  updated_at: 2010-03-25 06:22:44
+countries_131: 
+  id: "131"
+  text: Maldives
+  code: MV
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:45
+  updated_at: 2010-03-25 06:22:45
+countries_132: 
+  id: "132"
+  text: Mali
+  code: ML
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:45
+  updated_at: 2010-03-25 06:22:45
+countries_133: 
+  id: "133"
+  text: Malta
+  code: MT
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:45
+  updated_at: 2010-03-25 06:22:45
+countries_134: 
+  id: "134"
+  text: Isle of man
+  code: MN
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:45
+  updated_at: 2010-03-25 06:22:45
+countries_135: 
+  id: "135"
+  text: Marshall islands
+  code: MH
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:45
+  updated_at: 2010-03-25 06:22:45
+countries_136: 
+  id: "136"
+  text: Martinique
+  code: MQ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:46
+  updated_at: 2010-03-25 06:22:46
+countries_137: 
+  id: "137"
+  text: Mauritania
+  code: MR
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:46
+  updated_at: 2010-03-25 06:22:46
+countries_138: 
+  id: "138"
+  text: Mauritius
+  code: MU
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:46
+  updated_at: 2010-03-25 06:22:46
+countries_139: 
+  id: "139"
+  text: Mayotte
+  code: YT
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:46
+  updated_at: 2010-03-25 06:22:46
+countries_140: 
+  id: "140"
+  text: Mexico
+  code: MX
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:47
+  updated_at: 2010-03-25 06:22:47
+countries_141: 
+  id: "141"
+  text: Micronesia, federated states of
+  code: FM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:47
+  updated_at: 2010-03-25 06:22:47
+countries_142: 
+  id: "142"
+  text: Moldova, republic of
+  code: MD
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:47
+  updated_at: 2010-03-25 06:22:47
+countries_143: 
+  id: "143"
+  text: Monaco
+  code: MC
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:47
+  updated_at: 2010-03-25 06:22:47
+countries_144: 
+  id: "144"
+  text: Mongolia
+  code: MI
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:47
+  updated_at: 2010-03-25 06:22:47
+countries_145: 
+  id: "145"
+  text: Montserrat
+  code: MS
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:47
+  updated_at: 2010-03-25 06:22:47
+countries_146: 
+  id: "146"
+  text: Morocco
+  code: MA
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:47
+  updated_at: 2010-03-25 06:22:47
+countries_147: 
+  id: "147"
+  text: Mozambique
+  code: MZ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:48
+  updated_at: 2010-03-25 06:22:48
+countries_148: 
+  id: "148"
+  text: Myanmar
+  code: MM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:48
+  updated_at: 2010-03-25 06:22:48
+countries_149: 
+  id: "149"
+  text: Namibia
+  code: NA
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:48
+  updated_at: 2010-03-25 06:22:48
+countries_150: 
+  id: "150"
+  text: Nauru
+  code: NR
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:48
+  updated_at: 2010-03-25 06:22:48
+countries_151: 
+  id: "151"
+  text: Nepal
+  code: NP
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:48
+  updated_at: 2010-03-25 06:22:48
+countries_152: 
+  id: "152"
+  text: Netherlands
+  code: NL
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:48
+  updated_at: 2010-03-25 06:22:48
+countries_153: 
+  id: "153"
+  text: Netherlands antilles
+  code: AN
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:48
+  updated_at: 2010-03-25 06:22:48
+countries_154: 
+  id: "154"
+  text: New caledonia
+  code: NC
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:48
+  updated_at: 2010-03-25 06:22:48
+countries_155: 
+  id: "155"
+  text: New zealand
+  code: NZ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:49
+  updated_at: 2010-03-25 06:22:49
+countries_156: 
+  id: "156"
+  text: Nicaragua
+  code: NI
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:49
+  updated_at: 2010-03-25 06:22:49
+countries_157: 
+  id: "157"
+  text: Niger
+  code: NE
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:49
+  updated_at: 2010-03-25 06:22:49
+countries_158: 
+  id: "158"
+  text: Nigeria
+  code: NG
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:49
+  updated_at: 2010-03-25 06:22:49
+countries_159: 
+  id: "159"
+  text: Niue
+  code: NU
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:49
+  updated_at: 2010-03-25 06:22:49
+countries_160: 
+  id: "160"
+  text: Norfolk island
+  code: NF
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:49
+  updated_at: 2010-03-25 06:22:49
+countries_161: 
+  id: "161"
+  text: Northern mariana islands
+  code: MP
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:50
+  updated_at: 2010-03-25 06:22:50
+countries_162: 
+  id: "162"
+  text: Norway
+  code: "NO"
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:50
+  updated_at: 2010-03-25 06:22:50
+countries_163: 
+  id: "163"
+  text: Oman
+  code: OM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:50
+  updated_at: 2010-03-25 06:22:50
+countries_164: 
+  id: "164"
+  text: Pakistan
+  code: PK
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:50
+  updated_at: 2010-03-25 06:22:50
+countries_165: 
+  id: "165"
+  text: Palau
+  code: PW
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:50
+  updated_at: 2010-03-25 06:22:50
+countries_166: 
+  id: "166"
+  text: Palestinian territory, occupied
+  code: PS
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:50
+  updated_at: 2010-03-25 06:22:50
+countries_167: 
+  id: "167"
+  text: Panama
+  code: PA
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:50
+  updated_at: 2010-03-25 06:22:50
+countries_168: 
+  id: "168"
+  text: Papua new guinea
+  code: PG
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:50
+  updated_at: 2010-03-25 06:22:50
+countries_169: 
+  id: "169"
+  text: Paraguay
+  code: PY
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:51
+  updated_at: 2010-03-25 06:22:51
+countries_170: 
+  id: "170"
+  text: Peru
+  code: PE
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:51
+  updated_at: 2010-03-25 06:22:51
+countries_171: 
+  id: "171"
+  text: Philippines
+  code: PH
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:51
+  updated_at: 2010-03-25 06:22:51
+countries_172: 
+  id: "172"
+  text: Pitcairn
+  code: PN
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:51
+  updated_at: 2010-03-25 06:22:51
+countries_173: 
+  id: "173"
+  text: Poland
+  code: PL
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:51
+  updated_at: 2010-03-25 06:22:51
+countries_174: 
+  id: "174"
+  text: Portugal
+  code: PT
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:51
+  updated_at: 2010-03-25 06:22:51
+countries_175: 
+  id: "175"
+  text: Puerto rico
+  code: PR
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:52
+  updated_at: 2010-03-25 06:22:52
+countries_176: 
+  id: "176"
+  text: Qatar
+  code: QA
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:52
+  updated_at: 2010-03-25 06:22:52
+countries_177: 
+  id: "177"
+  text: Reunion
+  code: RE
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:52
+  updated_at: 2010-03-25 06:22:52
+countries_178: 
+  id: "178"
+  text: Romania
+  code: RO
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:52
+  updated_at: 2010-03-25 06:22:52
+countries_179: 
+  id: "179"
+  text: Russian federation
+  code: RU
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:52
+  updated_at: 2010-03-25 06:22:52
+countries_180: 
+  id: "180"
+  text: Rwanda
+  code: RW
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:52
+  updated_at: 2010-03-25 06:22:52
+countries_181: 
+  id: "181"
+  text: Saint helena
+  code: SH
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:52
+  updated_at: 2010-03-25 06:22:52
+countries_182: 
+  id: "182"
+  text: Saint kitts and nevis
+  code: KN
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:53
+  updated_at: 2010-03-25 06:22:53
+countries_183: 
+  id: "183"
+  text: Saint lucia
+  code: LC
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:53
+  updated_at: 2010-03-25 06:22:53
+countries_184: 
+  id: "184"
+  text: Saint pierre and miquelon
+  code: PM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:53
+  updated_at: 2010-03-25 06:22:53
+countries_185: 
+  id: "185"
+  text: Saint vincent and the grenadines
+  code: VC
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:53
+  updated_at: 2010-03-25 06:22:53
+countries_186: 
+  id: "186"
+  text: Samoa
+  code: WS
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:53
+  updated_at: 2010-03-25 06:22:53
+countries_187: 
+  id: "187"
+  text: San marino
+  code: SM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:53
+  updated_at: 2010-03-25 06:22:53
+countries_188: 
+  id: "188"
+  text: Sao tome and principe
+  code: ST
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:53
+  updated_at: 2010-03-25 06:22:53
+countries_189: 
+  id: "189"
+  text: Saudi arabia
+  code: SA
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:54
+  updated_at: 2010-03-25 06:22:54
+countries_190: 
+  id: "190"
+  text: Senegal
+  code: SN
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:54
+  updated_at: 2010-03-25 06:22:54
+countries_191: 
+  id: "191"
+  text: Seychelles
+  code: SC
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:54
+  updated_at: 2010-03-25 06:22:54
+countries_192: 
+  id: "192"
+  text: Sierra leone
+  code: SL
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:54
+  updated_at: 2010-03-25 06:22:54
+countries_193: 
+  id: "193"
+  text: Singapore
+  code: SG
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:54
+  updated_at: 2010-03-25 06:22:54
+countries_194: 
+  id: "194"
+  text: Slovakia
+  code: SK
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:54
+  updated_at: 2010-03-25 06:22:54
+countries_195: 
+  id: "195"
+  text: Slovenia
+  code: SI
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:55
+  updated_at: 2010-03-25 06:22:55
+countries_196: 
+  id: "196"
+  text: Solomon islands
+  code: SB
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:55
+  updated_at: 2010-03-25 06:22:55
+countries_197: 
+  id: "197"
+  text: Somalia
+  code: SO
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:55
+  updated_at: 2010-03-25 06:22:55
+countries_198: 
+  id: "198"
+  text: South africa
+  code: ZA
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:55
+  updated_at: 2010-03-25 06:22:55
+countries_199: 
+  id: "199"
+  text: South georgia and the south sandwich islands
+  code: GS
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:55
+  updated_at: 2010-03-25 06:22:55
+countries_200: 
+  id: "200"
+  text: Spain
+  code: ES
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:55
+  updated_at: 2010-03-25 06:22:55
+countries_201: 
+  id: "201"
+  text: Sri lanka
+  code: LK
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:55
+  updated_at: 2010-03-25 06:22:55
+countries_202: 
+  id: "202"
+  text: Sudan
+  code: SD
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:56
+  updated_at: 2010-03-25 06:22:56
+countries_203: 
+  id: "203"
+  text: Suriname
+  code: SR
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:56
+  updated_at: 2010-03-25 06:22:56
+countries_204: 
+  id: "204"
+  text: Svalbard and jan mayen
+  code: SJ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:56
+  updated_at: 2010-03-25 06:22:56
+countries_205: 
+  id: "205"
+  text: Swaziland
+  code: SZ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:56
+  updated_at: 2010-03-25 06:22:56
+countries_206: 
+  id: "206"
+  text: Sweden
+  code: SE
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:56
+  updated_at: 2010-03-25 06:22:56
+countries_207: 
+  id: "207"
+  text: Switzerland
+  code: CH
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:56
+  updated_at: 2010-03-25 06:22:56
+countries_208: 
+  id: "208"
+  text: Syrian arab republic
+  code: SY
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:56
+  updated_at: 2010-03-25 06:22:56
+countries_209: 
+  id: "209"
+  text: Taiwan, province of china
+  code: TW
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:57
+  updated_at: 2010-03-25 06:22:57
+countries_210: 
+  id: "210"
+  text: Tajikistan
+  code: TJ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:57
+  updated_at: 2010-03-25 06:22:57
+countries_211: 
+  id: "211"
+  text: Tanzania, united republic of
+  code: TZ
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:57
+  updated_at: 2010-03-25 06:22:57
+countries_212: 
+  id: "212"
+  text: Thailand
+  code: TH
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:57
+  updated_at: 2010-03-25 06:22:57
+countries_213: 
+  id: "213"
+  text: Timor-leste
+  code: TL
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:57
+  updated_at: 2010-03-25 06:22:57
+countries_214: 
+  id: "214"
+  text: Togo
+  code: TG
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:57
+  updated_at: 2010-03-25 06:22:57
+countries_215: 
+  id: "215"
+  text: Tokelau
+  code: TK
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:58
+  updated_at: 2010-03-25 06:22:58
+countries_216: 
+  id: "216"
+  text: Tonga
+  code: TO
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:58
+  updated_at: 2010-03-25 06:22:58
+countries_217: 
+  id: "217"
+  text: Trinidad and tobago
+  code: TT
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:58
+  updated_at: 2010-03-25 06:22:58
+countries_218: 
+  id: "218"
+  text: Tunisia
+  code: TN
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:58
+  updated_at: 2010-03-25 06:22:58
+countries_219: 
+  id: "219"
+  text: Turkey
+  code: TR
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:58
+  updated_at: 2010-03-25 06:22:58
+countries_220: 
+  id: "220"
+  text: Turkmenistan
+  code: TM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:58
+  updated_at: 2010-03-25 06:22:58
+countries_221: 
+  id: "221"
+  text: Turks and caicos islands
+  code: TC
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:58
+  updated_at: 2010-03-25 06:22:58
+countries_222: 
+  id: "222"
+  text: Tuvalu
+  code: TV
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:59
+  updated_at: 2010-03-25 06:22:59
+countries_223: 
+  id: "223"
+  text: Uganda
+  code: UG
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:59
+  updated_at: 2010-03-25 06:22:59
+countries_224: 
+  id: "224"
+  text: Ukraine
+  code: UA
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:59
+  updated_at: 2010-03-25 06:22:59
+countries_225: 
+  id: "225"
+  text: United arab emirates
+  code: AE
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:59
+  updated_at: 2010-03-25 06:22:59
+countries_226: 
+  id: "226"
+  text: United kingdom
+  code: GB
+  is_euro: "1"
+  created_at: 2010-03-25 06:22:59
+  updated_at: 2010-03-25 06:22:59
+countries_227: 
+  id: "227"
+  text: United states
+  code: US
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:59
+  updated_at: 2010-03-25 06:22:59
+countries_228: 
+  id: "228"
+  text: United states minor outlying islands
+  code: UM
+  is_euro: "0"
+  created_at: 2010-03-25 06:22:59
+  updated_at: 2010-03-25 06:22:59
+countries_229: 
+  id: "229"
+  text: Uruguay
+  code: UY
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:00
+  updated_at: 2010-03-25 06:23:00
+countries_230: 
+  id: "230"
+  text: Uzbekistan
+  code: UZ
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:00
+  updated_at: 2010-03-25 06:23:00
+countries_231: 
+  id: "231"
+  text: Vanuatu
+  code: VU
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:00
+  updated_at: 2010-03-25 06:23:00
+countries_232: 
+  id: "232"
+  text: Venezuela
+  code: VE
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:00
+  updated_at: 2010-03-25 06:23:00
+countries_233: 
+  id: "233"
+  text: Viet nam
+  code: VN
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:00
+  updated_at: 2010-03-25 06:23:00
+countries_234: 
+  id: "234"
+  text: Virgin islands, british
+  code: VG
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:01
+  updated_at: 2010-03-25 06:23:01
+countries_235: 
+  id: "235"
+  text: Virgin islands, u.s.
+  code: VI
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:01
+  updated_at: 2010-03-25 06:23:01
+countries_236: 
+  id: "236"
+  text: Wallis and futuna
+  code: WF
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:01
+  updated_at: 2010-03-25 06:23:01
+countries_237: 
+  id: "237"
+  text: Western sahara
+  code: EH
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:01
+  updated_at: 2010-03-25 06:23:01
+countries_238: 
+  id: "238"
+  text: Yemen
+  code: YE
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:01
+  updated_at: 2010-03-25 06:23:01
+countries_239: 
+  id: "239"
+  text: Yugoslavia
+  code: YU
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:01
+  updated_at: 2010-03-25 06:23:01
+countries_240: 
+  id: "240"
+  text: Zambia
+  code: ZM
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:02
+  updated_at: 2010-03-25 06:23:02
+countries_241: 
+  id: "241"
+  text: Zimbabwe
+  code: ZW
+  is_euro: "0"
+  created_at: 2010-03-25 06:23:02
+  updated_at: 2010-03-25 06:23:02
+countries_242: 
+  id: "242"
+  text: ""
+  code: "1"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:21
+  updated_at: 2010-03-28 18:57:21
+countries_243: 
+  id: "243"
+  text: Bekkeri
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:21
+  updated_at: 2010-03-28 18:57:21
+countries_244: 
+  id: "244"
+  text: Dirhami
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:21
+  updated_at: 2010-03-28 18:57:21
+countries_245: 
+  id: "245"
+  text: Haapsalu
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:21
+  updated_at: 2010-03-28 18:57:21
+countries_246: 
+  id: "246"
+  text: Heltermaa
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:22
+  updated_at: 2010-03-28 18:57:22
+countries_247: 
+  id: "247"
+  text: Hundipea / miinisadam
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:22
+  updated_at: 2010-03-28 18:57:22
+countries_248: 
+  id: "248"
+  text: Jansen kai
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:22
+  updated_at: 2010-03-28 18:57:22
+countries_249: 
+  id: "249"
+  text: Kuivastu
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:22
+  updated_at: 2010-03-28 18:57:22
+countries_250: 
+  id: "250"
+  text: Kunda
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:22
+  updated_at: 2010-03-28 18:57:22
+countries_251: 
+  id: "251"
+  text: Lehtma
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:22
+  updated_at: 2010-03-28 18:57:22
+countries_252: 
+  id: "252"
+  text: Tallinn / linnahall
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:22
+  updated_at: 2010-03-28 18:57:22
+countries_253: 
+  id: "253"
+  text: Loksa
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:22
+  updated_at: 2010-03-28 18:57:22
+countries_254: 
+  id: "254"
+  text: Majaka
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:22
+  updated_at: 2010-03-28 18:57:22
+countries_255: 
+  id: "255"
+  text: Tallinna meretehas
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:23
+  updated_at: 2010-03-28 18:57:23
+countries_256: 
+  id: "256"
+  text: Miiduranna
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:23
+  updated_at: 2010-03-28 18:57:23
+countries_257: 
+  id: "257"
+  text: Montu
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:23
+  updated_at: 2010-03-28 18:57:23
+countries_258: 
+  id: "258"
+  text: Tallinn / muuga
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:23
+  updated_at: 2010-03-28 18:57:23
+countries_259: 
+  id: "259"
+  text: Paldiski south
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:23
+  updated_at: 2010-03-28 18:57:23
+countries_260: 
+  id: "260"
+  text: Parnu
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:23
+  updated_at: 2010-03-28 18:57:23
+countries_261: 
+  id: "261"
+  text: Parnu shipyard's berth
+  code: "68"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:23
+  updated_at: 2010-03-28 18:57:23
+countries_262: 
+  id: "262"
+  text: Pirita
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:23
+  updated_at: 2010-03-28 18:57:23
+countries_263: 
+  id: "263"
+  text: Tallinn / paljassaare
+  code: "68"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:23
+  updated_at: 2010-03-28 18:57:23
+countries_264: 
+  id: "264"
+  text: Parnu peat terminal
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:24
+  updated_at: 2010-03-28 18:57:24
+countries_265: 
+  id: "265"
+  text: Paldiski north
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:24
+  updated_at: 2010-03-28 18:57:24
+countries_266: 
+  id: "266"
+  text: Parnu reldor port
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:24
+  updated_at: 2010-03-28 18:57:24
+countries_267: 
+  id: "267"
+  text: Rohukula
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:24
+  updated_at: 2010-03-28 18:57:24
+countries_268: 
+  id: "268"
+  text: Roomassaare
+  code: "68"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:24
+  updated_at: 2010-03-28 18:57:24
+countries_269: 
+  id: "269"
+  text: Roomassaare
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:24
+  updated_at: 2010-03-28 18:57:24
+countries_270: 
+  id: "270"
+  text: Snt. petersburg
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:24
+  updated_at: 2010-03-28 18:57:24
+countries_271: 
+  id: "271"
+  text: Tallinn / old city
+  code: "68"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:24
+  updated_at: 2010-03-28 18:57:24
+countries_272: 
+  id: "272"
+  text: Veere
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:24
+  updated_at: 2010-03-28 18:57:24
+countries_273: 
+  id: "273"
+  text: Tallinn / vene-balti
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:24
+  updated_at: 2010-03-28 18:57:24
+countries_274: 
+  id: "274"
+  text: Vergi
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:25
+  updated_at: 2010-03-28 18:57:25
+countries_275: 
+  id: "275"
+  text: Vesilennukite / hudrosadam
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:25
+  updated_at: 2010-03-28 18:57:25
+countries_276: 
+  id: "276"
+  text: Virtsu
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:25
+  updated_at: 2010-03-28 18:57:25
+countries_277: 
+  id: "277"
+  text: Riga / passenger
+  code: "118"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:25
+  updated_at: 2010-03-28 18:57:25
+countries_278: 
+  id: "278"
+  text: Ventspils
+  code: "118"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:25
+  updated_at: 2010-03-28 18:57:25
+countries_279: 
+  id: "279"
+  text: Klaipeda / nafta
+  code: "124"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:25
+  updated_at: 2010-03-28 18:57:25
+countries_280: 
+  id: "280"
+  text: Liepaja
+  code: "118"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:26
+  updated_at: 2010-03-28 18:57:26
+countries_281: 
+  id: "281"
+  text: Sillamae
+  code: "68"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:26
+  updated_at: 2010-03-28 18:57:26
+countries_282: 
+  id: "282"
+  text: Saaremaa
+  code: "68"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:26
+  updated_at: 2010-03-28 18:57:26
+countries_283: 
+  id: "283"
+  text: Klaipeda / kroviniu
+  code: "124"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:26
+  updated_at: 2010-03-28 18:57:26
+countries_284: 
+  id: "284"
+  text: Klaipeda / cruise
+  code: "124"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:26
+  updated_at: 2010-03-28 18:57:26
+countries_285: 
+  id: "285"
+  text: Riga / container
+  code: "118"
+  is_euro: "0"
+  created_at: 2010-03-28 18:57:26
+  updated_at: 2010-03-28 18:57:26
+countries_286: 
+  id: "286"
+  text: Riga / central
+  code: "118"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:26
+  updated_at: 2010-03-28 18:57:26
+countries_287: 
+  id: "287"
+  text: Copenhagen
+  code: "58"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:26
+  updated_at: 2010-03-28 18:57:26
+countries_288: 
+  id: "288"
+  text: Stockholm
+  code: "206"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:26
+  updated_at: 2010-03-28 18:57:26
+countries_289: 
+  id: "289"
+  text: Helsinki
+  code: "73"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:27
+  updated_at: 2010-03-28 18:57:27
+countries_290: 
+  id: "290"
+  text: Visby
+  code: "206"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:27
+  updated_at: 2010-03-28 18:57:27
+countries_291: 
+  id: "291"
+  text: Gdynia
+  code: "173"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:27
+  updated_at: 2010-03-28 18:57:27
+countries_292: 
+  id: "292"
+  text: Warnem?nde
+  code: "81"
+  is_euro: "1"
+  created_at: 2010-03-28 18:57:27
+  updated_at: 2010-03-28 18:57:27

@@ -1,6 +1,66 @@
 class TestingController < ApplicationController
 require "#{RAILS_ROOT}/HolidayValidator.rb" 
+require "#{RAILS_ROOT}/lib/marshal.rb"
 
+	def dumpClass(class_name)
+		data=""
+		eval("data= %s.all" % class_name)
+		txt=data.to_json
+		File.open(("%s/%s.yaml" % [@dir,class_name] ), 'w') {|f| f.write(txt) }
+	end
+	
+  def dump_data
+	@dir= "#{RAILS_ROOT}/db/data_dump"
+	str=""
+	begin
+		FileUtils.rm_r @dir
+	rescue
+	end
+	FileUtils.mkdir @dir
+	
+	str= dumpClass "Country"
+	str= dumpClass "Currency"
+	str= dumpClass "IceClass"
+	str= dumpClass "LightNaviTarif"
+	str= dumpClass "PilotageCharge"
+	str= dumpClass "PilotageDiapason"
+	str= dumpClass "Port"
+	str= dumpClass "TreeElement"
+	str= dumpClass "VesselType"
+	str= dumpClass "Vessel"
+	
+	render :text=> "OK"
+  end
+
+  def save_db (cls,contents)
+	data= ActiveSupport::JSON.decode contents
+	data.each{|row|
+		eval ("%s.new(%s)" % [cls,row.to_s])
+	}
+	
+  end
+  def load_yaml
+	@txt=""
+    @dir= "#{RAILS_ROOT}/db/data_dump"
+	Dir.chdir(@dir)
+	files=[]
+	Dir.foreach(@dir) {|x| 
+		if(x =~ /.yaml$/)
+			full_path= ("%s/%s" % [@dir,x] )
+			files.push full_path
+			contents=""
+			File.open(full_path , 'r') {|f| 
+				f.each_line do |line|
+					contents += line
+				end
+			}
+			cls= x[0,x.length-5]
+			save_db cls, contents
+		end
+	}
+	render :text=> @txt
+  end
+  
   def routes
 	txt=""
 	all_routes = ENV['CONTROLLER'] ? ActionController::Routing::Routes.routes.select { |route| route.defaults[:controller] == ENV['CONTROLLER'] } : ActionController::Routing::Routes.routes

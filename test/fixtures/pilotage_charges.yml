@@ -1,13 +1,961 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  diapason_id: 
-  gt_from: 
-  gt_to: 
-  tarif: 9.99
-
-two:
-  diapason_id: 
-  gt_from: 
-  gt_to: 
-  tarif: 9.99
+--- 
+pilotage_charges_001: 
+  id: "376"
+  tarif: "478"
+  created_at: 2010-06-05 12:44:16
+  updated_at: 2010-06-05 12:44:16
+  gt_from: "0"
+  gt_to: "250"
+  diapason_id: "1"
+pilotage_charges_002: 
+  id: "377"
+  tarif: "389"
+  created_at: 2010-06-05 12:44:16
+  updated_at: 2010-06-05 12:44:16
+  gt_from: "0"
+  gt_to: "250"
+  diapason_id: "2"
+pilotage_charges_003: 
+  id: "378"
+  tarif: "478"
+  created_at: 2010-06-05 12:44:16
+  updated_at: 2010-06-05 12:44:16
+  gt_from: "0"
+  gt_to: "250"
+  diapason_id: "3"
+pilotage_charges_004: 
+  id: "379"
+  tarif: "568"
+  created_at: 2010-06-05 12:44:16
+  updated_at: 2010-06-05 12:44:16
+  gt_from: "0"
+  gt_to: "250"
+  diapason_id: "4"
+pilotage_charges_005: 
+  id: "380"
+  tarif: "673"
+  created_at: 2010-06-05 12:44:16
+  updated_at: 2010-06-05 12:44:16
+  gt_from: "0"
+  gt_to: "250"
+  diapason_id: "5"
+pilotage_charges_006: 
+  id: "381"
+  tarif: "762"
+  created_at: 2010-06-05 12:44:16
+  updated_at: 2010-06-05 12:44:16
+  gt_from: "0"
+  gt_to: "250"
+  diapason_id: "6"
+pilotage_charges_007: 
+  id: "382"
+  tarif: "957"
+  created_at: 2010-06-05 12:44:16
+  updated_at: 2010-06-05 12:44:16
+  gt_from: "251"
+  gt_to: "500"
+  diapason_id: "1"
+pilotage_charges_008: 
+  id: "383"
+  tarif: "568"
+  created_at: 2010-06-05 12:44:16
+  updated_at: 2010-06-05 12:44:16
+  gt_from: "251"
+  gt_to: "500"
+  diapason_id: "2"
+pilotage_charges_009: 
+  id: "384"
+  tarif: "867"
+  created_at: 2010-06-05 12:44:16
+  updated_at: 2010-06-05 12:44:16
+  gt_from: "251"
+  gt_to: "500"
+  diapason_id: "3"
+pilotage_charges_010: 
+  id: "385"
+  tarif: "957"
+  created_at: 2010-06-05 12:44:17
+  updated_at: 2010-06-05 12:44:17
+  gt_from: "251"
+  gt_to: "500"
+  diapason_id: "4"
+pilotage_charges_011: 
+  id: "386"
+  tarif: "1241"
+  created_at: 2010-06-05 12:44:17
+  updated_at: 2010-06-05 12:44:17
+  gt_from: "251"
+  gt_to: "500"
+  diapason_id: "5"
+pilotage_charges_012: 
+  id: "387"
+  tarif: "1540"
+  created_at: 2010-06-05 12:44:17
+  updated_at: 2010-06-05 12:44:17
+  gt_from: "251"
+  gt_to: "500"
+  diapason_id: "6"
+pilotage_charges_013: 
+  id: "388"
+  tarif: "1914"
+  created_at: 2010-06-05 12:44:17
+  updated_at: 2010-06-05 12:44:17
+  gt_from: "501"
+  gt_to: "1000"
+  diapason_id: "1"
+pilotage_charges_014: 
+  id: "389"
+  tarif: "762"
+  created_at: 2010-06-05 12:44:18
+  updated_at: 2010-06-05 12:44:18
+  gt_from: "501"
+  gt_to: "1000"
+  diapason_id: "2"
+pilotage_charges_015: 
+  id: "390"
+  tarif: "1241"
+  created_at: 2010-06-05 12:44:18
+  updated_at: 2010-06-05 12:44:18
+  gt_from: "501"
+  gt_to: "1000"
+  diapason_id: "3"
+pilotage_charges_016: 
+  id: "391"
+  tarif: "1525"
+  created_at: 2010-06-05 12:44:18
+  updated_at: 2010-06-05 12:44:18
+  gt_from: "501"
+  gt_to: "1000"
+  diapason_id: "4"
+pilotage_charges_017: 
+  id: "392"
+  tarif: "1824"
+  created_at: 2010-06-05 12:44:18
+  updated_at: 2010-06-05 12:44:18
+  gt_from: "501"
+  gt_to: "1000"
+  diapason_id: "5"
+pilotage_charges_018: 
+  id: "393"
+  tarif: "2108"
+  created_at: 2010-06-05 12:44:18
+  updated_at: 2010-06-05 12:44:18
+  gt_from: "501"
+  gt_to: "1000"
+  diapason_id: "6"
+pilotage_charges_019: 
+  id: "394"
+  tarif: "2760"
+  created_at: 2010-06-05 12:44:18
+  updated_at: 2010-06-05 12:44:18
+  gt_from: "1001"
+  gt_to: "1500"
+  diapason_id: "1"
+pilotage_charges_020: 
+  id: "395"
+  tarif: "920"
+  created_at: 2010-06-05 12:44:19
+  updated_at: 2010-06-05 12:44:19
+  gt_from: "1001"
+  gt_to: "1500"
+  diapason_id: "2"
+pilotage_charges_021: 
+  id: "396"
+  tarif: "1567"
+  created_at: 2010-06-05 12:44:19
+  updated_at: 2010-06-05 12:44:19
+  gt_from: "1001"
+  gt_to: "1500"
+  diapason_id: "3"
+pilotage_charges_022: 
+  id: "397"
+  tarif: "2027"
+  created_at: 2010-06-05 12:44:19
+  updated_at: 2010-06-05 12:44:19
+  gt_from: "1001"
+  gt_to: "1500"
+  diapason_id: "4"
+pilotage_charges_023: 
+  id: "398"
+  tarif: "2760"
+  created_at: 2010-06-05 12:44:19
+  updated_at: 2010-06-05 12:44:19
+  gt_from: "1001"
+  gt_to: "1500"
+  diapason_id: "5"
+pilotage_charges_024: 
+  id: "399"
+  tarif: "3306"
+  created_at: 2010-06-05 12:44:19
+  updated_at: 2010-06-05 12:44:19
+  gt_from: "1001"
+  gt_to: "1500"
+  diapason_id: "6"
+pilotage_charges_025: 
+  id: "400"
+  tarif: "3680"
+  created_at: 2010-06-05 12:44:19
+  updated_at: 2010-06-05 12:44:19
+  gt_from: "1501"
+  gt_to: "2000"
+  diapason_id: "1"
+pilotage_charges_026: 
+  id: "401"
+  tarif: "1107"
+  created_at: 2010-06-05 12:44:19
+  updated_at: 2010-06-05 12:44:19
+  gt_from: "1501"
+  gt_to: "2000"
+  diapason_id: "2"
+pilotage_charges_027: 
+  id: "402"
+  tarif: "1926"
+  created_at: 2010-06-05 12:44:19
+  updated_at: 2010-06-05 12:44:19
+  gt_from: "1501"
+  gt_to: "2000"
+  diapason_id: "3"
+pilotage_charges_028: 
+  id: "403"
+  tarif: "2573"
+  created_at: 2010-06-05 12:44:20
+  updated_at: 2010-06-05 12:44:20
+  gt_from: "1501"
+  gt_to: "2000"
+  diapason_id: "4"
+pilotage_charges_029: 
+  id: "404"
+  tarif: "3680"
+  created_at: 2010-06-05 12:44:20
+  updated_at: 2010-06-05 12:44:20
+  gt_from: "1501"
+  gt_to: "2000"
+  diapason_id: "5"
+pilotage_charges_030: 
+  id: "405"
+  tarif: "4600"
+  created_at: 2010-06-05 12:44:20
+  updated_at: 2010-06-05 12:44:20
+  gt_from: "1501"
+  gt_to: "2000"
+  diapason_id: "6"
+pilotage_charges_031: 
+  id: "406"
+  tarif: "4600"
+  created_at: 2010-06-05 12:44:20
+  updated_at: 2010-06-05 12:44:20
+  gt_from: "2001"
+  gt_to: "3000"
+  diapason_id: "1"
+pilotage_charges_032: 
+  id: "407"
+  tarif: "1294"
+  created_at: 2010-06-05 12:44:20
+  updated_at: 2010-06-05 12:44:20
+  gt_from: "2001"
+  gt_to: "3000"
+  diapason_id: "2"
+pilotage_charges_033: 
+  id: "408"
+  tarif: "2300"
+  created_at: 2010-06-05 12:44:20
+  updated_at: 2010-06-05 12:44:20
+  gt_from: "2001"
+  gt_to: "3000"
+  diapason_id: "3"
+pilotage_charges_034: 
+  id: "409"
+  tarif: "3493"
+  created_at: 2010-06-05 12:44:20
+  updated_at: 2010-06-05 12:44:20
+  gt_from: "2001"
+  gt_to: "3000"
+  diapason_id: "4"
+pilotage_charges_035: 
+  id: "410"
+  tarif: "4413"
+  created_at: 2010-06-05 12:44:20
+  updated_at: 2010-06-05 12:44:20
+  gt_from: "2001"
+  gt_to: "3000"
+  diapason_id: "5"
+pilotage_charges_036: 
+  id: "411"
+  tarif: "5520"
+  created_at: 2010-06-05 12:44:20
+  updated_at: 2010-06-05 12:44:20
+  gt_from: "2001"
+  gt_to: "3000"
+  diapason_id: "6"
+pilotage_charges_037: 
+  id: "412"
+  tarif: "5299"
+  created_at: 2010-06-05 12:44:21
+  updated_at: 2010-06-05 12:44:21
+  gt_from: "3001"
+  gt_to: "5000"
+  diapason_id: "1"
+pilotage_charges_038: 
+  id: "413"
+  tarif: "1408"
+  created_at: 2010-06-05 12:44:21
+  updated_at: 2010-06-05 12:44:21
+  gt_from: "3001"
+  gt_to: "5000"
+  diapason_id: "2"
+pilotage_charges_039: 
+  id: "414"
+  tarif: "2650"
+  created_at: 2010-06-05 12:44:21
+  updated_at: 2010-06-05 12:44:21
+  gt_from: "3001"
+  gt_to: "5000"
+  diapason_id: "3"
+pilotage_charges_040: 
+  id: "415"
+  tarif: "3892"
+  created_at: 2010-06-05 12:44:21
+  updated_at: 2010-06-05 12:44:21
+  gt_from: "3001"
+  gt_to: "5000"
+  diapason_id: "4"
+pilotage_charges_041: 
+  id: "416"
+  tarif: "4940"
+  created_at: 2010-06-05 12:44:21
+  updated_at: 2010-06-05 12:44:21
+  gt_from: "3001"
+  gt_to: "5000"
+  diapason_id: "5"
+pilotage_charges_042: 
+  id: "417"
+  tarif: "6182"
+  created_at: 2010-06-05 12:44:21
+  updated_at: 2010-06-05 12:44:21
+  gt_from: "3001"
+  gt_to: "5000"
+  diapason_id: "6"
+pilotage_charges_043: 
+  id: "418"
+  tarif: "6541"
+  created_at: 2010-06-05 12:44:21
+  updated_at: 2010-06-05 12:44:21
+  gt_from: "5001"
+  gt_to: "7500"
+  diapason_id: "1"
+pilotage_charges_044: 
+  id: "419"
+  tarif: "1587"
+  created_at: 2010-06-05 12:44:21
+  updated_at: 2010-06-05 12:44:21
+  gt_from: "5001"
+  gt_to: "7500"
+  diapason_id: "2"
+pilotage_charges_045: 
+  id: "420"
+  tarif: "3091"
+  created_at: 2010-06-05 12:44:21
+  updated_at: 2010-06-05 12:44:21
+  gt_from: "5001"
+  gt_to: "7500"
+  diapason_id: "3"
+pilotage_charges_046: 
+  id: "421"
+  tarif: "4416"
+  created_at: 2010-06-05 12:44:21
+  updated_at: 2010-06-05 12:44:21
+  gt_from: "5001"
+  gt_to: "7500"
+  diapason_id: "4"
+pilotage_charges_047: 
+  id: "422"
+  tarif: "5658"
+  created_at: 2010-06-05 12:44:22
+  updated_at: 2010-06-05 12:44:22
+  gt_from: "5001"
+  gt_to: "7500"
+  diapason_id: "5"
+pilotage_charges_048: 
+  id: "423"
+  tarif: "7066"
+  created_at: 2010-06-05 12:44:22
+  updated_at: 2010-06-05 12:44:22
+  gt_from: "5001"
+  gt_to: "7500"
+  diapason_id: "6"
+pilotage_charges_049: 
+  id: "424"
+  tarif: "7949"
+  created_at: 2010-06-05 12:44:22
+  updated_at: 2010-06-05 12:44:22
+  gt_from: "7501"
+  gt_to: "10000"
+  diapason_id: "1"
+pilotage_charges_050: 
+  id: "425"
+  tarif: "1946"
+  created_at: 2010-06-05 12:44:22
+  updated_at: 2010-06-05 12:44:22
+  gt_from: "7501"
+  gt_to: "10000"
+  diapason_id: "2"
+pilotage_charges_051: 
+  id: "426"
+  tarif: "3533"
+  created_at: 2010-06-05 12:44:22
+  updated_at: 2010-06-05 12:44:22
+  gt_from: "7501"
+  gt_to: "10000"
+  diapason_id: "3"
+pilotage_charges_052: 
+  id: "427"
+  tarif: "4940"
+  created_at: 2010-06-05 12:44:22
+  updated_at: 2010-06-05 12:44:22
+  gt_from: "7501"
+  gt_to: "10000"
+  diapason_id: "4"
+pilotage_charges_053: 
+  id: "428"
+  tarif: "6362"
+  created_at: 2010-06-05 12:44:22
+  updated_at: 2010-06-05 12:44:22
+  gt_from: "7501"
+  gt_to: "10000"
+  diapason_id: "5"
+pilotage_charges_054: 
+  id: "429"
+  tarif: "8128"
+  created_at: 2010-06-05 12:44:23
+  updated_at: 2010-06-05 12:44:23
+  gt_from: "7501"
+  gt_to: "10000"
+  diapason_id: "6"
+pilotage_charges_055: 
+  id: "430"
+  tarif: "8464"
+  created_at: 2010-06-05 12:44:23
+  updated_at: 2010-06-05 12:44:23
+  gt_from: "10001"
+  gt_to: "12500"
+  diapason_id: "1"
+pilotage_charges_056: 
+  id: "431"
+  tarif: "2195"
+  created_at: 2010-06-05 12:44:23
+  updated_at: 2010-06-05 12:44:23
+  gt_from: "10001"
+  gt_to: "12500"
+  diapason_id: "2"
+pilotage_charges_057: 
+  id: "432"
+  tarif: "4153"
+  created_at: 2010-06-05 12:44:23
+  updated_at: 2010-06-05 12:44:23
+  gt_from: "10001"
+  gt_to: "12500"
+  diapason_id: "3"
+pilotage_charges_058: 
+  id: "433"
+  tarif: "5250"
+  created_at: 2010-06-05 12:44:23
+  updated_at: 2010-06-05 12:44:23
+  gt_from: "10001"
+  gt_to: "12500"
+  diapason_id: "4"
+pilotage_charges_059: 
+  id: "434"
+  tarif: "6771"
+  created_at: 2010-06-05 12:44:23
+  updated_at: 2010-06-05 12:44:23
+  gt_from: "10001"
+  gt_to: "12500"
+  diapason_id: "5"
+pilotage_charges_060: 
+  id: "435"
+  tarif: "8808"
+  created_at: 2010-06-05 12:44:23
+  updated_at: 2010-06-05 12:44:23
+  gt_from: "10001"
+  gt_to: "12500"
+  diapason_id: "6"
+pilotage_charges_061: 
+  id: "436"
+  tarif: "10157"
+  created_at: 2010-06-05 12:44:23
+  updated_at: 2010-06-05 12:44:23
+  gt_from: "12501"
+  gt_to: "15000"
+  diapason_id: "1"
+pilotage_charges_062: 
+  id: "437"
+  tarif: "2711"
+  created_at: 2010-06-05 12:44:24
+  updated_at: 2010-06-05 12:44:24
+  gt_from: "12501"
+  gt_to: "15000"
+  diapason_id: "2"
+pilotage_charges_063: 
+  id: "438"
+  tarif: "4906"
+  created_at: 2010-06-05 12:44:24
+  updated_at: 2010-06-05 12:44:24
+  gt_from: "12501"
+  gt_to: "15000"
+  diapason_id: "3"
+pilotage_charges_064: 
+  id: "439"
+  tarif: "6427"
+  created_at: 2010-06-05 12:44:24
+  updated_at: 2010-06-05 12:44:24
+  gt_from: "12501"
+  gt_to: "15000"
+  diapason_id: "4"
+pilotage_charges_065: 
+  id: "440"
+  tarif: "8464"
+  created_at: 2010-06-05 12:44:24
+  updated_at: 2010-06-05 12:44:24
+  gt_from: "12501"
+  gt_to: "15000"
+  diapason_id: "5"
+pilotage_charges_066: 
+  id: "441"
+  tarif: "10157"
+  created_at: 2010-06-05 12:44:24
+  updated_at: 2010-06-05 12:44:24
+  gt_from: "12501"
+  gt_to: "15000"
+  diapason_id: "6"
+pilotage_charges_067: 
+  id: "442"
+  tarif: "11850"
+  created_at: 2010-06-05 12:44:24
+  updated_at: 2010-06-05 12:44:24
+  gt_from: "15001"
+  gt_to: "18000"
+  diapason_id: "1"
+pilotage_charges_068: 
+  id: "443"
+  tarif: "3386"
+  created_at: 2010-06-05 12:44:25
+  updated_at: 2010-06-05 12:44:25
+  gt_from: "15001"
+  gt_to: "18000"
+  diapason_id: "2"
+pilotage_charges_069: 
+  id: "444"
+  tarif: "5753"
+  created_at: 2010-06-05 12:44:25
+  updated_at: 2010-06-05 12:44:25
+  gt_from: "15001"
+  gt_to: "18000"
+  diapason_id: "3"
+pilotage_charges_070: 
+  id: "445"
+  tarif: "7961"
+  created_at: 2010-06-05 12:44:25
+  updated_at: 2010-06-05 12:44:25
+  gt_from: "15001"
+  gt_to: "18000"
+  diapason_id: "4"
+pilotage_charges_071: 
+  id: "446"
+  tarif: "10157"
+  created_at: 2010-06-05 12:44:25
+  updated_at: 2010-06-05 12:44:25
+  gt_from: "15001"
+  gt_to: "18000"
+  diapason_id: "5"
+pilotage_charges_072: 
+  id: "447"
+  tarif: "11850"
+  created_at: 2010-06-05 12:44:25
+  updated_at: 2010-06-05 12:44:25
+  gt_from: "15001"
+  gt_to: "18000"
+  diapason_id: "6"
+pilotage_charges_073: 
+  id: "448"
+  tarif: "13524"
+  created_at: 2010-06-05 12:44:25
+  updated_at: 2010-06-05 12:44:25
+  gt_from: "18001"
+  gt_to: "24000"
+  diapason_id: "1"
+pilotage_charges_074: 
+  id: "449"
+  tarif: "4404"
+  created_at: 2010-06-05 12:44:26
+  updated_at: 2010-06-05 12:44:26
+  gt_from: "18001"
+  gt_to: "24000"
+  diapason_id: "2"
+pilotage_charges_075: 
+  id: "450"
+  tarif: "6599"
+  created_at: 2010-06-05 12:44:26
+  updated_at: 2010-06-05 12:44:26
+  gt_from: "18001"
+  gt_to: "24000"
+  diapason_id: "3"
+pilotage_charges_076: 
+  id: "451"
+  tarif: "9482"
+  created_at: 2010-06-05 12:44:26
+  updated_at: 2010-06-05 12:44:26
+  gt_from: "18001"
+  gt_to: "24000"
+  diapason_id: "4"
+pilotage_charges_077: 
+  id: "452"
+  tarif: "12193"
+  created_at: 2010-06-05 12:44:26
+  updated_at: 2010-06-05 12:44:26
+  gt_from: "18001"
+  gt_to: "24000"
+  diapason_id: "5"
+pilotage_charges_078: 
+  id: "453"
+  tarif: "13886"
+  created_at: 2010-06-05 12:44:26
+  updated_at: 2010-06-05 12:44:26
+  gt_from: "18001"
+  gt_to: "24000"
+  diapason_id: "6"
+pilotage_charges_079: 
+  id: "454"
+  tarif: "16082"
+  created_at: 2010-06-05 12:44:26
+  updated_at: 2010-06-05 12:44:26
+  gt_from: "24001"
+  gt_to: "30000"
+  diapason_id: "1"
+pilotage_charges_080: 
+  id: "455"
+  tarif: "5422"
+  created_at: 2010-06-05 12:44:26
+  updated_at: 2010-06-05 12:44:26
+  gt_from: "24001"
+  gt_to: "30000"
+  diapason_id: "2"
+pilotage_charges_081: 
+  id: "456"
+  tarif: "7538"
+  created_at: 2010-06-05 12:44:26
+  updated_at: 2010-06-05 12:44:26
+  gt_from: "24001"
+  gt_to: "30000"
+  diapason_id: "3"
+pilotage_charges_082: 
+  id: "457"
+  tarif: "11254"
+  created_at: 2010-06-05 12:44:27
+  updated_at: 2010-06-05 12:44:27
+  gt_from: "24001"
+  gt_to: "30000"
+  diapason_id: "4"
+pilotage_charges_083: 
+  id: "458"
+  tarif: "14217"
+  created_at: 2010-06-05 12:44:27
+  updated_at: 2010-06-05 12:44:27
+  gt_from: "24001"
+  gt_to: "30000"
+  diapason_id: "5"
+pilotage_charges_084: 
+  id: "459"
+  tarif: "15910"
+  created_at: 2010-06-05 12:44:27
+  updated_at: 2010-06-05 12:44:27
+  gt_from: "24001"
+  gt_to: "30000"
+  diapason_id: "6"
+pilotage_charges_085: 
+  id: "460"
+  tarif: "18621"
+  created_at: 2010-06-05 12:44:27
+  updated_at: 2010-06-05 12:44:27
+  gt_from: "30001"
+  gt_to: "40000"
+  diapason_id: "1"
+pilotage_charges_086: 
+  id: "461"
+  tarif: "6427"
+  created_at: 2010-06-05 12:44:27
+  updated_at: 2010-06-05 12:44:27
+  gt_from: "30001"
+  gt_to: "40000"
+  diapason_id: "2"
+pilotage_charges_087: 
+  id: "462"
+  tarif: "8464"
+  created_at: 2010-06-05 12:44:27
+  updated_at: 2010-06-05 12:44:27
+  gt_from: "30001"
+  gt_to: "40000"
+  diapason_id: "3"
+pilotage_charges_088: 
+  id: "463"
+  tarif: "12868"
+  created_at: 2010-06-05 12:44:27
+  updated_at: 2010-06-05 12:44:27
+  gt_from: "30001"
+  gt_to: "40000"
+  diapason_id: "4"
+pilotage_charges_089: 
+  id: "464"
+  tarif: "16928"
+  created_at: 2010-06-05 12:44:27
+  updated_at: 2010-06-05 12:44:27
+  gt_from: "30001"
+  gt_to: "40000"
+  diapason_id: "5"
+pilotage_charges_090: 
+  id: "465"
+  tarif: "18621"
+  created_at: 2010-06-05 12:44:27
+  updated_at: 2010-06-05 12:44:27
+  gt_from: "30001"
+  gt_to: "40000"
+  diapason_id: "6"
+pilotage_charges_091: 
+  id: "466"
+  tarif: "21160"
+  created_at: 2010-06-05 12:44:28
+  updated_at: 2010-06-05 12:44:28
+  gt_from: "40001"
+  gt_to: "60000"
+  diapason_id: "1"
+pilotage_charges_092: 
+  id: "467"
+  tarif: "7446"
+  created_at: 2010-06-05 12:44:28
+  updated_at: 2010-06-05 12:44:28
+  gt_from: "40001"
+  gt_to: "60000"
+  diapason_id: "2"
+pilotage_charges_093: 
+  id: "468"
+  tarif: "9654"
+  created_at: 2010-06-05 12:44:28
+  updated_at: 2010-06-05 12:44:28
+  gt_from: "40001"
+  gt_to: "60000"
+  diapason_id: "3"
+pilotage_charges_094: 
+  id: "469"
+  tarif: "14561"
+  created_at: 2010-06-05 12:44:28
+  updated_at: 2010-06-05 12:44:28
+  gt_from: "40001"
+  gt_to: "60000"
+  diapason_id: "4"
+pilotage_charges_095: 
+  id: "470"
+  tarif: "19467"
+  created_at: 2010-06-05 12:44:28
+  updated_at: 2010-06-05 12:44:28
+  gt_from: "40001"
+  gt_to: "60000"
+  diapason_id: "5"
+pilotage_charges_096: 
+  id: "471"
+  tarif: "21663"
+  created_at: 2010-06-05 12:44:28
+  updated_at: 2010-06-05 12:44:28
+  gt_from: "40001"
+  gt_to: "60000"
+  diapason_id: "6"
+pilotage_charges_097: 
+  id: "472"
+  tarif: "25392"
+  created_at: 2010-06-05 12:44:28
+  updated_at: 2010-06-05 12:44:28
+  gt_from: "60001"
+  gt_to: "80000"
+  diapason_id: "1"
+pilotage_charges_098: 
+  id: "473"
+  tarif: "8464"
+  created_at: 2010-06-05 12:44:28
+  updated_at: 2010-06-05 12:44:28
+  gt_from: "60001"
+  gt_to: "80000"
+  diapason_id: "2"
+pilotage_charges_099: 
+  id: "474"
+  tarif: "12696"
+  created_at: 2010-06-05 12:44:28
+  updated_at: 2010-06-05 12:44:28
+  gt_from: "60001"
+  gt_to: "80000"
+  diapason_id: "3"
+pilotage_charges_100: 
+  id: "475"
+  tarif: "16928"
+  created_at: 2010-06-05 12:44:29
+  updated_at: 2010-06-05 12:44:29
+  gt_from: "60001"
+  gt_to: "80000"
+  diapason_id: "4"
+pilotage_charges_101: 
+  id: "476"
+  tarif: "22006"
+  created_at: 2010-06-05 12:44:29
+  updated_at: 2010-06-05 12:44:29
+  gt_from: "60001"
+  gt_to: "80000"
+  diapason_id: "5"
+pilotage_charges_102: 
+  id: "477"
+  tarif: "25392"
+  created_at: 2010-06-05 12:44:29
+  updated_at: 2010-06-05 12:44:29
+  gt_from: "60001"
+  gt_to: "80000"
+  diapason_id: "6"
+pilotage_charges_103: 
+  id: "478"
+  tarif: "30021"
+  created_at: 2010-06-05 12:44:29
+  updated_at: 2010-06-05 12:44:29
+  gt_from: "80001"
+  gt_to: "100000"
+  diapason_id: "1"
+pilotage_charges_104: 
+  id: "479"
+  tarif: "9879"
+  created_at: 2010-06-05 12:44:29
+  updated_at: 2010-06-05 12:44:29
+  gt_from: "80001"
+  gt_to: "100000"
+  diapason_id: "2"
+pilotage_charges_105: 
+  id: "480"
+  tarif: "16399"
+  created_at: 2010-06-05 12:44:29
+  updated_at: 2010-06-05 12:44:29
+  gt_from: "80001"
+  gt_to: "100000"
+  diapason_id: "3"
+pilotage_charges_106: 
+  id: "481"
+  tarif: "18515"
+  created_at: 2010-06-05 12:44:29
+  updated_at: 2010-06-05 12:44:29
+  gt_from: "80001"
+  gt_to: "100000"
+  diapason_id: "4"
+pilotage_charges_107: 
+  id: "482"
+  tarif: "24651"
+  created_at: 2010-06-05 12:44:29
+  updated_at: 2010-06-05 12:44:29
+  gt_from: "80001"
+  gt_to: "100000"
+  diapason_id: "5"
+pilotage_charges_108: 
+  id: "483"
+  tarif: "28698"
+  created_at: 2010-06-05 12:44:29
+  updated_at: 2010-06-05 12:44:29
+  gt_from: "80001"
+  gt_to: "100000"
+  diapason_id: "6"
+pilotage_charges_109: 
+  id: "484"
+  tarif: "34650"
+  created_at: 2010-06-05 12:44:30
+  updated_at: 2010-06-05 12:44:30
+  gt_from: "100001"
+  gt_to: "120000"
+  diapason_id: "1"
+pilotage_charges_110: 
+  id: "485"
+  tarif: "10897"
+  created_at: 2010-06-05 12:44:30
+  updated_at: 2010-06-05 12:44:30
+  gt_from: "100001"
+  gt_to: "120000"
+  diapason_id: "2"
+pilotage_charges_111: 
+  id: "486"
+  tarif: "20102"
+  created_at: 2010-06-05 12:44:30
+  updated_at: 2010-06-05 12:44:30
+  gt_from: "100001"
+  gt_to: "120000"
+  diapason_id: "3"
+pilotage_charges_112: 
+  id: "487"
+  tarif: "21425"
+  created_at: 2010-06-05 12:44:30
+  updated_at: 2010-06-05 12:44:30
+  gt_from: "100001"
+  gt_to: "120000"
+  diapason_id: "4"
+pilotage_charges_113: 
+  id: "488"
+  tarif: "27296"
+  created_at: 2010-06-05 12:44:30
+  updated_at: 2010-06-05 12:44:30
+  gt_from: "100001"
+  gt_to: "120000"
+  diapason_id: "5"
+pilotage_charges_114: 
+  id: "489"
+  tarif: "32005"
+  created_at: 2010-06-05 12:44:30
+  updated_at: 2010-06-05 12:44:30
+  gt_from: "100001"
+  gt_to: "120000"
+  diapason_id: "6"
+pilotage_charges_115: 
+  id: "490"
+  tarif: "39278"
+  created_at: 2010-06-05 12:44:30
+  updated_at: 2010-06-05 12:44:30
+  gt_from: "120000"
+  gt_to: "99999999"
+  diapason_id: "1"
+pilotage_charges_116: 
+  id: "491"
+  tarif: "11916"
+  created_at: 2010-06-05 12:44:30
+  updated_at: 2010-06-05 12:44:30
+  gt_from: "120000"
+  gt_to: "99999999"
+  diapason_id: "2"
+pilotage_charges_117: 
+  id: "492"
+  tarif: "23805"
+  created_at: 2010-06-05 12:44:30
+  updated_at: 2010-06-05 12:44:30
+  gt_from: "120000"
+  gt_to: "99999999"
+  diapason_id: "3"
+pilotage_charges_118: 
+  id: "493"
+  tarif: "24334"
+  created_at: 2010-06-05 12:44:31
+  updated_at: 2010-06-05 12:44:31
+  gt_from: "120000"
+  gt_to: "99999999"
+  diapason_id: "4"
+pilotage_charges_119: 
+  id: "494"
+  tarif: "29941"
+  created_at: 2010-06-05 12:44:31
+  updated_at: 2010-06-05 12:44:31
+  gt_from: "120000"
+  gt_to: "99999999"
+  diapason_id: "5"
+pilotage_charges_120: 
+  id: "495"
+  tarif: "35311"
+  created_at: 2010-06-05 12:44:31
+  updated_at: 2010-06-05 12:44:31
+  gt_from: "120000"
+  gt_to: "99999999"
+  diapason_id: "6"

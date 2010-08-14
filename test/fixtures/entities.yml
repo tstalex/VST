@@ -1,11 +1,29 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  tag: MyString
+--- 
+entities_001: 
+  id: "1"
+  name: Root
+  tag: 
   parent_entity_id: 
-
-two:
-  name: MyString
-  tag: MyString
-  parent_entity_id: 
+  created_at: 
+  updated_at: 
+entities_002: 
+  id: "2"
+  name: Ports
+  tag: 
+  parent_entity_id: "1"
+  created_at: 
+  updated_at: 
+entities_003: 
+  id: "3"
+  name: Configuration
+  tag: 
+  parent_entity_id: "1"
+  created_at: 
+  updated_at: 
+entities_004: 
+  id: "4"
+  name: Proforma
+  tag: 
+  parent_entity_id: "1"
+  created_at: 
+  updated_at: 

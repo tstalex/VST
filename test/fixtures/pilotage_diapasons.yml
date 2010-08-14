@@ -1,9 +1,31 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  from: 
-  to: 
-
-two:
-  from: 
-  to: 
+--- 
+pilotage_diapasons_001: 
+  id: "1"
+  created_at: 
+  updated_at: 
+  pilotage_from: "0"
+  pilotage_to: "2.99"
+pilotage_diapasons_002: 
+  id: "2"
+  created_at: 
+  updated_at: 
+  pilotage_from: "3"
+  pilotage_to: "5.99"
+pilotage_diapasons_003: 
+  id: "3"
+  created_at: 
+  updated_at: 
+  pilotage_from: "6"
+  pilotage_to: "9.99"
+pilotage_diapasons_004: 
+  id: "4"
+  created_at: 
+  updated_at: 
+  pilotage_from: "10"
+  pilotage_to: "14.99"
+pilotage_diapasons_005: 
+  id: "5"
+  created_at: 
+  updated_at: 
+  pilotage_from: "15"
+  pilotage_to: "24.99"

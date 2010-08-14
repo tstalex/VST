@@ -1,55 +1,349 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  flag: 1
-  vesel_type: 1
-  owner_id: 1
-  loa: 1.5
-  vessel_length: 1.5
-  beam: 1.5
-  dw: 1.5
-  draft: 1.5
-  gross_tonnage: 1
-  net_tonnage: 1
-  cap1: 1
-  paxcap: 1
-  ice_class: 1
-  calls: MyString
-  contact_info: MyString
-  max_draft: 1.5
-  safety_cert_date: 2010-03-24
-  construction_cert_date: 2010-03-24
-  equipment_date: 2010-03-24
-  security_cert_date: 2010-03-24
-  int_load_line_cert_date: 2010-03-24
-  oil_pollut_prevent_date: 2010-03-24
-  tonnage_cert_issued_date: 2010-03-24
-  sanitation_contr_exempt_date: 2010-03-24
-
-two:
-  name: MyString
-  flag: 1
-  vesel_type: 1
-  owner_id: 1
-  loa: 1.5
-  vessel_length: 1.5
-  beam: 1.5
-  dw: 1.5
-  draft: 1.5
-  gross_tonnage: 1
-  net_tonnage: 1
-  cap1: 1
-  paxcap: 1
-  ice_class: 1
-  calls: MyString
-  contact_info: MyString
-  max_draft: 1.5
-  safety_cert_date: 2010-03-24
-  construction_cert_date: 2010-03-24
-  equipment_date: 2010-03-24
-  security_cert_date: 2010-03-24
-  int_load_line_cert_date: 2010-03-24
-  oil_pollut_prevent_date: 2010-03-24
-  tonnage_cert_issued_date: 2010-03-24
-  sanitation_contr_exempt_date: 2010-03-24
+--- 
+vessels_001: 
+  id: "34"
+  name: Delphin
+  flag: "16"
+  vessel_type: "8"
+  owner_id: "8512"
+  loa: "157.0"
+  vessel_length: 
+  beam: "21.8"
+  dw: "2860.0"
+  draft: "6.2"
+  gross_tonnage: "16214"
+  net_tonnage: "5865"
+  cap1: "0"
+  paxcap: "0"
+  ice_class_id: 
+  calls: 9HVI4
+  contact_info: "+31703434543"
+  max_draft: 
+  safety_cert_date: 
+  construction_cert_date: 
+  equipment_date: 
+  security_cert_date: 
+  int_load_line_cert_date: 
+  oil_pollut_prevent_date: 
+  tonnage_cert_issued_date: "2010-03-28"
+  sanitation_contr_exempt_date: 
+  created_at: 2010-03-28 16:34:09
+  updated_at: 2010-03-28 18:46:29
+vessels_002: 
+  id: "35"
+  name: Funchal
+  flag: "174"
+  vessel_type: "8"
+  owner_id: "12423"
+  loa: "154.6"
+  vessel_length: 
+  beam: "19.05"
+  dw: "1958.0"
+  draft: "6.8"
+  gross_tonnage: "9563"
+  net_tonnage: "3759"
+  cap1: "0"
+  paxcap: "0"
+  ice_class_id: 
+  calls: CSBM
+  contact_info: tlx 581/335206910, 435206910
+  max_draft: 
+  safety_cert_date: 
+  construction_cert_date: 
+  equipment_date: 
+  security_cert_date: 
+  int_load_line_cert_date: 
+  oil_pollut_prevent_date: 
+  tonnage_cert_issued_date: 
+  sanitation_contr_exempt_date: 
+  created_at: 2010-03-28 16:34:09
+  updated_at: 2010-03-28 16:34:09
+vessels_003: 
+  id: "36"
+  name: Astor
+  flag: "16"
+  vessel_type: "1"
+  owner_id: "4684"
+  loa: "176.5"
+  vessel_length: 
+  beam: "22.6"
+  dw: "0.0"
+  draft: "6.1"
+  gross_tonnage: "20606"
+  net_tonnage: "12815"
+  cap1: "0"
+  paxcap: "650"
+  ice_class_id: 
+  calls: C6JR3
+  contact_info: " 871-4/ 1400125 TLX/FAX"
+  max_draft: 
+  safety_cert_date: 
+  construction_cert_date: 
+  equipment_date: 
+  security_cert_date: 
+  int_load_line_cert_date: 
+  oil_pollut_prevent_date: 
+  tonnage_cert_issued_date: 
+  sanitation_contr_exempt_date: 
+  created_at: 2010-03-28 16:34:09
+  updated_at: 2010-03-28 16:34:09
+vessels_004: 
+  id: "37"
+  name: Sea cloud II
+  flag: "133"
+  vessel_type: "8"
+  owner_id: "11538"
+  loa: "117.0"
+  vessel_length: 
+  beam: "16.15"
+  dw: "680.0"
+  draft: "5.8"
+  gross_tonnage: "3849"
+  net_tonnage: "1154"
+  cap1: "0"
+  paxcap: "96"
+  ice_class_id: 
+  calls: 9HUE6
+  contact_info: Tel +491727536402, 00871324895
+  max_draft: 
+  safety_cert_date: 
+  construction_cert_date: 
+  equipment_date: 
+  security_cert_date: 
+  int_load_line_cert_date: 
+  oil_pollut_prevent_date: 
+  tonnage_cert_issued_date: 
+  sanitation_contr_exempt_date: 
+  created_at: 2010-03-28 16:34:10
+  updated_at: 2010-03-28 16:34:10
+vessels_005: 
+  id: "38"
+  name: Prinsendam
+  flag: "152"
+  vessel_type: "8"
+  owner_id: "4287"
+  loa: "204.0"
+  vessel_length: 
+  beam: "32.61"
+  dw: "6150.0"
+  draft: "7.25"
+  gross_tonnage: "37983"
+  net_tonnage: "14300"
+  cap1: "0"
+  paxcap: "740"
+  ice_class_id: 
+  calls: PBGH
+  contact_info: ""
+  max_draft: 
+  safety_cert_date: 
+  construction_cert_date: 
+  equipment_date: 
+  security_cert_date: 
+  int_load_line_cert_date: 
+  oil_pollut_prevent_date: 
+  tonnage_cert_issued_date: 
+  sanitation_contr_exempt_date: 
+  created_at: 2010-03-28 16:34:10
+  updated_at: 2010-03-28 16:34:10
+vessels_006: 
+  id: "39"
+  name: Saga ruby
+  flag: "226"
+  vessel_type: "8"
+  owner_id: "11452"
+  loa: "191.08"
+  vessel_length: 
+  beam: "24.38"
+  dw: "5954.0"
+  draft: "8.45"
+  gross_tonnage: "24492"
+  net_tonnage: "9356"
+  cap1: "0"
+  paxcap: "680"
+  ice_class_id: "4"
+  calls: MZFP7
+  contact_info: ""
+  max_draft: 
+  safety_cert_date: 
+  construction_cert_date: 
+  equipment_date: 
+  security_cert_date: 
+  int_load_line_cert_date: 
+  oil_pollut_prevent_date: 
+  tonnage_cert_issued_date: 
+  sanitation_contr_exempt_date: 
+  created_at: 2010-03-28 16:34:10
+  updated_at: 2010-03-28 16:43:19
+vessels_007: 
+  id: "40"
+  name: Athena
+  flag: "174"
+  vessel_type: "8"
+  owner_id: "12425"
+  loa: "160.07"
+  vessel_length: 
+  beam: "21.03"
+  dw: "0.0"
+  draft: "7.6"
+  gross_tonnage: "16144"
+  net_tonnage: "5931"
+  cap1: "0"
+  paxcap: "0"
+  ice_class_id: 
+  calls: CQRV
+  contact_info: ""
+  max_draft: 
+  safety_cert_date: 
+  construction_cert_date: 
+  equipment_date: 
+  security_cert_date: 
+  int_load_line_cert_date: 
+  oil_pollut_prevent_date: 
+  tonnage_cert_issued_date: 
+  sanitation_contr_exempt_date: 
+  created_at: 2010-03-28 16:34:11
+  updated_at: 2010-03-28 16:34:11
+vessels_008: 
+  id: "41"
+  name: Island sky
+  flag: "16"
+  vessel_type: "8"
+  owner_id: "12404"
+  loa: "90.6"
+  vessel_length: 
+  beam: "15.3"
+  dw: "500.0"
+  draft: "4.2"
+  gross_tonnage: "4200"
+  net_tonnage: "1263"
+  cap1: "0"
+  paxcap: "0"
+  ice_class_id: 
+  calls: C6TQ2
+  contact_info: ""
+  max_draft: 
+  safety_cert_date: 
+  construction_cert_date: 
+  equipment_date: 
+  security_cert_date: 
+  int_load_line_cert_date: 
+  oil_pollut_prevent_date: 
+  tonnage_cert_issued_date: 
+  sanitation_contr_exempt_date: 
+  created_at: 2010-03-28 16:34:11
+  updated_at: 2010-03-28 16:34:11
+vessels_009: 
+  id: "42"
+  name: Spirit of adventure
+  flag: "16"
+  vessel_type: "8"
+  owner_id: "11452"
+  loa: "139.3"
+  vessel_length: 
+  beam: "17.5"
+  dw: "1796.0"
+  draft: "5.1"
+  gross_tonnage: "9570"
+  net_tonnage: "3542"
+  cap1: "0"
+  paxcap: "0"
+  ice_class_id: 
+  calls: C6UM6
+  contact_info: ""
+  max_draft: 
+  safety_cert_date: 
+  construction_cert_date: 
+  equipment_date: 
+  security_cert_date: 
+  int_load_line_cert_date: 
+  oil_pollut_prevent_date: 
+  tonnage_cert_issued_date: 
+  sanitation_contr_exempt_date: 
+  created_at: 2010-03-28 16:34:11
+  updated_at: 2010-03-28 16:34:11
+vessels_010: 
+  id: "43"
+  name: Delphin voyager
+  flag: "16"
+  vessel_type: "8"
+  owner_id: "12505"
+  loa: "174.0"
+  vessel_length: 
+  beam: "24.0"
+  dw: "4863.0"
+  draft: "6.72"
+  gross_tonnage: "23287"
+  net_tonnage: "9008"
+  cap1: "0"
+  paxcap: "0"
+  ice_class_id: 
+  calls: C6UU6
+  contact_info: ""
+  max_draft: 
+  safety_cert_date: 
+  construction_cert_date: 
+  equipment_date: 
+  security_cert_date: 
+  int_load_line_cert_date: 
+  oil_pollut_prevent_date: 
+  tonnage_cert_issued_date: 
+  sanitation_contr_exempt_date: 
+  created_at: 2010-03-28 16:34:12
+  updated_at: 2010-03-28 16:34:12
+vessels_011: 
+  id: "44"
+  name: Eurodam
+  flag: "152"
+  vessel_type: "8"
+  owner_id: "4287"
+  loa: "286.0"
+  vessel_length: 
+  beam: "0.0"
+  dw: "0.0"
+  draft: "0.0"
+  gross_tonnage: "86273"
+  net_tonnage: "41640"
+  cap1: "0"
+  paxcap: "0"
+  ice_class_id: 
+  calls: ""
+  contact_info: ""
+  max_draft: 
+  safety_cert_date: 
+  construction_cert_date: 
+  equipment_date: 
+  security_cert_date: 
+  int_load_line_cert_date: 
+  oil_pollut_prevent_date: 
+  tonnage_cert_issued_date: 
+  sanitation_contr_exempt_date: 
+  created_at: 2010-03-28 16:34:12
+  updated_at: 2010-03-28 16:34:12
+vessels_012: 
+  id: "45"
+  name: Princess daphne
+  flag: "174"
+  vessel_type: "8"
+  owner_id: "12253"
+  loa: "162.37"
+  vessel_length: 
+  beam: "21.34"
+  dw: "5737.0"
+  draft: "7.8"
+  gross_tonnage: "15833"
+  net_tonnage: "5572"
+  cap1: "0"
+  paxcap: "526"
+  ice_class_id: 
+  calls: CQSD
+  contact_info: ""
+  max_draft: 
+  safety_cert_date: 
+  construction_cert_date: 
+  equipment_date: 
+  security_cert_date: 
+  int_load_line_cert_date: 
+  oil_pollut_prevent_date: 
+  tonnage_cert_issued_date: 
+  sanitation_contr_exempt_date: 
+  created_at: 2010-03-28 16:34:12
+  updated_at: 2010-03-28 16:34:12

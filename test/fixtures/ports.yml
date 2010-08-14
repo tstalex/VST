@@ -1,19 +1,2018 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  country: 1
-  code: MyString
-  flag: 1
-  tips: MyText
-  description: MyText
-  picture: MyString
-
-two:
-  name: MyString
-  country: 1
-  code: MyString
-  flag: 1
-  tips: MyText
-  description: MyText
-  picture: MyString
+--- 
+ports_001: 
+  id: "155"
+  name: Bekkeri
+  country: "68"
+  code: BEK
+  flag: "1"
+  tips: ""
+  description: <br>
+  picture: 
+  created_at: 2010-03-28 19:10:09
+  updated_at: 2010-04-01 06:21:31
+ports_002: 
+  id: "156"
+  name: Dirhami
+  country: "68"
+  code: DIR
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:09
+  updated_at: 2010-03-28 19:10:09
+ports_003: 
+  id: "157"
+  name: Haapsalu
+  country: "68"
+  code: HAA
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:09
+  updated_at: 2010-03-28 19:10:09
+ports_004: 
+  id: "158"
+  name: Heltermaa
+  country: "68"
+  code: HEL
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:10
+  updated_at: 2010-03-28 19:10:10
+ports_005: 
+  id: "159"
+  name: Hundipea / miinisadam
+  country: "68"
+  code: HUN
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:10
+  updated_at: 2010-03-28 19:10:10
+ports_006: 
+  id: "160"
+  name: Jansen kai
+  country: "68"
+  code: JAN
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:10
+  updated_at: 2010-03-28 19:10:10
+ports_007: 
+  id: "161"
+  name: Kuivastu
+  country: "68"
+  code: KUI
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:10
+  updated_at: 2010-03-28 19:10:10
+ports_008: 
+  id: "162"
+  name: Kunda
+  country: "68"
+  code: KUN
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:10
+  updated_at: 2010-03-28 19:10:10
+ports_009: 
+  id: "163"
+  name: Lehtma
+  country: "68"
+  code: LEH
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:10
+  updated_at: 2010-03-28 19:10:10
+ports_010: 
+  id: "164"
+  name: Tallinn / linnahall
+  country: "68"
+  code: LIN
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:11
+  updated_at: 2010-03-28 19:10:11
+ports_011: 
+  id: "165"
+  name: Loksa
+  country: "68"
+  code: LOK
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:11
+  updated_at: 2010-03-28 19:10:11
+ports_012: 
+  id: "166"
+  name: Majaka
+  country: "68"
+  code: MAJ
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:11
+  updated_at: 2010-03-28 19:10:11
+ports_013: 
+  id: "167"
+  name: Tallinna meretehas
+  country: "68"
+  code: MER
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:11
+  updated_at: 2010-03-28 19:10:11
+ports_014: 
+  id: "168"
+  name: Miiduranna
+  country: "68"
+  code: MII
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:12
+  updated_at: 2010-03-28 19:10:12
+ports_015: 
+  id: "169"
+  name: Montu
+  country: "68"
+  code: MON
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:12
+  updated_at: 2010-03-28 19:10:12
+ports_016: 
+  id: "170"
+  name: Tallinn / muuga
+  country: "68"
+  code: MUU
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:12
+  updated_at: 2010-03-28 19:10:12
+ports_017: 
+  id: "171"
+  name: Paldiski south
+  country: "68"
+  code: PAL
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:12
+  updated_at: 2010-03-28 19:10:12
+ports_018: 
+  id: "172"
+  name: Parnu
+  country: "68"
+  code: PAR
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:12
+  updated_at: 2010-03-28 19:10:12
+ports_019: 
+  id: "173"
+  name: Parnu shipyard's berth
+  country: "68"
+  code: PAS
+  flag: "1"
+  tips: ""
+  description: "1. Going ashore:\r\n\
+    No landing cards are needed. No any ship-produced  IDs are accepted.\r\n\
+    Passengers : All passengers are going ashore with passports.The holders of European Union states' passports, can go ashore with National ID card only, without passport. If  ID is not available, they are going ashore with National passport.\r\n\
+    Crew : Crewmembers of EU states can go ashore with National  ID cards, passports or seaman's book, crewmembers of non-EU states are going ashore with valid Seaman's Book or National passport. Passport for non-ILO member states are required\r\n\
+    \r\n\
+    2. Clearance & Visas\r\n\
+    Health formalities  : No any special requirements.\r\n\
+    Clearance Officials board upon berthing, 2-3 person;\r\n\
+    Clearance times : passengers 1 min, crew - 10 mins,\r\n\
+    Please prepare passports of those who has Estonian visa to go ashore for stamping also those passengers passport who dis/embark;\r\n\
+    Generally no personal control neither for pax nor for crew ;\r\n\
+    ALL PASSENGERS SHOULD HAVE ESTONIAN VISA OR TO BE INCLUDED INTO VISAFREE NATIONALITIES LIST TO BE ABLE TO GO ASHORE as follwoing:\r\n\
+    Andorra, Argentina, Australia,  Austria,  Belgium, Brazil, Brunei, Bulgaria, Canada, Costa Rica, Chile, Croatia, Cyprus, Czech Republic, El Salvador, Denmark, Finland,  France,  Greece,   Germany, Guatemala,Hong Kong, Honduras, Hungary, Iceland, Ireland, Israel, Italy, Japan, Latvia, Liechtenstein, Lithuania, Luxembourg, Macao, Malaysia, Malta, Mexico, Monaco, New Zealand, The Netherlands, Nicaragua, Norway, Panama, Paraguay, Poland, Portugal, Romania, San Marino, Singapore, South Korea, Slovak Republic, Slovenia, South Korea, Spain, Sweden, Switzerland, United Kingdom, Uruguay, USA, Vatican City, Venezuela\r\n\
+    Citizens of S. AFRICA are entitled to arrive to/transit Estonia with valid visa issued by Latvia or Lithuania.\r\n\
+    \r\n\
+    Generally, it is not possible to apply for a visa at a border checkpoint, an exception is made for seamen only.\r\n\
+    \r\n\
+    However passengers that obliged to have a visa but is not in possession could stay on board without any problem.\r\n\
+    \r\n\
+    Since May 1st 2007 passengers which has special type of Undefined National passport issued by EU state with it's permanent residence permitt may visit Estonia without visa.\r\n\
+    \r\n\
+    Visa is not required for crew going ashore if ship sailing under ILO flag. To embark or disembark the ship some nationals require ESTONAIN Transit visa.\r\n\
+    \r\n\
+    3. A COPY OF PASSENGER LIST & CREW LIST WITH NATIONALITIES BREAKDOWN should be sent to Agent FOR IMMIGRATION NEEDS in electronic format, latest a day prior to arrival. Excel is preferable.\r\n\
+    \r\n\
+    Please prepare for arrival clearance sufficient quantities of following documents:\r\n\
+    Crew list   4,\r\n\
+    Bonded stores  2,\r\n\
+    Crew's effects   2,\r\n\
+    Health declaration   1,\r\n\
+    Arms/Narcotics List (if any)  2.\r\n\
+    Besides, for the 1st call ONLY we need : copy of Tonnage, Registry &  Passenger Ship Safety Certificates.\r\n\
+    Validity terms of - Load Line, IOPP, Deratting exemption certificates; Bunkers, fresh & ballast waters figures.\r\n\
+    \r\n\
+    For sailing pls prepare following:\r\n\
+    Crew list   3,\r\n\
+    Bonded stores  1,  if any changes\r\n\
+    Crew's effects   1, if any changes\r\n\
+    \r\n\
+    4. Customs\r\n\
+    Bonded stores should be closed, generally Customs don't inspect or seal them.\r\n\
+    Crew & Passengers:\r\n\
+    If ship arrives from E.Union state then each person may have onboard 800 cigarettes, 10 ltrs of spirits, 20 ltrs of under 22% alc. 90 ltrs of wins, 110 ltrs of beers.\r\n\
+    If ship arrives from non-EU state (Russia, Aland Islands) then each person may have only 200 cigarettes, 1 ltrs of spirits OR 2 ltrs of under 22% alc. and 3 ltrs of wine. Amounts of controllable goods exceeding above mentioned quantities are subject to legal penalties.\r\n\
+    \r\n\
+    5. Navigation\r\n\
+    LOCAL SUMMER TIME:  GMT + 3 ( THREE ) hrs.\r\n\
+    Pa\"rnu pilot boarding position :  58 d 14' 4 N, 24 d 25' 0 E.\r\n\
+    Pls call 'Pa\"rnu Pilot' on VHF-13,  2 hr prior reaching plt psn.\r\n\
+    Distance from Pilot station to berth 3-10 miles.Please contact Pilot/or agent some 1,5 hrs  before arriving. \r\n\
+    Pa\"rnu harbour has 62000 m long, 45 m wide entrance chanel & min depth 5.8 m.\r\n\
+    Speed limit at chanel starting upper light of Seedri light is 5 knots.\r\n\
+    Minimum depths at approaches 15.0 m.\r\n\
+    \r\n\
+    6. Port\r\n\
+    Port working chanel VHF-13/16\r\n\
+    Port of Pa\"rnu is ISPS certified\r\n\
+    PFSO : Mr. Riho Prints ph.+3725043064\r\n\
+    Minimum depths at berth 6.0 m\r\n\
+    Tugs fleet available : Nico  - 1000 bhp.\r\n\
+    WEATHER CONDITIONS:  Pls see site  www.weather.ee\r\n\
+    Port traffic is restricted when wind speed exceeding 15 m/s & visibility less then 3 cables.\r\n\
+    Wastes delivery included into Port Sanitary dues. The amount of wastes is not restricted, however port reserves right to charge extra expenses.\r\n\
+    Latest 24 hrs prior to arrival ISPS & Wastes delivery notification form should be sent to AGENT.\r\n\
+    \r\n\
+    7. Destination information\r\n\
+    Exchange rates : 1.0 EUR= 15.4, 1.0 USD=~11.2, 1.0 GBP=~22.0 EEK;\r\n\
+    Distance from pier to downtown:     1.5 km\r\n\
+    Taxi rate to Downtown :  abt 7.00 EUR all taxis are metered;\r\n\
+    Shopping hours in downtown:     0900-1900 (supermarkets - 2100)\r\n\
+    Post office working hours:     Weekdays 0800-1930,  Sat 0800-1800,  Sun 0800-1500,  address :    Narva mnt. 1\r\n\
+    Bank hours:    1000-1800,\r\n\
+    Closest Bank office is in city center\r\n\
+    USD/EURO are not accepted for payment, but you can find currency exchange bureaus widely\r\n\
+    \r\n\
+    Postage :                                  Europe    USA / Rest\r\n\
+    postcards&letters (-20 gr)         6.50           8.00\r\n\
+    letter (20 gr+)                            10.00          13.50\r\n\
+    ALL rates are in Estonian krones -  EEK.\r\n\
+    \r\n\
+    8. Local (emergency) contact numbers:\r\n\
+    Fire                       112\r\n\
+    Ambulance         112\r\n\
+    Police                  110, 112\r\n\
+    Hospital              112\r\n\
+    Port authorities    (+372) 4442 932,   VHF-13/16\r\n\
+    Coastguard / Immigration    (+372)4475810\r\n\
+    Customs                                 (+372)4477771 "
+  picture: 
+  created_at: 2010-03-28 19:10:12
+  updated_at: 2010-03-28 19:10:12
+ports_020: 
+  id: "174"
+  name: Pirita
+  country: "68"
+  code: PIR
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:13
+  updated_at: 2010-03-28 19:10:13
+ports_021: 
+  id: "175"
+  name: Tallinn / paljassaare
+  country: "68"
+  code: PLJ
+  flag: "1"
+  tips: Same rebates aplicable as for Tallinn Old City Harbour.
+  description: "1. Navigation\r\n\
+    Before entering Gulf of Finland pls note GOFREP area and report accordingly.\r\n\
+    LOCAL SUMMER TIME:  GMT + 3 ( THREE ) hrs.\r\n\
+    Tallinn pilot boarding positions :\r\n\
+    Tallinn North Buoy Nr 1,  59 d 37'5 N,  24 d 38'0 E.\r\n\
+    Tallinn Suurupi Nr 3,  59 d 29' 4 N, 24 d 33' 0 E.\r\n\
+    Pls call 'Tallinn Traffic Control' on VHF-13,  2 hr prior reaching plt psn.\r\n\
+    Distance from Pilot station to berth10 miles.\r\n\
+    Minimum depths at approaches 15.0 m.\r\n\
+    \r\n\
+    2. Port\r\n\
+    Port working chanel VHF-11\r\n\
+    Port of Tallinn / Paljassaare Harbour is ISPS certified\r\n\
+    PFSO : Mr. Marko Kotkas,  phone +372 6318 030, e/mail:  m.kotkas@ts.ee\r\n\
+    Minimum depths at berth 9.0 m.\r\n\
+    Tugs fleet available :  Akilles - 1450 bhp, Hermes - 2650 bhp, Vega - 2850 bhp ASD, Calypso - 3000 bhp ASD, Pallas - 3000 bhp, Neptun - 4250 bhp.\r\n\
+    Washing & painting permitted without pollution\r\n\
+    WEATHER CONDITIONS:  Pls see site  www.weather.ee\r\n\
+    Wastes delivery in Tallinn included into Port Sanitary dues. The amount of wastes is not restricted, however port reserves right to charge extra expenses.\r\n\
+    Latest 24 hrs prior to arrival ISPS & Wastes delivery notification  form should be sent to AGENT.\r\n\
+    \r\n\
+    3. Going ashore:\r\n\
+    No landing cards are needed. No any ship-produced  IDs are accepted.\r\n\
+    Passengers : All passengers are going ashore with passports.The holders of European Union states' passports, can go ashore with National ID card only, without passport. If  ID is not available, they are going ashore with National passport.\r\n\
+    Crew : Crewmembers of EU states can go ashore with National  ID cards, passports or seaman's book, crewmembers of non-EU states are going ashore with valid Seaman's Book or National passport. Passport for non-ILO member states are required\r\n\
+    \r\n\
+    4. Clearance & Visas\r\n\
+    Health formalities : An answers to Maritime Health Delcaration needed a day before arrival. No other special requirements.\r\n\
+    Clearance Officials board upon berthing, 2-3 person;\r\n\
+    Clearance times : 15 mins,\r\n\
+    If ship is bound from non-Schengen please prepare for stamping passports of all those non-EU passengers who embarked at last port and make a list of those who has Schengen visa or residence permit;\r\n\
+    If ship is bound to non-Schengen please prepare for stamping passports of all those non-EU passengers who disembark at next port and make a list of those who has Schengen visa or residence permit;\r\n\
+    Generally no personal control neither for pax nor for crew ;\r\n\
+    ALL PASSENGERS SHOULD HAVE SCHENGEN VISA OR RESIDENCE PERMIT OR TO BE INCLUDED INTO VISAFREE NATIONALITIES LIST TO BE ABLE TO GO ASHORE as follwoing:\r\n\
+    Andorra, Argentina, Australia,  Austria,  Belgium, Brazil, Brunei, Bulgaria, Canada, Costa Rica, Chile, Croatia, Cyprus, Czech Republic, El Salvador, Denmark, Finland,  France,  Greece,   Germany, Guatemala,Hong Kong, Honduras, Hungary, Iceland, Ireland, Israel, Italy, Japan, Latvia, Liechtenstein, Lithuania, Luxembourg, Macao, Malaysia, Malta, Mexico, Monaco, New Zealand, The Netherlands, Nicaragua, Norway, Panama, Paraguay, Poland, Portugal, Romania, San Marino, Singapore, South Korea, Slovak Republic, Slovenia, South Korea, Spain, Sweden, Switzerland, United Kingdom, Uruguay, USA, Vatican City, Venezuela\r\n\
+    \r\n\
+    Citizens of S. AFRICA are entitled to arrive to/transit Estonia with valid visa issued by Latvia or Lithuania.\r\n\
+    \r\n\
+    Generally, it is not possible to apply for a visa at a border checkpoint, an exception is made for seamen only.\r\n\
+    \r\n\
+    However passengers that obliged to have a visa but is not in possession could stay on board without any problem.\r\n\
+    \r\n\
+    Since December 21st 2007 passengers obtaining Schengen State residence permitt may visit Estonia without visa.\r\n\
+    \r\n\
+    Visa is not required for crew going ashore if ship sailing under ILO flag. To embark or disembark the ship some nationals require ESTONAIN Transit visa.\r\n\
+    \r\n\
+    5. A COPY OF PASSENGER LIST & CREW LIST WITH NATIONALITIES BREAKDOWN should be sent to Agent FOR IMMIGRATION NEEDS in electronic format, latest a day prior to arrival. Excel is preferable.\r\n\
+    \r\n\
+    Please prepare for clearance sufficient quantities of following documents:\r\n\
+    Crew list   3,\r\n\
+    Pax list   1,\r\n\
+    Cre & Pax Nationalities breakdown 2,\r\n\
+    Bonded stores  1, \r\n\
+    Crew's effects   1, \r\n\
+    Health declaration   1, \r\n\
+    Arms/Narcotics List (if any)  2.\r\n\
+    Besides, for the 1st call ONLY we need : copy of Tonnage Certificate; \r\n\
+    Validity terms of - Passenger Ship Safety, Load Line, IOPP, Sanitation exemption certificates;  \r\n\
+    Bunkers, fresh & ballast waters figures.\r\n\
+    \r\n\
+    6. Customs\r\n\
+    Bonded stores should be closed, generally Customs don't inspect or seal them. Beauty salons and bars might be opened while ship is in Tallinn\r\n\
+    Crew & Passengers: \r\n\
+    If ship arrives from E.Union state then each person may have onboard 800 cigarettes, 10 ltrs of spirits, 20 ltrs of under 22% alc. 90 ltrs of wins, 110 ltrs of beers.\r\n\
+    If ship arrives from non-EU state (Russia, Aland Islands) then each person may have only 200 cigarettes, 1 ltrs of spirits OR 2 ltrs of under 22% alc. and 3 ltrs of wine.\r\n\
+    Cash exceeding 10000 EUR shoud be declared.\r\n\
+    Amounts of controllable goods or cash exceeding above mentioned quantities are subject to legal penalties.\r\n\
+    \r\n\
+    Then ship bond to Russia or other non EU state and Customs TaxFree confirmation required for non EU citizens please inform on arrival about number of persons for Customs arrangements. For goods purchased at Estonia latest notification is 2 hrs prior sailing.\r\n\
+    NB! EU Goods shall be closed in original packing with TaxFree invoice.\r\n\
+    \r\n\
+    7. Destination information\r\n\
+    Exchange rates : 1.0 EUR=15.4, 1.0 USD=12.0, 1.0 GBP=22.0 EEK;\r\n\
+    Distance from pier to downtown:     5 km\r\n\
+    Taxi rate to Downtown :     abt 20.00 EUR all taxis are metered; Shuttle bus service :      optional (via Travel Agents)\r\n\
+    Shopping hours in downtown:     0900-1900 (supermarkets - 2100)\r\n\
+    Post office working hours:     Weekdays 0800-1930,  Sat 0800-1800,  Sun 0800-1500,  address :    Narva mnt. 1\r\n\
+    Bank hours:    1000-1800, \r\n\
+    Closest Bank office is in Old Town, in downtown ATMs each 300 m,\r\n\
+    Onboard Banking Exchange service is available by request ; \r\n\
+    USD/EURO are not accepted for payment, but you can find currency exchange bureaus widely,\r\n\
+    Nearest telephone terminal:    At Old Town\r\n\
+    Nearest Internet cafe:  Kaubamaja (Viru Center) (Gonsiori 2, 5 floor); \"Enter\" cafe  (Viru  Str.,24)\r\n\
+    Shore Excursion agents will attend on board on arrival -  they can help you with maps and information.\r\n\
+    Postage :\r\n                                                        Europe    USA / Rest\r\n\
+    postcards&letters (-20 gr)         6.50           8.00\r\n\
+    letter (20 gr+)                             10.00           13.50\r\n\
+    ALL rates are in Estonian krones -  EEK. \r\n\
+    \r\n\
+    8. Local (emergency) contact numbers:\r\n\
+    Fire\t\t                112\r\n\
+    Ambulance\t         112\r\n\
+    Police\t\t                110, 112\r\n\
+    Hospital\t\t         112\r\n\
+    Port authorities\t(+372) 6100828,   VHF-11\r\n\
+    Coastguard / Immigration\t(+372) 6100765\r\n\
+    Customs\t\t                          (+372) 6100759 "
+  picture: 
+  created_at: 2010-03-28 19:10:13
+  updated_at: 2010-03-28 19:10:13
+ports_022: 
+  id: "176"
+  name: Parnu peat terminal
+  country: "68"
+  code: PPT
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:13
+  updated_at: 2010-03-28 19:10:13
+ports_023: 
+  id: "177"
+  name: Paldiski north
+  country: "68"
+  code: PSA
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:13
+  updated_at: 2010-03-28 19:10:13
+ports_024: 
+  id: "178"
+  name: Parnu reldor port
+  country: "68"
+  code: REL
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:13
+  updated_at: 2010-03-28 19:10:13
+ports_025: 
+  id: "179"
+  name: Rohukula
+  country: "68"
+  code: ROH
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:13
+  updated_at: 2010-03-28 19:10:13
+ports_026: 
+  id: "180"
+  name: Roomassaare
+  country: "68"
+  code: ROO
+  flag: "1"
+  tips: ""
+  description: |-
+    1. Navigation
+    LOCAL SUMMER TIME:  GMT + 3 ( THREE ) hrs.
+    Pilot boarding position :  58 d 11' N, 22 d 29' 0 E.
+    Pls call 'Tamme Radio' on VHF-14,  1 hr prior reaching plt psn.
+    Distance from Pilot station to berth 4 miles.
+    Distance from anchorage to pier 3 mile.
+    Minimum depths at approaches 6 m.
+    
+    2. Port
+    Roomassaare Harbour is ISPS certified
+    PFSO  phone +372 45 55774
+    Two berths of 201 & 115 m.
+    Minimum depths at berth 5.0 m.
+    Tugs available by prior request.
+    Washing & painting permitted without pollution
+    Wastes delivery included into Port Sanitary dues. The amount of wastes is not restricted, however port reserves right to charge extra expenses.
+    Latest 24 hrs prior to arrival ISPS & Wastes delivery notification form should be sent to AGENT.
+    
+    3. Going ashore:
+    No landing cards are needed. No any ship-produced  IDs are accepted.
+    Passengers : All passengers are going ashore with passports.The holders of European Union states' passports, can go ashore with National ID card only, without passport. If  ID is not available, they are going ashore with National passport.
+    Crew : Crewmembers of EU states can go ashore with National  ID cards, passports or seaman's book, crewmembers of non-EU states are going ashore with valid Seaman's Book or National passport. Passport for non-ILO member states are required
+    
+    4. Clearance & Visas
+    Health formalities : An answers to Maritime Health Delcaration needed a day before arrival. No other special requirements.
+    Clearance Officials board upon berthing, 2-3 person;
+    Clearance times : 15 mins,
+    If ship is bound from non-Schengen please prepare for stamping passports of all those non-EU passengers who embarked at last port and make a list of those who has Schengen visa or residence permit;
+    If ship is bound to non-Schengen please prepare for stamping passports of all those non-EU passengers who disembark at next port and make a list of those who has Schengen visa or residence permit;
+    Generally no personal control neither for pax nor for crew ;
+    ALL PASSENGERS SHOULD HAVE SCHENGEN VISA OR RESIDENCE PERMIT OR TO BE INCLUDED INTO VISAFREE NATIONALITIES LIST TO BE ABLE TO GO ASHORE as follwoing:
+    Andorra, Argentina, Australia,  Austria,  Belgium, Brazil, Brunei, Bulgaria, Canada, Costa Rica, Chile, Croatia, Cyprus, Czech Republic, El Salvador, Denmark, Finland,  France,  Greece,   Germany, Guatemala,Hong Kong, Honduras, Hungary, Iceland, Ireland, Israel, Italy, Japan, Latvia, Liechtenstein, Lithuania, Luxembourg, Macao, Malaysia, Malta, Mexico, Monaco, New Zealand, The Netherlands, Nicaragua, Norway, Panama, Paraguay, Poland, Portugal, Romania, San Marino, Singapore, South Korea, Slovak Republic, Slovenia, South Korea, Spain, Sweden, Switzerland, United Kingdom, Uruguay, USA, Vatican City, Venezuela
+    
+    Citizens of S. AFRICA are entitled to arrive to/transit Estonia with valid visa issued by Latvia or Lithuania.
+    
+    Generally, it is not possible to apply for a visa at a border checkpoint, an exception is made for seamen only.
+    
+    However passengers that obliged to have a visa but is not in possession could stay on board without any problem.
+    
+    Since December 21st 2007 passengers obtaining Schengen State residence permitt may visit Estonia without visa.
+    
+    Visa is not required for crew going ashore if ship sailing under ILO flag. To embark or disembark the ship some nationals require ESTONAIN Transit visa.
+    
+    5. A COPY OF PASSENGER LIST & CREW LIST WITH NATIONALITIES BREAKDOWN should be sent to Agent FOR IMMIGRATION NEEDS in electronic format, latest a day prior to arrival. Excel is preferable.
+    
+    Please prepare for clearance sufficient quantities of following documents:
+    Crew list   3,
+    Pax list   1,
+    Cre & Pax Nationalities breakdown 2,
+    Bonded stores  2, 
+    Crew's effects   2, 
+    Health declaration   1, 
+    Arms/Narcotics List (if any)  2.
+    Besides, for the 1st call ONLY we need : copy of Tonnage Certificate; 
+    Validity terms of - Passenger Ship Safety, Load Line, IOPP, Sanitation exemption certificates;  
+    Bunkers, fresh & ballast waters figures.
+    
+    6. Customs
+    Bonded stores should be closed, generally Customs don't inspect or seal them. Beauty salons and bars might be opened while ship is in Tallinn
+    Crew & Passengers:
+    If ship arrives from E.Union state then each person may have onboard 800 cigarettes, 10 ltrs of spirits, 20 ltrs of under 22% alc. 90 ltrs of wins, 110 ltrs of beers.
+    If ship arrives from non-EU state (Russia, Aland Islands) then each person may have only 200 cigarettes, 1 ltrs of spirits OR 2 ltrs of under 22% alc. and 3 ltrs of wine. 
+    Cash exceeding 10000 EUR shoud be declared.
+    Amounts of controllable goods or cash exceeding above mentioned quantities are subject to legal penalties.
+    
+    Then ship bond to Russia or other non EU state and Customs TaxFree confirmation required for non EU citizens please inform on arrival about number of persons for Customs arrangements. For goods purchased at Estonia latest notification is 2 hrs prior sailing.
+    NB! EU Goods shall be closed in original packing with TaxFree invoice.
+    
+    7. Destination information
+    Exchange rates : 1.0 EUR=15.4, 1.0 USD=10.3, 1.0 GBP=20.5 EEK;
+    Distance from pier to Kuressaare:     5 km
+    Taxi rate to Downtown :     abt 15.00 EUR all taxis are metered;
+    Shuttle bus service :       optional (via Travel Agents)
+    Shopping hours in downtown:     0900-1900 (supermarkets - 2100)
+    Post office working hours:  Weekdays 0830-1800, Kuressaare
+    Bank hours:    0900-1700, Closest Bank office at Kuressaare,
+    USD/EURO are not accepted for payment, but you can find currency exchange bureaus widely,
+    Nearest telephone terminal: Port building
+    Nearest Internet cafe located at Kuressaare
+    Shore Excursion agents will attend on board on arrival -  they can help you with maps and information.
+    Postage :
+                                    Europe    USA / Rest
+    postcards&letters (-20 gr)        6.50           8.00
+    letter (20 gr+)                            10.00           13.50
+    ALL rates are in Estonian krones -  EEK.
+    
+    8. Local (emergency) contact numbers:
+    Fire                            112
+    Ambulance              112
+    Police                        110, 112
+    Hospital                    112
+    Port authorities         (+372) 45 55774,   VHF-14
+    Coastguard / Immigration (+372) 45 33321
+  picture: 
+  created_at: 2010-03-28 19:10:14
+  updated_at: 2010-03-28 19:10:14
+ports_027: 
+  id: "181"
+  name: Roomassaare
+  country: "68"
+  code: ROO
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:14
+  updated_at: 2010-03-28 19:10:14
+ports_028: 
+  id: "182"
+  name: Snt. petersburg
+  country: "68"
+  code: SPB
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:14
+  updated_at: 2010-03-28 19:10:14
+ports_029: 
+  id: "183"
+  name: Tallinn / old city
+  country: "68"
+  code: TLL
+  flag: "68"
+  tips: |-
+    Rebate on Tonnage due granted basis number of call ship visting Port of Tallinn group harbours (Old City Harbour, Saaremaa Harbour).
+    2-3 call       - 50%
+    4-5 call       - 75%
+    from 6 call - 85%
+    Wastes delivery in Tallinn included into Port Sanitary Due
+  description: "1. Navigation\n\
+    Before entering Gulf of Finland pls note GOFREP area and report accordingly.\n\
+    LOCAL SUMMER TIME:  GMT + 3 ( THREE ) hrs.\n\
+    Tallinn pilot boarding positions :\n\
+    Tallinn North Buoy Nr 1,  59 d 37'5 N,  24 d 38'0 E.\n\
+    Tallinn Suurupi Nr 3,  59 d 29' 4 N, 24 d 33' 0 E.\n\
+    Pls call 'Tallinn Traffic Control' on VHF-13,  2 hr prior reaching plt psn.\n\
+    Distance from Pilot station to berth 11 miles.\n\
+    Minimum depths at approaches 15.0 m.\n\n\
+    2. Port\n\
+    Port working chanel VHF-14\n\
+    Port of Tallinn / Old City Harbour is ISPS certified\n\
+    Port ID number -  VS-1 (Old City)\n\
+    UN Locator EE VAN\n\
+    Port Facility Number -  EE395-0001\n\
+    PFSO : Mr. Marko Kotkas,  phone +372 6318 030, e/mail:  m.kotkas@ts.ee\n\
+    Minimum depths at berth 10.7 m\n\
+    Tugs fleet available :  Akilles - 1450 bhp, Jupiters - 3000 bhp ASD, Calypso - 3000 bhp ASD.\n\
+    Due to high local traffic at the port LIFEBOAT DRILLS ARE NOT PERMITTED inside the port only at seaberth (jetty 24/25).\n\
+    Washing &amp; painting permitted without pollution\n\
+    WEATHER CONDITIONS:  Pls see site  www.weather.ee\n\
+    Local ferries has a priority in entering and leaving the port.\n\
+    Wastes delivery in Tallinn included into Port Sanitary dues. The amount of wastes is not restricted, however port reserves right to charge extra expenses.\n\
+    Latest 24 hrs prior to arrival ISPS &amp; Wastes delivery notification  form should be sent to AGENT.\n\n\
+    3. Going ashore:\n\
+    No landing cards are needed. No any ship-produced  IDs are accepted.\n\
+    Passengers : All passengers are going ashore with passports.The holders of European Union states' passports, can go ashore with National ID card only, without passport. If  ID is not available, they are going ashore with National passport.\n\
+    Crew : Crewmembers of EU states can go ashore with National  ID cards, passports or seaman's book, crewmembers of non-EU states are going ashore with valid Seaman's Book or National passport. Passport for non-ILO member states are required\n\n\
+    4. Clearance &amp; Visas\n\
+    Health formalities : An answers to Maritime Health Delcaration needed a day before arrival. No other special requirements.\n\
+    Clearance Officials board upon berthing, 2-3 person;\n\
+    Clearance times : 15 mins,\n\
+    If ship is bound from non-Schengen please prepare for stamping passports of all those non-EU passengers who embarked at last port and make a list of those who has Schengen visa or residence permit;\n\
+    If ship is bound to non-Schengen please prepare for stamping passports of all those non-EU passengers who disembark at next port and make a list of those who has Schengen visa or residence permit;\n\
+    Generally no personal control neither for pax nor for crew ;\n\
+    ALL PASSENGERS SHOULD HAVE SCHENGEN VISA OR RESIDENCE PERMIT OR TO BE INCLUDED INTO VISAFREE NATIONALITIES LIST TO BE ABLE TO GO ASHORE as follwoing:\n\
+    Andorra, Argentina, Australia,  Austria,  Belgium, Brazil, Brunei, Bulgaria, Canada, Costa Rica, Chile, Croatia, Cyprus, Czech Republic, El Salvador, Denmark, Finland,  France,  Greece,   Germany, Guatemala,Hong Kong, Honduras, Hungary, Iceland, Ireland, Israel, Italy, Japan, Latvia, Liechtenstein, Lithuania, Luxembourg, Macao, Malaysia, Malta, Mexico, Monaco, New Zealand, The Netherlands, Nicaragua, Norway, Panama, Paraguay, Poland, Portugal, Romania, San Marino, Singapore, South Korea, Slovak Republic, Slovenia, South Korea, Spain, Sweden, Switzerland, United Kingdom, Uruguay, USA, Vatican City, Venezuela\n\n\
+    Citizens of S. AFRICA are entitled to arrive to/transit Estonia with valid visa issued by Latvia or Lithuania.\n\n\
+    Generally, it is not possible to apply for a visa at a border checkpoint, an exception is made for seamen only.\n\n\
+    However passengers that obliged to have a visa but is not in possession could stay on board without any problem.\n\n\
+    Since December 21st 2007 passengers obtaining Schengen State residence permitt may visit Estonia without visa.\n\n\
+    Visa is not required for crew going ashore if ship sailing under ILO flag. To embark or disembark the ship some nationals require ESTONAIN Transit visa.\n\n\
+    5. A COPY OF PASSENGER LIST &amp; CREW LIST WITH NATIONALITIES BREAKDOWN should be sent to Agent FOR IMMIGRATION NEEDS in electronic format, latest a day prior to arrival. Excel is preferable.\n\n\
+    Please prepare for clearance sufficient quantities of following documents:\n\
+    Crew list   3,\n\
+    Pax list   1,\n\
+    Cre &amp; Pax Nationalities breakdown 2,\n\
+    Bonded stores  1, \n\
+    Crew's effects   1, \n\
+    Health declaration   1, \n\
+    Arms/Narcotics List (if any)  2.\n\
+    Besides, for the 1st call ONLY we need : copy of Tonnage Certificate; \n\
+    Validity terms of - Passenger Ship Safety, Load Line, IOPP, Sanitation exemption certificates;  \n\
+    Bunkers, fresh &amp; ballast waters figures.\n\n\
+    6. Customs\n\
+    Bonded stores should be closed, generally Customs don't inspect or seal them. Beauty salons and bars might be opened while ship is in Tallinn\n\
+    Crew &amp; Passengers: \n\
+    If ship arrives from E.Union state then each person may have onboard 800 cigarettes, 10 ltrs of spirits, 20 ltrs of under 22% alc. 90 ltrs of wins, 110 ltrs of beers.\n\
+    If ship arrives from non-EU state (Russia, Aland Islands) then each person may have only 200 cigarettes, 1 ltrs of spirits OR 2 ltrs of under 22% alc. and 3 ltrs of wine. \n\
+    Cash exceeding 10000 EUR shoud be declared.\n\
+    Amounts of controllable goods or cash exceeding above mentioned quantities are subject to legal penalties.\n\n\
+    Then ship bond to Russia or other non EU state and Customs TaxFree confirmation required for non EU citizens please inform on arrival about number of persons for Customs arrangements. For goods purchased at Estonia latest notification is 2 hrs prior sailing.\n\
+    NB! EU Goods shall be closed in original packing with TaxFree invoice.\n\n\
+    7. Destination information\n\
+    Exchange rates : 1.0 EUR=15.4, 1.0 USD=10.3, 1.0 GBP=20.5 EEK;\n\
+    Distance from pier to downtown:     0.9 km\n\
+    Taxi rate to Downtown :     abt 10.00 EUR all taxis are metered; Shuttle bus service :      optional (via Travel Agents)\n\
+    Shopping hours in downtown:     0900-1900 (supermarkets - 2100)\n\
+    Post office working hours:     Weekdays 0800-1930,  Sat 0800-1800,  Sun 0800-1500,  address :    Narva mnt. 1\n\
+    Bank hours:    1000-1800, \n\
+    Closest Bank office is in A-Terminal 400m, in downtown ATMs each 300 m,\n\
+    Onboard Banking Exchange service is available by request ; \n\
+    USD/EURO are not accepted for payment, but you can find currency exchange bureaus widely,\n\
+    Nearest telephone terminal:    400m A-Terminal\n\
+    Nearest Internet cafe:  Kaubamaja (Viru Center) (Gonsiori 2, 5 floor); \"Enter\" cafe  (Viru  Str.,24)\n\
+    Shore Excursion agents will attend on board on arrival -  they can help you with maps and information.\n\
+    Postage :\n                                                         Europe    USA / Rest\n\
+    postcards&amp;letters (-20 gr)         6.50           8.00\n\
+    letter (20 gr+)                             10.00           13.50\n\
+    ALL rates are in Estonian krones -  EEK. \n\n\
+    8. Local (emergency) contact numbers:\n\
+    Fire\t\t                112\n\
+    Ambulance\t         112\n\
+    Police\t\t                110, 112\n\
+    Hospital\t\t         112\n\
+    Port authorities\t(+372) 6318588,   VHF-14\n\
+    Coastguard / Immigration\t(+372) 6318777\n\
+    Customs\t\t                          (+372) 6318759 "
+  picture: 
+  created_at: 2010-03-28 19:10:14
+  updated_at: 2010-04-07 04:59:47
+ports_030: 
+  id: "184"
+  name: Veere
+  country: "68"
+  code: VEE
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:14
+  updated_at: 2010-03-28 19:10:14
+ports_031: 
+  id: "185"
+  name: Tallinn / vene-balti
+  country: "68"
+  code: VEN
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:14
+  updated_at: 2010-03-28 19:10:14
+ports_032: 
+  id: "186"
+  name: Vergi
+  country: "68"
+  code: VER
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:15
+  updated_at: 2010-03-28 19:10:15
+ports_033: 
+  id: "187"
+  name: Vesilennukite / hudrosadam
+  country: "68"
+  code: VES
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:15
+  updated_at: 2010-03-28 19:10:15
+ports_034: 
+  id: "188"
+  name: Virtsu
+  country: "68"
+  code: VIR
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:15
+  updated_at: 2010-03-28 19:10:15
+ports_035: 
+  id: "189"
+  name: Riga / passenger
+  country: "118"
+  code: RIG
+  flag: "1"
+  tips: |-
+    Port costs vary a lot depending on terminal utilized, up to 50%.
+    Passenger Terminal - 1 km
+    Central Terminal        - 1.5-3 km
+    Rebate for number of calls from Canal, Berth & Passenger due available:
+    starting from 5th call - 20% 
+    starting from 10th cal
+  description: |-
+    1. NAVIGATION
+    1.1. Riga pilot boarding position - Buoy "B" (Lat=57 06.50 N/Long=23 56.94 E). Two hours prior to reaching PS vessel should contact "RIGA TRAFFIC CONTROL" on VHF ch 16 or 9 and report name of vsl and Eta to PS. Riga traffic control will provide the vessel with further instructions.
+    Distance from Pilot tation to berth 4.7 miles.
+    Depths at approaches 14 m, at canal 8.4 m
+    Speed restricted by 8 knots.
+    
+    1.2. All Port facilities are ISPS certified:
+    Port name: Riga, Latvia
+    Status: Port Open
+    Port ID Number: 18830
+    UN Locator code: LVRIX
+    
+    Port facility name: Rigas Pasazieru Terminals SIA
+    Assigned port facility number: 0101
+    Alternative name(s) for port facility (if applicable): RPT
+    Description of port facility: Passenger and cargo operations
+    Latitude: 56 58,0' N
+    Longitude: 024 06,0' E
+    Maritime security point of contact: PFSO Mr. Albert Vagelis, ph: 00 371 2 92 351 01
+    
+    1.3 Berthing positions:
+    1.3.1 Riga Passenger Terminal
+    Berth: MK-3 ,
+    draft: 7.70 m,
+    LOA  : 180 m,
+    High of the pier from "0" water level: 2,60 m
+    
+    Berth: JPS-1
+    draft: 5.80 m,
+    LOA  : 120 m,
+    High of the pier from "0" water level: 2,60 m
+    berthing starboard side / port side alongside
+    No tide in area.
+    
+    Berth: JPS-2
+    draft: 7.70 m,
+    LOA  : 217 m,
+    High of the pier from "0" water level: 2,60 m
+    berthing starboard side / port side alongside
+    No tide in area.
+    
+    1.4. Local time: GMT/UTC + 3 (three) hrs.
+    
+    1.5. Tugs available
+    JUPITERS (3000 hp) - 500 eur/hr;
+    URAN (3000 hp) - 500 eur/hr;
+    SOMERI (2500 hp) - 470 eur/hr;
+    TOM (1600 hp) - 350 eur/hr;
+    ORION (1600 hp) - 350 eur/hr.
+    
+    1.6. Riga Passenger Terminal details:
+    Address:
+    Riga Freeport, Riga Passenger Terminal Ltd.,
+    Eksporta str. 3A,
+    Riga LV-1010
+    Latvia
+    
+    1.7. Due to vessels' traffic in the fairway of Daugava river and strong streams, anchorage of passenger ships on Daugava river is prohibited;
+    
+    1.8. In Port of Riga washing and painting of ship's hull is prohibited due to environment protection requirements and port rules conditions;
+    Special permission from Riga Harbour Master can be obtained for vessel's illuminators washing with fresh water ONLY without any chemical addition.
+    
+    2. CLEARANCE, etc.
+    FOR IMMIGRATION WE NEED A COPY OF PASSENGER AND CREW LISTS LATEST 24 HRS PRIOR TO ARRIVAL. 
+    
+    As per port regulation please send the following docs / info
+    to us 24 hours prior vessel's arrival:
+    
+    - ETA notice (ETA to Riga PS)
+    - Waste Declaration (local form),
+    - Crew list,
+    - Passenger list.
+    - For MRCC Riga ISPS vessel report, directly by e-mail:
+    isps1@mrcc.lv with copy to us.
+    
+    2.1. Documents required on arrival / departure:
+    
+    Arrival
+    --------
+    5 Crew List
+    5 Passengers List
+    3 Narcotics List
+    2 Crew's Effects declaration
+    2 Ship's Stores List
+    2 NIL list
+    2 Maritime Declaration on Health
+    2 Ship's waste declaration
+    4 Embarking Pax/Crew List (if any)
+    4 Disembarking Pax/Crew List (if any)
+    
+    and copies for 1st call a year :
+    ---------------
+    2 - International tonnage certificate
+    2 - Passenger Ship Safety certificate
+    2 - IOPP certificate (All pages)
+    2 - Certificate of class
+    2 - ISPS certificate
+    2 - Certificate Of Insurance
+    
+    On arrival please advise: bunkers, fresh water figures;
+    fore/aft drafts on arrival.
+    
+    Departure
+    ----------
+    3 Crew Lists (ONLY if any crew change occurred)
+    3 Passenger Lists (ONLY if any passengers embarked/disembarked in Riga)
+    1 Crew's Effects Declaration (ONLY if any crew change occurred)
+    1 Ship's Stores List (ONLY if any provision or other supply took place)
+    
+    2.2. Landing cards for all passengers going ashore will be distributed by immigration officers, no other landing cards required for
+    embarking/disembarking crew/paxes.
+    
+    2.3. For embarking/disembarking crew/paxes we'll need a separate Crew or Passenger list.
+    
+    2.4. Other custom & immigration requirements / details :
+    2.4.1. Please distribute passports among the passengers and seaman's books (or passports if no SB available) among the crew prior to arrival. All crew and passengers will have to pass the passport control in the building of Riga passenger terminal, every person going ashore will receive a landing card from immigration office which should be returned to immigration office when coming back to vessel. Every passenger/crew should carry their passports/seamen's books while ashore.
+    
+    2.4.2. Visa in not required for cruise ship passengers If ship stays at port of Riga less than 72 hours. ALL passengers may go ashore for excursion irrespective to their nationality EXCEPT BELOW MENTIONED citizens who require Schengen visa for going ashore:
+    
+    Afghanistan, Albania, Alger, Arabian Emirates, Bahrain, Bangladesh, Burundi, Egypt, India, Indonesia, Iraq, Iran, Yemen, Jordan, Qatar, Kenya, Columbia, Kongo, Korea, Kuwait, Russia (Chechnya), Livia, Morocco, Nigeria, Oman, Pakistan, Palestine, Rwanda, Saudi Arabia, Syria, Somali, Sudan, Shri-Lanka, Suriname, Tunis and Vietnam republics.
+    
+    2.4.3. If crew members have a seaman's book, they may go ashore without visa irrespective of nationality. If crew members have a passport ONLY, they may go ashore only if they mentioned in below list:
+    
+    Passengers and crew may join or leave the ship at Latvia without visa basis passport if included in list below:
+    
+    Austria; Belgium; Czech Republic; Cyprus; Denmark; Finland; France; Germany; Greece; Hungary; Estonia; Ireland; Iceland; Italy; Lithuania; Liechtenstein; Luxembourg; Malta; The Netherlands; Norway; Poland; Portugal; Slovakia; Slovenia; Spain; Sweden; Switzerland; United Kingdom; Andorra; Argentina; Bulgaria; Costa Rica; Croatia; Israel; Japan; Korea (South Korea); Monaco; Panama; Romania; Singapore; Uruguay; Special Administrative Regions of the People's Republic of China (only passport holders of Hong Kong SAR & of Macao SAR); USA; Vatican City State; Australia; New Zealand; Canada; Nicaragua; Honduras; Bolivia; Brazil; Brunei; Chile; Guatemala; Malaysia; Mexico; Paraguay; El Salvador; Venezuela; San Marino.
+    
+    For disembarking crew members who has seaman's book  visa can be arranged within 3-6hrs at the Immigration department after vessel is berthed.
+    
+    Embarking Passengers & crew members who need visa according to above regulations, should have valid visa on hand upon their arrival to the Airport.
+    
+    2.4.4. In case entering from Non-EU states one person may carry without paying customs duty, VAT and excise tax following:
+    
+    200 cigarettes
+    100 cigarillos
+    50 cigars
+    250 gr smoking tobacco
+    1 ltr alcohol beverages (>22%)
+    2 ltrs alcohol beverages (<22%)
+    2 ltrs wines/sparkling wines
+    
+    No limitations if entering from EU states (concerns goods for personal use only).
+    
+    3. MISCELLANEOUS INFORMATION:
+    
+    - Clearance times for passengers 1...5 minutes;
+    - No passports to be stamped or inspected - only those, who debark;
+    - Usually no personal control neither for pax nor for crew;
+    - Exchange rates : 1.00 EURO = 0.7028 LVL, 1.00 USD = 0.551 LVL   (USD/LVL rate not fixed, changing every day);
+    - Taxi rate to Downtown : 4.00 - 5.00 LVL all taxis are metered;
+    - Shopping hours in downtown: 09:00-18:00 hrs lt (large supermarkets open till 23:00 lt);
+    - Few addresses of main supermarkets:
+    
+    Stockmann
+    Business hours: Mon - Sun 9:00 - 22:00
+    Address: 13. Janvara str. 8, LV-1050 Riga
+    Phone: Loyal Customer Service +371 707 1222
+    
+    Origo shopping centre
+    Address: Stacijas laukums 4, Riga LV 1050
+    Phone: +371 7018 188
+    
+    Mols shopping centre
+    Address: Krasta street 46, Riga
+    Phone: +371 7 030210
+    
+    - Central post office address:
+      Stacijas laukuma 1 (tel. +371-7018804),
+      working hours:  Weekdays 0700-2000, Sat 0800-1800, Sun 0800-1600;
+    - Bank hours: 1000-1700, closest Bank office is in Riga Oldtown 1,5 km from Passenger terminal, in downtown ATMs each 3-400 m;
+    - USD and EUR are not accepted for payment in most of the shops, but you can find currency exchange points widely;
+    - Nearest telephone terminal: abt 200 m from the pier at Riga Passenger Terminal;
+    - Nearest tourist office information: abt 200 m from the pier at Riga Passenger Terminal, main tourist info office: 
+    Main tourist info office:
+    Address: Ratslaukums 6, Riga;
+    Phone: +371-7037900
+    E-mail: tourinfo@rcc.lv
+    Working hours: Every day 09.00am - 7.00pm
+    
+    - Postage expenses
+    -------------------Europe / USA-----
+    postcards               0.36 / 0.40
+    letters (-20 gr)       0.45 / 0.50
+    letter (20-100 gr)   0.60 / 0.90
+    
+    All rates are in local currency - Latvian Lats (LVL).
+    
+    - Distances:
+    Passenger Terminal-Riga downtown - 1 km
+    Passenger Terminal-Riga international airport - 15 km
+    
+    Local (emergency) contact numbers:
+    ----------------------------------
+    Fire                               112
+    Ambulance                 112
+    Police                          112
+    Hospital                      112
+    Coastguard / Immigration  +371-7323103
+    Customs                                +371-7490109
+  picture: 
+  created_at: 2010-03-28 19:10:15
+  updated_at: 2010-03-28 19:10:15
+ports_036: 
+  id: "190"
+  name: Ventspils
+  country: "118"
+  code: VNT
+  flag: "1"
+  tips: ""
+  description: "1. NAVIGATION\r\n\
+    1.1. Ventspils pilot boarding position - Buoy \"B\" (Lat=57 25 N/Long=21 30 E). Two hours prior to reaching PS pls call \"VENTSPILS TRAFFIC CONTROL\" on VHF ch 16 or 9 and report name of vsl and Eta to PS.\r\n\
+    Ventspils traffic control will provide the vessel with further instructions.\r\n\
+    \r\n\
+    1.2. All Port facilities are ISPS certified:\r\n\
+    Port name: Ventspils, Latvia\r\n\
+    Status: Port Open\r\n\
+    Port ID Number: 24520\r\n\
+    UN Locator code: LVVNT\r\n\
+    \r\n\
+    Port facility name:  Noord Natie Ventspils Terminals SIA\r\n\
+    IMO Port facility number: LVVNT-0003\r\n\
+    Port facility description:  Handling of containers, bulk cargoes, timber, ro-ro cargoes\r\n\
+    Port facility has approved port facility security plan (PFSP)?  Yes\r\n\
+    Date of port facility security plan (PFSP) approval:  01/06/2004\r\n\
+    \r\n\
+    1.3. Due to vessels' traffic in the fairway of Venta river anchorage of passenger ships on Venta river is prohibited;\r\n\
+    \r\n\
+    1.4. In Port of Ventspils washing and painting of ship's hull is prohibited. Special permission from Ventspils Harbour Master can be obtained for vessel's illuminators washing with fresh water ONLY without any chemical addition.\r\n\
+    \r\n\
+    1.5 Port/Terminal restrictions\r\n\
+    ------------------------------\r\n\
+    Port              : Ventspils\r\n\
+    Anchorage depth   : 'V2' - 30m /'V3' - 15m (North end) & 23m (South end)\r\n\
+    Max channel draft : 15.0m\r\n\
+    Max channel depth : 17.5m\r\n\
+    Terminal          : Noord-Natie Ventspils Terminal (NNVT)\r\n\
+    Berth             : 15\r\n\
+    Length            : 290.0m\r\n\
+    Max LOA           : 240.0m\r\n\
+    Max draft         :  13.2m\r\n\
+    Alongside         : starboardside (tbc closer to vessel's arrival)\r\n\
+    FW supply         : Yes (2.90 EUR/mt if ship's hoses used & 3.20\r\n\
+    EUR/mt if Terminal's hoses used)\r\n\
+    Bunker supply     : from bunker barge\r\n\
+    Garbage disposal  : ashore\r\n\
+    Sludge/bilge      : via barge\r\n\
+    Ship's gangway is required\r\n\
+    No any Night/Daylight berthing/traffic restrictions\r\n\
+    \r\n\
+    1.6. Local summer time: GMT/UTC + 3 (three) hrs.\r\n\
+    \r\n\
+    1.7. Noord Natie Ventspils Terminals\r\n\
+    7 Plosta Street,\r\n\
+    Ventspils LV-3601, LATVIA\r\n\
+    Phone: +371 63607300\r\n\
+    Fax: +371 63607301\r\n\
+    http://www.nnvt.lv/\r\n\
+    \r\n\
+    2. CLEARANCE, etc.\r\n\
+    2.1. Documents required on arrival / departure:\r\n\
+    \r\n\
+    Arrival\r\n\
+    --------\r\n\
+    5 Crew List\r\n\
+    5 Passengers List\r\n\
+    2 Narcotics List\r\n\
+    2 Crew's Effects declaration\r\n\
+    2 Ship's Stores List\r\n\
+    2 NIL list\r\n\
+    1 Maritime Declaration on Health\r\n\
+    4 Ship's waste declaration\r\n\
+    4 Embarking Pax/Crew List (if any)\r\n\
+    4 Disembarking Pax/Crew List (if any)\r\n\
+    \r\n\
+    and copies of:\r\n\
+    ---------------\r\n\
+    2 - International tonnage certificate\r\n\
+    2 - Passenger Ship Safety certificate\r\n\
+    2 - IOPP certificate (All pages)\r\n\
+    \r\n\
+    On arrival please advise: bunkers, fresh water figures;\r\n\
+    fore/aft drafts on arrival.\r\n\
+    \r\n\
+    Departure\r\n\
+    ----------\r\n\
+    3 Crew Lists (ONLY if any crew change occurred)\r\n\
+    3 Passenger Lists (ONLY if any passengers embarked/disembarked in Riga)\r\n\
+    1 Ship's Stores List (ONLY if any provision or other supply took place)\r\n\
+    ---\r\n\
+    \r\n\
+    2.2. No any landing cards required for embarking/disembarking crew/paxes.\r\n\
+    \r\n\
+    2.3. For embarking/disembarking crew/paxes we'll need a separate Crew or Passenger list.\r\n\
+    \r\n\
+    2.4. Other custom & immigration requirements / details :\r\n\
+    2.4.1. Please distribute passports among the passengers and\r\n\
+    seaman's books (or passports if no SB available) among the crew prior to arrival. All crew and passengers going ashore will pass the passport control in the Immigration point, which is located at Terminal central gate. Every passenger/crew should carry their passports/seamen's books while ashore.\r\n\
+    \r\n\
+    2.4.2. Latvian visa in not required for cruise ship passengers If ship stays at port of Riga less than 72 hours. ALL passengers may go ashore for excursion irrespective to their nationality EXCEPT BELOW MENTIONED citizens who require Latvian visa for going ashore:\r\n\
+    \r\n\
+    Afghanistan, Albania, Alger, Arabian Emirates, Bahrain, Bangladesh, Burundi, Egypt, India, Indonesia, Iraq, Iran, Yemen, Jordan, Qatar, Kenya, Columbia, Kongo, Korea, Kuwait, Russia (Chechnya), Livia, Morocco, Nigeria, Oman, Pakistan, Palestine, Rwanda, Saudi Arabia, Syria, Somali, Sudan, Shri-Lanka, Suriname, Tunis and Vietnam republics.\r\n\
+    \r\n\
+    2.4.3. If crew members have a seaman's book, they may go ashore without visa irrespective of nationality. If crew members have a passport ONLY, they may go ashore only if they mentioned in below list:\r\n\
+    \r\n\
+    Passengers and crew may join or leave the ship at Latvia without visa basis passport if included in list below:\r\n\
+    \r\n\
+    Austria; Belgium; Czech Republic; Cyprus; Denmark; Finland; France; Germany; Greece; Hungary; Estonia; Ireland; Iceland; Italy; Lithuania; Liechtenstein; Luxembourg; Malta; The Netherlands; Norway; Poland; Portugal; Slovakia; Slovenia; Spain; Sweden; Switzerland; United Kingdom; Andorra; Argentina; Bulgaria; Costa Rica; Croatia; Israel; Japan; Korea (South Korea); Monaco; Panama; Romania; Singapore; Uruguay; Special Administrative Regions of the People's Republic of China (only passport holders of Hong Kong SAR & of Macao SAR); USA; Vatican City State; Australia; New Zealand; Canada; Nicaragua; Honduras; Bolivia; Brazil; Brunei; Chile; Guatemala; Malaysia; Mexico; Paraguay; El Salvador; Venezuela; San Marino.\r\n\
+    \r\n\
+    2.4.4. In case entering from Non-EU states one person may carry without paying customs duty, VAT and excise tax following:\r\n\
+    \r\n\
+    200 cigarettes\r\n\
+    100 cigarillos\r\n\
+    50 cigars\r\n\
+    250 gr smoking tobacco\r\n\
+    1 ltr alcohol beverages (>22%)\r\n\
+    2 ltrs alcohol beverages (<22%)\r\n\
+    2 ltrs wines/sparkling wines\r\n\
+    \r\n\
+    No limitations if entering from EU states (concerns goods for personal use only).\r\n\
+    \r\n\
+    3. MISCELLANEOUS INFORMATION:\r\n\
+    \r\n\
+    - Clearance times for passengers 1...5 minutes;\r\n\
+    - No passports to be stamped or inspected - only those, who debark;\r\n\
+    - Usually no personal control neither for pax nor for crew;\r\n\
+    - Exchange rates : 1.00 EURO = 0.7028 LVL, 1.00 USD = 0.551 LVL (USD/LVL\r\n\
+    rate not fixed, changing every day);\r\n\
+    - Shopping hours in downtown: 09:00-18:00 hrs lt (large supermarkets opened till 23:00 lt);\r\n\
+    - Few addresses of main supermarkets:\r\n\
+    \r\n\
+    T/C TOBAGO:\r\n\
+    Lielais prospekts str. 3/5,\r\n\
+    Ventspils, LV-3600, Latvia\r\n\
+    Ph.: +371 636 29 303\r\n\
+    \r\n\
+    Working hrs:\r\n\
+    T/C TOBAGO 9:00 \xC2\x96 22:00\r\n\
+    RIMI supemarket  9:00 \xC2\x96 23:00\r\n\
+    \r\n\
+    Name: Ventspils Market\r\n\
+    Address: 2 Skolas Street\r\n\
+    Phone: +371 3622532\r\n\
+    \r\n\
+    - Central post office address:\r\n\
+    Plata 8, Ventspils, LV-3601,\r\n\
+    Ph. +371 63629630\r\n\
+    working hours: Weekdays 0700-2000, Sat 0800-1800, Sun 0800-1600;\r\n\
+    - Bank hours: 1000-1700,\r\n\
+    - USD and EUR are not accepted for payment in most of the shops, but you\r\n\
+    can find currency exchange points widely;\r\n\
+    - Nearest tourist office information:\r\n\
+    Main tourist info office:\r\n\
+    Address: Tirgus str 7, Ventspils;\r\n\
+    Phone: +371 3622263, 3607664\r\n\
+    E-mail: tourism@ventspils.lv\r\n\
+    Web: http://www.ventspils.tourism.lv/english/index.html\r\n\
+    Working hours: tourism season - from 1st May till 30th September - Weekdays 8:00 - 19:00, Sat 10:00 - 17:00, Sun 10:00 - 15:00.\r\n\
+    \r\n\
+    - Postage expenses\r\n\
+    -------------------Europe / USA-----\r\n\
+    postcards            0.36 / 0.40\r\n\
+    letters (-20 gr)     0.45 / 0.50\r\n\
+    letter (20-100 gr)   0.60 / 0.90\r\n\
+    \r\n\
+    All rates are in local currency - Latvian Lats (LVL).\r\n\
+    \r\n\
+    - Distances:\r\n\
+    NNVT Terminal-Ventspils downtown - 1 km\r\n\
+    NNVT Terminal-Ventspils beach - 3 km\r\n\
+    NNVT Terminal-Riga international airport - 220 km\r\n\
+    \r\n\
+    Local (emergency) contact numbers:\r\n\
+    ----------------------------------\r\n\
+    a. local and state authority emergency contact means and numbers:\r\n   MRCC Riga center\r\n   Phone: +371-67323103 (emergency)\r\n   +371-29476101\r\n   +371-67082070\r\n   Fax: +371-67320100 / +371-29270690\r\n   Inmarsat-C: 581 427518510\r\n   E-mail: sar@mrcc.lv\r\n\
+    \r\n\
+    Radio communication - telephony/radiotelex/DSC: Rescue Coordination Centre maintains constant watch on 2182.0 kHz, VHF CH 16, call sign\r\n\
+    RIGA RESCUE RADIO. Radiotelex - ARQ selective number 6060 RMRCC LV, scanning all GMDSS ARQ distress and safety frequencies. DSC selective call number 002750100, watching 2187.5 kHz distress and safety frequency; VHF CH 70 DSC. or phone number 112 from any phone.\r\n\
+    \r\n\
+    b. port authority emergency contact means and numbers:\r\n   Ventspils Port Control, duty operator +371-63621040 or VHF 9/16\r\n\
+    \r\n\
+    c. local salvage company : Ventspils Ostas Flote.\r\n   Duty operator phone number: +371-63668865, +371-63668853 or VHF 33\r\n\
+    \r\n\
+    d. fire department emergency contact means and numbers:\r\n   State Fire & Rescue Service (Station 1)\r\n   tel. +371-63622026 / Mr. Gennadijs Pavlovs; or 112\r\n\
+    \r\n\
+    e. Port Facilities Security Officer: Mr. Gintars\r\n   +371-63607345, 371-63607341 (fax), +371-26162253 (24 hrs)\r\n\
+    \r\n\
+    f. Port Authorities Security Officer: Mr. Aivars Mendrikis\r\n   371-29468742 (24 hrs)\r\n\
+    ---------------------------------------------------------------\r\n\
+    As per port regulation please send the following docs / info\r\n\
+    to us 24 hours prior vessel's arrival:\r\n\
+    \r\n\
+    - ETA notice (ETA to Ventspils PS)\r\n\
+    - Waste Declaration (local form),\r\n\
+    - Crew list (in excel format),\r\n\
+    - Passenger list (in excel format).\r\n\
+    - For MRCC Riga ISPS vessel report, directly by e-mail:\r\n\
+    isps1@mrcc.lv with copy to us.\r\n\
+    ---------------------------------------------------------------"
+  picture: 
+  created_at: 2010-03-28 19:10:15
+  updated_at: 2010-03-28 19:10:15
+ports_037: 
+  id: "191"
+  name: Klaipeda / nafta
+  country: "124"
+  code: KLA
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:15
+  updated_at: 2010-03-28 19:10:15
+ports_038: 
+  id: "192"
+  name: Liepaja
+  country: "118"
+  code: LIE
+  flag: "1"
+  tips: ""
+  description: "1. NAVIGATION\r\n\
+    1.1. Liepaja pilot boarding position - Buoy \"A\" (Lat=56 31.07 N/Long=20 59.11 E). Two hours prior to reaching PS vessel should contact \"Liepaja TRAFFIC CONTROL\" on VHF ch 16 or 9 and report name of vsl and Eta to PS. Liepaja Traffic Control will provide the vessel with further instructions.\r\n\
+    \r\n\
+    1.2. All Port facilities are ISPS certified:\r\n\
+    Port name: Liepaja, Latvia\r\n\
+    Status: Port Open\r\n\
+    UN Locator code: LVLRX\r\n\
+    Port facility name: Terrabalt SIA\r\n\
+    Assigned port facility number: 0014\r\n\
+    Alternative name(s) for port facility (if applicable): Liepajas pasazieru terminals\r\n\
+    Description of port facility: Passenger and cargo operations\r\n\
+    Latitude: 56 32,0' N\r\n\
+    Longitude: 020 59,0' E\r\n\
+    Maritime security point of contact: mob. 00371-2-9207564\r\n\
+    Port facility has alternative arrangement (Y/N): No\r\n\
+    Port facility has approved port facility security plan (PFSP): Yes\r\n\
+    Approval date: 5-May-2004\r\n\
+    \r\n\
+    1.5 Berthing positions:\r\n\
+    1.5.1 Terrabalt Terminal\r\n\
+    starboard side / port side (up to Pilot/Master final decision)\r\n\
+    Berth: 46\r\n\
+    LOA  : 181.00 m\r\n\
+    draft:   9.50 m\r\n\
+    No tide in area\r\n\
+    \r\n\
+    1.6. Local time: GMT/UTC + 3 (three) hrs.\r\n\
+    \r\n\
+    1.7. Terrabalt Terminal details:\r\n\
+    Address:\r\n\
+    Brivosta, 46 piers\r\n\
+    Liepaja,\r\n\
+    LV-3405,\r\n\
+    Latvia\r\n\
+    \r\n\
+    2. CLEARANCE, etc.\r\n\
+    FOR IMMIGRATION WE NEED A COPY OF PASSENGER AND CREW LISTS LATEST 24 HRS PRIOR TO ARRIVAL. \r\n\
+    \r\n\
+    2.1. Documents required on arrival / departure:\r\n\
+    \r\n\
+    Arrival\r\n\
+    --------\r\n\
+    5 Crew List\r\n\
+    5 Passengers List\r\n\
+    3 Narcotics List\r\n\
+    2 Crew's Effects declaration\r\n\
+    2 Ship's Stores List\r\n\
+    2 NIL list\r\n\
+    2 Maritime Declaration on Health\r\n\
+    2 Ship's waste declaration\r\n\
+    4 Embarking Pax/Crew List (if any)\r\n\
+    4 Disembarking Pax/Crew List (if any)\r\n\
+    \r\n\
+    and copies for 1st call a year :\r\n\
+    ---------------\r\n\
+    2 - International tonnage certificate\r\n\
+    2 - Passenger Ship Safety certificate\r\n\
+    2 - IOPP certificate (All pages)\r\n\
+    2 - Certificate of class\r\n\
+    2 - ISPS certificate\r\n\
+    2 - Certificate Of Insurance\r\n\
+    \r\n\
+    On arrival please advise: bunkers, fresh water figures;\r\n\
+    fore/aft drafts on arrival.\r\n\
+    \r\n\
+    Departure\r\n\
+    ----------\r\n\
+    3 Crew Lists (ONLY if any crew change occurred)\r\n\
+    3 Passenger Lists (ONLY if any passengers embarked/disembarked in Riga)\r\n\
+    1 Crew's Effects Declaration (ONLY if any crew change occurred)\r\n\
+    1 Ship's Stores List (ONLY if any provision or other supply took place)\r\n\
+    \r\n\
+    2.2. No any landing cards required for embarking/disembarking crew/paxes.\r\n\
+    \r\n\
+    2.3. For embarking/disembarking crew/paxes we'll need a separate Crew or\r\n\
+    Passenger list.\r\n\
+    \r\n\
+    2.4. Other custom & immigration requirements / details :\r\n\
+    2.4.1. Please distribute passports among the passengers and seaman's books (or passports if no SB available) among the crew prior to arrival. All persons going ashore have to pass through the quick passport control on board the vessel. Please prepare a small table for 2 immigration officers near the exit from the vessel. Every passenger/crew should carry their passports/seamen's books while ashore.\r\n\
+    \r\n\
+    2.4.2. Latvian visa in not required for cruise ship passengers If ship stays at port of Riga less than 72 hours. ALL passengers may go ashore for excursion irrespective to their nationality EXCEPT BELOW MENTIONED citizens who require Latvian visa for going ashore:\r\n\
+    \r\n\
+    Afghanistan, Albania, Alger, Arabian Emirates, Bahrain, Bangladesh, Burundi, Egypt, India, Indonesia, Iraq, Iran, Yemen, Jordan, Qatar, Kenya, Columbia, Kongo, Korea, Kuwait, Russia (Chechnya), Livia, Morocco, Nigeria, Oman, Pakistan, Palestine, Rwanda, Saudi Arabia, Syria, Somali, Sudan, Shri-Lanka, Suriname, Tunis and Vietnam republics.\r\n\
+    \r\n\
+    2.4.3. If crew members have a seaman's book, they may go ashore without visa irrespective of nationality. If crew members have a passport ONLY, they may go ashore only if they mentioned in below list:\r\n\
+    \r\n\
+    Passengers and crew may join or leave the ship at Latvia without visa basis passport if included in list below:\r\n\
+    \r\n\
+    Austria; Belgium; Czech Republic; Cyprus; Denmark; Finland; France; Germany; Greece; Hungary; Estonia; Ireland; Iceland; Italy; Lithuania; Liechtenstein; Luxembourg; Malta; The Netherlands; Norway; Poland; Portugal; Slovakia; Slovenia; Spain; Sweden; Switzerland; United Kingdom; Andorra; Argentina; Bulgaria; Costa Rica; Croatia; Israel; Japan; Korea (South Korea); Monaco; Panama; Romania; Singapore; Uruguay; Special Administrative Regions of the People's Republic of China (only passport holders of Hong Kong SAR & of Macao SAR); USA; Vatican City State; Australia; New Zealand; Canada; Nicaragua; Honduras; Bolivia; Brazil; Brunei; Chile; Guatemala; Malaysia; Mexico; Paraguay; El Salvador; Venezuela; San Marino.\r\n\
+    \r\n\
+    2.4.4. In case entering from Non-EU states one person may carry without\r\n\
+    paying customs duty, VAT and excise tax following:\r\n\
+    \r\n\
+    200 cigarettes\r\n\
+    100 cigarillos\r\n\
+    50 cigars\r\n\
+    250 gr smoking tobacco\r\n\
+    1 ltr alcohol beverages (>22%)\r\n\
+    2 ltrs alcohol beverages (<22%)\r\n\
+    2 ltrs wines/sparkling wines\r\n\
+    \r\n\
+    No limitations if entering from EU states (concerns goods for personal\r\n\
+    use only).\r\n\
+    \r\n\
+    3. MISCELLANEOUS INFORMATION:\r\n\
+    \r\n\
+    - Clearance times for passengers 1...5 minutes;\r\n\
+    - No passports to be stamped or inspected - only those, who debark;\r\n\
+    - Usually no personal control neither for pax nor for crew;\r\n\
+    - Exchange rates : 1.00 EURO = 0.7028 LVL, 1.00 USD = 0.551 LVL (USD/LVL\r\n\
+    rate not fixed, changing every day);\r\n\
+    - Shopping hours in downtown: 09:00-18:00 hrs lt (large supermarkets\r\n\
+    open till 23:00 lt);\r\n\
+    \r\n\
+    Local (emergency) contact numbers:\r\n\
+    ----------------------------------\r\n\
+    Fire 112\r\n\
+    Ambulance 112\r\n\
+    Police 112\r\n\
+    Hospital 112\r\n\
+    ---------------------------------------------------------------\r\n\
+    As per port regulation please send the following docs / info\r\n\
+    to us 24 hours prior vessel's arrival:\r\n\
+    \r\n\
+    - ETA notice (ETA to Liepaja PS)\r\n\
+    - Waste Declaration (local form),\r\n\
+    - Crew list,\r\n\
+    - Passenger list.\r\n\
+    - For MRCC Riga ISPS vessel report, directly by e-mail:\r\n\
+    isps1@mrcc.lv with copy to us.\r\n\
+    --------------------------------------------------------------- "
+  picture: 
+  created_at: 2010-03-28 19:10:16
+  updated_at: 2010-03-28 19:10:16
+ports_039: 
+  id: "193"
+  name: Sillamae
+  country: "68"
+  code: SIL
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:16
+  updated_at: 2010-03-28 19:10:16
+ports_040: 
+  id: "194"
+  name: Saaremaa
+  country: "68"
+  code: SAR
+  flag: "1"
+  tips: |-
+    Rebate on Tonnage due granted basis number of call ship visting Tallinn Old City & Saaremaa Harbours. 
+    2-3 call       - 50%
+    4-5 call       - 75%
+    from 6 call - 85%
+    Additional rebate 30% in 2008-2009
+    Wastes delivery included into Port Sanitary Due
+  description: "1. Navigation\r\n\
+    LOCAL SUMMER TIME:  GMT + 3 ( THREE ) hrs.\r\n\
+    Pilot boarding position :  58 d 35' N, 22 d 12' 0 E.\r\n\
+    Pls call 'Tamme Radio' on VHF-14,  1 hr prior reaching plt psn.\r\n\
+    Distance from Pilot station to berth 3.2 miles.\r\n\
+    Minimum depths at approaches 15 m.\r\n\
+    \r\n\
+    2. Port\r\n\
+    Saaremaa Harbour is ISPS certified\r\n\
+    PFSO  phone +372  45 79 799\r\n\
+    Minimum depths at berth 7 & 10 m.\r\n\
+    Tugs available by 24 hrs prior request.\r\n\
+    Washing & painting permitted without pollution\r\n\
+    Wastes delivery included into Port Sanitary dues. The amount of wastes is not restricted, however port reserves right to charge extra expenses.\r\n\
+    Latest 24 hrs prior to arrival ISPS & Wastes delivery notification  form should be sent to AGENT.\r\n\
+    \r\n\
+    3. Going ashore:\r\n\
+    No landing cards are needed. No any ship-produced  IDs are accepted.\r\n\
+    Passengers : All passengers are going ashore with passports.The holders of European Union states' passports, can go ashore with National ID card only, without passport. If  ID is not available, they are going ashore with National passport.\r\n\
+    Crew : Crewmembers of EU states can go ashore with National  ID cards, passports or seaman's book, crewmembers of non-EU states are going ashore with valid Seaman's Book or National passport. Passport for non-ILO member states are required\r\n\
+    \r\n\
+    4. Clearance & Visas\r\n\
+    Health formalities : An answers to Maritime Health Delcaration needed a day before arrival. No other special requirements.\r\n\
+    Clearance Officials board upon berthing, 2-3 person;\r\n\
+    Clearance times : 15 mins,\r\n\
+    If ship is bound from non-Schengen please prepare for stamping passports of all those non-EU passengers who embarked at last port and make a list of those who has Schengen visa or residence permit;\r\n\
+    If ship is bound to non-Schengen please prepare for stamping passports of all those non-EU passengers who disembark at next port and make a list of those who has Schengen visa or residence permit;\r\n\
+    Generally no personal control neither for pax nor for crew ;\r\n\
+    ALL PASSENGERS SHOULD HAVE SCHENGEN VISA OR RESIDENCE PERMIT OR TO BE INCLUDED INTO VISAFREE NATIONALITIES LIST TO BE ABLE TO GO ASHORE as follwoing:\r\n\
+    Andorra, Argentina, Australia,  Austria,  Belgium, Brazil, Brunei, Bulgaria, Canada, Costa Rica, Chile, Croatia, Cyprus, Czech Republic, El Salvador, Denmark, Finland,  France,  Greece,   Germany, Guatemala,Hong Kong, Honduras, Hungary, Iceland, Ireland, Israel, Italy, Japan, Latvia, Liechtenstein, Lithuania, Luxembourg, Macao, Malaysia, Malta, Mexico, Monaco, New Zealand, The Netherlands, Nicaragua, Norway, Panama, Paraguay, Poland, Portugal, Romania, San Marino, Singapore, South Korea, Slovak Republic, Slovenia, South Korea, Spain, Sweden, Switzerland, United Kingdom, Uruguay, USA, Vatican City, Venezuela\r\n\
+    \r\n\
+    Citizens of S. AFRICA are entitled to arrive to/transit Estonia with valid visa issued by Latvia or Lithuania.\r\n\
+    \r\n\
+    Generally, it is not possible to apply for a visa at a border checkpoint, an exception is made for seamen only.\r\n\
+    \r\n\
+    However passengers that obliged to have a visa but is not in possession could stay on board without any problem.\r\n\
+    \r\n\
+    Since December 21st 2007 passengers obtaining Schengen State residence permitt may visit Estonia without visa.\r\n\
+    \r\n\
+    Visa is not required for crew going ashore if ship sailing under ILO flag. To embark or disembark the ship some nationals require ESTONAIN Transit visa.\r\n\
+    \r\n\
+    5. A COPY OF PASSENGER LIST & CREW LIST WITH NATIONALITIES BREAKDOWN should be sent to Agent FOR IMMIGRATION NEEDS in electronic format, latest a day prior to arrival. Excel is preferable.\r\n\
+    \r\n\
+    Please prepare for clearance sufficient quantities of following documents:\r\n\
+    Crew list   3,\r\n\
+    Pax list   1,\r\n\
+    Cre & Pax Nationalities breakdown 2,\r\n\
+    Bonded stores  2, \r\n\
+    Crew's effects   2, \r\n\
+    Health declaration   1, \r\n\
+    Arms/Narcotics List (if any)  2.\r\n\
+    Besides, for the 1st call ONLY we need : copy of Tonnage Certificate; \r\n\
+    Validity terms of - Passenger Ship Safety, Load Line, IOPP, Sanitation exemption certificates;  \r\n\
+    Bunkers, fresh & ballast waters figures.\r\n\
+    \r\n\
+    6. Customs\r\n\
+    Bonded stores should be closed, generally Customs don't inspect or seal them. Beauty salons and bars might be opened while ship is in Tallinn\r\n\
+    Crew & Passengers:\r\n\
+    If ship arrives from E.Union state then each person may have onboard 800 cigarettes, 10 ltrs of spirits, 20 ltrs of under 22% alc. 90 ltrs of wins, 110 ltrs of beers.\r\n\
+    If ship arrives from non-EU state (Russia, Aland Islands) then each person may have only 200 cigarettes, 1 ltrs of spirits OR 2 ltrs of under 22% alc. and 3 ltrs of wine. \r\n\
+    Cash exceeding 10000 EUR shoud be declared.\r\n\
+    Amounts of controllable goods or cash exceeding above mentioned quantities are subject to legal penalties.\r\n\
+    \r\n\
+    Then ship bond to Russia or other non EU state and Customs TaxFree confirmation required for non EU citizens please inform on arrival about number of persons for Customs arrangements. For goods purchased at Estonia latest notification is 2 hrs prior sailing.\r\n\
+    NB! EU Goods shall be closed in original packing with TaxFree invoice.\r\n\
+    \r\n\
+    7. Destination information\r\n\
+    Exchange rates : 1.0 EUR=15.4, 1.0 USD=10.0, 1.0 GBP=20.5 EEK;\r\n\
+    Distance from pier to Kuressaare:     45 km\r\n\
+    Taxi rate to Downtown :     abt 30.00 EUR all taxis are metered;\r\n\
+    Shuttle bus service :       optional (via Travel Agents)\r\n\
+    Shopping hours in downtown:     0900-1900 (supermarkets - 2100)\r\n\
+    Post office working hours:  Weekdays 0830-1800, Kuressaare\r\n\
+    Bank hours:    0900-1700, Closest Bank office at Kuressaare,\r\n\
+    USD/EURO are not accepted for payment, but you can find currency exchange bureaus widely,\r\n\
+    Nearest telephone terminal: Kuressaare\r\n\
+    Nearest Internet cafe located at Kuressaare\r\n\
+    Shore Excursion agents will attend on board on arrival -  they can help you with maps and information.\r\n\
+    Postage :\r\n                                                        Europe    USA / Rest\r\n\
+    postcards&letters (-20 gr)         6.50           8.00\r\n\
+    letter (20 gr+)                             10.00           13.50\r\n\
+    ALL rates are in Estonian krones -  EEK.\r\n\
+    \r\n\
+    8. Local (emergency) contact numbers:\r\n\
+    Fire                            112\r\n\
+    Ambulance              112\r\n\
+    Police                        110, 112\r\n\
+    Hospital                    112\r\n\
+    Port authorities         (+372) 45 55774,   VHF-14\r\n\
+    Coastguard / Immigration (+372) 45 33321 "
+  picture: 
+  created_at: 2010-03-28 19:10:16
+  updated_at: 2010-03-28 19:10:16
+ports_041: 
+  id: "195"
+  name: Klaipeda / kroviniu
+  country: "124"
+  code: ""
+  flag: "0"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:16
+  updated_at: 2010-03-28 19:10:16
+ports_042: 
+  id: "196"
+  name: Klaipeda / cruise
+  country: "124"
+  code: ""
+  flag: "1"
+  tips: "All wastes generated during last voyage are collected for account of Port Sanitary Dues.\r\n\
+    Rebate for number of calls from Vessel & Navigation due available:\r\n\
+    starting from 4th call - 20% \r\n\
+    starting from 9th call - 40% "
+  description: "1. Navigation\r\n\
+    LOCAL SUMMER TIME:  GMT + 3 ( THREE ) hrs.\r\n\
+    Pilotage is compulsory then entering Klaipeda port. \r\n\
+    Pilot station Buoy No. 1 \r\n\
+    55\xC2\xB0 43,84' N\r\n\
+    20\xC2\xB0 59,62' E\r\n\
+    Vessel Traffic Service on VHF - 9 (call sign: KLAIPEDA radio-5)\r\n\
+    Distance from pilot station to berth 3.8 miles\r\n\
+    Depths at approaches 24 m, at canal 14 m.\r\n\
+    Speed restricted by 6 knots.\r\n\
+    Pier high is  2.0 m\r\n\
+    No tide in area.\r\n\
+    \r\n\
+    2. PORT\r\n\
+    Port of Klaipeda is ISPS certified\r\n\
+    PFSO Name: Mr Bronius Mikuta,  contact tel.: + 37069826453\r\n\
+    Port VHF - 10 (call sign: radio-32)\r\n\
+    Berth No. 28-33 LOA - 348 m, Max draft 8,5 m\r\n\
+    Berth No. 34-37 LOA - 220 m, Max draft 5.5 m\r\n\
+    Berthing starboard side left\r\n\
+    Towage is not compulsory\r\n\
+    Tugs available:\r\n\
+    TAK1-1800, TAK2-1000, TAK3-1500, TAK4-1800, TAK5-1800, TAK9 - 4000 bhp\r\n\
+    Washing and painting prohibited according to port rules.\r\n\
+    Fresh Water available at rate 15 cbm/hour\r\n\
+    \r\n\
+    3. Going ashore\r\n\
+    Passengers: All passengers are going ashore with passports.The holders of European Union states passports can go ashore with National ID card only, without passport. If ID is not available, they are going ashore with National passport.\r\n\
+    \r\n\
+    Crew: Crewmembers of EU states can go ashore with National ID cards, passports or seaman's book, crewmembers of non-EU states are going ashore with valid Seaman's Book or National passport. \r\n\
+    \r\n\
+    4. Visas:\r\n\
+    Citizens of following countries do not need a visa:\r\n\
+    Ireland, Andorra,Argentina, Austria, Australia, Belgium, Bolivia, Brazil, Brunei, Bulgaria, Czech Republic, Chile, Denmark, Estonia, Greece, Guatemala, Honduras, Iceland, Spain, Italy, Israel, Japan, UK, USA, Canada, Hong Kong, Macau, Cyprus, Costa Rica, Croatia, Latvia, Poland, Liechtenstein, Luxembourg, Malaysia, Malta, Mexico, Monaco,  New Zealand, Nicaragua, Netherlands, Norway, Panama, Paraguay, South Korea, Portugal, France, Romania, Salvador, San Marino, Singapore, Slovakia, Slovenia, Finland, Sweden, Switzerland, Uruguay, Vatican, Hungary, Venezuela, Germany\r\n\
+    All other passengers should have valid Schengen visa or Schengen residence permit. Visa information should be sent to agent in this case beforehand. It's not possible to apply for visa at port.\r\n\
+    \r\n\
+    5. Clearance\r\n\
+    Health formalities: No any special requirements.\r\n\
+    Clearance Officials board upon berthing, 2-4 person;\r\n\
+    If previous and next port of call is Schengen member state then no Immigration clearance is required\r\n\
+    Clearance times: 15 minutes\r\n\
+    No passports to be stamped or inspected - only those, who dis/embark;\r\n\
+    Generally no personal control neither for pax nor for crew;\r\n\
+    Departure clearance to be performed as well.\r\n\
+    \r\n\
+    FOR IMMIGRATION WE NEED A COPY OF PASSENGER AND CREW LISTS LATEST 24 HRS PRIOR TO ARRIVAL. \r\n\
+    \r\n\
+    Please prepare for clearance sufficient quantities of following documents:\r\n\
+    On Arrival:\r\n\
+    Crew list 5\r\n\
+    Pax list 5;\r\n\
+    Crew/Pax sign-on/off list (date/port/country) - 1 copyEmbarking Pax/Crew List (if any) - 4 copiesDisembarking Pax/Crew List (if any) - 4 copies\r\n\
+    Ship's Bonded stores 2;\r\n\
+    Crew's effects 2;\r\n\
+    Narcotics list 2;\r\n\
+    Health declaration 1;\r\n\
+    Free pratique 1;\r\n\
+    Receipt for waste collection (of last port re-delivery)  1; \r\n\
+    Waste Declaration(local form) 1\r\n\
+    For the first call at the port copies of following certificates:\r\n\
+    Tonnage -1;\r\n\
+    Classification Certificate -1; \r\n\
+    Deratting exemption -1; \r\n\
+    Passenger ship's safety -1; \r\n\
+    Loadline -1;\r\n\
+    IOPP -1;\r\n\
+    ISPS -1.\r\n\
+    \r\n\
+    On Departure:\r\n\
+    Pax list 2;\r\n\
+    Crew list 2;\r\n\
+    Crew effects 1;\r\n\
+    Ship's Bonded stores 1\r\n\
+    Receipt for waste collection at Klaipeda (if any) - 1 copyBunkers, fresh & ballast waters figures. \r\n\
+    \r\n\
+    6. Additional information:\r\n\
+    Distance to City Center 1 km\r\n\
+    Nearest telephone terminal: 200 m from the pier at Klaipeda passenger Terminal;\r\n\
+    Nearest Tourist office information: 100 m from the pier at Klaipeda passenger Terminal;\r\n\
+    Nearest Bank exchange services: 400 m from the pier at Klaipeda passenger Terminal or in the Old town. Exchanges rate 1EURO = 3,4528 LT, 1 USD = 2,67 (rates not fixed, changing every day);\r\n\
+    Nearest Internet cafe: 400 m from the pier at Klaipeda passenger Terminal or in the Old town;\r\n\
+    Shopping hours in downtown: 09.00-18.00 (large supermarkets 08.00-24.00).\r\n\
+    Taxi rate to the downtown: 10-20 Lt all taxis are metered.\r\n\
+    PALANGA International Airport = 30 km\r\n\
+    \r\n\
+    Local (emergency) contact numbers:\r\n\
+    Fire                 112\r\n\
+    Ambulance   112 \r\n\
+    Police             112\r\n\
+    Port Control Office              (+370) 46 499641, VHF-10\r\n\
+    Coastguard / Immigration (+ 370) 46 399539;\r\n\
+    Customs                               (+ 370) 46 395723;\r\n\
+    Medical Office                       (+ 370) 46 399108."
+  picture: 
+  created_at: 2010-03-28 19:10:17
+  updated_at: 2010-03-28 19:10:17
+ports_043: 
+  id: "197"
+  name: Riga / container
+  country: "118"
+  code: ""
+  flag: "0"
+  tips: |-
+    Port costs vary a lot depending on terminal utilized, up to 50%.
+    Passenger Terminal - 1 km
+    Central Terminal        - 1.5-3 km
+    Container Terminal   - 7 km
+    Vecmilgravis Terminal - 15 km
+  description: "1. NAVIGATION\r\n\
+    1.1. Riga pilot boarding position - Buoy \"B\" (Lat=57 06.50 N/Long=23 56.94 E). Two hours prior to reaching PS vessel should contact \"RIGA TRAFFIC CONTROL\" on VHF ch 16 or 9 and report name of vsl and Eta to PS. Riga traffic control will provide the vessel with further instructions.\r\n\
+    Distance from Pilot tation to berth 4.1 miles.\r\n\
+    Depths at approaches 14 m, at canal 13.0 m\r\n\
+    Speed restricted by 8 knots.\r\n\
+    \r\n\
+    1.2. All Port facilities are ISPS certified:\r\n\
+    Port name: Riga, Latvia\r\n\
+    Status: Port Open\r\n\
+    Port ID Number: 18830\r\n\
+    UN Locator code: LVRIX\r\n\
+    \r\n\
+    Port facility name: Baltic Container terminal SIA\r\n\
+    Assigned port facility number: 0107\r\n\
+    Alternative name(s) for port facility (if applicable): BCT\r\n\
+    Description of port facility: Container terminal\r\n\
+    Latitude: 56 58,0\xC2\x92 N\r\n\
+    Longitude: 024 06,0\xC2\x92 E\r\n\
+    Maritime security point of contact: PFSO Mr. Pjotr Shishko  00 371 2 95 556 08, 00 371 70 762 08\r\n\
+    \r\n\
+    1.3 Berthing positions:\r\n\
+    Baltic Container Terminal\r\n\
+    Berth: KS-32/33,\r\n\
+    draft: 10.0 m,\r\n\
+    LOA  : 300 m,\r\n\
+    High of the pier from \"0\" water level: 1,60 m\r\n\
+    berthing starboard side / port side alongside\r\n\
+    No tide in area.\r\n\
+    \r\n\
+    1.4. Local time: GMT/UTC + 3 (three) hrs.\r\n\
+    \r\n\
+    1.5. Tugs available\r\n\
+    JUPITERS (3000 hp) - 500 eur/hr;\r\n\
+    URAN (3000 hp) - 500 eur/hr;\r\n\
+    SOMERI (2500 hp) - 470 eur/hr;\r\n\
+    TOM (1600 hp) - 350 eur/hr;\r\n\
+    ORION (1600 hp) - 350 eur/hr.\r\n\
+    \r\n\
+    1.6. Baltic Container Terminal details:\r\n\
+    Riga freeport\r\n\
+    Baltic Container Terminal Ltd.\r\n\
+    Kundzinsala str. 1\r\n\
+    Riga\r\n\
+    LV-1822\r\n\
+    Latvia\r\n\
+    \r\n\
+    1.7. Due to vessels' traffic in the fairway of Daugava river and strong streams, anchorage of passenger ships on Daugava river is prohibited;\r\n\
+    \r\n\
+    1.8. In Port of Riga washing and painting of ship's hull is prohibited due to environment protection requirements and port rules conditions;\r\n\
+    Special permission from Riga Harbour Master can be obtained for vessel's illuminators washing with fresh water ONLY without any chemical addition.\r\n\
+    \r\n\
+    2. CLEARANCE, etc.\r\n\
+    FOR IMMIGRATION WE NEED A COPY OF PASSENGER AND CREW LISTS LATEST 24 HRS PRIOR TO ARRIVAL. \r\n\
+    \r\n\
+    2.1. Documents required on arrival / departure:\r\n\
+    \r\n\
+    Arrival\r\n\
+    --------\r\n\
+    5 Crew List\r\n\
+    5 Passengers List\r\n\
+    3 Narcotics List\r\n\
+    2 Crew's Effects declaration\r\n\
+    2 Ship's Stores List\r\n\
+    2 NIL list\r\n\
+    2 Maritime Declaration on Health\r\n\
+    2 Ship's waste declaration\r\n\
+    4 Embarking Pax/Crew List (if any)\r\n\
+    4 Disembarking Pax/Crew List (if any)\r\n\
+    \r\n\
+    and copies for 1st call a year :\r\n\
+    ---------------\r\n\
+    2 - International tonnage certificate\r\n\
+    2 - Passenger Ship Safety certificate\r\n\
+    2 - IOPP certificate (All pages)\r\n\
+    2 - Certificate of class\r\n\
+    2 - ISPS certificate\r\n\
+    2 - Certificate Of Insurance\r\n\
+    \r\n\
+    On arrival please advise: bunkers, fresh water figures;\r\n\
+    fore/aft drafts on arrival.\r\n\
+    \r\n\
+    Departure\r\n\
+    ----------\r\n\
+    3 Crew Lists (ONLY if any crew change occurred)\r\n\
+    3 Passenger Lists (ONLY if any passengers embarked/disembarked in Riga)\r\n\
+    1 Crew's Effects Declaration (ONLY if any crew change occurred)\r\n\
+    1 Ship's Stores List (ONLY if any provision or other supply took place)\r\n\
+    \r\n\
+    2.2. Landing cards for all passengers going ashore will be distributed by immigration officers, no other landing cards required for\r\n\
+    embarking/disembarking crew/paxes.\r\n\
+    \r\n\
+    2.3. For embarking/disembarking crew/paxes we'll need a separate Crew or Passenger list.\r\n\
+    \r\n\
+    2.4. Other custom & immigration requirements / details :\r\n\
+    2.4.1. Please distribute passports among the passengers and seaman's books (or passports if no SB available) among the crew prior to arrival. All persons going ashore have to pass through the quick passport control on board the vessel. Please prepare a small table for 2 immigration officers inside the ship near the gangway. Each passenger / crew member going ashore will receive a landing card which should be returned to immigration officer when returning to the vessel. Every passenger/crew should carry their passports/seamen's books while ashore.\r\n\
+    \r\n\
+    2.4.2. Latvian visa in not required for cruise ship passengers If ship stays at port of Riga less than 72 hours. ALL passengers may go ashore for excursion irrespective to their nationality EXCEPT BELOW MENTIONED citizens who require Latvian visa for going ashore:\r\n\
+    \r\n\
+    Afghanistan, Albania, Alger, Arabian Emirates, Bahrain, Bangladesh, Burundi, Egypt, India, Indonesia, Iraq, Iran, Yemen, Jordan, Qatar, Kenya, Columbia, Kongo, Korea, Kuwait, Russia (Chechnya), Livia, Morocco, Nigeria, Oman, Pakistan, Palestine, Rwanda, Saudi Arabia, Syria, Somali, Sudan, Shri-Lanka, Suriname, Tunis and Vietnam republics.\r\n\
+    \r\n\
+    2.4.3. If crew members have a seaman's book, they may go ashore without visa irrespective of nationality. If crew members have a passport ONLY, they may go ashore only if they mentioned in below list:\r\n\
+    \r\n\
+    Passengers and crew may join or leave the ship at Latvia without visa basis passport if included in list below:\r\n\
+    \r\n\
+    Austria; Belgium; Czech Republic; Cyprus; Denmark; Finland; France; Germany; Greece; Hungary; Estonia; Ireland; Iceland; Italy; Lithuania; Liechtenstein; Luxembourg; Malta; The Netherlands; Norway; Poland; Portugal; Slovakia; Slovenia; Spain; Sweden; Switzerland; United Kingdom; Andorra; Argentina; Bulgaria; Costa Rica; Croatia; Israel; Japan; Korea (South Korea); Monaco; Panama; Romania; Singapore; Uruguay; Special Administrative Regions of the People's Republic of China (only passport holders of Hong Kong SAR & of Macao SAR); USA; Vatican City State; Australia; New Zealand; Canada; Nicaragua; Honduras; Bolivia; Brazil; Brunei; Chile; Guatemala; Malaysia; Mexico; Paraguay; El Salvador; Venezuela; San Marino.\r\n\
+    \r\n\
+    2.4.4. In case entering from Non-EU states one person may carry without paying customs duty, VAT and excise tax following:\r\n\
+    \r\n\
+    200 cigarettes\r\n\
+    100 cigarillos\r\n\
+    50 cigars\r\n\
+    250 gr smoking tobacco\r\n\
+    1 ltr alcohol beverages (>22%)\r\n\
+    2 ltrs alcohol beverages (<22%)\r\n\
+    2 ltrs wines/sparkling wines\r\n\
+    \r\n\
+    No limitations if entering from EU states (concerns goods for personal use only).\r\n\
+    \r\n\
+    3. MISCELLANEOUS INFORMATION:\r\n\
+    \r\n\
+    - Clearance times for passengers 1...5 minutes;\r\n\
+    - No passports to be stamped or inspected - only those, who debark;\r\n\
+    - Usually no personal control neither for pax nor for crew;\r\n\
+    - Exchange rates : 1.00 EURO = 0.7028 LVL, 1.00 USD = 0.551 LVL\r\n  (USD/LVL rate not fixed, changing every day);\r\n\
+    - Taxi rate to Downtown : 7.00 - 10.00 LVL all taxis are metered;\r\n\
+    - Shopping hours in downtown: 09:00-18:00 hrs lt (large supermarkets open till 23:00 lt);\r\n\
+    - Few addresses of main supermarkets:\r\n\
+    \r\n\
+    Stockmann\r\n\
+    Business hours: Mon - Sun 9:00 - 22:00\r\n\
+    Address: 13. Janvara str. 8, LV-1050 Riga\r\n\
+    Phone: Loyal Customer Service +371 707 1222\r\n\
+    \r\n\
+    Origo shopping centre\r\n\
+    Address: Stacijas laukums 4, Riga LV 1050\r\n\
+    Phone: +371 7018 188\r\n\
+    \r\n\
+    Mols shopping centre\r\n\
+    Address: Krasta street 46, Riga\r\n\
+    Phone: +371 7 030210\r\n\
+    \r\n\
+    - Central post office address:\r\n\
+    Stacijas laukuma 1 (tel. +371-7018804),\r\n\
+    working hours: Weekdays 0700-2000, Sat 0800-1800, Sun 0800-1600;\r\n\
+    - Bank hours: 1000-1700, closest Bank office is in Riga Oldtown as well as ATMs each 300-400 m;\r\n\
+    - USD and EUR are not accepted for payment in most of the shops, but you can find currency exchange points widely;\r\n\
+    - Nearest tourist office information:\r\n\
+    Main tourist info office:\r\n\
+    Address: Ratslaukums 6, Riga;\r\n\
+    Phone: +371-7037900\r\n\
+    E-mail: tourinfo@rcc.lv\r\n\
+    Working hours: Every day 09.00am - 7.00pm \r\n\
+    \r\n\
+    - Postage expenses\r\n\
+    -------------------Europe / USA-----\r\n\
+    postcards               0.36 / 0.40\r\n\
+    letters (-20 gr)       0.45 / 0.50\r\n\
+    letter (20-100 gr)   0.60 / 0.90\r\n\
+    \r\n\
+    All rates are in local currency - Latvian Lats (LVL).\r\n\
+    \r\n\
+    - Distances:\r\n\
+    Passenger Terminal-Riga downtown - 7 km\r\n\
+    Passenger Terminal-Riga international airport - 22 km\r\n\
+    \r\n\
+    Local (emergency) contact numbers:\r\n\
+    ----------------------------------\r\n\
+    Fire                               112\r\n\
+    Ambulance                 112\r\n\
+    Police                          112\r\n\
+    Hospital                      112\r\n\
+    Coastguard / Immigration  +371-7323103\r\n\
+    Customs                                +371-7490109\r\n\
+    ---------------------------------------------------------------\r\n\
+    As per port regulation please send the following docs / info\r\n\
+    to us 24 hours prior vessel's arrival:\r\n\
+    \r\n\
+    - ETA notice (ETA to Riga PS)\r\n\
+    - Waste Declaration (local form),\r\n\
+    - Crew list,\r\n\
+    - Passenger list.\r\n\
+    - For MRCC Riga ISPS vessel report, directly by e-mail:\r\n\
+    isps1@mrcc.lv with copy to us."
+  picture: 
+  created_at: 2010-03-28 19:10:17
+  updated_at: 2010-03-28 19:10:17
+ports_044: 
+  id: "198"
+  name: Riga / central
+  country: "118"
+  code: ""
+  flag: "1"
+  tips: |-
+    Port costs vary a lot depending on terminal utilized, up to 50%.
+    Passenger Terminal - 1 km
+    Central Terminal        - 1.5-3 km
+    Rebate for number of calls from Canal, Berth & Passenger due available:
+    starting from 5th call - 20% 
+    starting from 10th cal
+  description: "1. NAVIGATION\r\n\
+    1.1. Riga pilot boarding position - Buoy \"B\" (Lat=57 06.50 N/Long=23 56.94 E). Two hours prior to reaching PS vessel should contact \"RIGA TRAFFIC CONTROL\" on VHF ch 16 or 9 and report name of vsl and Eta to PS. Riga traffic control will provide the vessel with further instructions.\r\n\
+    Distance from Pilot tation to berth 4.4 miles.\r\n\
+    Depths at approaches 14 m, at canal 12.8 m\r\n\
+    Speed restricted by 8 knots.\r\n\
+    \r\n\
+    1.2. All Port facilities are ISPS certified:\r\n\
+    Port name: Riga, Latvia\r\n\
+    Status: Port Open\r\n\
+    Port ID Number: 18830\r\n\
+    UN Locator code: LVRIX\r\n\
+    \r\n\
+    Port facility name: Rigas Centralais terminals SIA\r\n\
+    IMO Port facility number: LVRIX-0032\r\n\
+    Alternative names for this port facility, if applicable: RCT\r\n\
+    Port facility description: bulk cargo, RO-RO cargo, metal cargo, passengers\r\n\
+    Longitude: 24\xC2\xB0 5.54' E\r\n\
+    Latitude: 56\xC2\xB0 58.44' N\r\n\
+    Maritime Security Points of Contact\r\n\
+    Name: PFSO\r\n\
+    Address: 15 eksporta street, Riga, Latvia, LV-1170\r\n\
+    Telephone: +371 26437503\r\n\
+    Fax: +371 7326501\r\n\
+    \r\n\
+    1.3 Berthing positions:\r\n\
+    Riga Central Terminal\r\n\
+    Berth: EO-6/7/8,\r\n\
+    draft: 10.06/9.5/9.1m\r\n\
+    LOA  : 240/190/188m,\r\n\
+    High of the pier from \"0\" water level: 2.50 m\r\n\
+    \r\n\
+    Berth: AS-03/AS-04 \r\n\
+    draft: 7.4 m\r\n\
+    LOA  : 230 m, \r\n\
+    HIGH OF THE PIER FROM \"0\" WL: 3.70 M\r\n\
+    berthing starboard side / port side alongside\r\n\
+    No tide in area.\r\n\
+    \r\n\
+    1.4. Local time: GMT/UTC + 3 (three) hrs.\r\n\
+    \r\n\
+    1.5. Tugs available\r\n\
+    JUPITERS (3000 hp) - 500 eur/hr;\r\n\
+    URAN (3000 hp) - 500 eur/hr;\r\n\
+    SOMERI (2500 hp) - 470 eur/hr;\r\n\
+    TOM (1600 hp) - 350 eur/hr;\r\n\
+    ORION (1600 hp) - 350 eur/hr.\r\n\
+    \r\n\
+    1.6. Riga Central Terminal details:\r\n\
+    Riga freeport\r\n\
+    Riga Central Terminal Ltd.\r\n\
+    Eksporta str. 15\r\n\
+    Riga LV-1045\r\n\
+    Latvia\r\n\
+    \r\n\
+    1.7. Due to vessels' traffic in the fairway of Daugava river and strong streams, anchorage of passenger ships on Daugava river is prohibited;\r\n\
+    \r\n\
+    1.8. In Port of Riga washing and painting of ship's hull is prohibited due to environment protection requirements and port rules conditions;\r\n\
+    Special permission from Riga Harbour Master can be obtained for vessel's illuminators washing with fresh water ONLY without any chemical addition.\r\n\
+    \r\n\
+    2. CLEARANCE, etc.\r\n\
+    FOR IMMIGRATION WE NEED A COPY OF PASSENGER AND CREW LISTS LATEST 24 HRS PRIOR TO ARRIVAL. \r\n\
+    \r\n\
+    As per port regulation please send the following docs / info\r\n\
+    to us 24 hours prior vessel's arrival:\r\n\
+    \r\n\
+    - ETA notice (ETA to Riga PS)\r\n\
+    - Waste Declaration (local form),\r\n\
+    - Crew list,\r\n\
+    - Passenger list.\r\n\
+    - For MRCC Riga ISPS vessel report, directly by e-mail:\r\n\
+    isps1@mrcc.lv with copy to us.\r\n\
+    \r\n\
+    2.1. Documents required on arrival / departure:\r\n\
+    \r\n\
+    Arrival\r\n\
+    --------\r\n\
+    5 Crew List\r\n\
+    5 Passengers List\r\n\
+    3 Narcotics List\r\n\
+    2 Crew's Effects declaration\r\n\
+    2 Ship's Stores List\r\n\
+    2 NIL list\r\n\
+    2 Maritime Declaration on Health\r\n\
+    2 Ship's waste declaration\r\n\
+    4 Embarking Pax/Crew List (if any)\r\n\
+    4 Disembarking Pax/Crew List (if any)\r\n\
+    \r\n\
+    and copies for 1st call a year :\r\n\
+    ---------------\r\n\
+    2 - International tonnage certificate\r\n\
+    2 - Passenger Ship Safety certificate\r\n\
+    2 - IOPP certificate (All pages)\r\n\
+    2 - Certificate of class\r\n\
+    2 - ISPS certificate\r\n\
+    2 - Certificate Of Insurance\r\n\
+    \r\n\
+    On arrival please advise: bunkers, fresh water figures;\r\n\
+    fore/aft drafts on arrival.\r\n\
+    \r\n\
+    Departure\r\n\
+    ----------\r\n\
+    3 Crew Lists (ONLY if any crew change occurred)\r\n\
+    3 Passenger Lists (ONLY if any passengers embarked/disembarked in Riga)\r\n\
+    1 Crew's Effects Declaration (ONLY if any crew change occurred)\r\n\
+    1 Ship's Stores List (ONLY if any provision or other supply took place)\r\n\
+    \r\n\
+    2.2. Landing cards for all passengers going ashore will be distributed by immigration officers, no other landing cards required for embarking/disembarking crew/paxes.\r\n\
+    \r\n\
+    2.3. For embarking/disembarking crew/paxes we'll need a separate Crew or Passenger list.\r\n\
+    \r\n\
+    2.4. Other custom & immigration requirements / details :\r\n\
+    2.4.1. Please distribute passports among the passengers and seaman's books (or passports if no SB available) among the crew prior to arrival. All persons going ashore have to pass through the quick passport control on board the vessel. Please prepare a small table for 2 immigration officers inside the ship near the gangway. Each passenger / crew member going ashore will receive a landing card which should be returned to immigration officer when returning to the vessel. Every passenger/crew should carry their passports/seamen's books while ashore.\r\n\
+    \r\n\
+    2.4.2. Visa in not required for cruise ship passengers If ship stays at port of Riga less than 72 hours. ALL passengers may go ashore for excursion irrespective to their nationality EXCEPT BELOW MENTIONED citizens who require Schengen visa to go ashore:\r\n\
+    \r\n\
+    Afghanistan, Albania, Alger, Arabian Emirates, Bahrain, Bangladesh, Burundi, Egypt, India, Indonesia, Iraq, Iran, Yemen, Jordan, Qatar, Kenya, Columbia, Kongo, Korea, Kuwait, Russia (Chechnya), Livia, Morocco, Nigeria, Oman, Pakistan, Palestine, Rwanda, Saudi Arabia, Syria, Somali, Sudan, Shri-Lanka, Suriname, Tunis and Vietnam republics.\r\n\
+    \r\n\
+    2.4.3. If crew members have a seaman's book, they may go ashore without visa irrespective of nationality. If crew members have a passport ONLY, they may go ashore only if they mentioned in below list:\r\n\
+    \r\n\
+    Passengers and crew may join or leave the ship at Latvia without visa basis passport if included in list below:\r\n\
+    \r\n\
+    Austria; Belgium; Czech Republic; Cyprus; Denmark; Finland; France; Germany; Greece; Hungary; Estonia; Ireland; Iceland; Italy; Lithuania; Liechtenstein; Luxembourg; Malta; The Netherlands; Norway; Poland; Portugal; Slovakia; Slovenia; Spain; Sweden; Switzerland; United Kingdom; Andorra; Argentina; Bulgaria; Costa Rica; Croatia; Israel; Japan; Korea (South Korea); Monaco; Panama; Romania; Singapore; Uruguay; Special Administrative Regions of the People's Republic of China (only passport holders of Hong Kong SAR & of Macao SAR); USA; Vatican City State; Australia; New Zealand; Canada; Nicaragua; Honduras; Bolivia; Brazil; Brunei; Chile; Guatemala; Malaysia; Mexico; Paraguay; El Salvador; Venezuela; San Marino.\r\n\
+    \r\n\
+    For disembarking crew members who has seaman's book  visa can be arranged within 3-6hrs at the Immigration department after vessel is berthed.\r\n\
+    \r\n\
+    Embarking Passengers & crew members who need visa according to above regulations, should have valid visa on hand upon their arrival to the Airport.\r\n\
+    \r\n\
+    2.4.4. In case entering from Non-EU states one person may carry without paying customs duty, VAT and excise tax following:\r\n\
+    \r\n\
+    200 cigarettes\r\n\
+    100 cigarillos\r\n\
+    50 cigars\r\n\
+    250 gr smoking tobacco\r\n\
+    1 ltr alcohol beverages (>22%)\r\n\
+    2 ltrs alcohol beverages (<22%)\r\n\
+    2 ltrs wines/sparkling wines\r\n\
+    \r\n\
+    No limitations if entering from EU states (concerns goods for personal use only).\r\n\
+    \r\n\
+    3. MISCELLANEOUS INFORMATION:\r\n\
+    \r\n\
+    - Clearance times for passengers 1...5 minutes;\r\n\
+    - No passports to be stamped or inspected - only those, who debark;\r\n\
+    - Usually no personal control neither for pax nor for crew;\r\n\
+    - Exchange rates : 1.00 EURO = 0.7028 LVL, 1.00 USD = 0.551 LVL\r\n  (USD/LVL rate not fixed, changing every day);\r\n\
+    - Taxi rate to Downtown : 5.00 - 7.00 LVL all taxis are metered;\r\n\
+    - Shopping hours in downtown: 09:00-18:00 hrs lt (large supermarkets open till 23:00 lt);\r\n\
+    - Few addresses of main supermarkets:\r\n\
+    \r\n\
+    Stockmann\r\n\
+    Business hours: Mon - Sun 9:00 - 22:00\r\n\
+    Address: 13. Janvara str. 8, LV-1050 Riga\r\n\
+    Phone: Loyal Customer Service +371 707 1222\r\n\
+    \r\n\
+    Origo shopping centre\r\n\
+    Address: Stacijas laukums 4, Riga LV 1050\r\n\
+    Phone: +371 7018 188\r\n\
+    \r\n\
+    Mols shopping centre\r\n\
+    Address: Krasta street 46, Riga\r\n\
+    Phone: +371 7 030210\r\n\
+    \r\n\
+    - Central post office address:\r\n\
+    Stacijas laukuma 1 (tel. +371-7018804),\r\n\
+    working hours: Weekdays 0700-2000, Sat 0800-1800, Sun 0800-1600;\r\n\
+    - Bank hours: 1000-1700, closest Bank office is in Riga Oldtown as well as ATMs each 300-400 m;\r\n\
+    - USD and EUR are not accepted for payment in most of the shops, but you can find currency exchange points widely;\r\n\
+    - Nearest tourist office information:\r\n\
+    Main tourist info office:\r\n\
+    Address: Ratslaukums 6, Riga;\r\n\
+    Phone: +371-7037900\r\n\
+    E-mail: tourinfo@rcc.lv\r\n\
+    Working hours: Every day 09.00am - 7.00pm \r\n\
+    \r\n\
+    - Postage expenses\r\n\
+    -------------------Europe / USA-----\r\n\
+    postcards               0.36 / 0.40\r\n\
+    letters (-20 gr)       0.45 / 0.50\r\n\
+    letter (20-100 gr)   0.60 / 0.90\r\n\
+    \r\n\
+    All rates are in local currency - Latvian Lats (LVL).\r\n\
+    \r\n\
+    - Distances:\r\n\
+    Central Terminal-Riga downtown - 1.5-3 km\r\n\
+    CentralTerminal-Riga international airport - 18 km\r\n\
+    \r\n\
+    Local (emergency) contact numbers:\r\n\
+    ----------------------------------\r\n\
+    Fire                               112\r\n\
+    Ambulance                 112\r\n\
+    Police                          112\r\n\
+    Hospital                      112\r\n\
+    Coastguard / Immigration  +371-7323103\r\n\
+    Customs                                +371-7490109"
+  picture: 
+  created_at: 2010-03-28 19:10:17
+  updated_at: 2010-03-28 19:10:17
+ports_045: 
+  id: "199"
+  name: Copenhagen
+  country: "58"
+  code: ""
+  flag: "1"
+  tips: Handled by European Cruise Service
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:17
+  updated_at: 2010-03-28 19:10:17
+ports_046: 
+  id: "200"
+  name: Stockholm
+  country: "206"
+  code: ""
+  flag: "1"
+  tips: Handled by European Cruise Service
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:17
+  updated_at: 2010-03-28 19:10:17
+ports_047: 
+  id: "201"
+  name: Helsinki
+  country: "73"
+  code: ""
+  flag: "1"
+  tips: Handled by Nurminen Ship Agency Oy
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:18
+  updated_at: 2010-03-28 19:10:18
+ports_048: 
+  id: "202"
+  name: Visby
+  country: "206"
+  code: ""
+  flag: "1"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:18
+  updated_at: 2010-03-28 19:10:18
+ports_049: 
+  id: "203"
+  name: Gdynia
+  country: "173"
+  code: ""
+  flag: "1"
+  tips: ""
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:18
+  updated_at: 2010-03-28 19:10:18
+ports_050: 
+  id: "204"
+  name: Warnem?nde
+  country: "81"
+  code: ""
+  flag: "1"
+  tips: "Handled by Frachtcontor Junge&Co. "
+  description: ""
+  picture: 
+  created_at: 2010-03-28 19:10:18
+  updated_at: 2010-03-28 19:10:18

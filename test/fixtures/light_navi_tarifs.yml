@@ -1,11 +1,145 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  gt: 
-  lighthouse: 9.99
-  navi: 9.99
-
-two:
-  gt: 
-  lighthouse: 9.99
-  navi: 9.99
+--- 
+light_navi_tarifs_001: 
+  id: "29"
+  lighthouse: "640"
+  navi: "100"
+  created_at: 2010-06-05 09:23:46
+  updated_at: 2010-06-05 09:23:46
+  gt_from: "100"
+  gt_to: "250"
+light_navi_tarifs_002: 
+  id: "30"
+  lighthouse: "1280"
+  navi: "300"
+  created_at: 2010-06-05 09:23:46
+  updated_at: 2010-06-05 09:23:46
+  gt_from: "251"
+  gt_to: "500"
+light_navi_tarifs_003: 
+  id: "31"
+  lighthouse: "1920"
+  navi: "870"
+  created_at: 2010-06-05 09:23:46
+  updated_at: 2010-06-05 09:23:46
+  gt_from: "501"
+  gt_to: "1000"
+light_navi_tarifs_004: 
+  id: "32"
+  lighthouse: "2560"
+  navi: "1500"
+  created_at: 2010-06-05 09:23:47
+  updated_at: 2010-06-05 09:23:47
+  gt_from: "1001"
+  gt_to: "1500"
+light_navi_tarifs_005: 
+  id: "33"
+  lighthouse: "3200"
+  navi: "2000"
+  created_at: 2010-06-05 09:23:47
+  updated_at: 2010-06-05 09:23:47
+  gt_from: "1501"
+  gt_to: "2000"
+light_navi_tarifs_006: 
+  id: "34"
+  lighthouse: "3840"
+  navi: "2700"
+  created_at: 2010-06-05 09:23:47
+  updated_at: 2010-06-05 09:23:47
+  gt_from: "2001"
+  gt_to: "3000"
+light_navi_tarifs_007: 
+  id: "35"
+  lighthouse: "5120"
+  navi: "3700"
+  created_at: 2010-06-05 09:23:47
+  updated_at: 2010-06-05 09:23:47
+  gt_from: "3001"
+  gt_to: "5000"
+light_navi_tarifs_008: 
+  id: "36"
+  lighthouse: "6400"
+  navi: "6000"
+  created_at: 2010-06-05 09:23:47
+  updated_at: 2010-06-05 09:23:47
+  gt_from: "5001"
+  gt_to: "7500"
+light_navi_tarifs_009: 
+  id: "37"
+  lighthouse: "8960"
+  navi: "8500"
+  created_at: 2010-06-05 09:23:48
+  updated_at: 2010-06-05 09:23:48
+  gt_from: "7501"
+  gt_to: "10000"
+light_navi_tarifs_010: 
+  id: "38"
+  lighthouse: "11520"
+  navi: "11000"
+  created_at: 2010-06-05 09:23:48
+  updated_at: 2010-06-05 09:23:48
+  gt_from: "10001"
+  gt_to: "12500"
+light_navi_tarifs_011: 
+  id: "39"
+  lighthouse: "14080"
+  navi: "13200"
+  created_at: 2010-06-05 09:23:48
+  updated_at: 2010-06-05 09:23:48
+  gt_from: "12501"
+  gt_to: "15000"
+light_navi_tarifs_012: 
+  id: "40"
+  lighthouse: "16640"
+  navi: "15500"
+  created_at: 2010-06-05 09:23:49
+  updated_at: 2010-06-05 09:23:49
+  gt_from: "15001"
+  gt_to: "18000"
+light_navi_tarifs_013: 
+  id: "41"
+  lighthouse: "19200"
+  navi: "17500"
+  created_at: 2010-06-05 09:23:49
+  updated_at: 2010-06-05 09:23:49
+  gt_from: "18001"
+  gt_to: "24000"
+light_navi_tarifs_014: 
+  id: "42"
+  lighthouse: "25600"
+  navi: "19700"
+  created_at: 2010-06-05 09:23:49
+  updated_at: 2010-06-05 09:23:49
+  gt_from: "24001"
+  gt_to: "30000"
+light_navi_tarifs_015: 
+  id: "43"
+  lighthouse: "32000"
+  navi: "23500"
+  created_at: 2010-06-05 09:23:50
+  updated_at: 2010-06-05 09:23:50
+  gt_from: "30001"
+  gt_to: "40000"
+light_navi_tarifs_016: 
+  id: "44"
+  lighthouse: "38400"
+  navi: "28000"
+  created_at: 2010-06-05 09:23:50
+  updated_at: 2010-06-05 09:23:50
+  gt_from: "40001"
+  gt_to: "60000"
+light_navi_tarifs_017: 
+  id: "45"
+  lighthouse: "44800"
+  navi: "32000"
+  created_at: 2010-06-05 09:23:50
+  updated_at: 2010-06-05 09:23:50
+  gt_from: "60001"
+  gt_to: "75000"
+light_navi_tarifs_018: 
+  id: "46"
+  lighthouse: "51000"
+  navi: "35000"
+  created_at: 2010-06-05 09:23:50
+  updated_at: 2010-06-05 09:23:50
+  gt_from: "75000"
+  gt_to: "99999999"
