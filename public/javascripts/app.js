@@ -110,11 +110,17 @@ function Application() {
             store : "dict_store"
         },
         {
-            store:"country_storse"
+            store:Dict.storeCountryAll()
         },
         {
             store:Currency.currencyStore()
         },
+		{
+			store:Dict.ice_classStore()
+		},
+        {
+			store:Dict.vesselTypeStore()
+		},
         {
             store:Vessel.vesselStore()
         },
