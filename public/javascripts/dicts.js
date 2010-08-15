@@ -193,7 +193,7 @@ function Dicts() {
 
         countryAllStoreRestControl = new Ext.data.Store({
             restful: true,
-            storeId : "country_storse",
+            storeId : "country_store",
             proxy: proxy,
             reader: reader,
             listeners: {

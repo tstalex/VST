@@ -69,18 +69,18 @@ function Vessels() {
             valueField: 'id',
             displayField: 'name',
             fieldLabel: 'Vessel type',
-            name: 'vesel_type'
+            name: 'vessel_type'
         });
         var iceClassCombo = new Ext.form.ComboBox({
             store: Dict.ice_classStore() ,
             typeAhead: true,
             triggerAction: 'all',
             lazyRender:true,
-            mode: 'remote',
+            mode: 'local',
             valueField: 'id',
             displayField: 'code',
             fieldLabel: 'Ice class',
-            name: 'ice_class'
+            name: 'ice_class_id'
         });
         vesselEditControl = new Ext.FormPanel({
             region:"center",
@@ -316,17 +316,20 @@ function Vessels() {
                 ,
                 {
                     dataIndex: 'flag',
-                    header: 'flag'
+                    header: 'flag',
+					renderer: Ext.ux.storeRenderer(Dict.storeCountryAll(), "text")
                 }
                 ,
                 {
-                    dataIndex: 'vesel_type',
-                    header: 'vesel_type'
+                    dataIndex: 'vessel_type',
+                    header: 'vessel_type',
+					renderer: Ext.ux.storeRenderer(Dict.vesselTypeStore(), "name")
                 }
                 ,
                 {
                     dataIndex: 'owner_id',
-                    header: 'owner_id'
+                    header: 'owner_id',
+					hidden:true
                 }
                 ,
                 {
@@ -375,13 +378,15 @@ function Vessels() {
                 }
                 ,
                 {
-                    dataIndex: 'ice_class',
-                    header: 'ice_class'
+                    dataIndex: 'ice_class_id',
+                    header: 'ice_class',
+					renderer: Ext.ux.storeRenderer(Dict.ice_classStore(), "code")
                 }
                 ,
                 {
                     dataIndex: 'calls',
-                    header: 'calls'
+                    header: 'calls',
+					hidden:true
                 }
                 ,
                 {
@@ -396,42 +401,50 @@ function Vessels() {
                 ,
                 {
                     dataIndex: 'safety_cert_date',
-                    header: 'safety_cert_date'
+                    header: 'safety_cert_date',
+					hidden:true
                 }
                 ,
                 {
                     dataIndex: 'construction_cert_date',
-                    header: 'construction_cert_date'
+                    header: 'construction_cert_date',
+					hidden:true
                 }
                 ,
                 {
                     dataIndex: 'equipment_date',
-                    header: 'equipment_date'
+                    header: 'equipment_date',
+					hidden:true
                 }
                 ,
                 {
                     dataIndex: 'security_cert_date',
-                    header: 'security_cert_date'
+                    header: 'security_cert_date',
+					hidden:true
                 }
                 ,
                 {
                     dataIndex: 'int_load_line_cert_date',
-                    header: 'int_load_line_cert_date'
+                    header: 'int_load_line_cert_date',
+					hidden:true
                 }
                 ,
                 {
                     dataIndex: 'oil_pollut_prevent_date',
-                    header: 'oil_pollut_prevent_date'
+                    header: 'oil_pollut_prevent_date',
+					hidden:true
                 }
                 ,
                 {
                     dataIndex: 'tonnage_cert_issued_date',
-                    header: 'tonnage_cert_issued_date'
+                    header: 'tonnage_cert_issued_date',
+					hidden:true
                 }
                 ,
                 {
                     dataIndex: 'sanitation_contr_exempt_date',
-                    header: 'sanitation_contr_exempt_date'
+                    header: 'sanitation_contr_exempt_date',
+					hidden:true
                 }
 
             ]
@@ -472,7 +485,7 @@ function Vessels() {
             }
             ,
             {
-                name: 'vesel_type' ,
+                name: 'vessel_type' ,
                 type: 'int'
             }
             ,
@@ -527,7 +540,7 @@ function Vessels() {
             }
             ,
             {
-                name: 'ice_class' ,
+                name: 'ice_class_id' ,
                 type: 'int'
             }
             ,
