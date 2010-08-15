@@ -5,7 +5,7 @@ function Dicts() {
     var countryAllStoreRestControl = null;
     var vessel_typeStoreControl = null;
     var ice_classStoreControl = null;
-
+ 
     var statusesStoreControl = null;
           
     //proforma statuses

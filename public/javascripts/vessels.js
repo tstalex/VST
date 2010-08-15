@@ -422,7 +422,7 @@ function Vessels() {
                     header: 'security_cert_date',
 					hidden:true
                 }
-                ,
+                , 
                 {
                     dataIndex: 'int_load_line_cert_date',
                     header: 'int_load_line_cert_date',
