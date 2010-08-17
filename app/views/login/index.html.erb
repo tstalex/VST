@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+  <title>Base</title>
+  <%= javascript_include_tag 'adapter/ext/ext-base-debug.js','ext-all-debug.js',"dt.js","login" ,:cache => true %>
+  <%= stylesheet_link_tag    "silk", "/stylesheets/silk.css" %>
+  <link rel="stylesheet" type="text/css" href="<%= stylesheet_path "ext-all" %>"/>
+</head>
+<body>
+<script>
+	var App= new App();
+
+    Ext.onReady(function() {
+        
+        App.start();
+
+    });
+
+</script>
+<div id="main"></div>
+</body>
+</html>
