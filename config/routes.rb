@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :users
+
   
   map.root :controller=>"base",:action=>"show"
   
@@ -34,7 +36,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :countries
 
   map.resources :ports
-
+  map.resources :login , :method=>"POST",:action=>'create'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
