@@ -5,7 +5,7 @@ function Dicts() {
     var countryAllStoreRestControl = null;
     var vessel_typeStoreControl = null;
     var ice_classStoreControl = null;
-
+ 
     var statusesStoreControl = null;
           
     //proforma statuses
@@ -193,7 +193,7 @@ function Dicts() {
 
         countryAllStoreRestControl = new Ext.data.Store({
             restful: true,
-            storeId : "country_storse",
+            storeId : "country_store",
             proxy: proxy,
             reader: reader,
             listeners: {
