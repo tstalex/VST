@@ -24,11 +24,25 @@ class ProformasController < ApplicationController
 
   end
 
+  def pdf
+	
+  end
+  
   # GET /proformas
   # GET /proformas.ext_json
   def index
-    @proformas =Proforma.all
-    render :json => {:successful=>true, :total=>@proformas.length, :data=> @proformas }
+	if params[:id].nil?
+		@proformas =Proforma.all
+		render :json => {:successful=>true, :total=>@proformas.length, :data=> @proformas }
+	else
+		@proforma =Proforma.find(params[:id])
+		respond_to do |format|
+			format.html
+			format.excel {
+				render :action => 'pdf'
+			}
+		end
+	end
   end
 
   # POST /proformas

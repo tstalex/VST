@@ -34,12 +34,15 @@ Ext.ux.ProfTarifHelper = function(proforma) {
 
     this.generateTarifs = function() {
         var data = proforma.gridPanel().getSelectionModel().getSelected().data;
+		delete data.total_eur;
+		var dataJson=Ext.util.JSON.encode(data);
+		delete dataJson.total_eur;
         Ext.Ajax.request({
             url: '/prof_tarif_calcs/gen_tarifs',
             success: this.loadGeneratedCalc,
             method:"POST",
             failure: proforma.fail,
-            params: { data: Ext.util.JSON.encode(data)}
+            params: { data: dataJson}
         });
     }
 

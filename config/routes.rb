@@ -1,15 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :users
-
+  map.root :controller => "login"
   
-  map.root :controller=>"base",:action=>"show"
-  
+  map.resources :users 
   map.resources :tree_elements
-
   map.resources :entities
-
   map.resources :light_navi_tarifs
-
   map.resources :pilotage_charges
 
   map.resources :pilotage_diapasons
@@ -21,7 +16,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :prof_tarif_calcs
 
   map.resources :proformas
-
+  map.connect "proformas/pdf", :method=>"GET", :controller => 'proformas', :action => 'pdf'
+	
   map.resources :currencies
 
   map.resources :tarif_calculations

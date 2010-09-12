@@ -255,6 +255,24 @@ function Proformas() {
         this.calcGrid().setReadOnly(false);
 
     };
+	
+	this.print=function(){
+		var row= this.gridPanel().getSelectionModel().getSelected();
+		if(!row)
+			return;
+		var id= row.get("id");
+		var location="/print/xls/"+id;
+		var ifr= new Ext.IframeWindow({
+			iframe_id:"iframeid",
+			width:640,
+			height:480,
+			title:"Knowledge Control Solutions Iframe Window Sample",
+			src:location
+		});
+		ifr.show();
+		iframeid.print();
+	};
+	
     this.newRow = function() {
         this.editPanel().addNew(this.gridPanel());
     };
@@ -486,6 +504,13 @@ function Proformas() {
                         Proforma.calcGrid().setReadOnly(true);
                     }
                 },
+				{
+                    text: 'Print',
+                    iconCls:"silk-printer",
+                    handler: function(btn, evnt) {
+                        btn.getFormPanel().controller.print();
+                    }
+                }
 
 
             ]

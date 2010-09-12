@@ -63,9 +63,12 @@ Ext.override(Ext.FormPanel, {
             rec = new grid.store.recordType();
         }
         this.getForm().items.each(function(field) {
-
-            if (field.submitValue && field.name && (name = field.name) && (value = field.getValue()) !== undefined) {
+			
+			console.log("field.name "+field.name+" value="+field.getValue()+" submitValue="+ field.submitValue);
+			
+            if (field.name && (name = field.name) && (value = field.getValue()) !== undefined) {
                 rec.set(name, value);
+				console.log("	name="+name+" value="+value);
             }
         }, this);
         if (!grid.store.getById(rec.id)) {
@@ -259,3 +262,18 @@ Ext.override(Ext.grid.EditorGridPanel, {
         }
     }
 })
+
+Ext.IframeWindow = Ext.extend(Ext.Window, {
+onRender: function() {
+    this.bodyCfg = {
+		id:this.iframe_id,
+        tag: 'iframe',
+        src: this.src,
+        cls: this.bodyCls,
+        style: {
+            border: '0px none'
+        }
+    };
+    Ext.IframeWindow.superclass.onRender.apply(this, arguments);
+}
+});

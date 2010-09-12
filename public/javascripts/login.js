@@ -17,7 +17,7 @@ function App(){
                 { fieldLabel: 'login',name: 'login' }
                 ,
                 { fieldLabel: 'password', inputType:'password',name: 'pwd' },
-				{xtype:'displayfield',value:"1",id:"msg_fld"}
+				{xtype:'displayfield',value:"",id:"msg_fld"}
             ]
         }
                 );
