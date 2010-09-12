@@ -263,6 +263,15 @@ Ext.override(Ext.grid.EditorGridPanel, {
     }
 })
 
+Ext.override(Ext.form.DateField,{
+	format:'d.m.Y'
+})
+
+Ext.override(Ext.ux.form.DateTime,{
+	dateFormat:'d.m.Y',
+	timeFormat:'H:i'
+})
+
 Ext.IframeWindow = Ext.extend(Ext.Window, {
 onRender: function() {
     this.bodyCfg = {

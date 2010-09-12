@@ -8,6 +8,9 @@ var Proforma = new Proformas();
 var Calc = new TarifCalculations();
 var Tarif = new Tarifs();
 
+if(typeof(console)=="undefined"){
+	console={log:function(foo){}};
+}
 
 function Application() {
 

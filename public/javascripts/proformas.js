@@ -446,6 +446,10 @@ function Proformas() {
                                     fieldLabel: 'Date of rates',
                                     xtype:"datefield",
                                     name: 'date_curr'
+                                } ,{
+                                    fieldLabel: 'Passengers',
+                                    xtype:"textfield",
+                                    name: 'passengers'
                                 }
 
                             ]
