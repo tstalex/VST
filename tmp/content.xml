@@ -155,7 +155,7 @@
 						<text:p>Porttimes:</text:p>
 					</table:table-cell>
 					<table:table-cell table:style-name="ce11" office:value-type="string">
-						<text:p>23.08.2010 09:00</text:p>
+						<text:p>23.08.2010 08:45</text:p>
 					</table:table-cell>
 					<table:table-cell table:number-columns-repeated="1020"/>
 				</table:table-row>
@@ -163,7 +163,7 @@
 					<table:covered-table-cell table:number-columns-repeated="2"/>
 					<table:covered-table-cell table:style-name="ce9"/>
 					<table:table-cell table:style-name="ce11" office:value-type="string">
-						<text:p>23.08.2010 14:00</text:p>
+						<text:p>23.08.2010 13:00</text:p>
 					</table:table-cell>
 					<table:table-cell table:number-columns-repeated="1020"/>
 				</table:table-row>
@@ -186,7 +186,7 @@
 					</table:table-cell>
 					<table:covered-table-cell table:number-columns-repeated="2"/>
 					<table:table-cell table:style-name="ce1" office:value-type="string">
-						<text:p>N1</text:p>
+						<text:p>N300</text:p>
 					</table:table-cell>
 					<table:table-cell table:number-columns-repeated="1020"/>
 				</table:table-row>

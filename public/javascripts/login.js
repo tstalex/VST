@@ -59,8 +59,8 @@ function App(){
 		closable:false,
         items: this.editPanel(),
         buttons: [ {
-                    text: 'Save',
-                    iconCls:"icon-save",
+                    text: 'Login',
+                    iconCls:"silk-accept",
                     handler: function(btn, evnt) {
                         App.editPanel().getForm().submit();
                     }

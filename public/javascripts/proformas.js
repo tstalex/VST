@@ -220,7 +220,7 @@ function Proformas() {
                     iconCls:"silk-delete",
                     listeners:{
                         scope: this.tarifHelper,
-                        'click': this.tarifHelper.generateTarifs
+                        'click': this.tarifHelper.deleteTarif
                     }
                 }
                 ,
@@ -266,7 +266,7 @@ function Proformas() {
 			iframe_id:"iframeid",
 			width:640,
 			height:480,
-			title:"Knowledge Control Solutions Iframe Window Sample",
+			title:"Proforma id "+id,
 			src:location
 		});
 		ifr.show();

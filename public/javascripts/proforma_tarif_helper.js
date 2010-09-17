@@ -46,6 +46,14 @@ Ext.ux.ProfTarifHelper = function(proforma) {
         });
     }
 
+	this.deleteTarif=function(){
+		var sel = proforma.calcGrid().getSelectionModel().selection.record;
+		if(!sel)
+			return;
+		proforma.calcGrid().store.remove(sel);
+	}
+	
+	
     this.loadGeneratedCalc = function(resp, opts) {
         var obj = Ext.decode(resp.responseText);
         proforma.calcGrid().store.removeAll(true);

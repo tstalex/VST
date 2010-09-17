@@ -7,6 +7,10 @@ require "cgi"
 include ApplicationHelper 
 include REXML
 
+	def gen_file_name
+		("#{Rails.root}/tmp/%s.odt" % Time.now.to_i)
+	end
+	
 	def get_file(proforma)
 		@dir=Time.now.to_i
 		@tmp_dir=("#{Rails.root}/tmp/%s" % @dir)
