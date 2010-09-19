@@ -8,21 +8,22 @@ Ext.ux.ProfTarifHelper = function(proforma) {
         proformaCurrency = Currency.currencyStore().getById( proformaCurrency);
         proforma.calcGrid().store.each(function(row) {
             var tarif_id = row.get("tarif_id");
-            var tarif=proforma.tarifsByPort().getById(tarif_id);
-            var val = row.get("val");
+            if(tarif_id!=1){
+				var tarif=proforma.tarifsByPort().getById(tarif_id);
+				var val = row.get("val");
 
-            var curr = tarif.get("currency_id");
-            curr = Currency.currencyStore().getById(curr);
-            val= parseFloat(val)* curr.get("rate");
-            valTotal += val / proformaCurrency.get("rate") ;
-            console.log("tarif "+tarif.get("name")+" val "+val+" total "+valTotal);
-
+				var curr = tarif.get("currency_id");
+				curr = Currency.currencyStore().getById(curr);
+				val= parseFloat(val)* curr.get("rate");
+				valTotal += val / proformaCurrency.get("rate") ;
+			}
         }, this);
         proforma.editPanel().getFieldByName("total_eur").setValue(valTotal.toFixed(2));
     }
 
     this.handleProformaRowChanged = function() {
-        this.handlePortChanged();
+        proforma.calcGrid().setReadOnly(true);
+		this.handlePortChanged();
         this.fillProfTarifs();
     }
 

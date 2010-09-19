@@ -179,12 +179,12 @@ function Proformas() {
                 var bt = Proforma.calcGrid().getTopToolbar().items;
                 if (!isRo) {
                     bt.get(0).enable();
-                    bt.get(1).enable();
                     bt.get(2).enable();
+                    bt.get(3).enable();
                 } else {
                     bt.get(0).disable();
-                    bt.get(1).disable();
                     bt.get(2).disable();
+                    bt.get(3).disable();
                 }
             }
             ,
@@ -212,7 +212,7 @@ function Proformas() {
                         });
                         Proforma.calcGrid().store.insert(0, newTarif);
                         Proforma.calcGrid().getView().refresh();
-                        Proforma.calcGrid().getSelectionModel().selectRow(0);
+                       // Proforma.calcGrid().getSelectionModel().select(0,0);
                     }
                 },
                 {
@@ -237,6 +237,11 @@ function Proformas() {
         });
         calcgrid.store.on("add", function(a, b, c) {
             Proforma.tarifHelper.calcTotal();
+        });
+		
+		calcgrid.getSelectionModel().on("selectionchange", function(csm, obj) {
+            if(csm.grid.controller.editPanel().editable)
+				csm.grid.setReadOnly((obj==null));
         });
         return calcgrid;
     }
