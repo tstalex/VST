@@ -114,7 +114,7 @@ function Proformas() {
         var fm = Ext.form;
         var combo = new fm.ComboBox({
             allowBlank: false,
-            store: this.tarifsByPort(),
+            store: this.tarifHelper.getTarifs(),
             displayField:'name',
             valueField: 'id',
             allowBlank: false,
@@ -163,7 +163,6 @@ function Proformas() {
                     editable:false,
                     renderer: Ext.ux.forignKeyRenderer(Currency.currencyStore(), combo.store, "currency_id", "curr")
                 }
-
             ]
         });
 
@@ -174,6 +173,7 @@ function Proformas() {
             frame: true,
             clicksToEdit: 1,
             controller:this,
+			tarif_combo:combo,
             setReadOnly:function(isRo) {
                 this.setPanelReadOnly(isRo);
                 var bt = Proforma.calcGrid().getTopToolbar().items;
@@ -275,7 +275,8 @@ function Proformas() {
 			src:location
 		});
 		ifr.show();
-		iframeid.print();
+		frames["iframeid"].focus();
+		frames["iframeid"].print();
 	};
 	
     this.newRow = function() {
@@ -304,16 +305,13 @@ function Proformas() {
         this.gridPanel().getSelectionModel().on("rowselect", function(rsm, rowIndex, e) {
             rsm.grid.viewPanel.loadData();
             rsm.grid.controller.tarifHelper.handleProformaRowChanged();
-            rsm.grid.controller.tarifHelper.calcTotal();
 
 
         });
         this.gridPanel().getSelectionModel().on("rowdeselect", function(rsm, rowIndex, e) {
             rsm.grid.viewPanel.loadData();
             rsm.grid.controller.tarifHelper.handleProformaRowChanged();
-            rsm.grid.controller.tarifHelper.calcTotal();
         });
-
         return proformaMainControl;
     };
 
@@ -366,6 +364,7 @@ function Proformas() {
                                         scope: Proforma,
                                         'select':   function(fld, record, indx) {
                                             this.tarifHelper.handlePortChanged();
+											this.calcGrid().store.removeAll(true);
                                         }
                                     }
                                 }),
@@ -545,6 +544,7 @@ function Proformas() {
             collapsible:true,
             split:true,
             controller:this,
+			height:160,
             columns:[
                 {
                     id:"id",

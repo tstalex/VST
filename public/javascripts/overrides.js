@@ -38,11 +38,28 @@ Ext.ux.comboBoxRenderer = function(combo) {
             var rec = combo.store.getAt(idx);
             return rec.get(combo.displayField);
         } else {
+			console.log("comboBoxRenderer");
             return value + " " + combo.store.getTotalCount();
         }
-
+		console.log(combo.store.data);
     };
 }
+
+Ext.form.ComboBox.prototype.filterBy = function(fn, scope) {
+	var ds = this.store;
+	ds.filterBy(fn, scope);
+	ds.realSnapshot = ds.snapshot;
+	ds.snapshot = ds.data;
+};
+
+Ext.form.ComboBox.prototype.clearFilter = function(suppressEvent) {
+	var ds = this.store;
+	if (ds.realSnapshot && ds.realSnapshot != ds.snapshot) {
+		ds.snapshot = ds.realSnapshot;
+		delete ds.realSnapshot;
+	}
+	ds.clearFilter(suppressEvent);
+};
 
 Ext.override(Ext.FormPanel, {
     grid:null,
@@ -151,6 +168,15 @@ Ext.override(Ext.FormPanel, {
         }, this);
     }
     ,
+	
+	putValues:function(rec){
+		this.getForm().items.each( function(field) {
+			if(Ext.isDefined(this.get(field.name))){
+				this.set(field.name,field.getValue());
+			}
+        }, rec);
+	}
+	,
     loadData : function() {
         var record = (this.grid.getSelectionModel().getSelected()) ? this.grid.getSelectionModel().getSelected() : new this.grid.store.recordType();
         var values = record.data;
@@ -206,7 +232,22 @@ Ext.override(Ext.grid.GridPanel, {
     viewPanel:null,
     showInView: function(viewPanel) {
         viewPanel.loadData(this);
-    }
+    },
+	getSelectedColumnValue:function(col){
+		var row= this.getSelectionModel().getSelected();
+		if(row==null)
+			return null;
+		if(Ext.isArray(row)){
+			ret= [];
+			Ext.each(row,function(obj,indx,arr){
+				this.push(obj.get(col));
+			},ret);
+			return ret;
+		}else{
+			return row.get(col);
+		}
+		
+	}
 });
 
 Ext.override(Ext.Button, {
@@ -279,6 +320,7 @@ onRender: function() {
         tag: 'iframe',
         src: this.src,
         cls: this.bodyCls,
+		name:this.iframe_id,
         style: {
             border: '0px none'
         }

@@ -9,6 +9,8 @@ class PrintController < ApplicationController
     
 	proforma=gen
 	file= gen_file_name
+	total=0 
+	proforma.prof_tarif_calcs
 	render_odt 'lib/proforma_template/Proforma.odt',file
 	send_file(file)
   end

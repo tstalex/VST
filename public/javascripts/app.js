@@ -3,18 +3,18 @@ var Currency = new Currencies();
 var Dict = new Dicts();
 var Vessel = new Vessels();
 var Ports = new Ports();
+var Tarif = new Tarifs();
+var Calc = new TarifCalculations();
 var App = new Application();
 var Proforma = new Proformas();
-var Calc = new TarifCalculations();
-var Tarif = new Tarifs();
+
+
 
 if(typeof(console)=="undefined"){
 	console={log:function(foo){}};
 }
 
 function Application() {
-
-
     var currentpanel = new Ext.Panel({region:"center"});
     var mainPanel = null;
 
@@ -129,6 +129,12 @@ function Application() {
         },
         {
             store:Ports.storeRest()
+        },
+        {
+            store:Tarif.tarifStore()
+        },
+        {
+            store:Calc.tarif_calculationStore()
         }
     ];
 

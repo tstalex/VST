@@ -1,7 +1,45 @@
 Ext.namespace("Ext.ux");
 
 Ext.ux.ProfTarifHelper = function(proforma) {
-
+	var tarifsPerPort=null;
+	
+	this.getTarifs=function(){
+		if(tarifsPerPort!=null){
+			return tarifsPerPort;
+		}
+		var port = proforma.gridPanel().getSelectedColumnValue("port_id");
+		if(port==null)
+			port=-1;
+		var calc= Calc.tarif_calculationStore().find("port_id",port);
+		tarifsPerPort = new Ext.data.Store({
+			reader: Tarif.tarifStore().reader,
+		});
+		Ext.each(Tarif.tarifStore().data.items,function(item,indx,data){
+			this.add(item);
+		},tarifsPerPort);
+		return tarifsPerPort;
+	}
+	
+	this.changeCombo=function(){
+		var port = proforma.gridPanel().getSelectedColumnValue("port_id");
+		if(port==null)
+			port=-1;
+		var calc_index= Calc.tarif_calculationStore().find("port_id",port);
+		if(calc_index>-1){
+			var calc= Calc.tarif_calculationStore().getAt(calc_index)
+			proforma.calcGrid().tarif_combo.clearFilter();
+			proforma.calcGrid().tarif_combo.filterBy(function(rec,id){
+				var id= this.get("id");
+				var t_calc_id=rec.get("tarif_calculation_id");
+				if(t_calc_id==id){
+					return true;
+				}
+				return false
+			},calc);
+			proforma.calcGrid().tarif_combo.onLoad();
+		}
+	}
+	
     this.calcTotal = function() {
         var valTotal = 0;
         var proformaCurrency = proforma.editPanel().getFieldByName("currency_id").getValue();
@@ -9,9 +47,8 @@ Ext.ux.ProfTarifHelper = function(proforma) {
         proforma.calcGrid().store.each(function(row) {
             var tarif_id = row.get("tarif_id");
             if(tarif_id!=1){
-				var tarif=proforma.tarifsByPort().getById(tarif_id);
+				var tarif=Tarif.tarifStore().getById(tarif_id);
 				var val = row.get("val");
-
 				var curr = tarif.get("currency_id");
 				curr = Currency.currencyStore().getById(curr);
 				val= parseFloat(val)* curr.get("rate");
@@ -25,6 +62,8 @@ Ext.ux.ProfTarifHelper = function(proforma) {
         proforma.calcGrid().setReadOnly(true);
 		this.handlePortChanged();
         this.fillProfTarifs();
+		this.calcTotal();
+		this.changeCombo();
     }
 
     this.fillProfTarifs = function() {
@@ -34,7 +73,10 @@ Ext.ux.ProfTarifHelper = function(proforma) {
     }
 
     this.generateTarifs = function() {
-        var data = proforma.gridPanel().getSelectionModel().getSelected().data;
+		this.changeCombo()
+		var row=proforma.gridPanel().getSelectionModel().getSelected();
+		proforma.editPanel().putValues(row);
+        var data = row.data;
 		delete data.total_eur;
 		var dataJson=Ext.util.JSON.encode(data);
 		delete dataJson.total_eur;
