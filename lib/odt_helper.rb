@@ -8,7 +8,7 @@ include ApplicationHelper
 include REXML
 
 	def gen_file_name
-		("#{Rails.root}/tmp/%s.odt" % Time.now.to_i)
+		("#{Rails.root}/tmp/%s.ods" % Time.now.to_i)
 	end
 	
 	def get_file(proforma)
