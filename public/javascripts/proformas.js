@@ -275,8 +275,8 @@ function Proformas() {
 			src:location
 		});
 		ifr.show();
-		frames["iframeid"].focus();
-		frames["iframeid"].print();
+		//frames["iframeid"].focus();
+		//frames["iframeid"].print();
 	};
 	
     this.newRow = function() {
