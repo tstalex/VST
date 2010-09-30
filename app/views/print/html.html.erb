@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+  <title>Base</title>
+  <%= stylesheet_link_tag    "silk", "/stylesheets/silk.css" %>
+  <link rel="stylesheet" type="text/css" href="<%= stylesheet_path "ext-all" %>"/>
+  <style>
+  table{
+	padding:3px;
+	width:600px;
+  }
+  .odd_cell{
+	text-align:right;
+  }
+  .print_val{
+	font:normal;
+  }
+  tr td{
+	border-bottom:1px solid gray;
+  }
+  .total{
+	font-weight:bold;
+  }
+  #footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;
+  </style>
+</head>
+<div id="logo">
+<img src="/images/atlas.jpg"/>
+</div>
+<table>
+	<tr>
+		<td>Vessel:</td>
+		<td class="print_val"><%=@proforma.vessel.name%></td>
+		<td class="odd_cell">Port:</td>
+		<td class="print_val"><%=@proforma.port.name%></td>		
+	</tr>
+	<tr>
+		<td>Flag:</td>
+		<td class="print_val"><%=@proforma.vessel.vessel_flag.text%></td>
+		<td class="odd_cell">Date of call:</td>
+		<td class="print_val"><%=@proforma.registration_date.strftime('%d.%m.%Y')%></td>		
+	</tr>
+	<tr>
+		<td>D/A estimated:</td>
+		<td class="print_val"><%=@proforma.estimated_arrive.strftime('%d.%m.%Y')%></td>
+		<td class="odd_cell">Porttimes:</td>
+		<td class="print_val"><%=@proforma.arrived.strftime('%d.%m.%Y %H:%M')%> <br/> <%=@proforma.sailed.strftime('%d.%m.%Y %H:%M')%></td>		
+	</tr>
+	<tr>
+		<td colspan="2">ROE 1 <%= @proforma.currency.curr%> = <%= default_currency.curr%>  <span class="print_val">
+		<%= sprintf('%.4f', @proforma.currency.rate/default_currency.rate)%></span> </td>
+		<td class="odd_cell">GT:</td>
+		<td class="print_val"><%=@proforma.gw.round%></td>		
+	</tr>
+	<tr>
+		<td colspan="3" class="odd_cell">Voyage:</td>
+		<td class="print_val">N<%=@proforma.calls%></td>		
+	</tr>
+	<tr>
+		<td colspan="4">&nbsp;</td>	
+	</tr>
+	<tr>
+		<td>Voucher</td>
+		<td>Description</td>
+		<td>Remarks</td>
+		<td><%= @proforma.currency.curr%></td>
+	</tr>
+	<% 
+	total=0
+	@proforma.prof_tarif_calcs.each do |calc|
+	total+=calc.tarif.currency.convertTo(calc.val,@proforma.currency)
+	%>
+	<tr>
+		<td>&nbsp;</td>
+		<td><%=calc.tarif.name%></td>
+		<td><%=calc.remark%></td>
+		<td>
+			<%=sprintf('%.2f',calc.tarif.currency.convertTo(calc.val,@proforma.currency))%>
+		</td>		
+	</tr>
+	<%end%>
+	<tr class="total">
+		<td>&nbsp;</td>
+		<td>Total:</td>
+		<td></td>
+		<td>
+			<%=sprintf('%.2f',total)%>
+		</td>		
+	</tr>
+</table>
+<div id="footer">
+	<table>
+		<tr>
+			<td>xx</td>
+			<td>dd</td>
+		</tr>
+	</table>
+</div>
+<script>
+window.print();
+</script>
+</body>
+</html>
+  
