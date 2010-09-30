@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<office:document-content xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:msoxl="http://schemas.microsoft.com/office/excel/formula">
+	<office:font-face-decls>
+		<style:font-face style:name="Calibri" svg:font-family="Calibri"/>
+		<style:font-face style:name="Cambria" svg:font-family="Cambria"/>
+	</office:font-face-decls>
+	<office:automatic-styles>
+		<style:style style:name="ce1" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N0"/>
+		<style:style style:name="ce2" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N0">
+			<style:table-cell-properties style:vertical-align="automatic" fo:wrap-option="wrap"/>
+		</style:style>
+		<style:style style:name="ce3" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N0">
+			<style:table-cell-properties style:vertical-align="automatic" fo:wrap-option="wrap" style:repeat-content="false"/>
+			<style:paragraph-properties fo:text-align="end" fo:margin-right="0cm"/>
+		</style:style>
+		<style:style style:name="ce4" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N36">
+			<style:table-cell-properties style:vertical-align="automatic" fo:wrap-option="wrap"/>
+		</style:style>
+		<style:style style:name="ce5" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N37">
+			<style:table-cell-properties style:vertical-align="automatic" fo:wrap-option="wrap"/>
+		</style:style>
+		<style:style style:name="ce6" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N0">
+			<style:table-cell-properties style:vertical-align="automatic" fo:wrap-option="wrap" style:repeat-content="false"/>
+			<style:paragraph-properties fo:text-align="start" fo:margin-left="0cm"/>
+		</style:style>
+		<style:style style:name="ce7" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N0">
+			<style:table-cell-properties style:vertical-align="automatic" fo:wrap-option="wrap"/>
+			<style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+		</style:style>
+		<style:style style:name="ce8" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N0"/>
+		<style:style style:name="ce9" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N0">
+			<style:table-cell-properties style:vertical-align="top" fo:wrap-option="wrap" style:repeat-content="false"/>
+			<style:paragraph-properties fo:text-align="end" fo:margin-right="0cm"/>
+			<style:text-properties fo:font-size="16pt" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+		</style:style>
+		<style:style style:name="ce10" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N0">
+			<style:table-cell-properties style:vertical-align="automatic" fo:wrap-option="wrap"/>
+		</style:style>
+		<style:style style:name="ce11" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N0">
+			<style:table-cell-properties style:vertical-align="middle" fo:wrap-option="wrap" style:repeat-content="false"/>
+			<style:paragraph-properties fo:text-align="end" fo:margin-right="0cm"/>
+		</style:style>
+		<style:style style:name="ce12" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N0">
+			<style:table-cell-properties style:vertical-align="automatic" fo:wrap-option="wrap" style:repeat-content="false"/>
+			<style:paragraph-properties fo:text-align="end" fo:margin-right="0cm"/>
+		</style:style>
+		<style:style style:name="co1" style:family="table-column">
+			<style:table-column-properties fo:break-before="auto" style:column-width="2.54cm"/>
+		</style:style>
+		<style:style style:name="co2" style:family="table-column">
+			<style:table-column-properties fo:break-before="auto" style:column-width="5.84729166666667cm"/>
+		</style:style>
+		<style:style style:name="co3" style:family="table-column">
+			<style:table-column-properties fo:break-before="auto" style:column-width="2.16958333333333cm"/>
+		</style:style>
+		<style:style style:name="co4" style:family="table-column">
+			<style:table-column-properties fo:break-before="auto" style:column-width="3.14854166666667cm"/>
+		</style:style>
+		<style:style style:name="co5" style:family="table-column">
+			<style:table-column-properties fo:break-before="auto" style:column-width="1.61395833333333cm"/>
+		</style:style>
+		<style:style style:name="ro1" style:family="table-row">
+			<style:table-row-properties style:row-height="87.95pt" style:use-optimal-row-height="false" fo:break-before="auto"/>
+		</style:style>
+		<style:style style:name="ro2" style:family="table-row">
+			<style:table-row-properties style:row-height="15pt" style:use-optimal-row-height="false" fo:break-before="auto"/>
+		</style:style>
+		<style:style style:name="ro3" style:family="table-row">
+			<style:table-row-properties style:row-height="30pt" style:use-optimal-row-height="true" fo:break-before="auto"/>
+		</style:style>
+		<style:style style:name="ta1" style:family="table" style:master-page-name="mp1">
+			<style:table-properties table:display="true" style:writing-mode="lr-tb"/>
+		</style:style>
+		<style:style style:family="graphic" style:name="a0" style:parent-style-name="Graphics">
+			<style:graphic-properties draw:fill="none" fo:clip="rect(0in 0in 0in 0in)" draw:stroke="none"/>
+		</style:style>
+	</office:automatic-styles>
+	<office:body>
+		<office:spreadsheet>
+			<table:calculation-settings table:case-sensitive="false" table:search-criteria-must-apply-to-whole-cell="false"/>
+			<table:table table:name="Sheet1" table:style-name="ta1">
+				<table:shapes>
+					<draw:frame draw:z-index="1" draw:id="id0" draw:style-name="a0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" draw:name="Graphics 1" svg:x="0in" svg:y="0in" svg:width="1.57292in" svg:height="1.15625in" style:rel-width="scale" style:rel-height="scale">
+						<draw:image xlink:href="media/image1.jpeg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"/>
+						<svg:desc/>
+					</draw:frame>
+				</table:shapes>
+				<table:table-column table:style-name="co1" table:default-cell-style-name="ce1"/>
+				<table:table-column table:style-name="co2" table:default-cell-style-name="ce1"/>
+				<table:table-column table:style-name="co3" table:default-cell-style-name="ce1"/>
+				<table:table-column table:style-name="co4" table:default-cell-style-name="ce1"/>
+				<table:table-column table:style-name="co5" table:number-columns-repeated="16380" table:default-cell-style-name="ce1"/>
+				<table:table-row table:style-name="ro1">
+					<table:table-cell table:number-columns-spanned="2" table:number-rows-spanned="1" table:style-name="ce8"/>
+					<table:covered-table-cell/>
+					<table:table-cell office:value-type="string" table:number-columns-spanned="2" table:number-rows-spanned="1" table:style-name="ce9">
+						<text:p>Atlas Baltic Ltd</text:p>
+					</table:table-cell>
+					<table:covered-table-cell/>
+					<table:table-cell table:number-columns-repeated="16380"/>
+				</table:table-row>
+				<table:table-row table:style-name="ro2">
+					<table:table-cell office:value-type="string" table:style-name="ce2">
+						<text:p>Vessel:</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:style-name="ce2">
+						<text:p>{%=@proforma.vessel.name.to_xs%}</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:style-name="ce3">
+						<text:p>Port:</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:style-name="ce2">
+						<text:p>{%=@proforma.port.name.to_xs%}</text:p>
+					</table:table-cell>
+					<table:table-cell table:number-columns-repeated="16380"/>
+				</table:table-row>
+				<table:table-row table:style-name="ro3">
+					<table:table-cell office:value-type="string" table:style-name="ce2">
+						<text:p>Flag:</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:style-name="ce2">
+						<text:p>{%=@proforma.vessel.vessel_flag.text.to_xs%}</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:style-name="ce3">
+						<text:p>Date of call:</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:style-name="ce4">
+						<text:p>{%=@proforma.registration_date%}</text:p>
+					</table:table-cell>
+					<table:table-cell table:number-columns-repeated="16380"/>
+				</table:table-row>
+				<table:table-row table:style-name="ro2">
+					<table:table-cell office:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2" table:style-name="ce10">
+						<text:p>D/A estimated:</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2" table:style-name="ce8">
+						<text:p>{%=@proforma.estimated_arrive%}</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2" table:style-name="ce11">
+						<text:p>Porttimes:</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:style-name="ce5">
+						<text:p>{%=@proforma.arrived%}</text:p>
+					</table:table-cell>
+					<table:table-cell table:number-columns-repeated="16380"/>
+				</table:table-row>
+				<table:table-row table:style-name="ro2">
+					<table:covered-table-cell/>
+					<table:covered-table-cell/>
+					<table:covered-table-cell/>
+					<table:table-cell office:value-type="string" table:style-name="ce5">
+						<text:p>{%=@proforma.sailed%}</text:p>
+					</table:table-cell>
+					<table:table-cell table:number-columns-repeated="16380"/>
+				</table:table-row>
+				<table:table-row table:style-name="ro2">
+					<table:table-cell office:value-type="string" table:number-columns-spanned="2" table:number-rows-spanned="1" table:style-name="ce10">
+						<text:p>ROE 1 {%=@proforma.currency.curr%} = {%=default_currency.curr%} {%=@proforma.currency.rate/default_currency.rate%}</text:p>
+					</table:table-cell>
+					<table:covered-table-cell/>
+					<table:table-cell office:value-type="string" table:style-name="ce3">
+						<text:p>GT:</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:style-name="ce6">
+						<text:p>{%=@proforma.gw%}</text:p>
+					</table:table-cell>
+					<table:table-cell table:number-columns-repeated="16380"/>
+				</table:table-row>
+				<table:table-row table:style-name="ro2">
+					<table:table-cell office:value-type="string" table:number-columns-spanned="3" table:number-rows-spanned="1" table:style-name="ce12">
+						<text:p>Voyage:</text:p>
+					</table:table-cell>
+					<table:covered-table-cell table:number-columns-repeated="2"/>
+					<table:table-cell office:value-type="string" table:style-name="ce2">
+						<text:p>N{%=@proforma.calls%}</text:p>
+					</table:table-cell>
+					<table:table-cell table:number-columns-repeated="16380"/>
+				</table:table-row>
+				<table:table-row table:style-name="ro2">
+					<table:table-cell table:number-columns-spanned="4" table:number-rows-spanned="1" table:style-name="ce8"/>
+					<table:covered-table-cell table:number-columns-repeated="3"/>
+					<table:table-cell table:number-columns-repeated="16380"/>
+				</table:table-row>
+				<table:table-row table:style-name="ro2">
+					<table:table-cell office:value-type="string" table:style-name="ce2">
+						<text:p>Voucher</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:style-name="ce2">
+						<text:p>Description</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:style-name="ce2">
+						<text:p>Remarks</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:style-name="ce2">
+						<text:p>EUR</text:p>
+					</table:table-cell>
+					<table:table-cell table:number-columns-repeated="16380"/>
+				</table:table-row>
+{% @tarifs.each do |item|%}
+				<table:table-row table:style-name="ro2">
+					<table:table-cell table:style-name="ce2"/>
+					<table:table-cell office:value-type="string" table:style-name="ce2">
+						<text:p>{%=item["tarif"].to_xs%}</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="string" table:style-name="ce2">
+						<text:p>{%=item["val"][1].to_xs%}</text:p>
+					</table:table-cell>
+					<table:table-cell office:value-type="float" office:value="{%=item["val"][0]%}" table:style-name="ce2">
+						<text:p>{%=money(item["val"][0])%}</text:p>
+					</table:table-cell>
+					<table:table-cell table:number-columns-repeated="16380"/>
+				</table:table-row>
+	{% end %}
+				<table:table-row table:style-name="ro2">
+					<table:table-cell table:style-name="ce1"/>
+					<table:table-cell office:value-type="string" table:style-name="ce7">
+						<text:p>Total:</text:p>
+					</table:table-cell>
+					<table:table-cell table:style-name="ce2"/>
+					<table:table-cell office:value-type="float" office:value="0" table:style-name="ce7">
+						<text:p>0</text:p>
+					</table:table-cell>
+					<table:table-cell table:number-columns-repeated="16380"/>
+				</table:table-row>
+				<table:table-row table:number-rows-repeated="1048566" table:style-name="ro2">
+					<table:table-cell table:number-columns-repeated="16384"/>
+				</table:table-row>
+			</table:table>
+		</office:spreadsheet>
+	</office:body>
+</office:document-content>

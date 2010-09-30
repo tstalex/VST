@@ -16,7 +16,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :prof_tarif_calcs
 
   map.resources :proformas
-  map.connect "proformas/pdf", :method=>"GET", :controller => 'proformas', :action => 'pdf'
+  map.connect "proformas/xlsx", :method=>"GET", :controller => 'proformas', :action => 'xlsx'
 	
   map.resources :currencies
 

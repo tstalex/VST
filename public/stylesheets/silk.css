@@ -6,7 +6,7 @@
 
 .icon-32 { height:32px; width:32px}
 .icon-24 { height:24px; width:24px}
-
+.silk-excel { background-image: url(fam/page_excel.png) !important; background-repeat: no-repeat; }
 .icon-arrow-up { background-image: url(fam/arrow-up.gif) !important; background-repeat: no-repeat; }
 .icon-arrow-down { background-image: url(fam/arrow-down.gif) !important; background-repeat: no-repeat; }
 .icon-save { background-image: url(fam/save.gif) !important; background-repeat: no-repeat; }

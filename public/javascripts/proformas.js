@@ -260,6 +260,14 @@ function Proformas() {
         this.calcGrid().setReadOnly(false);
 
     };
+	this.xlsx=function(){
+		var row= this.gridPanel().getSelectionModel().getSelected();
+		if(!row)
+			return;
+		var id= row.get("id");
+		var location="/print/xlsx/"+id;
+		window.open(location);
+	}
 	
 	this.print=function(){
 		var row= this.gridPanel().getSelectionModel().getSelected();
@@ -475,6 +483,7 @@ function Proformas() {
 
                 {
                     text: 'New',
+					onrow_selected:false,
                     iconCls:"silk-add",
                     handler: function(btn, evnt) {
                         btn.getFormPanel().controller.newRow();
@@ -482,7 +491,8 @@ function Proformas() {
                 },
                 {
                     text: 'Edit',
-                    iconCls:"silk-page-edit",
+                    onrow_selected:true,
+					iconCls:"silk-page-edit",
                     handler: function(btn, evnt) {
                         btn.getFormPanel().controller.edit();
                         Proforma.calcGrid().setReadOnly(false);
@@ -490,6 +500,7 @@ function Proformas() {
                 },
                 {
                     text: 'Save',
+                    onrow_selected:true,
                     iconCls:"icon-save",
                     handler: function(btn, evnt) {
                         btn.getFormPanel().controller.add();
@@ -498,6 +509,7 @@ function Proformas() {
                 },
                 {
                     text: 'Cancel',
+                    onrow_selected:true,
                     iconCls:"silk-cancel",
                     handler: function(btn, evnt) {
                         btn.getFormPanel().controller.reset();
@@ -506,6 +518,7 @@ function Proformas() {
                 },
                 {
                     text: 'Delete',
+                    onrow_selected:true,
                     iconCls:"silk-delete",
                     handler: function(btn, evnt) {
                         btn.getFormPanel().controller.del();
@@ -513,14 +526,13 @@ function Proformas() {
                     }
                 },
 				{
-                    text: 'Print',
-                    iconCls:"silk-printer",
+                    text: 'Excel',
+                    onrow_selected:true,
+                    iconCls:"silk-excel",
                     handler: function(btn, evnt) {
-                        btn.getFormPanel().controller.print();
+                        btn.getFormPanel().controller.xlsx();
                     }
                 }
-
-
             ]
         }
                 )

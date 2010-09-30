@@ -64,6 +64,11 @@ Ext.ux.ProfTarifHelper = function(proforma) {
         this.fillProfTarifs();
 		this.calcTotal();
 		this.changeCombo();
+		if(proforma.gridPanel().getSelectionModel().getSelected()!=null){
+			proforma.editPanel().getBottomToolbar().items.get(5).show();
+		}else{
+			proforma.editPanel().getBottomToolbar().items.get(5).hide();
+		}
     }
 
     this.fillProfTarifs = function() {

@@ -3,23 +3,21 @@ class PrintController < ApplicationController
   require 'serenity'
   include Serenity::Generator
 
-   def auth
-	
+	def auth
 	end
-  def pdf
-	gen
-	file= gen_file_name
-	render_odt 'lib/proforma_template/Proforma.odt',file
-	send_file(file)
-  end
-
-  def xls
-	gen
-  end
-
-  def mail
-	gen
-  end
+	
+	def html
+		gen
+	end
+	def xlsx
+		gen
+		file= gen_file_name
+		render_odt 'lib/proforma_template/Proforma.odt',file
+		response.headers["Content-Type"]="application/vnd.ms-excel; charset=UTF-8"
+		response.headers["Content-Disposition"]="inline; filename=proforma.ods"
+		send_file(file)
+	end
+  
   def gen
 	unless params[:data].nil?
 		data= params[:data]
@@ -35,19 +33,8 @@ class PrintController < ApplicationController
 		tval={"tarif"=>item.tarif.name, "val"=>item.getCalculatedValue} 
 		@tarifs.push tval
 		@total+=tval["val"][0]
-	end
-	logger.info "dDDDDDDDDDDDDDDDDD"
-	@tarifs.each do|item|
-			logger.info item["tarif"]
-	
-	end
-		
+	end		
 	@proforma
   end
-  def xml
-	response.headers["Content-Type"]="application/vnd.ms-excel; charset=UTF-8"
-	response.headers["Content-Disposition"]="inline; filename=proforma.xml"
-	gen
-  end
-
+ 
 end

@@ -9,7 +9,7 @@ module ApplicationHelper
 	end
 	
 	def money(number)
-		number_with_precision(number, :precision => 2, :separator => ',', :delimiter => '')
+		("%.2f" % number).gsub(".",",")
 	end
 	
 end
