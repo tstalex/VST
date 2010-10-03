@@ -3,7 +3,15 @@ function Currencies() {
     var currencyEditControl = null;
     var currencyStoreControl = null;
     var currencyMainControl = null;
-
+	
+	
+	this.convertTo=function(val,from,to){
+		fromCurr = this.currencyStore().getById(from);
+		toCurr = this.currencyStore().getById(to);
+		val= parseFloat(val)* fromCurr.get("rate");
+		val= val / toCurr.get("rate")
+		return val;
+	}
 
     this.del = function() {
         this.editPanel().deleteGridData(this.currencyGrid());

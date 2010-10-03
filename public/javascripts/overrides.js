@@ -7,11 +7,34 @@ Ext.ux.boolRenderer = function() {
     }
 }
 
+Ext.ux.moneyRenderer = function() {
+    return function(value) {
+		if(value){
+			return value.toFixed(2)
+		}else{
+			return "0.00";
+		}
+    }
+}
+
 Ext.ux.storeRenderer = function(store, display_field) {
     return function(value) {
         return store.searchField(display_field, value);
     }
 }
+
+Ext.ux.valueInEur = function(tarifs) {
+    return function(value, meta, record) {
+        var val= record.get("val");
+		var idx = tarifs.find("id", value);
+		var rec = tarifs.getAt(idx); 
+		var curr=rec.get("currency_id");
+		
+		var inEur= Currency.convertTo(val,curr,1);
+		return inEur.toFixed(2);
+    }
+}
+
 Ext.ux.forignKeyRenderer = function(pkStore, fkStore, fk, display_field) {
     return function(value) {
 
@@ -175,6 +198,15 @@ Ext.override(Ext.FormPanel, {
 				this.set(field.name,field.getValue());
 			}
         }, rec);
+	}
+	,
+	getJson:function(){
+		var ret=new Object();
+		this.getForm().items.each( function(field) {
+			this[field.name]=field.getValue();
+        }, ret);
+		
+		return ret;
 	}
 	,
     loadData : function() {

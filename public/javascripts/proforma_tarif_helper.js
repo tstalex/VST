@@ -68,6 +68,7 @@ Ext.ux.ProfTarifHelper = function(proforma) {
 			proforma.editPanel().getBottomToolbar().items.get(5).show();
 		}else{
 			proforma.editPanel().getBottomToolbar().items.get(5).hide();
+			proforma.calcGrid().store.removeAll(true);
 		}
     }
 
@@ -79,9 +80,7 @@ Ext.ux.ProfTarifHelper = function(proforma) {
 
     this.generateTarifs = function() {
 		this.changeCombo()
-		var row=proforma.gridPanel().getSelectionModel().getSelected();
-		proforma.editPanel().putValues(row);
-        var data = row.data;
+		var data=proforma.editPanel().getJson();
 		delete data.total_eur;
 		var dataJson=Ext.util.JSON.encode(data);
 		delete dataJson.total_eur;
@@ -104,6 +103,11 @@ Ext.ux.ProfTarifHelper = function(proforma) {
 	
     this.loadGeneratedCalc = function(resp, opts) {
         var obj = Ext.decode(resp.responseText);
+		if(!obj.success){
+			Ext.Msg.alert('Warning', obj.message);
+			console.log(obj.stacktrace);
+			return;
+		}
         proforma.calcGrid().store.removeAll(true);
         var recordType = Ext.data.Record.create([
             {

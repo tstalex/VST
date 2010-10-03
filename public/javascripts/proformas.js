@@ -153,15 +153,21 @@ function Proformas() {
                     editor: new fm.TextField()
                 },
                 {
-                    header: 'Remark',
-                    dataIndex: 'description',
-                    editor: new fm.TextField()
-                },
-                {
                     header: 'Currency',
                     dataIndex: 'tarif_id',
                     editable:false,
                     renderer: Ext.ux.forignKeyRenderer(Currency.currencyStore(), combo.store, "currency_id", "curr")
+                },
+				{
+					header:'(EUR)',
+					editable:false,
+					dataIndex:"tarif_id",
+					renderer: Ext.ux.valueInEur(combo.store)
+				},
+				 {
+                    header: 'Remark',
+                    dataIndex: 'description',
+                    editor: new fm.TextField()
                 }
             ]
         });
@@ -240,8 +246,8 @@ function Proformas() {
         });
 		
 		calcgrid.getSelectionModel().on("selectionchange", function(csm, obj) {
-            if(csm.grid.controller.editPanel().editable)
-				csm.grid.setReadOnly((obj==null));
+            csm.grid.setReadOnly(!csm.grid.controller.editPanel().editable);
+				
         });
         return calcgrid;
     }
@@ -289,6 +295,7 @@ function Proformas() {
 	
     this.newRow = function() {
         this.editPanel().addNew(this.gridPanel());
+		this.calcGrid().setReadOnly(false);
     };
 
     this.add = function() {

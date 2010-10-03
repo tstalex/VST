@@ -19,29 +19,37 @@ class ProfTarifCalcsController < ApplicationController
 
   # GET /gen_tarifs
   def gen_tarifs
-    data= params[:data]
-    json_obj= ActiveSupport::JSON.decode(data)
-    prof =Proforma.new json_obj
-    logger.debug "calculating for port %s" % json_obj["port_id"]
-    port= Port.find(json_obj["port_id"])
-    profCalc=Array.new
-    if port
-      tarifs= port.tarifs
-    else
-      tarifs= []
-    end
-    tarifs.each{|t|
-      if(t.is_manual)                                                         
-        next  
-      end
+	profCalc=Array.new
+		
+	begin 
+		data= params[:data]
+		json_obj= ActiveSupport::JSON.decode(data)
+		prof =Proforma.new json_obj
+		logger.debug "calculating for port %s" % json_obj["port_id"]
+		port= Port.find(json_obj["port_id"])
+		if port
+		  tarifs= port.tarifs
+		else
+		  tarifs= []
+		end
+		tarifs.each{|t|
+		  if(t.is_manual)                                                         
+			next  
+		  end
 
-      calc= ProfTarifCalc.new
-      calc.proforma=prof
-      calc.tarif_id=t.id
-      generated_value=calc.getCalculatedValue
-      profCalc.push calc}
-    
-  render :json => { :success => true, :data => profCalc }
+		  calc= ProfTarifCalc.new
+		  calc.proforma=prof
+		  calc.tarif_id=t.id
+		  generated_value=calc.getCalculatedValue
+		  profCalc.push calc
+		  
+		  }
+		 render :json => { :success => true, :data => profCalc } 
+	rescue Exception => e
+		render :json => { :success => false, :message => "An error occurred: %s" % e.message, :stacktrace=> e.backtrace.inspect }
+	end
+	
+  
 
 end
 
